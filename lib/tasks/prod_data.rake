@@ -6,7 +6,7 @@ require "net/http"
 #
 # Before loading, the task:
 #   1. Deletes all data it will recreate: users with email ending in
-#      ProdDataLoadHelpers::PROD_DATA_SEED_EMAIL_DOMAINS (@seed.ollazen.ma, @seed.glow.ma) and their
+#      ProdDataLoadHelpers::PROD_DATA_SEED_EMAIL_DOMAINS (@seed.vazivo.ma, @seed.glow.ma) and their
 #      businesses (and dependents: services, bookings, reviews, etc.).
 #   2. Unlinks services from non-canonical categories so Category.ensure_canonical_acts! can run without FK errors.
 #   3. Ensures the 5 canonical Category acts exist (ensure_canonical_acts!).

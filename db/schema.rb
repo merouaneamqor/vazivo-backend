@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2026_03_06_210000) do
+ActiveRecord::Schema[7.1].define(version: 2026_03_08_000002) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -116,12 +116,13 @@ ActiveRecord::Schema[7.1].define(version: 2026_03_06_210000) do
     t.string "customer_email"
     t.string "short_booking_id", null: false
     t.bigint "staff_id"
+    t.integer "number_of_guests"
     t.index ["business_id"], name: "index_bookings_on_business_id"
     t.index ["cancelled_at"], name: "index_bookings_on_cancelled_at"
     t.index ["confirmed_at"], name: "index_bookings_on_confirmed_at"
     t.index ["date"], name: "index_bookings_on_date"
     t.index ["short_booking_id"], name: "index_bookings_on_short_booking_id", unique: true
-    t.index ["staff_id", "date", "start_time"], name: "index_bookings_on_staff_date_start_time_active", where: "((status)::text = ANY ((ARRAY['pending'::character varying, 'confirmed'::character varying])::text[]))"
+    t.index ["staff_id", "date", "start_time"], name: "index_bookings_on_staff_date_start_time_active", where: "((status)::text = ANY (ARRAY[('pending'::character varying)::text, ('confirmed'::character varying)::text]))"
     t.index ["staff_id", "date", "start_time"], name: "index_bookings_on_staff_id_and_date_and_start_time"
     t.index ["staff_id"], name: "index_bookings_on_staff_id"
     t.index ["status"], name: "index_bookings_on_status"
@@ -234,6 +235,9 @@ ActiveRecord::Schema[7.1].define(version: 2026_03_06_210000) do
     t.bigint "neighborhood_id"
     t.float "average_rating", default: 0.0, null: false
     t.integer "reviews_count", default: 0, null: false
+    t.jsonb "cuisine_types", default: []
+    t.string "price_range"
+    t.integer "table_capacity"
     t.index ["category"], name: "index_businesses_on_category"
     t.index ["city"], name: "index_businesses_on_city"
     t.index ["city_id"], name: "index_businesses_on_city_id"

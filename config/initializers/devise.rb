@@ -5,7 +5,7 @@
 Devise.setup do |config|
   config.secret_key = ENV.fetch("SECRET_KEY_BASE") { Rails.application.credentials.secret_key_base }
 
-  config.mailer_sender = ENV.fetch("MAILER_SENDER", "Ollazen <contact@ollazen.com>")
+  config.mailer_sender = ENV.fetch("MAILER_SENDER", "Vazivo <contact@vazivo.com>")
   config.mailer = "CustomDeviseMailer"
 
   require "devise/orm/active_record"

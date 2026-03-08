@@ -18,8 +18,9 @@ class SearchService
     # Text search
     scope = scope.search(@params[:q]) if @params[:q].present?
 
-    # Category filter
-    scope = scope.by_category(@params[:category]) if @params[:category].present?
+    # Category filter (category or cuisine - for Vazivo cuisine is the category)
+    category_param = @params[:category].presence || @params[:cuisine].presence
+    scope = scope.by_category(category_param) if category_param.present?
 
     # City filter
     scope = scope.by_city(@params[:city]) if @params[:city].present?

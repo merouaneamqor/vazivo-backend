@@ -16,7 +16,7 @@ Sample transactional email templates for SendGrid compliance.
   
   <!-- Header -->
   <div style="text-align: center; padding: 20px 0; border-bottom: 2px solid #8b5cf6;">
-    <h1 style="color: #8b5cf6; margin: 0;">OllaZen</h1>
+    <h1 style="color: #8b5cf6; margin: 0;">Vazivo</h1>
     <p style="color: #666; margin: 5px 0;">Your Beauty & Wellness Platform</p>
   </div>
 
@@ -56,7 +56,7 @@ Sample transactional email templates for SendGrid compliance.
   <!-- Footer -->
   <div style="border-top: 1px solid #e5e7eb; padding-top: 20px; margin-top: 30px; font-size: 12px; color: #666;">
     <p style="margin: 10px 0;">
-      <strong>OllaZen</strong><br>
+      <strong>Vazivo</strong><br>
       [Your Business Address]<br>
       [City, State ZIP]<br>
       [Country]
@@ -73,7 +73,7 @@ Sample transactional email templates for SendGrid compliance.
     </p>
     
     <p style="margin: 10px 0; color: #999;">
-      This is a transactional email related to your booking. You received this because you made a booking on OllaZen.
+      This is a transactional email related to your booking. You received this because you made a booking on Vazivo.
     </p>
   </div>
 
@@ -94,7 +94,7 @@ Sample transactional email templates for SendGrid compliance.
 <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
   
   <div style="text-align: center; padding: 20px 0; border-bottom: 2px solid #8b5cf6;">
-    <h1 style="color: #8b5cf6; margin: 0;">OllaZen</h1>
+    <h1 style="color: #8b5cf6; margin: 0;">Vazivo</h1>
   </div>
 
   <div style="padding: 30px 0;">
@@ -120,7 +120,7 @@ Sample transactional email templates for SendGrid compliance.
 
   <div style="border-top: 1px solid #e5e7eb; padding-top: 20px; margin-top: 30px; font-size: 12px; color: #666;">
     <p style="margin: 10px 0;">
-      <strong>OllaZen</strong><br>
+      <strong>Vazivo</strong><br>
       [Your Business Address]<br>
       [City, State ZIP]<br>
       [Country]

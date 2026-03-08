@@ -246,7 +246,7 @@ module Api
         end
         
         def extract_root_domain(host)
-          # Extract root domain (e.g., "ollazen.com" from "infra.ollazen.com")
+          # Extract root domain (e.g., "vazivo.com" from "infra.vazivo.com")
           parts = host.split(".")
           return nil if parts.length < 2
           ".#{parts[-2..-1].join('.')}"

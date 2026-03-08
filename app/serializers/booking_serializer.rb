@@ -2,7 +2,8 @@
 
 class BookingSerializer < ActiveModel::Serializer
   attributes :id, :date, :start_time, :end_time, :status,
-             :total_price, :notes, :duration_minutes,
+             :total_price, :notes, :special_requests, :number_of_guests,
+             :duration_minutes,
              :can_cancel, :can_confirm, :can_complete,
              :service_id, :service_name, :business_id, :business_name, :business_slug,
              :user, :short_booking_id,
@@ -32,6 +33,14 @@ class BookingSerializer < ActiveModel::Serializer
 
   def can_cancel
     object.can_cancel?
+  end
+
+  def special_requests
+    object.notes
+  end
+
+  def number_of_guests
+    object.respond_to?(:number_of_guests) ? object.number_of_guests : nil
   end
 
   def can_confirm

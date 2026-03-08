@@ -5,7 +5,7 @@
 # (1 request/second for bulk; set GEOCODING_USER_AGENT to identify your app.)
 class GeocodingService
   NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
-  DEFAULT_USER_AGENT = "OllaZenBooking/1.0 (booking@ollazen.ma)"
+  DEFAULT_USER_AGENT = "VazivoBooking/1.0 (booking@vazivo.ma)"
 
   # @param address [String] full address (e.g. "123 Main St, Casablanca, Morocco")
   # @return [Hash] { lat: Float, lng: Float } or {} if not found / error

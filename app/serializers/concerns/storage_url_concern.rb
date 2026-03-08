@@ -45,7 +45,7 @@ module StorageUrlConcern
 
   def minio_url(blob)
     endpoint = ENV.fetch("MINIO_PUBLIC_ENDPOINT", "http://localhost:9000")
-    bucket = ENV.fetch("MINIO_BUCKET", "ollazen-development")
+    bucket = ENV.fetch("MINIO_BUCKET", "vazivo-development")
     key = blob.key
 
     "#{endpoint}/#{bucket}/#{key}"

@@ -90,7 +90,7 @@ module Api
           case Rails.application.config.active_storage.service
           when :minio
             endpoint = ENV.fetch("MINIO_PUBLIC_ENDPOINT", "http://localhost:9000")
-            bucket = ENV.fetch("MINIO_BUCKET", "ollazen-development")
+            bucket = ENV.fetch("MINIO_BUCKET", "vazivo-development")
             "#{endpoint}/#{bucket}/#{blob.key}"
           when :cloudinary
             folder = ENV.fetch("CLOUDINARY_FOLDER", "glow").presence

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Prevents delivery to prod_data seed users (@seed.ollazen.ma, @seed.glow.ma) so we never send real emails
+# Prevents delivery to prod_data seed users (@seed.vazivo.ma, @seed.glow.ma) so we never send real emails
 # to fake provider accounts (protects sender reputation and avoids bounces).
 class ProdDataSeedEmailInterceptor
   def self.delivering_email(mail)

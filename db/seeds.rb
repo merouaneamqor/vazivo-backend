@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Comprehensive seed file for OllaZen platform with Moroccan data
+# Comprehensive seed file for Vazivo restaurant platform with Moroccan data
 Rails.logger.debug "🌱 Seeding database with Moroccan data..."
 Rails.logger.debug "=" * 60
 
@@ -54,7 +54,7 @@ MOROCCAN_CITIES = [
 Rails.logger.debug "\n👥 Creating users..."
 
 # Admin user (always ensure consistent credentials and admin role)
-admin = User.find_or_initialize_by(email: "admin@ollazen.ma")
+admin = User.find_or_initialize_by(email: "admin@vazivo.com")
 admin.name = "Merouane Admin"
 admin.password = "password123"
 admin.role = "admin"
@@ -65,14 +65,14 @@ Rails.logger.debug { "  ✓ Admin: #{admin.email} (role=#{admin.role}, admin_rol
 
 # Provider users (business owners)
 providers_data = [
-  { name: "Fatima Zahra", email: "fatima@ollazen.ma", phone: "+212612345679", city: "Casablanca" },
-  { name: "Mohamed Amine", email: "mohamed@ollazen.ma", phone: "+212612345680", city: "Rabat" },
-  { name: "Aicha Benali", email: "aicha@ollazen.ma", phone: "+212612345681", city: "Marrakech" },
-  { name: "Youssef Alami", email: "youssef@ollazen.ma", phone: "+212612345682", city: "Fes" },
-  { name: "Sanae Idrissi", email: "sanae@ollazen.ma", phone: "+212612345683", city: "Tangier" },
-  { name: "Hassan Tazi", email: "hassan@ollazen.ma", phone: "+212612345684", city: "Agadir" },
-  { name: "Laila Bensaid", email: "laila@ollazen.ma", phone: "+212612345685", city: "Casablanca" },
-  { name: "Omar Cherkaoui", email: "omar@ollazen.ma", phone: "+212612345686", city: "Rabat" },
+  { name: "Fatima Zahra", email: "fatima@vazivo.com", phone: "+212612345679", city: "Casablanca" },
+  { name: "Mohamed Amine", email: "mohamed@vazivo.com", phone: "+212612345680", city: "Rabat" },
+  { name: "Aicha Benali", email: "aicha@vazivo.com", phone: "+212612345681", city: "Marrakech" },
+  { name: "Youssef Alami", email: "youssef@vazivo.com", phone: "+212612345682", city: "Fes" },
+  { name: "Sanae Idrissi", email: "sanae@vazivo.com", phone: "+212612345683", city: "Tangier" },
+  { name: "Hassan Tazi", email: "hassan@vazivo.com", phone: "+212612345684", city: "Agadir" },
+  { name: "Laila Bensaid", email: "laila@vazivo.com", phone: "+212612345685", city: "Casablanca" },
+  { name: "Omar Cherkaoui", email: "omar@vazivo.com", phone: "+212612345686", city: "Rabat" },
 ]
 
 providers = providers_data.map do |data|
@@ -90,16 +90,16 @@ end
 
 # Customer users
 customers_data = [
-  { name: "Sara Alami", email: "sara@ollazen.ma", phone: "+212612345700" },
-  { name: "Mehdi Benjelloun", email: "mehdi@ollazen.ma", phone: "+212612345701" },
-  { name: "Nadia El Fassi", email: "nadia@ollazen.ma", phone: "+212612345702" },
-  { name: "Karim Bennis", email: "karim@ollazen.ma", phone: "+212612345703" },
-  { name: "Imane Tazi", email: "imane@ollazen.ma", phone: "+212612345704" },
-  { name: "Yassine Alaoui", email: "yassine@ollazen.ma", phone: "+212612345705" },
-  { name: "Hind Idrissi", email: "hind@ollazen.ma", phone: "+212612345706" },
-  { name: "Amine Cherkaoui", email: "amine@ollazen.ma", phone: "+212612345707" },
-  { name: "Salma Bensaid", email: "salma@ollazen.ma", phone: "+212612345708" },
-  { name: "Omar Alami", email: "omar.customer@ollazen.ma", phone: "+212612345709" },
+  { name: "Sara Alami", email: "sara@vazivo.com", phone: "+212612345700" },
+  { name: "Mehdi Benjelloun", email: "mehdi@vazivo.com", phone: "+212612345701" },
+  { name: "Nadia El Fassi", email: "nadia@vazivo.com", phone: "+212612345702" },
+  { name: "Karim Bennis", email: "karim@vazivo.com", phone: "+212612345703" },
+  { name: "Imane Tazi", email: "imane@vazivo.com", phone: "+212612345704" },
+  { name: "Yassine Alaoui", email: "yassine@vazivo.com", phone: "+212612345705" },
+  { name: "Hind Idrissi", email: "hind@vazivo.com", phone: "+212612345706" },
+  { name: "Amine Cherkaoui", email: "amine@vazivo.com", phone: "+212612345707" },
+  { name: "Salma Bensaid", email: "salma@vazivo.com", phone: "+212612345708" },
+  { name: "Omar Alami", email: "omar.customer@vazivo.com", phone: "+212612345709" },
 ]
 
 customers = customers_data.map do |data|
@@ -112,80 +112,17 @@ customers = customers_data.map do |data|
 end
 
 # ============================================================================
-# CATEGORIES: Acts (top-level) + Subacts (children). Services link to subacts.
+# CATEGORIES: Cuisines (top-level). Each has one "Table reservation" experience.
 # ============================================================================
-# Each act has name, slug, and subacts with name, slug, and service seed data.
 SEED_ACTS = [
-  {
-    name: "Salon de Beauté",
-    slug: "salon-de-beaute",
-    subacts: [
-      { name: "Soin du visage", slug: "soin-visage", description: "Soin du visage professionnel", duration: 60,
-        price: 180.00 },
-      { name: "Maquillage", slug: "maquillage", description: "Maquillage professionnel", duration: 45, price: 120.00 },
-      { name: "Épilation", slug: "epilation", description: "Épilation soignée", duration: 30, price: 80.00 },
-      { name: "Soin des cheveux", slug: "soin-cheveux", description: "Soin et coiffure", duration: 60, price: 150.00 },
-      { name: "Beauté du regard", slug: "beaute-regard", description: "Soin des yeux et sourcils", duration: 30,
-        price: 70.00 },
-    ],
-  },
-  {
-    name: "Barber",
-    slug: "barber",
-    subacts: [
-      { name: "Coupe homme", slug: "coupe-homme", description: "Coupe de cheveux moderne", duration: 30, price: 80.00 },
-      { name: "Taille de barbe", slug: "taille-barbe", description: "Taille et entretien de la barbe", duration: 20,
-        price: 60.00 },
-      { name: "Rasage traditionnel", slug: "rasage-traditionnel",
-        description: "Rasage au rasoir avec serviette chaude", duration: 30, price: 100.00 },
-      { name: "Soin visage homme", slug: "soin-visage-homme", description: "Soin du visage pour homme", duration: 45,
-        price: 90.00 },
-      { name: "Coloration homme", slug: "coloration-homme", description: "Coloration barbe ou cheveux", duration: 45,
-        price: 110.00 },
-    ],
-  },
-  {
-    name: "Hammam",
-    slug: "hammam",
-    subacts: [
-      { name: "Hammam traditionnel", slug: "hammam-traditionnel", description: "Séance complète de hammam marocain",
-        duration: 90, price: 200.00 },
-      { name: "Gommage", slug: "gommage", description: "Gommage traditionnel au savon noir", duration: 60,
-        price: 150.00 },
-      { name: "Savonnage", slug: "savonnage", description: "Savonnage et enveloppement", duration: 45, price: 100.00 },
-      { name: "Massage au hammam", slug: "massage-hammam", description: "Massage relaxant au hammam", duration: 60,
-        price: 180.00 },
-      { name: "Soin corps au hammam", slug: "soin-corps-hammam", description: "Soin du corps complet au hammam",
-        duration: 120, price: 300.00 },
-    ],
-  },
-  {
-    name: "Massage & Spa",
-    slug: "massage-spa",
-    subacts: [
-      { name: "Massage relaxant", slug: "massage-relaxant", description: "Massage aux huiles essentielles",
-        duration: 60, price: 250.00 },
-      { name: "Massage thérapeutique", slug: "massage-therapeutique",
-        description: "Massage pour soulager les tensions", duration: 60, price: 300.00 },
-      { name: "Massage pierres chaudes", slug: "massage-pierres-chaudes",
-        description: "Massage avec pierres volcaniques", duration: 90, price: 400.00 },
-      { name: "Spa & jacuzzi", slug: "spa-jacuzzi", description: "Accès spa et jacuzzi", duration: 60, price: 150.00 },
-      { name: "Aromathérapie", slug: "aromatherapie", description: "Soin aux huiles essentielles", duration: 45,
-        price: 120.00 },
-    ],
-  },
-  {
-    name: "Nail Salon",
-    slug: "nail-salon",
-    subacts: [
-      { name: "Manucure", slug: "manucure", description: "Manucure soignée avec vernis", duration: 45, price: 80.00 },
-      { name: "Pédicure", slug: "pedicure", description: "Soin des pieds et pose vernis", duration: 60, price: 120.00 },
-      { name: "Ongles gel", slug: "ongles-gel", description: "Pose de gel longue tenue", duration: 60, price: 150.00 },
-      { name: "Nail art", slug: "nail-art", description: "Décoration et nail art", duration: 60, price: 180.00 },
-      { name: "Pose américaine", slug: "pose-americaine", description: "Pose américaine classique", duration: 90,
-        price: 200.00 },
-    ],
-  },
+  { name: "Moroccan", slug: "moroccan", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Mediterranean", slug: "mediterranean", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Italian", slug: "italian", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "French", slug: "french", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Japanese", slug: "japanese", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Seafood", slug: "seafood", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "International", slug: "international", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Street food", slug: "street-food", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table", duration: 60, price: 0.0 }] },
 ].freeze
 
 CANONICAL_CATEGORIES = SEED_ACTS.map { |a| a[:name] }.freeze
@@ -307,90 +244,95 @@ def seed_city_for(name)
 end
 
 businesses_data = [
-  # Rabat businesses
   {
-    name: "Barber Shop Royal",
-    description: "Salon de coiffure pour hommes avec services de rasage traditionnel et moderne.",
-    category: "Barber",
-    city: "Rabat",
-    address: "34 Rue Oqba, Rabat",
-    lat: 34.0300,
-    lng: -6.8500,
-    phone: "+212537234567",
-    email: "info@barbershoproyal.ma",
-    provider_index: 7,
-  },
-  {
-    name: "Salon Coiffure Élégance",
-    description: "Coupe, coloration, styling par les meilleurs coiffeurs",
-    category: "Salon de Beauté",
+    name: "La Sqala",
+    description: "Restaurant marocain dans un cadre historique. Cuisine traditionnelle et raffinée.",
+    category: "Moroccan",
     city: "Casablanca",
-    address: "89 Rue Zerktouni, Casablanca",
+    address: "Boulevard des Almohades, Casablanca",
     lat: 33.5750,
     lng: -7.5950,
     phone: "+212522456789",
-    email: "contact@coiffureelegance.ma",
+    email: "contact@lasqala.ma",
     provider_index: 0,
+    cuisine_types: ["Moroccan", "Mediterranean"],
+    price_range: "$$",
+    table_capacity: 30,
   },
   {
-    name: "Hammam Traditionnel Al Badi",
-    description: "Soin du corps, Gommage, Hammam relaxant",
-    category: "Hammam",
+    name: "Le Comptoir Darna",
+    description: "Cuisine méditerranéenne et ambiance lounge.",
+    category: "Mediterranean",
     city: "Marrakech",
-    address: "12 Rue Riad Zitoun, Marrakech",
+    address: "1 Rue du 4 Septembre, Marrakech",
     lat: 31.6250,
     lng: -7.9850,
     phone: "+212524345678",
-    email: "contact@hammamalbadi.ma",
+    email: "contact@comptoirdarna.ma",
     provider_index: 2,
+    cuisine_types: ["Mediterranean", "Moroccan"],
+    price_range: "$$$",
+    table_capacity: 25,
   },
   {
-    name: "Nail Studio Premium",
-    description: "Pose de vernis, nail art, soins des ongles",
-    category: "Nail Salon",
+    name: "Ricks Café",
+    description: "Restaurant international inspiré du film Casablanca.",
+    category: "International",
+    city: "Casablanca",
+    address: "248 Boulevard Sour Jdid, Casablanca",
+    lat: 33.5720,
+    lng: -7.5920,
+    phone: "+212522567890",
+    email: "contact@rickscafe.ma",
+    provider_index: 6,
+    cuisine_types: ["International", "French"],
+    price_range: "$$$",
+    table_capacity: 40,
+  },
+  {
+    name: "Dar Moha",
+    description: "Cuisine marocaine gastronomique dans un palais.",
+    category: "Moroccan",
+    city: "Marrakech",
+    address: "81 Rue Dar El Bacha, Marrakech",
+    lat: 31.6300,
+    lng: -7.9900,
+    phone: "+212524385678",
+    email: "contact@darmoha.ma",
+    provider_index: 2,
+    cuisine_types: ["Moroccan"],
+    price_range: "$$$",
+    table_capacity: 20,
+  },
+  {
+    name: "Le Petit Rocher",
+    description: "Bistrot français et cuisine du marché.",
+    category: "French",
     city: "Rabat",
     address: "56 Avenue Mohammed V, Rabat",
     lat: 34.0250,
     lng: -6.8450,
     phone: "+212537345678",
-    email: "info@nailstudio.ma",
+    email: "info@lepetitrocher.ma",
     provider_index: 1,
+    cuisine_types: ["French", "Mediterranean"],
+    price_range: "$$",
+    table_capacity: 22,
   },
   {
-    name: "Spa Relaxation & Bien-être",
-    description: "Massages thérapeutiques, détente, bien-être",
-    category: "Massage & Spa",
-    city: "Casablanca",
-    address: "34 Boulevard Anfa, Casablanca",
-    lat: 33.5700,
-    lng: -7.5900,
-    phone: "+212522567890",
-    email: "contact@sparelaxation.ma",
-    provider_index: 6,
-  },
-  {
-    name: "Barber Shop Premium",
-    description: "Coupe homme, taille de barbe",
-    category: "Barber",
-    city: "Casablanca",
-    address: "78 Rue Mohammed V, Casablanca",
-    lat: 33.5800,
-    lng: -7.5950,
-    phone: "+212522678901",
-    email: "info@barbershoppremium.ma",
-    provider_index: 7,
-  },
-  {
-    name: "Fit Club Maroc",
-    description: "Salle de sport, coaching et préparation physique.",
-    category: "Massage & Spa",
-    city: "Casablanca",
-    address: "12 Boulevard d'Anfa, Casablanca",
-    lat: 33.5720,
-    lng: -7.5920,
-    phone: "+212522556677",
-    email: "contact@fitclub.ma",
-    provider_index: 4,
+    name: "Ocean View",
+    description: "Fruits de mer et poissons frais face à l'océan.",
+    category: "Seafood",
+    city: "Agadir",
+    address: "Promenade de la Plage, Agadir",
+    lat: 30.4278,
+    lng: -9.5981,
+    phone: "+212528823456",
+    email: "contact@oceanview.ma",
+    provider_index: 5,
+    cuisine_types: ["Seafood", "Mediterranean"],
+    price_range: "$$",
+    table_capacity: 35,
   },
 ]
 
@@ -425,6 +367,9 @@ businesses = businesses_data.map do |data|
     opening_hours: opening_hours,
   }
   attrs[:category] = data[:category] if Business.column_names.include?("category")
+  attrs[:cuisine_types] = data[:cuisine_types] if data.key?(:cuisine_types) && Business.column_names.include?("cuisine_types")
+  attrs[:price_range] = data[:price_range] if data.key?(:price_range) && Business.column_names.include?("price_range")
+  attrs[:table_capacity] = data[:table_capacity] if data.key?(:table_capacity) && Business.column_names.include?("table_capacity")
   business.assign_attributes(attrs)
   business[:city] = data[:city]
   business.city_id = seed_city_for(data[:city])
@@ -469,7 +414,7 @@ if defined?(Faker)
 
   55.times do |i|
     email = "provider#{i + 100}@#{Faker::Internet.domain_name}"
-    email = "provider-#{i + 100}-#{SecureRandom.hex(2)}@ollazen-seed.ma" while User.exists?(email: email)
+    email = "provider-#{i + 100}-#{SecureRandom.hex(2)}@vazivo-seed.ma" while User.exists?(email: email)
 
     user = User.find_or_create_by!(email: email) do |u|
       u.name = Faker::Name.name
@@ -493,10 +438,10 @@ if defined?(Faker)
     city_name = city_data[:name]
     category = SEED_CATEGORIES.sample
     business_name = [
-      Faker::Company.name,
+      "Restaurant #{Faker::Name.last_name}",
       "#{Faker::Adjective.positive.capitalize} #{category}",
       "#{Faker::Name.last_name} #{category}",
-      "Salon #{Faker::Name.first_name}",
+      "Restaurant #{Faker::Name.first_name}",
       "#{category} #{city_name}",
     ].sample
     business_name = "#{business_name} #{city_name}" if rand(1..100) <= 30
@@ -523,9 +468,14 @@ if defined?(Faker)
       b.lat = lat
       b.lng = lng
       b.phone = "+2125#{rand(20..29)}#{rand(100_000_00..999_999_99)}"
-      b.email = Faker::Internet.email(domain: "ollazen-seed.ma")
+      b.email = Faker::Internet.email(domain: "vazivo-seed.ma")
       b.opening_hours = opening_hours
       b.verification_status = ["verified", "pending"].sample
+      if Business.column_names.include?("cuisine_types")
+        b.cuisine_types = [category].compact
+        b.price_range = ["$", "$$", "$$$"].sample
+        b.table_capacity = rand(15..50)
+      end
     end
     business.update_columns(verification_status: ["verified", "pending"].sample) if business.persisted?
     # Mix: ~40% premium (per business)
@@ -823,7 +773,8 @@ upcoming_bookings = []
     end_time: end_time_str,
     total_price: service.price,
     status: status,
-    confirmed_at: (status == :confirmed ? Time.current : nil)
+    confirmed_at: (status == :confirmed ? Time.current : nil),
+    number_of_guests: Booking.column_names.include?("number_of_guests") ? rand(1..6) : nil
   )
 
   BookingServiceItem.create!(

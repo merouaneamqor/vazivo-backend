@@ -46,8 +46,8 @@ class OpenRouterService
       headers: {
         "Authorization" => "Bearer #{@api_key}",
         "Content-Type" => "application/json",
-        "HTTP-Referer" => ENV["APP_URL"] || "https://ollazen.com",
-        "X-Title" => "Ollazen"
+        "HTTP-Referer" => ENV["APP_URL"] || "https://vazivo.com",
+        "X-Title" => "Vazivo"
       },
       body: {
         model: FREE_MODEL,

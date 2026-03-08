@@ -249,7 +249,7 @@ module Api
           tokens = JwtService.generate_tokens(admin)
 
           # Clear impersonation cookies and set admin cookies
-          cookie_domain = Rails.env.production? ? ".ollazen.com" : nil
+          cookie_domain = Rails.env.production? ? ".vazivo.com" : nil
           cookie_options = { 
             httponly: true, 
             secure: Rails.env.production?,
@@ -439,7 +439,7 @@ module Api
         end
 
         def set_impersonation_cookies(tokens, user)
-          cookie_domain = Rails.env.production? ? ".ollazen.com" : nil
+          cookie_domain = Rails.env.production? ? ".vazivo.com" : nil
           cookie_options = { 
             httponly: true, 
             secure: Rails.env.production?,

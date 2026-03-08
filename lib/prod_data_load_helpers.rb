@@ -7,7 +7,7 @@ require "open-uri"
 # Slug is the canonical identity for a business; all operations are idempotent.
 module ProdDataLoadHelpers
   # Email domains for prod_data/seed users. Used by build_provider_email (first), cleanup, and mail interceptor.
-  PROD_DATA_SEED_EMAIL_DOMAINS = ["@seed.ollazen.ma", "@seed.glow.ma"].freeze
+  PROD_DATA_SEED_EMAIL_DOMAINS = ["@seed.vazivo.ma", "@seed.glow.ma"].freeze
   PROD_DATA_SEED_EMAIL_DOMAIN = PROD_DATA_SEED_EMAIL_DOMAINS.first
 
   # Database translations for the 5 canonical Category acts (en/fr/ar + slug). Keep in sync with prod_data.rake.

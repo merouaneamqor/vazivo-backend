@@ -49,7 +49,8 @@ class BookingService
       start_time: start_str,
       end_time: end_time_str,
       total_price: total_price,
-      notes: params[:notes],
+      notes: params[:special_requests].presence || params[:notes],
+      number_of_guests: params[:number_of_guests],
       customer_name: params[:customer_name],
       customer_phone: params[:customer_phone],
       customer_email: params[:customer_email]
@@ -257,7 +258,8 @@ class BookingService
       start_time: start_str,
       end_time: end_time_str,
       total_price: total_price,
-      notes: params[:notes],
+      notes: params[:special_requests].presence || params[:notes],
+      number_of_guests: params[:number_of_guests],
       customer_name: customer[:customer_name],
       customer_phone: customer[:customer_phone],
       customer_email: customer[:customer_email]

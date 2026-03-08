@@ -5,6 +5,7 @@ class BusinessDetailSerializer < ActiveModel::Serializer
              :lat, :lng, :phone, :email, :website,
              :opening_hours, :average_rating, :total_reviews,
              :is_open, :today_hours,
+             :cuisine_types, :price_range, :table_capacity,
              :logo_url, :image_urls,
              :created_at, :updated_at
 
@@ -14,6 +15,18 @@ class BusinessDetailSerializer < ActiveModel::Serializer
 
   def is_open
     object.is_open?
+  end
+
+  def cuisine_types
+    object.respond_to?(:cuisine_types) && object.cuisine_types.present? ? object.cuisine_types : []
+  end
+
+  def price_range
+    object.respond_to?(:price_range) ? object.price_range : nil
+  end
+
+  def table_capacity
+    object.respond_to?(:table_capacity) ? object.table_capacity : nil
   end
 
   def logo_url

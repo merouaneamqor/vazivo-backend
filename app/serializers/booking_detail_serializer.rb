@@ -2,7 +2,8 @@
 
 class BookingDetailSerializer < ActiveModel::Serializer
   attributes :id, :date, :start_time, :end_time, :status,
-             :total_price, :notes, :duration_minutes,
+             :total_price, :notes, :special_requests, :number_of_guests,
+             :duration_minutes,
              :can_cancel, :can_confirm, :can_complete,
              :confirmed_at, :cancelled_at, :completed_at,
              :created_at, :updated_at
@@ -30,6 +31,14 @@ class BookingDetailSerializer < ActiveModel::Serializer
 
   def can_complete
     object.can_complete?
+  end
+
+  def special_requests
+    object.notes
+  end
+
+  def number_of_guests
+    object.respond_to?(:number_of_guests) ? object.number_of_guests : nil
   end
 
   # Primary service for backwards compatibility; derived from first booking_service_item.

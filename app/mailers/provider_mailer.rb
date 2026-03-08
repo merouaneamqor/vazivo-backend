@@ -7,7 +7,7 @@ class ProviderMailer < ApplicationMailer
     @user = user
     @business = business
     @business_name = business&.name || "your business"
-    mail(to: user.email, subject: "Your OllaZen provider account is approved")
+    mail(to: user.email, subject: "Your Vazivo provider account is approved")
   end
 
   def premium_confirmation(user, business: nil, expires_at: nil)
@@ -17,6 +17,6 @@ class ProviderMailer < ApplicationMailer
     @business = business
     @business_name = business&.name || "your business"
     @expires_at = expires_at
-    mail(to: user.email, subject: "Premium subscription confirmed – OllaZen")
+    mail(to: user.email, subject: "Premium subscription confirmed – Vazivo")
   end
 end

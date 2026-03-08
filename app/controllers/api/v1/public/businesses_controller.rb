@@ -214,7 +214,7 @@ module Api
 
         def search_params
           params.permit(
-            :q, :category, :city,
+            :q, :category, :cuisine, :city,
             :min_price, :max_price, :min_rating,
             :lat, :lng, :radius,
             :sort_by, :page, :per_page

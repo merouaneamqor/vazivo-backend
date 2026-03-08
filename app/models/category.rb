@@ -6,8 +6,8 @@ class Category < ApplicationRecord
   translates :slug, backend: :column, locale_accessors: [:en, :fr, :ar]
 
   LOCALES = %w[en fr ar].freeze
-  # Only these 5 top-level categories are used. All businesses must map to one of them.
-  CANONICAL_NAMES = ["Salon de Beauté", "Barber", "Hammam", "Massage & Spa", "Nail Salon"].freeze
+  # Only these top-level categories are used. For Vazivo these are cuisines.
+  CANONICAL_NAMES = ["Moroccan", "Mediterranean", "Italian", "French", "Japanese", "Seafood", "International", "Street food"].freeze
 
   belongs_to :parent, class_name: "Category", optional: true
   has_many :children, class_name: "Category", foreign_key: :parent_id, dependent: :destroy

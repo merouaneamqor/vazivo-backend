@@ -53,7 +53,7 @@ In both cases the worker needs **REDIS_URL**, **DATABASE_URL**, **RAILS_ENV**, *
 ## 2. Add a Sidekiq worker service on Railway
 
 1. In your Railway project, click **+ New** → **Empty Service** (or duplicate your existing backend service).
-2. Name it e.g. **ollazen-backend-worker** (or **booking-platform-worker**).
+2. Name it e.g. **vazivo-backend-worker** (or **booking-platform-worker**).
 3. **Connect the same repo** (and same **root directory** if monorepo, e.g. `backend`).
 4. **Build** (when Build is locked by `railway.toml`):  
    You can’t change **Settings → Build** because it’s set in `railway.toml`. Override the Dockerfile **per service** with a variable:
@@ -86,8 +86,8 @@ In both cases the worker needs **REDIS_URL**, **DATABASE_URL**, **RAILS_ENV**, *
 
 | Service              | Dockerfile           | Start command              | Role                          |
 |----------------------|----------------------|----------------------------|-------------------------------|
-| ollazen-backend (web)   | `Dockerfile`         | (default: Puma)            | Serves HTTP, enqueues jobs    |
-| ollazen-backend-worker  | `Dockerfile.sidekiq` | (default: Sidekiq)         | Runs Sidekiq, processes jobs  |
+| vazivo-backend (web)   | `Dockerfile`         | (default: Puma)            | Serves HTTP, enqueues jobs    |
+| vazivo-backend-worker  | `Dockerfile.sidekiq` | (default: Sidekiq)         | Runs Sidekiq, processes jobs  |
 
 Both use the same **REDIS_URL** (internal) and **DATABASE_URL**. Jobs enqueued by the web process will be picked up by the worker process.
 

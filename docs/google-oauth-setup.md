@@ -1,4 +1,4 @@
-# Google OAuth Configuration for OllaZen
+# Google OAuth Configuration for Vazivo
 
 ## Setup Instructions
 
@@ -16,7 +16,7 @@ Add these redirect URIs:
 
 **Production:**
 ```
-https://infra.ollazen.com/auth/google_oauth2/callback
+https://infra.vazivo.com/auth/google_oauth2/callback
 ```
 
 **Development:**
@@ -37,7 +37,7 @@ GOOGLE_CLIENT_SECRET=your_client_secret
 
 The frontend should redirect to:
 ```
-GET https://infra.ollazen.com/auth/google_oauth2
+GET https://infra.vazivo.com/auth/google_oauth2
 ```
 
 After successful authentication, Google will redirect back to the callback URL, and the backend will:
@@ -67,5 +67,5 @@ GOOGLE_CLIENT_ID=xxx.apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=xxx
 
 # Frontend (.env.production)
-NEXT_PUBLIC_API_URL=https://infra.ollazen.com/api/v1
+NEXT_PUBLIC_API_URL=https://infra.vazivo.com/api/v1
 ```

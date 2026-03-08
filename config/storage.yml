@@ -12,7 +12,7 @@ minio:
   access_key_id: <%= ENV['MINIO_ACCESS_KEY_ID'] %>
   secret_access_key: <%= ENV['MINIO_SECRET_ACCESS_KEY'] %>
   region: us-east-1
-  bucket: <%= ENV['MINIO_BUCKET'] || 'ollazen-development' %>
+  bucket: <%= ENV['MINIO_BUCKET'] || 'vazivo-development' %>
   endpoint: <%= ENV['MINIO_ENDPOINT'] || 'http://localhost:9000' %>
   force_path_style: true
   public: true

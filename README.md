@@ -79,4 +79,4 @@ Copy `.env.example` to `.env` and configure:
 ```bash
 cp .env.example .env
 ```
-# OllaZen Backend
+# Vazivo Backend

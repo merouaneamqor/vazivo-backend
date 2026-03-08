@@ -41,6 +41,9 @@ class BusinessPresenter
       name: name,
       description: description,
       category: category,
+      cuisine_types: cuisine_types,
+      price_range: price_range,
+      table_capacity: table_capacity,
       address: address,
       city: city,
       lat: lat,
@@ -59,6 +62,18 @@ class BusinessPresenter
       created_at: created_at,
       premium: business.premium?,
     }
+  end
+
+  def cuisine_types
+    business.respond_to?(:cuisine_types) && business.cuisine_types.present? ? business.cuisine_types : []
+  end
+
+  def price_range
+    business.respond_to?(:price_range) ? business.price_range : nil
+  end
+
+  def table_capacity
+    business.respond_to?(:table_capacity) ? business.table_capacity : nil
   end
 
   def lat

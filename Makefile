@@ -35,6 +35,7 @@ build:
 	docker-compose build
 
 up:
+	@docker volume rm backend_bundle_cache 2>/dev/null || true
 	docker-compose up -d
 
 down:

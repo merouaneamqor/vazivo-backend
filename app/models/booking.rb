@@ -17,6 +17,7 @@ class Booking < ApplicationRecord
   validates :end_time, presence: true
   validates :status, inclusion: { in: ["pending", "confirmed", "cancelled", "completed", "no_show"] }
   validates :total_price, numericality: { greater_than_or_equal_to: 0 }, allow_nil: true
+  validates :number_of_guests, numericality: { greater_than: 0, less_than_or_equal_to: 50 }, allow_nil: true
   validate :guest_fields_required_when_no_user
   validate :end_time_after_start_time
   validate :no_overlapping_bookings, on: :create
