@@ -1,0 +1,35 @@
+test:
+  service: Disk
+  root: <%= Rails.root.join("tmp/storage") %>
+
+local:
+  service: Disk
+  root: <%= Rails.root.join("storage") %>
+
+# MinIO (S3-compatible) for development
+minio:
+  service: S3
+  access_key_id: <%= ENV['MINIO_ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['MINIO_SECRET_ACCESS_KEY'] %>
+  region: us-east-1
+  bucket: <%= ENV['MINIO_BUCKET'] || 'ollazen-development' %>
+  endpoint: <%= ENV['MINIO_ENDPOINT'] || 'http://localhost:9000' %>
+  force_path_style: true
+  public: true
+
+# Cloudinary for production
+cloudinary:
+  service: Cloudinary
+  cloud_name: <%= ENV['CLOUDINARY_CLOUD_NAME'] %>
+  api_key: <%= ENV['CLOUDINARY_API_KEY'] %>
+  api_secret: <%= ENV['CLOUDINARY_API_SECRET'] %>
+  secure: true
+  folder: glow
+
+# AWS S3 (alternative for production)
+amazon:
+  service: S3
+  access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+  region: <%= ENV['AWS_REGION'] || 'us-east-1' %>
+  bucket: <%= ENV['AWS_BUCKET'] %>

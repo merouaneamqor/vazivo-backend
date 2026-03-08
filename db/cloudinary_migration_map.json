@@ -1,0 +1,32 @@
+{
+  "categories": {
+    "Beauty & Wellness": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223197/categories/beauty-wellness/photo-1560066984-138dadb4c035_vndoob.jpg",
+    "beauty-wellness": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223197/categories/beauty-wellness/photo-1560066984-138dadb4c035_vndoob.jpg",
+    "Barber": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223199/categories/barber/photo-1585747860715-2ba37e788b70_p8mejn.jpg",
+    "barber": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223199/categories/barber/photo-1585747860715-2ba37e788b70_p8mejn.jpg",
+    "Fitness": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223200/categories/fitness/photo-1534438327276-14e5300c3a48_zndms9.jpg",
+    "fitness": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223200/categories/fitness/photo-1534438327276-14e5300c3a48_zndms9.jpg"
+  },
+  "cities": {
+    "Casablanca": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223202/cities/casablanca/gallery/photo-1558642452-9d2a7deb7f62_geclrn.jpg",
+    "casablanca": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223202/cities/casablanca/gallery/photo-1558642452-9d2a7deb7f62_geclrn.jpg",
+    "Marrakech": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223206/cities/marrakech/gallery/photo-1489749798305-4fea3ae63d43_gucoa9.jpg",
+    "marrakech": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223206/cities/marrakech/gallery/photo-1489749798305-4fea3ae63d43_gucoa9.jpg",
+    "Fes": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223208/cities/fes/gallery/photo-1502602898657-3e91760cbb34_u4buks.jpg",
+    "fes": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223208/cities/fes/gallery/photo-1502602898657-3e91760cbb34_u4buks.jpg",
+    "Tangier": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223210/cities/tangier/gallery/photo-1516026672322-bc52d61a55d5_axaaju.jpg",
+    "tangier": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223210/cities/tangier/gallery/photo-1516026672322-bc52d61a55d5_axaaju.jpg",
+    "Agadir": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223211/cities/agadir/gallery/photo-1507525428034-b723cf961d3e_kzvjmw.jpg",
+    "agadir": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223211/cities/agadir/gallery/photo-1507525428034-b723cf961d3e_kzvjmw.jpg",
+    "Meknes": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223214/cities/meknes/gallery/photo-1506929562872-bb421503ef21_uomugv.jpg",
+    "meknes": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223214/cities/meknes/gallery/photo-1506929562872-bb421503ef21_uomugv.jpg",
+    "Oujda": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223218/cities/oujda/gallery/photo-1469854523086-cc02fe5d8800_xzvbxu.jpg",
+    "oujda": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223218/cities/oujda/gallery/photo-1469854523086-cc02fe5d8800_xzvbxu.jpg",
+    "Kenitra": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223220/cities/kenitra/gallery/photo-1476514525535-07fb3b4ae5f1_dke3qf.jpg",
+    "kenitra": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223220/cities/kenitra/gallery/photo-1476514525535-07fb3b4ae5f1_dke3qf.jpg",
+    "Tetouan": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223221/cities/tetouan/gallery/photo-1519681393784-d120267933ba_kg2mwj.jpg",
+    "tetouan": "https://res.cloudinary.com/dqssnduni/image/upload/v1770223221/cities/tetouan/gallery/photo-1519681393784-d120267933ba_kg2mwj.jpg"
+  },
+  "businesses": {},
+  "services": {}
+}

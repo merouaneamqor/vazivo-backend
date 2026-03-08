@@ -1,0 +1,21 @@
+example_id                                       | status  | run_time |
+------------------------------------------------ | ------- | -------- |
+./spec/services/booking_service_spec.rb[1:1:1:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:1:1:2] | unknown |          |
+./spec/services/booking_service_spec.rb[1:1:1:3] | unknown |          |
+./spec/services/booking_service_spec.rb[1:1:2:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:1:3:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:1:4:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:1:5:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:2:1:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:2:2:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:2:3:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:2:4:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:3:1:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:3:2:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:3:3:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:4:1:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:4:2:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:5:1:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:5:2:1] | unknown |          |
+./spec/services/booking_service_spec.rb[1:5:3:1] | unknown |          |

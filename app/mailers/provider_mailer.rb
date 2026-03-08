@@ -1,0 +1,22 @@
+# frozen_string_literal: true
+
+class ProviderMailer < ApplicationMailer
+  def provider_approved(user, business)
+    return if user.blank? || user.email.blank?
+
+    @user = user
+    @business = business
+    @business_name = business&.name || "your business"
+    mail(to: user.email, subject: "Your OllaZen provider account is approved")
+  end
+
+  def premium_confirmation(user, business: nil, expires_at: nil)
+    return if user.blank? || user.email.blank?
+
+    @user = user
+    @business = business
+    @business_name = business&.name || "your business"
+    @expires_at = expires_at
+    mail(to: user.email, subject: "Premium subscription confirmed – OllaZen")
+  end
+end

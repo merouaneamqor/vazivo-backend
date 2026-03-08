@@ -1,0 +1,32 @@
+# Sidekiq worker image. Same stack as the web app; CMD runs Sidekiq.
+# On Railway: set this service's Dockerfile path to backend/Dockerfile.sidekiq
+# and leave start command empty so this CMD is used.
+
+FROM ruby:3.2.2-alpine
+
+# Install dependencies (cmake required for h3 gem native extension)
+RUN apk add --no-cache \
+    build-base \
+    cmake \
+    postgresql-dev \
+    postgresql-client \
+    tzdata \
+    nodejs \
+    npm \
+    git \
+    imagemagick \
+    vips-dev
+
+WORKDIR /app
+
+RUN gem install bundler
+
+COPY Gemfile Gemfile.lock ./
+RUN bundle install --jobs 4 --retry 3
+
+COPY . .
+
+RUN mkdir -p tmp/pids tmp/sockets log storage
+
+# No EXPOSE — Sidekiq doesn't serve HTTP
+CMD ["bundle", "exec", "sidekiq"]

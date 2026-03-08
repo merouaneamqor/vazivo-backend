@@ -1,0 +1,779 @@
+[
+    {
+        "title": "Barbershop temara",
+        "rating": "4,2",
+        "location": "8 Av. Mohammed V, Témara 12000",
+        "phone": "0708-277040",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipOY9TcM4rGicBlT-btAlWnaCtnyraspRh-d1HSu",
+            "https://lh3.googleusercontent.com/p/AF1QipPZ-r7cuovpM9dpqc4Mkkk-cz9VAbL2A1ySq64P",
+            "https://lh3.googleusercontent.com/p/AF1QipPekTtBRUQSxXVSzaRC_CLv0pAnoFM15KAcV3TM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhJPpHXcN9q_J5oCnl9N5leEaXS3eJSAdImZEK310s9jBnnyTB16k0d_htUuiC7-1hNnINN2Ng2bHhCv3904xNPhrPzaivm6UUHZnVfaHJFzgZQWUZKF1tyZMrekQ6aG9IqBs",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzDGfHcahEG6S3gO0dDznOOu6XL2hcDeomztqHUWXH5IUd6YTMkuR-tgrkyY3gXJ5sfPWItxrxKY-DS7X8osHJ9Qoof0zGlBK6j_o-CX0gga1Moxcbi12602jqttTQ1oJ5zQF1o",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyNYxy0U6_ghWi8gs45xm6LU4XTDxj3P5CWCIj7he6x_7vxoNPXnCQ2oNomFinPVujeq6ESBZSW5_nMt8nOPzbzy3cBMlV4rN3nq8Y_FoXLwcLsBettanaDIHzviS1z0nyyJVKPzg",
+            "https://lh3.googleusercontent.com/p/AF1QipPW7xRrWNKjm36vH_Z4NwvmvLETxgVLbi57Bs7-",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwDBni1bP6rTPPFw857IStN5PTp05XGgwgMOG03zsQrUqtxFCNmHYNeifOtWrimNNXEKfFLPp-LjvfiSAOq5voqSyil6IxwKoTcbI8HtxGXPJm9RXn5eEye6cAFg-kL8xORK69p",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz9_LzQB7YBOl14DSK0dOshcjCcWYDc4pnK0uKio6YLbTFEFAsnE2Opv_oCjNYcZIQPSDT-7OUr8OBXwfFG29Fn3TGU9c-e249aRti61GiCJV_4S3bJowS6YJpyCTL4uMnzxAih",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwQLWOdSto4uec_hxH_Qlx0OCEfe9JmMwFAtxfhTvW_SngciCiww7mMUcuw7Ki6pk1zMwfVH1Q5MvRHv4SHpsmDT-XKvwMUZ7aIkRiWNfNMKFr7Ll0NaLX3fv99Uh_msd1umgRXJw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSydgI1dtFaQ8sW3MepIXnrV1ptFE4qoc-Ar6tI9jeX6hHNRp3LUhHGUZoPI_dLfnTHVN3YaElf5h5C6PZsg9QEot2oAcJJ38zYvx-VOgKsZr9kCZ6POTJV_rfMgBXF2Zdu0RnhXlw"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOY9TcM4rGicBlT-btAlWnaCtnyraspRh-d1HSu"
+    },
+    {
+        "title": "Coiffeur/Barber luxe temara",
+        "rating": "4,8",
+        "location": "حي الفضيلة, شارع أحمد الحنصالي, Témara",
+        "phone": "0651-591099",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxXqM3RdklJ5G2bGWmCImDvtX79gxcL7nioGW3Nak4_Yaw8uaqEotbT8HL2XsYN9e-4QiY-om1V20yuLQC0Ils-F9sOEBq8rNAvPgdYsFq5ZvS__pGgqUD8I-pmyt8meOl9pqX4",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyoWTp80NSrmI41ZWsc9XwIGiAEWiPg6xJQNvHVPam74PzVYpfTeOaequZaq2zryzPVLyl-TAXzxXlalO8_mPw0e19H3GARkRUZtmXk1okI5jwGySgg9bC5BM7iV3fFrkPx1cwV",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOLXxtKzytRn-Fun3BqdInSd-OfCpQTMobq7wOOEGCqup_fK_sCNxof5Bbx-79Q5JG4p79vnr_oWPNpqt7YdQsbjPxRMVzAR60oedEvfnIJMJUkxW0wd00QwL49bOg0SJvo6xK",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyMoIB-DKaI6tdIvn7upJCsv70VyClqYWV2IrbJ5LzoVME-UufGX31QtroT_VToLhVgsdpXMZeceQZ_RpQ9_Wg8LoIm-ntTvHszBZ9JXlVpAOt3dTUiIUe0S77lLoKK0wBvWqoR",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwdSBu_t8QN33k0Nun-xUD1C3xgdzIz57ccTJE0icpvP5FxKXMthmHf8uiaZPOsPFMEhfvnzlc1ZTgPv8qyc_6hNCshLj4m_EHwVEoIfekmK0t5grO4nVWzuwL2aSL_9GWjpD5r",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwjHg5VveQHHNCkYCLFhT-pTUuDgCw04Lg_LcKQ6nbl9AI0z9u2hex4nJ0n4Zea92kcLc36hEf4_SwYHVeLpdmZ2aK9yFbVPa0tVcSGVMFVxh8TmPGRP8M4nwrkXaI1eRHKQYA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx2sr0zHlC3VbDVoQMYbG9sIvHpoKIji8dUoY0HvMWpEnDb8efK-Qlx-jGl6UuwBMHLjBng8j4f39GQSEDPngvzJRNdwfE37erW7kEUsWl3W4rev601S9DJjCSsLL5slhMtx3nRYQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx_d15FYtcHRBN-dlZgoeGA-D_74KUt3wddH7hNV_tOr2mGRt7LpscE9t1vQkKNC6p8EH-2H6qTklhs2B3WluiuJvVONI5Ff--voIPC4MeRAAwvpCoLAf-VB23uZ4-rfe_ws8rhBw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxBn3MkQKuQmwNaV_7FEvWpeqIgucVe1Ky3sx8T6hB6a2r45pdYpOUb6sqRTC0cdxoqZmA-4pWRgCW-8IdkjokowhC39mEsCF6EElFhXAMs-X-aEuI-TXVcyEFO-38mc6CFiOjj",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzl1OEbnkUFMjE6ubLxi_FUHbKmBsasC-U0dSrwrdXERNXBHyie8lRDkpLS_5MWDIox9tsXZ44yVgZgFLG-UxUlW5cIz5dwFbIgbwOR7c3TxCckgNKtrUwVyRmFHGT7Vb53JObj2w",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSymhKiw50JUocuTQ3tpIxMuF9ltQYEmlSqfa6pvPEX3YdF_GwqchDAMLREajC5R9DzS5bKAlLDdY3CkK1BvyEalPBDhhQbBJ2SrN0aRFTHkZWCXAdAnEKucx_1ttxCutG7ExHzy"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxXqM3RdklJ5G2bGWmCImDvtX79gxcL7nioGW3Nak4_Yaw8uaqEotbT8HL2XsYN9e-4QiY-om1V20yuLQC0Ils-F9sOEBq8rNAvPgdYsFq5ZvS__pGgqUD8I-pmyt8meOl9pqX4"
+    },
+    {
+        "title": "Gentleman Barbershop",
+        "rating": "4,6",
+        "location": "N/A",
+        "phone": "05374-81927",
+        "description": "N/A",
+        "website": "https://instagram.com/gentleman_mens_club?igshid=YmMyMTA2M2Y=",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMebfp4JWZhEr500ar7jk-atVliN3qJ2lOLH0P0",
+            "https://lh3.googleusercontent.com/p/AF1QipPhN2cg6bFiUyyhF9GUqqIUYju6FpInQO-ey9dF",
+            "https://lh3.googleusercontent.com/p/AF1QipMDo07tJ4ljHRrVO2dwNyqSd9Wbfi-Wrk7D4Kec",
+            "https://lh3.googleusercontent.com/p/AF1QipMmlXTz01kRv42eWTdJeNYK9pYmn94wesJomBrC",
+            "https://lh3.googleusercontent.com/p/AF1QipOfz0KSq8Plnl0IjXQuqKNTMhxir7NdrMmKjLXh",
+            "https://lh3.googleusercontent.com/p/AF1QipOiRXga2-RKLUTdWkx9XMRQLJz5W7ush0E6GSlV",
+            "https://lh3.googleusercontent.com/p/AF1QipN6JImbxz6OBy38wtPRhAf1yt9rCPIhXXvq1IfL",
+            "https://lh3.googleusercontent.com/p/AF1QipPPoleoDug--o8y2kszGSp6chomA3XOP6LaT7CP",
+            "https://lh3.googleusercontent.com/p/AF1QipODcUNrcXL3U969Uggi3DkfatEWh5wkbcVeLQEQ",
+            "https://lh3.googleusercontent.com/p/AF1QipM0KQtq0lBGzzdgbkHxl0_7ozqrmgH9mtlUWduB",
+            "https://lh3.googleusercontent.com/p/AF1QipMOOJyQrmTetoi12ni_ZkNwQEJXPa7ZS41jgVC-",
+            "https://lh3.googleusercontent.com/p/AF1QipPdh73Hlijs1ufEhl-BHj0WgQo-qI3XVArmDV8k",
+            "https://lh3.googleusercontent.com/p/AF1QipN5f-qUBUaglXau6jRnHmrwliGtDZa-d0we5U8y"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMebfp4JWZhEr500ar7jk-atVliN3qJ2lOLH0P0"
+    },
+    {
+        "title": "TWO BROTHERS BARBERSHOP",
+        "rating": "4,8",
+        "location": "imm 1353, temara centre lotissement al wifaq mag1 et 2 rdc, Témara",
+        "phone": "0530-164125",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyzPAVpFWaBmL8TARSCq1Ck9HvwpANfrE4ne7deXXiPC5L-r4Yb_8OOTmf3lh7ijH8ZCkcJGmatt8IyZX7_SyCXypzTWvGB5Y4FBjcVINSTGikYyZYKjlLXUSFk6-JAco9WiC18",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxiBjLElMj3YqImgqkh7qa8LLZaLcNZ-pcnZS6xvHL1t2f-55NRE_BU1jPiMbcnTPzOXHCd-aqlzhOuDlvxBqJsAkfH0evkFlfMRqYF6eX8hJqCWrC9s2y0NsHpdS51vH_Zlic",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhe9y3gNTB3uIfEBanLGXnLUVd-76_YpaIauUoOpEX3nDNbLaoO6BsiRXtqUQo_IZYoY2HRrYGUI6oCbh_VTfqGESYK3dpveJ3WoYKCiuFePkYVA_7MtiwCjIBd7Ya53scH32WMQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyzPAVpFWaBmL8TARSCq1Ck9HvwpANfrE4ne7deXXiPC5L-r4Yb_8OOTmf3lh7ijH8ZCkcJGmatt8IyZX7_SyCXypzTWvGB5Y4FBjcVINSTGikYyZYKjlLXUSFk6-JAco9WiC18"
+    },
+    {
+        "title": "Azzar ~ THE BARBER’S HOOD",
+        "rating": "4,6",
+        "location": "Rue Berkane, Témara 20000",
+        "phone": "0708-841585",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzfsetIB0jjjUUHLUuXrleLO20LobzTtmte-1_sRbXFpwZGKeTjuxSqIYPyLDM3WlSKAjPC9ab-l9nPsC7dzutg97_ERaQKUvbpEDMy3tXDhGU-nWDuAFIPhcTXKs--6wC3itXhBrUinUg",
+            "https://lh3.googleusercontent.com/p/AF1QipMduSgdgVP_08cfcUHu0cAZgi6mkjkiQiBlM4Ax",
+            "https://lh3.googleusercontent.com/p/AF1QipNIflIuW8lRZ4IBISsHPxR4D3pLWqPQq_H0muK4",
+            "https://lh3.googleusercontent.com/p/AF1QipNHh6DerKzT3zoT4Hw0uG1qodP1GRhwKCSkLnPt",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzclUfGr8rj0g8zcYzyVtZvRVElSQprK9DunYq5994fUed2kaqDCJrnnlyjQRwojBJF1oV0t2oTJYYXhmSPJTUUSMdyDgNpTZFYTUEGY-9NHoAZgHPiMH8mi-6gGU2Y9KCcV2vBoQ",
+            "https://lh3.googleusercontent.com/p/AF1QipMSBVadZxG31hcxUfRbWlxAz_UWBdJhjJF4hmIS",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxgiEZlMq80EtH_8YBq_nJj71oh-8Tnpw3CF3vXTlKU_0Sh77k7wN5xkZ5z3Ejsh8cnHRgZqYMIpwoEfKs39rlCchjC-f0WdLjOuLZsg5SrILPWyb66D0eNZHD1YhNaf19uUAkCt3IZyak",
+            "https://lh3.googleusercontent.com/p/AF1QipN1lXUGoEEa3Ovzk4_Qs4WUWkVIsnJkSFdcVTk4",
+            "https://lh3.googleusercontent.com/p/AF1QipPK2ANEpdhDMg1EF5iMtIR9aMuy6odbX6KhtXz_",
+            "https://lh3.googleusercontent.com/p/AF1QipO9sCvQUb8r52FekjSSCVH5xIWunXAHTGrpJ1EQ",
+            "https://lh3.googleusercontent.com/p/AF1QipPImAUQozCCcKBS3DL59jYVRbNgkrvkKLLwpG7S"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzfsetIB0jjjUUHLUuXrleLO20LobzTtmte-1_sRbXFpwZGKeTjuxSqIYPyLDM3WlSKAjPC9ab-l9nPsC7dzutg97_ERaQKUvbpEDMy3tXDhGU-nWDuAFIPhcTXKs--6wC3itXhBrUinUg"
+    },
+    {
+        "title": "The barbershop",
+        "rating": "4,8",
+        "location": "W3CF+2RW, Témara 12000",
+        "phone": "0614-901304",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwRfPnYOz1CwlgUts3_s2Yp6yo4UDWtM1-l5twNVoCeKeum0fPNrFHjYC_WhZtiAgCmyMCOzUa2kCs6h-uoWELkl0jSaWmQlWzgDIkpBrgiPbDTWY-j5ZHJswl7iK4_V3i_h8WK8g"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwRfPnYOz1CwlgUts3_s2Yp6yo4UDWtM1-l5twNVoCeKeum0fPNrFHjYC_WhZtiAgCmyMCOzUa2kCs6h-uoWELkl0jSaWmQlWzgDIkpBrgiPbDTWY-j5ZHJswl7iK4_V3i_h8WK8g"
+    },
+    {
+        "title": "Barbershop men's style",
+        "rating": "4,4",
+        "location": "W38H+GM6, Av. Mohammed V, Témara",
+        "phone": "0667-223831",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyM3I5j9tMkZWXp5ptXbfrPpCLsN8wW3Ncr3xOKpuubhrHQyxE8E5B-KAP9THgtG0155o4fukV1JvMj1iSIrlGIU_DKokXq_N5245-rOxsmp-hV1RoJkw73AKaNiaqFjLupdQVQ5w",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyKbyH5-HH1RN8-sA_94lLj2e6UoQTEOTOFyYvxELrKXO55alu8wmWmFDAw--OY7Q1uwmF004dPHHAV09ZWHA2Vny-qGqn9ApJ3UGelCJLe31DOpOAx4l3WYwaZXiK6hyyY3TRp",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxvPcmJ4UknA_bYWaEwYbBgXPsIZrWAQmJWRZNgbDTPvQObgxikWrQDcuV7W9-0G0q-GitXUZDdvII2piS2MBJfGCYcrlW2CiywcEZAASGmxYwJFuXHLUGs_xEY12jG19CVG_EG"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyM3I5j9tMkZWXp5ptXbfrPpCLsN8wW3Ncr3xOKpuubhrHQyxE8E5B-KAP9THgtG0155o4fukV1JvMj1iSIrlGIU_DKokXq_N5245-rOxsmp-hV1RoJkw73AKaNiaqFjLupdQVQ5w"
+    },
+    {
+        "title": "barbershop Salon De Coiffure temara",
+        "rating": "4,0",
+        "location": "W38H+5J3, Unnamed Road, Témara",
+        "phone": "0662-542614",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzNvGpqfvvtKN7CEDfqsX4vNGV3YQ3LXWE1e7DfVgZSBL8b2GVTS8clFCCT7XYX1Ad_N4jk4JFcfR-dbXI8PAx0wmOBzUK-O-q_MtmyBrZu3udLsTnQJoQj0RDPlRvhzNBt07qD",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx8e43000ztSWbqtbTbizj8PDWV-WjtAtNZisJ8JgKQnHF201Pyo5m6I7HUbMZoJ77GjsmGXnc7Qqq6Yi74stzR7K4GITTRmNbmdLepovPsgfiWam77tf_pNQq0SeepAchP6jlb",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw-UvmgwRIeXs6qqCuNmKPg7w5Y4xdVgd8ntcqbjzdbVAou1p3u6_QNspTns7fcH3CuZkIGEsTpQFHp57v8krb7-99Jd2o2Kg9QvofWvAySo9bgOuJ2b1eVuIYvxf-xf64Ccc0b",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzgbzm9SH8A2X5qRKaF4XDNMRi00-15wWg0AMNIZfEFRcvR6pEhhn3cqb7DeKC6MNSjYdcnjzaVtTaWNscVvzWX41j26HGO7SKhk0uglk739aQl0T62DHslvS-koestj7b-Jto",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwqd9zyhzKS9w4IacKw64xCkXJE8Y3el_j6il-a841hTzc6AxR0lN979oRUPWpgqARojwyLCsEd-yfsqOy8i_ISPmrdNwGuofoRbBNpp_9682nkR0afnjExy6inMqftE95QF54jbQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwWynUAhgBOSTMvVjPTlpf_PI6H5O7xqD_Pypj6wnNajWo33kVmY-Trh4PH6a1y2AMUgrzLWm2m1ZjhaHDkAlskwAFe4EDasK5NS_HrVL3jyd7DvCbTyrVFk0-yETgzPachqRw6",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzmZAHdtemqqtroxeBROQUe5_AZv5MH1V3HId6Xo4yfm3KmPZoUI59o5sg2XzTVqPuR17Vpqdth9XaBSjzyWqLPOGRb5at0ts6IdyUb-J8Zr0yy9NzAdRzWSCsS6RKOHrOjmxS1",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz9ywVaUqohIWywKFZjHuZBuoAEwx1QbW2Vs42AvnDFZd9u2Wsx7m0_zQegZiKkgp_mxarsN6lnwB1-Ga3f8hP5awx-r7j8RpK3jIGvETRScXW62kSHEnj6v_tiNf7mnkIl62w7"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzNvGpqfvvtKN7CEDfqsX4vNGV3YQ3LXWE1e7DfVgZSBL8b2GVTS8clFCCT7XYX1Ad_N4jk4JFcfR-dbXI8PAx0wmOBzUK-O-q_MtmyBrZu3udLsTnQJoQj0RDPlRvhzNBt07qD"
+    },
+    {
+        "title": "The Barber Style",
+        "rating": "5,0",
+        "location": "2 économique, Magasin 1 IMM 4 bloc 3, Témara 12000",
+        "phone": "0644-256960",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipOsEONTVZdumwbFtR7C_kNwZoEUAEx7ZsU5Uxq1",
+            "https://lh3.googleusercontent.com/p/AF1QipPb_H32bzeQXo1z7HldBF1NmRXkkYVYgpegMPBH",
+            "https://lh3.googleusercontent.com/p/AF1QipM5y9VYrH6Depw3w4iyyYspij9HzZacKG0xpBuT",
+            "https://lh3.googleusercontent.com/p/AF1QipNUnlA4ReT0XJUYHcD6FleWUvxEdsbLpnyPcb7e",
+            "https://lh3.googleusercontent.com/p/AF1QipPWae18D1TZkzDxBaUtSV97jOmL3c6xoSFCpn0u",
+            "https://lh3.googleusercontent.com/p/AF1QipNGUQfk-nYDbOrgZauBF8yPZvmpIlPKepycupJU",
+            "https://lh3.googleusercontent.com/p/AF1QipMVFdikj_AfK6ayRTK5udUun_iKkeM1kfGQJnUE",
+            "https://lh3.googleusercontent.com/p/AF1QipPY2FFOojnot_gNYxDVI1RtWAseLGWltq50nyfi"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOsEONTVZdumwbFtR7C_kNwZoEUAEx7ZsU5Uxq1"
+    },
+    {
+        "title": "Barber shop Zouhir",
+        "rating": "5,0",
+        "location": "W39H+6CC, Rue jerrico, Témara",
+        "phone": "0662-774459",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSykW6QE5uGJiGLMS3VD4uPJd-9uqlZUxOd5wmFzWGT2eOktc539JxiXS53KsjKvFRg-8CGsswaeUKWu2jBVcPJp8Q_2Odbkr9l0fzW3QlsZGNFJL1GwfMz3_CPzftcMQ8TgE6kxDZoAkEXP",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyXM6d0N5HwccIm4ffrXexm_azE1atstOB1Vicq9DzqCHjQ23NlKc8f6go9WpDOB0u6QDWGii109AIIzndYNup-yWIccJCH6GuPQVHdQzjJ-vMZX8SU2bw9oAmAqsKik8PDFreG",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxj4X8zW2MMdHIyWEg8YLOnSefPl8ZV9yz9TxViCvJhYopG-fRekVr4By8cw7dUSW8yA9_JQCSMwZmbSgD7DoS0HwYPSIdJI_pIPbS9VaAWhx--yLM2cYlkySwbBMzeGvIP7scd",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxXCvVsr1trjhHD0-sXMVrzpJfM31AlEv4p3aSsZquL_kkXF4cbtetz_Y8BXMuqIpoP_pROxBw_baFHO498jVO_OYfQjIvwEW2_6mgiA8DcyhllvGDbgHcpHrXj9PnA0vVryr1iU9kcOZLK",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzXnG_soyQqIdvk6HyQXACEdZVB5D2Krrc-IcmKa7K93fDl30P12fghSC4k6YV44H4jr6Lr3yPKQU3Y7T2j95EuRgqQKPBrK3xLuTYiE55GdOsK_am8geVwO_6iEJMTtyeCEnmIww",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwX-yjshct_d7krTBiWjS4zA0_ddJR0H7s1KTXbqNIRaKRIik_dGXdXnFYxv2ANuinBN9pe_jXCRFX8L2JEI3DKNpkHwhQOGT4BLiMDsihP18NFcm8rCmFMqxNXGYciiqWC8Pvy",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz2oVkdWCARpfm6Pwar9AwYQel39FK6hBsfSFMqvzWLzhG9cacg7Z99oQu3kluFt3OBAyoT5ayFgT6un5GJUCJy1225tqYncMM8MjYZjdo3yJchM5Dn3r-cezLxre0ojuFgNmJ-Tg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzvH379ErkRPbGFV_-ivRTPJ18OB768DuY8BWy_QpfnA3-AnG3r3F4tGF7khXdXGt6fXCM3oFlkWYXFGRE6donMvJZ3OGgRsmmfLRtjaJJSnxgRpARGp7_461GJPPkJtv2T7WTzog"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSykW6QE5uGJiGLMS3VD4uPJd-9uqlZUxOd5wmFzWGT2eOktc539JxiXS53KsjKvFRg-8CGsswaeUKWu2jBVcPJp8Q_2Odbkr9l0fzW3QlsZGNFJL1GwfMz3_CPzftcMQ8TgE6kxDZoAkEXP"
+    },
+    {
+        "title": "BARBER SCHNITT coiffeur homme",
+        "rating": "5,0",
+        "location": "Résidence Tarik, Av. Tarik Ibn Ziad, Témara",
+        "phone": "0530-279580",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz-h4YpL1Qgjtl2nDm4WeahU11zshfT8N_eSXd2O6V8dz6brJXf4_GSbY_mFM9FvqdG4WPvelumfyCNJWAMJxvgcTjFM3-SVkL1xALI4udxJf8p1J7JeANSfokG7LHUpohQZOV4",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyMpwuKqVvNINv-yjRbiJ48ETR-8ozAuBl9sOOx4s_qFg-hYp2BjWvIHAn_MthPdfW2Aj_gv-zlncsNl01iXLpjkuU6hEkMxhZn2x2q5tq7i8dre0kDebzu_QyUm9wmpZ7p4J0",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhKSAmDQtg8zSj2LaOpbOrBPjAarUSVIWOSw_SutPwCsYEz2Qxg2DFek4Zt-OQLS8DL-J7INRHaEzMrc4-r6rqM2GYMjG786Fv73oWTB6NDLHZmeMbKv6VAAt8ltclkadNbNy4",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwgpVXQT36Wywl1o3CYgR1rkk0wFqBdOknNRAr-79iQ_e33peFIAMTCAfdxNAaQHoNo4TkTz2aLL9j8S10lzaUhqOALdTBpbHuCJu__FmbLWLyMrfJA2-mDAPGsB-K8LQHO8l8",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx7KMsHMiDnPl1HOSQpFUFEz2V5pceaSS8xZp3aXVIg6VXGvHLhgoKcOpAC8B_-YsLm_vntpao6fgxalaOxDFZqx_pxwCe-mOOWEZVnrhlrxDcDs4q3MUwnr1nZx3stbDXtPG7N",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzLUfJv3zOetdHwUMm3N6OQlOhFaAx2dSOq6R6bKU5uWqr90BIcX2vfFytHBaeTzS5UFZJyR8_OhPrAb9_ZvzDVd18_qRrwd1DXQLMFjD3I272WCHwhP00TIQWBOi8JJqi5L-kQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzhIc4Kr7_tzu28RE1aOhWcb-AzJXO1vMlRcejrzJrGZIdAFUNEN9sPglytzyDIDmRowHVk7zPskVKIxgmkcW8Pnj2pB8wIWSUANvKaYQ2sEe22OE2XBuNvtoSVWvSGH9RO6-WutQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz-h4YpL1Qgjtl2nDm4WeahU11zshfT8N_eSXd2O6V8dz6brJXf4_GSbY_mFM9FvqdG4WPvelumfyCNJWAMJxvgcTjFM3-SVkL1xALI4udxJf8p1J7JeANSfokG7LHUpohQZOV4"
+    },
+    {
+        "title": "Saad coiffure",
+        "rating": "5,0",
+        "location": "6.909134, 33.908336, Temara 12000",
+        "phone": "0762-351445",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipM2EKyKRJ67M7qaKzTX_0xvTLMbXCwTLDMGcMbT",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwmwtlXaz_v1AHbWljsvgdJql930SjCZjfmfR7vgrrWAuiQ62xaeSTPWeVh3RWhKRj1lSmXOMqxMu171rJL7F24qtx8crlx75jdy7STM2pCCnhilUfBVb6SNq41oL2nXu-HDPQElg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxwtuyJYjwV-LP7-3DbPx1ArWqdk-0yvI8fI0JCfRzmryb12PYU1G6DocemmRii_Ld9tuDRpALH64CnS7yxhNSXbmdcm_NWLM9LZGg3raQq8WoP9ElSbKjX53W2oHx2rFWwRYyP7Q",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxujz0os5l7ogg_XXKYH1XgyY_ZW0GS8KUDMoe9sqaVRaIAWbZ8YFWGAO3H99Ywd0LTn8GTl_qEJCWmjLYDMNaSOgo04HMrI1myxXFDeJldM8rJArKneYPl51PnScl5Vw3QZVv5ZQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzU7a74NzaB1A13JCoOEsIvTPVTFKPgPqJnPyZSmip0rjHf6qKWabtF9pbqce8ILTUlx-_skXnaJFgngK93EDCKixvabhYbw0WBRyanjCDPDQzMq12G-qkGouCQKHsp21z_6lJE-A",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzNVrrhKzUtEp9cSK3vM9VccgYqvxSUEx5QhWGNzpUkYjQYwbKkBwjhb8tCK7UgJiepFHOKKaiin-ubJTXA--Fr8S5uouEbWZehUy0e-SSijZTYrN3pc5j0fx7N3UL8AaEX5NLCcg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx_2VMfx92EWMVU_wcsXdOmJDusSruGe5KLT0tnfiJWk4IJYv2eejllZv8zlotUjUn-r8kQ6Cl5bVA3kj3Fps8rHmzcUfZSbYQe2CLZzo-kwZoX3amFGnGuzQzuPG2qKAIoLIQ",
+            "https://lh3.googleusercontent.com/p/AF1QipOFHyUFvbvTqdL_N09aKxrkz_8bVVH_DbkdE0Zp"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipM2EKyKRJ67M7qaKzTX_0xvTLMbXCwTLDMGcMbT"
+    },
+    {
+        "title": "SALONM.ELEGANCE",
+        "rating": "4,9",
+        "location": "Av. Ibn Rochd, Témara",
+        "phone": "0672-357692",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSycElGjaWteyL-bXtLt5KmkkgR3pX9wGvmRDgbUoDsSZf8pISJFbPF7z1wDZi0oxvQN9kWBmI3QrxIpChSCqj_j4d0B7uKfdQ7B6fY2uConPMDFqh72AfaCOxvwLj5NevJpEZ1bxw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzRe8P9mtM8vgrU8DMpKtGmX_YnUUWoglp4WZRtD-4MvWAel7jAwFu_4VS_Qx5boIxCsRVXRcHoJ6SrGAVfMWsQKzOMsIf9EIAHHpmIigHZjk_UOWKkCg7uALHF99HmUQmtbsBxgQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwLQp_gyFGQkveBYNMWgxk6TV7BE2wnB2kEAEF066bKyAYPgQLWNdMezcxDaJhLyNKvPSv2uIjVa6wtgmMEhQ9GJRyiGzsMEZUgK86TpFGiBzGwy_eiqWTpyduRVKbxLVpBbfosLA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwFXS8bo1lw_fkvlbe1sz1Y8u3fo2XE5CEyMuzX6FTMj7xBjZeMqUTCzcSYCNbeF3k1zmtWx7lZqows5l1vdYm0mudIsJ1M9v9LiieRK2unrJaebHCQMroUMuYXpvRyQ-RNwQrh",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxgkijFdkodeFvJfUB3DJNVCSvT_DHBdK2k3q81V4N6-hvQSIy95tOH-1BLfTIoCLz6mFsDxfe73negpr5mxQ-rSt542QwOkTppBHRY6EqOD3dt9LGlQzHnc4xh4MBHFeN_ggWM9w"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSycElGjaWteyL-bXtLt5KmkkgR3pX9wGvmRDgbUoDsSZf8pISJFbPF7z1wDZi0oxvQN9kWBmI3QrxIpChSCqj_j4d0B7uKfdQ7B6fY2uConPMDFqh72AfaCOxvwLj5NevJpEZ1bxw"
+    },
+    {
+        "title": "Barber Elegant - OULAD MTAA",
+        "rating": "5,0",
+        "location": "N/A",
+        "phone": "0675-474453",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxXI5rJmmljoB3CsJ6ynLz9_b73p5GQA1CEVJcEaPaX9BAuwS4uMfjHT4vC5uGQ-famxjUHad7koAwaAKPWKUBOAFrwZkk3GNhJT-E2tx56fLo6xEBFOAAbNL17k8xcBLq3flph2GaLVd_s",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyCvxAgQJRJ7ct8BruLgRaV5SgCQfwgfnng2f0-q23-3QjDkfsBDM6JsifL08BvG4Sey1bISH0TYbxRrPqmq9E8VLuv9yVfXDES261gQ1IneSlgK5e8lBHwlH5AkxPPvDNEzHB7iGIrxsFa",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyikgU7aaPuH0PaT7GCfdYuTdi8JbASwswhGAlrf_MUB1_I6t_X0A2Jruax-dQc8hsWVEegWSznbCU2fBEzEZdqvDBJg3wQ9nhUatfXXNIg2fU-IL2BNUP5UFtJ-lKIJMy5mHbhoXLJT8ax",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx-3HLM8ZFDMO4me4I3RE_5wNdd4QUX-tw6lcnjBuL1lb5aoxMpy_Rfcp_gon7dxpkakH4XRGdz1fE_5B6TBYX0KRWuNUnJOulSmF8zmlgxPLjraXtYFYwjlpSaQEEbtlZwZbtaTtEK5ZI"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxXI5rJmmljoB3CsJ6ynLz9_b73p5GQA1CEVJcEaPaX9BAuwS4uMfjHT4vC5uGQ-famxjUHad7koAwaAKPWKUBOAFrwZkk3GNhJT-E2tx56fLo6xEBFOAAbNL17k8xcBLq3flph2GaLVd_s"
+    },
+    {
+        "title": "BARBER SHOP GOOD LIFE",
+        "rating": "5,0",
+        "location": "46 lot.comatrav oued eddahab, Témara 12000",
+        "phone": "0664-739703",
+        "description": "N/A",
+        "website": "https://instagram.com/mohamed__gb05?igshid=MzRlODBiNWFlZA==",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Salon Barber maestro الحلاقة العليا والذوق الرفيع",
+        "rating": "4,8",
+        "location": "Résidence Jnan, Témara 11500",
+        "phone": "0619-834390",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipO5FV7V6w5PZiY2DCLcSMMt3lWQZvr9P0jyjN5z",
+            "https://lh3.googleusercontent.com/p/AF1QipOQzFVGlw1rzjqY1VUU_F1ol74QJp28_eEnFEAA",
+            "https://lh3.googleusercontent.com/p/AF1QipPJTMOkbKENBbMW2zxigCOlNTF6r5dJDdB3H2f-",
+            "https://lh3.googleusercontent.com/p/AF1QipNx2wddjlCOci1MYIPFPWClApsUydh-HVB-Z0hd",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzhtIb9ntxF9QIx4dkJtvamWkjmLU1xMEt56vl8DSX8GaPEJeEXOKvSrsMH53BBXlcKetNTp1X-MEaejzGtLURaQ0PG6WSJAW2vxvLP5Pg5fLYyJCGb1QsRp4iAJrqb7Z4T21i4__XKM-kE",
+            "https://lh3.googleusercontent.com/p/AF1QipP9kS2H5bPAqAF1il3afJYhrUen5RcXAx_W3aet"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipO5FV7V6w5PZiY2DCLcSMMt3lWQZvr9P0jyjN5z"
+    },
+    {
+        "title": "Yassine barbershop",
+        "rating": "5,0",
+        "location": "N/A",
+        "phone": "0665-192442",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipP57erNSQyAGbDKRoN1hK-LtcBPQi33Tac2ybTb",
+            "https://lh3.googleusercontent.com/p/AF1QipPSRMtEWIo3YjdSd0BRpKVwHx_HSRcCfAkxiBEu",
+            "https://lh3.googleusercontent.com/p/AF1QipN463bc4sh6Od9uoaX5zQprbMTZkdhnG4OHEvbC",
+            "https://lh3.googleusercontent.com/p/AF1QipNA5KSdoieUdJsPXjDUrKkoVj-XmfZkMnhCixrn",
+            "https://lh3.googleusercontent.com/p/AF1QipOjolspML32HyatPhUV2bLA-1BTPapypXsoM877",
+            "https://lh3.googleusercontent.com/p/AF1QipMI-FA0PDG_5G9o-dbXyigmd754ESz_R3KySEdD",
+            "https://lh3.googleusercontent.com/p/AF1QipOnp3nIpAtYsUy8RAphslIU8XFy-v65YXWon8BX",
+            "https://lh3.googleusercontent.com/p/AF1QipNDUPYCveWOi4Cq5FBtd0IujVKsypYW-dwQKzm9",
+            "https://lh3.googleusercontent.com/p/AF1QipPJPdg4mMZrcRGnjyzGmymMdHs4IjhZwV7G7JYL",
+            "https://lh3.googleusercontent.com/p/AF1QipPgG-nq2PDCYSeCUr9hGgZ5_f8u35w1jquJPNWP",
+            "https://lh3.googleusercontent.com/p/AF1QipORB4Wfu5II56MJgkG70uarD8Q9Sa-_bthp4Tx-",
+            "https://lh3.googleusercontent.com/p/AF1QipMvoNEsIq6smGRIr2m-EUWQgi_ogaQEdRMgHKcR",
+            "https://lh3.googleusercontent.com/p/AF1QipMHqyBv96iXN3ZUqC8HrHJ2LVEY-Jytakgsezx1",
+            "https://lh3.googleusercontent.com/p/AF1QipMyJV-hjBfkHZUm5MfUdCingFoPhmwQzIeEL2_f"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipP57erNSQyAGbDKRoN1hK-LtcBPQi33Tac2ybTb"
+    },
+    {
+        "title": "Zaki barber",
+        "rating": "4,4",
+        "location": "Rue De Rabat, Avenue Oued Eddahab, Témara 12000",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy5gznvHJruv5lIcIkyZgqG_Wl2sBAl62D0zQ194zmY3mDjlcG7KPc7U_jQy7zYRiYynRcsn34DE2f4AkZ0EuW6R5NNHq-8fLC3RbZPqI8pYSBnd1BadOr6x9xyTW692cSZzoRd",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy_6fMMqOiroxdCztfY3JcLeXgUi1AcVMnII5B9DE_tChIJCy01EasKZ2kHI2O8ecswMXtISZrKpdZAhtgyZe6GZ7kGAJ0Ui8uoqzJFzOVZQXXzg9rjFcGF-YwWT7cGIdTOyscfDg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyVBTJeYy6H86Pi_Vo_4DL8NwNKnuuPTmoR-u1GAAOxmeJkUQCPDpKzmdVJj-lg1Z90PBAKf0raJ2f6AAJHDB93xMLhDFAafc7tX1CvBtqQvkr-ahG2y3fV8dgec-w-D3M1DF9XpA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx_NJlgdvLnEysFqcWEbpxmjxcoTSF84JXYpoX2ZQv92R7DBN_PVpPRdChUKCfv8dOneMfTyD0M2Oset40Sm5aJ-2g2aOjESWK3ofdD8jRxshl0LgfqPKMVSVTAzY0eJ-YCrhRx"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy5gznvHJruv5lIcIkyZgqG_Wl2sBAl62D0zQ194zmY3mDjlcG7KPc7U_jQy7zYRiYynRcsn34DE2f4AkZ0EuW6R5NNHq-8fLC3RbZPqI8pYSBnd1BadOr6x9xyTW692cSZzoRd"
+    },
+    {
+        "title": "Zaki barber",
+        "rating": "4,4",
+        "location": "Rue De Rabat, Avenue Oued Eddahab, Témara 12000",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy_6fMMqOiroxdCztfY3JcLeXgUi1AcVMnII5B9DE_tChIJCy01EasKZ2kHI2O8ecswMXtISZrKpdZAhtgyZe6GZ7kGAJ0Ui8uoqzJFzOVZQXXzg9rjFcGF-YwWT7cGIdTOyscfDg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyVBTJeYy6H86Pi_Vo_4DL8NwNKnuuPTmoR-u1GAAOxmeJkUQCPDpKzmdVJj-lg1Z90PBAKf0raJ2f6AAJHDB93xMLhDFAafc7tX1CvBtqQvkr-ahG2y3fV8dgec-w-D3M1DF9XpA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx_NJlgdvLnEysFqcWEbpxmjxcoTSF84JXYpoX2ZQv92R7DBN_PVpPRdChUKCfv8dOneMfTyD0M2Oset40Sm5aJ-2g2aOjESWK3ofdD8jRxshl0LgfqPKMVSVTAzY0eJ-YCrhRx"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy_6fMMqOiroxdCztfY3JcLeXgUi1AcVMnII5B9DE_tChIJCy01EasKZ2kHI2O8ecswMXtISZrKpdZAhtgyZe6GZ7kGAJ0Ui8uoqzJFzOVZQXXzg9rjFcGF-YwWT7cGIdTOyscfDg"
+    },
+    {
+        "title": "Barber shop milano",
+        "rating": "5,0",
+        "location": "Secteur 1 hay maghreb arabi, Témara 10000",
+        "phone": "0644-729149",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Imadoss Coiffeur Harhoura",
+        "rating": "5,0",
+        "location": "Ibn Khaldoun, Temara 12040",
+        "phone": "0644-764099",
+        "description": "N/A",
+        "website": "https://www.instagram.com/imaddosss/",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipPrYJk6KSikraWwTyL7mZ_dq3Js8_o4BLPlo7Cv",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxzDnhmct8XjuH1PnI2qwBc0R5pIethR8_VBcEe9Q6B0H7cMqojroieUbMx9VvsmgGI6rx7ldLPCDJYPpEPXFOBM005PjdwOfARAf-E7uMDI4ac8ZpKUz41JJ2E7-kEFSSAl1LlWZJlwJk",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyHM5Qkn94RvV6VdEAct6ckhqO4TnA5XoHE1fyhHb8c45noeCNkB6BW8RQ5lGYhnCGbxvVLHVr8EEg_VcapsD7bIMDtUCT_ZM-ZwkZyAnXDzvqVuWMUUPdF79RH07Y0BKftU2Avmr9Bwgkj",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwRX818gDZ6mPD_4ax-g3e2jhQSLpJ0d8N4ZTad16fdDa2a3EApqTbQblvGH7syY_U_Nf7fNjtIXxGbhyoeToBLvTRBtWFKUT1DgXoSCbQipc8UmznU0m0EqRlkGj88TQ77lKM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz-i4SkzZ9r51zwO4IuRyn_RNR2ic7SLh10Ufv_sxaISX8uKu5SA-D3lovYZzaPTb5DaxEy_TdQIXsiAnSSWwLUPV2oJW0QQwV_VWf_e5rcVYCAZtz8AOLxKQ4QOWf-Xonifx4977mhZ0U",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy6HnKLVM_vkf6S3E8eu2GEG4W-ENREhekTmouPH6NcQa1AkzkvQa9Z47odL0Gb4wv1WWqkcirKkJr68DaXrViWie9z-7-YAhzeXJ9v4JwM-4oLHcDKNKZhD9hQ9hfIqvuQG3nZXQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx-JDoUB0I46dI1aw8Pt6M29EtGXY4kR5AqUErvfV-WNXuVWSiH2lOPS5Neozx6_mYC0T2eDzf8WvD7kghO8I3CE5KEIcyDH4hek7rjFElXt4CC0nvhMYnxlaGcnxmciPQ3V70KpwyBp4O4",
+            "https://lh3.googleusercontent.com/p/AF1QipOfXMA4xvkwGlncQpVPD7h5jStLzw2h8TDu7_D7",
+            "https://lh3.googleusercontent.com/p/AF1QipNpUleTlH_ZlmqjG9zmOFMIV6V-QKJ3vmYaRZKy"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPrYJk6KSikraWwTyL7mZ_dq3Js8_o4BLPlo7Cv"
+    },
+    {
+        "title": "Barbershop محل حلاقة",
+        "rating": "4,8",
+        "location": "W4J3+28Q, Témara",
+        "phone": "0646-248270",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzS_KNdEAUZKWZmcOIrWRRxYtv5iW1FflQSG2IivU1T-uCz-79GQTZmyc7zVoWhAW4Em3YB19CFEgEUIYC1wsRPas9LfOSGWPLlwEN8QR8aQcyOaUP5I2RaX-bfTM-gmZaPGuNx",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSydGR2z-dWLHUaL8tEskYbzPkLKgwkI15LVagX77RUD9kgZFBA-NlNqgzMWsd_wQoLVun58n5aHEREBGqQ4h2XI1ElBA_GsW1qnEZmpYFTwsnhSNfHrKxcmdiAiWvw6QPIofI0Q7Q",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzjwamev69biX3kzV4H91m2InVS83Ed9g82GcRfAoU_YYjcBJqr6hDr_8GekQkfNbwnS79hyTyW9nGaOFxUU-N81bPHGJoPGeL9uSXg1dpiDgqy97f3wZGNss2_XrNyhcsm7g6I"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzS_KNdEAUZKWZmcOIrWRRxYtv5iW1FflQSG2IivU1T-uCz-79GQTZmyc7zVoWhAW4Em3YB19CFEgEUIYC1wsRPas9LfOSGWPLlwEN8QR8aQcyOaUP5I2RaX-bfTM-gmZaPGuNx"
+    },
+    {
+        "title": "Kassem barber",
+        "rating": "5,0",
+        "location": "bloc 1, magasin 2, Residence Rif 3, Témara 12000",
+        "phone": "0530-453995",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "NB Barber Shop",
+        "rating": "4,8",
+        "location": "14 Residence Nakhla MAG 14 AVENUE MOHAMMED 6, 1200, Témara 12000",
+        "phone": "0661-869226",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMiy_sWYoGQ6DMB3OUYjKtQrJ0N9P3newV6eGhi",
+            "https://lh3.googleusercontent.com/p/AF1QipMigZVFt6P2DYrUwgmLdNr7KRNG87lXQXKKfmEe",
+            "https://lh3.googleusercontent.com/p/AF1QipObT8gHlBsI5OYxWeWTHn3zYn7G-rkAY2UxtVbB"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMiy_sWYoGQ6DMB3OUYjKtQrJ0N9P3newV6eGhi"
+    },
+    {
+        "title": "BARBER ALI",
+        "rating": "5,0",
+        "location": "20 namsia 1, Temara",
+        "phone": "0680-218423",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxEwk6NGBRk25lz-kB3zuF5HkzVHjM6qH1FLt7cRwA44vuwfQZR5ql9pafDxR1AnKoNnDFAy1H2F4iRBRvliUVD_kuZ7-4KlyMHleJhcsLqodEcQG1Ze5wsx2wNOjFim_Zz3wlV4g",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyRy3RIPXSDrUN75bbW_wzuH2AQEHKdjkkKzQVhzulHtdOadEtJFBJvO9Nnw68R5LJCMK_mPIsWq7wORarG6cAEjP_t3RmTVU-QlvJHKDd2WPBvGMbZk4rllfzl--JTLa82Odt5"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxEwk6NGBRk25lz-kB3zuF5HkzVHjM6qH1FLt7cRwA44vuwfQZR5ql9pafDxR1AnKoNnDFAy1H2F4iRBRvliUVD_kuZ7-4KlyMHleJhcsLqodEcQG1Ze5wsx2wNOjFim_Zz3wlV4g"
+    },
+    {
+        "title": "Barber shop milano",
+        "rating": "5,0",
+        "location": "99 Av. du Caire, Témara",
+        "phone": "0773-089460",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSywD7Def94qhRENhpRN_d-6O8I5DwFxaN0LAuWTjPMu3iqw6Hceq1S83HodctCoOeAx6_6-EJFFty7zOQ1CMY2qdYl9FWELfbgErs-FT8qhXrqUJS-kNh7u_u3wzfsuO-I1cQdO",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxBmPQRgunb9qeBK0Jq-zyr7XEEJ4SE07HI0sq5kmbEEXWYEKaztgs8iLMRtVhbgw-obb4Vqblxc2CYn_bWt1Y64-wYBKIBlAsicBsrQd4VgPzBAHj7cxDBS3bAMm9jxj74rPIv",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzuwCx4AWHgzAikv2ekS1ivZ01vdLlb6yn7PJdpcS7sxPxuXA-P1WqR74xfUq4aWL4GOh0sxVClNn-aksvVAqzGcNSQx4TNnD2uAzjiTAz3r8gjPXnRa3eM6KG7H-rvD5e3eyks"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSywD7Def94qhRENhpRN_d-6O8I5DwFxaN0LAuWTjPMu3iqw6Hceq1S83HodctCoOeAx6_6-EJFFty7zOQ1CMY2qdYl9FWELfbgErs-FT8qhXrqUJS-kNh7u_u3wzfsuO-I1cQdO"
+    },
+    {
+        "title": "BARBER NORI | salon de coiffure nori",
+        "rating": "5,0",
+        "location": "W3GC+JMG, Bd Dr Abdelkrim Al Khateb, Témara",
+        "phone": "0779-269208",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxfOZ0P7L1ClZv1yjnf8L_NA0jO1U1BwuI1wsyuT3Hkwvahs4aKA73xwJB3cYya56kVCZXGyNxJu2uYmPj12DaCbT9EpOx6U33RwMy2H3pMBr2Nr041RzFsiX3qYyoLfs-tXyJrN7q0jcqt",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwafz9AxFzfXsNdUUSwYfiSS9fEGb0gVLEUNC73iO4h-KRuz8MAt5Lqqh7hTFULVkDJXzaU9dJB5biNn4p_5dy5slDkPiChQ1wU5CycuhxYUCv_hLDLAT2Pc3WMbtKxdnAWg0TBFJKPjQE",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwgncIkn8uSFRmN6L4NfXl80_1IDISpNI3ygZuWXSAw9rwHVZB3KbK4o5CnWuu-CzombM68vV8rfpUYdO40klRtjNKWRm5_pLwFzXRIgEHpABMFu-UxZF21TKyxJcPiTaA_Dgwttcl6QDg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwhbAiFxE7yQI9JKH0omS-8JoF6-haMvSgSjozaP3WUt1KHLAL6iyxBa7vQss2KzOzWhlf1H4-NI713vOpCpGYBaOkoJMPXFkFUCA2tPnnmbzNg7LuzwDo-oVLdqmQlRXr8SCDRC40N0QH2",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyWbfqX85mBc_ye6VEz3kbjqoJn4GVfTOGuTozHrpm2rVyqnnOp_pwQvT59j9zJHm_S1hffJVdhppgk0tyPxo8EisLjcxC0pAPjrr6uc5y9LjYdOuOYjiJa3yCaaMgY_ekKlqXhXuDSz-vB",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxOSGKwGG3WUWyLRturtrS0eK9C58VEXpD3Anp6ux4xp9s5Gicq_PKfXuV190wcWvB8n6RCFgzZX0NXNRdusS4C5Rbiw2GXHsnMKEGw4t8OnL0UaeOix9w6JV-zb0wBk4w1iZFGAFTP3q7d",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw9vXhSkZq4E9bzWGJW_0u0W_zeoK9qvFfl-_mq4Mn3Zemofvvv7ZueOL0eyJV_trh5Kt3gEyYQ_j0IlUTQw9IabpRzOivf-pCDoyskk7GOruiBVZmuX2xiJ0GmVWZakP1XU2_ofZ8lznY",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyZGHLEpFaORrqbxgHH2v4vLIKazsjiacwC_K83QFT7QRS0jBenAHKnEbMCNxjHeSNpWHfR-K9SEkOsk3MZNipTvRtrVirxXIVymeUY-aGGRGn7WKffEfYeACBR4CMxZQQ4id6--QodZNxN"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxfOZ0P7L1ClZv1yjnf8L_NA0jO1U1BwuI1wsyuT3Hkwvahs4aKA73xwJB3cYya56kVCZXGyNxJu2uYmPj12DaCbT9EpOx6U33RwMy2H3pMBr2Nr041RzFsiX3qYyoLfs-tXyJrN7q0jcqt"
+    },
+    {
+        "title": "BARBERSHOP CR7",
+        "rating": "5,0",
+        "location": "n 319 secteur 6 hay maamoura, Témara 12000",
+        "phone": "0661-941929",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipPDLD1czOuOUFHfFck5JbWp6pgZ-s0Mex0bKTID",
+            "https://lh3.googleusercontent.com/p/AF1QipO4hTxBzmMcr5nuwZA-MLMVMSuOIO3lSeScZ6N5",
+            "https://lh3.googleusercontent.com/p/AF1QipOE9Y0C46YVNBzEdV7Jar83N3OuLI9oEIJSwec-",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz4AM1O7HmnKeYnP3Sa97tm8TLwEiTkCFe33AQhPViAO7a5Ze5rpEIULhiXlSTxsSGDPRH0zfYKffEgLxfRb7hMZAxCOU7-PFBx3r4tBHQCbNkHMUGNzdsJX9JbgR5uULHa5k8m",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOy7cSlGiXZU1-PU6XFNtsC0kwtPjGUk5Kum3u9R-tNtNnCjNrjKEsFI7b0Aa8fyQvpq50Ny8F7MA5HARJhBX8SQ3Ps88vsCAhubFKPyaiNs0HQOIZainBbsar7OdMAbGoed3yZw",
+            "https://lh3.googleusercontent.com/p/AF1QipMpMC8wGkZ99jEsUxcCpKqa0HTp5ARWNifN5IKM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxR0wGThWdYtBq4qZhChpYRadBIKAwm_R7j7bR9_MUFG5dSmDoo7D0q1ioVosTdSvnrPDZhZI_Dq81Kd0FejjnMxLceAntr62m0UcbUq7wTrp-Ddvew7m2Ad4MdSVrPdjpQ7qCPmQ",
+            "https://lh3.googleusercontent.com/p/AF1QipNE_Qe7FHkxoY6p7YYl_zpulliSw2I6eSMqbTIw",
+            "https://lh3.googleusercontent.com/p/AF1QipMoAnl2vuQa9F6quK5mxGmg6vQMMgHh9viOhek8",
+            "https://lh3.googleusercontent.com/p/AF1QipOdHhKSTRMj_4wXt3FSc_B8XGZZxKM3tBpbdz7Z",
+            "https://lh3.googleusercontent.com/p/AF1QipNCPcEP9gx5uQk8H1ON4nlKOKkzNe-7p4eZRP1p"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPDLD1czOuOUFHfFck5JbWp6pgZ-s0Mex0bKTID"
+    },
+    {
+        "title": "Maestro Barber shop temara",
+        "rating": "5,0",
+        "location": "Immeuble 20 apt 04 hay alaouine zenkat JENIN, Témara",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Alfridu barber",
+        "rating": "4,4",
+        "location": "W32J+H96, Témara",
+        "phone": "0660-233831",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwl5oSFk_xiU17oE7wTkf9bUETvorhLe96lSKCXS4VfsAvv0IiLw3bO2YeRYVUZrALvD82HSV_L-5tbsQmoT_qWfijLgbFwvO263EZQ-B_phI6fSuZw-CTHI2TwcnJ7vGtqaCDU",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxosjULzXMN2coZ4Sa4D_lFaA4FEx6gr8llkSK0fd7SnPGY-d7sjTDg-IqU1gpY-AVd9Ih8Ki7wQwZyNxfJWWuikMABanWnT3e_FbeKRiIdr0goTB6iNe0A-nfjeIuyOBEE4UzF",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyDkfOKpz09E2pWXhSVWDnFSEtbfqbOC7FmrZ24sSFFg6lJDVCwBClm6dDpeQvyrTUYlazzMRPjdX-608hGM0QzGMzlsqEkTQRccSJZynL8RF3NNcKeqGk-YIeP0dzV2tH2TOK8oA"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwl5oSFk_xiU17oE7wTkf9bUETvorhLe96lSKCXS4VfsAvv0IiLw3bO2YeRYVUZrALvD82HSV_L-5tbsQmoT_qWfijLgbFwvO263EZQ-B_phI6fSuZw-CTHI2TwcnJ7vGtqaCDU"
+    },
+    {
+        "title": "ABDEL BARBER",
+        "rating": "4,3",
+        "location": "6 rue Ouajda, Temara 12000",
+        "phone": "0673-838287",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "salon MAHJOUB ( barber )",
+        "rating": "5,0",
+        "location": "73 lot 24 hec, Témara 12000",
+        "phone": "0638-685002",
+        "description": "N/A",
+        "website": "https://www.facebook.com/mahjoub.lheimeur",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipOY9TcM4rGicBlT-btAlWnaCtnyraspRh-d1HSu"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOY9TcM4rGicBlT-btAlWnaCtnyraspRh-d1HSu"
+    },
+    {
+        "title": "Our barber",
+        "rating": "5,0",
+        "location": "n195, riad oulad mataa, Témara 12000",
+        "phone": "0645-755841",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipPwa8gqMM-a3BbbnP1fXCRpkycD8wWSyEKzgyT2",
+            "https://lh3.googleusercontent.com/p/AF1QipM8hHxJB2tJY02IIZy90UUk2SxWilfpZ5mJDVi0",
+            "https://lh3.googleusercontent.com/p/AF1QipPskbfMWu5lSNTV6ZN6jBgWPO5RMCQE8hUVsiMi",
+            "https://lh3.googleusercontent.com/p/AF1QipONrlRctSIRRUDPuPL24OiTxjRYXPXR1VJnB7w1",
+            "https://lh3.googleusercontent.com/p/AF1QipOrPIuMcW-vUjPItT6su7zlgnOS7jP2xk1g_Yye",
+            "https://lh3.googleusercontent.com/p/AF1QipPIRkaZZu3CONo1IjROgDjKvtSE_9TodiMCF9x-",
+            "https://lh3.googleusercontent.com/p/AF1QipPOJRG-TedJ6e6wqpqyeFsPi7rndOEzP1VfwXfO"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPwa8gqMM-a3BbbnP1fXCRpkycD8wWSyEKzgyT2"
+    },
+    {
+        "title": "THE DAWAD BARBERSHOP",
+        "rating": "4,7",
+        "location": "W3MR+2R7, Témara",
+        "phone": "0767-448896",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipP383mCpVsR5OBq0cuBNXsH-rOGGCJUyOEPgX1C",
+            "https://lh3.googleusercontent.com/p/AF1QipPMuANx2tJ1ASzbove3z5oOJo-4UJ2qwyU-KdUH",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzdvAGyMLf1X-zQl9i3Q11dfWxt_UPjgssznHNIJ8qgyDhUWEURYtQq3ZE1hDtqSxXZGxPbIThr-Nbov-sI5OFsDfsTRxEc30_dh4jElca9i7LVFY5T5WQIYW7cou6popSuxgtH",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwvEfCDa6cKD0hHyqVHOz0ZUmmTGvaf_pHz91rD5-TSAHuxai6eifsfpK7xH3GZN2XLe_P5vbsVEvK71qrGue1g8P-iXZ8GWsRr324yoeHwseS4MGUzGFyNGQJhX9og4Rnx9BkLqA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxSyF0WKxlki8r3Zycs3OhKUKGp1MF9QIhOdq-NDxNSKjBFeOz3CJr6Ijx-jhfi-n-3GJv_5Ymq6iT-BkBlgoULGFD-0epOrWVjIWfTq96TcgvT5sOb9WCmbaON7DBcIYY_pnZqYQ",
+            "https://lh3.googleusercontent.com/p/AF1QipOsaGQxClHbDacbaWq5hUoFkQwMeAFyBaBB6Pc-",
+            "https://lh3.googleusercontent.com/p/AF1QipP4NJA6Wf7S_UGt2sK57HlYShwwuAJjn6e5sQn7",
+            "https://lh3.googleusercontent.com/p/AF1QipPcbRs29HKmKmVsAXimeL2KudJ-Me7AsbVVjlGZ"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipP383mCpVsR5OBq0cuBNXsH-rOGGCJUyOEPgX1C"
+    },
+    {
+        "title": "Barber Baraka💈صالون حلاقة",
+        "rating": "5,0",
+        "location": "Hay fardouss Oued Yakam, Témara 12000",
+        "phone": "0625-575204",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipOmKxjBglUsuVCiF0k2f_uKGdnZYhZ8D1p3gXWr",
+            "https://lh3.googleusercontent.com/p/AF1QipOykXRoZAs7BknBkEomi20PoxP8Xtu1IHDdRmom",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxmww6Epx_095fdEolaxe4uC2MQK-JoZTBfNr2TECqDXTBDB6KQ73YiFI8yzsBjYvzqxPBlGwm_2DWhQONaolPmBNZcWf44RRL19oAmjPvrbjn95qvBCxmBuGT9-dTZwnX2Z5ZB",
+            "https://lh3.googleusercontent.com/p/AF1QipNfEwhUe0KBq90B5s3c4ovN1cJVdHrGA3arhvih",
+            "https://lh3.googleusercontent.com/p/AF1QipOoNGnOR7wHSkW8b3TegudgBoK-ecDnhK81tlhM",
+            "https://lh3.googleusercontent.com/p/AF1QipNq3SUD8PNsqkMRDEOiHVtzyM7D0VOlNwi_igdg",
+            "https://lh3.googleusercontent.com/p/AF1QipMStw1ND00ExTLNZVoV9Mfgb1P-O-se5AcMUp4D",
+            "https://lh3.googleusercontent.com/p/AF1QipPQwT7S4Z3qsyn91NcNOE7pRSPrIkX_YiQRsx9x"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOmKxjBglUsuVCiF0k2f_uKGdnZYhZ8D1p3gXWr"
+    },
+    {
+        "title": "Hair_shop",
+        "rating": "5,0",
+        "location": "111 rue amazmiz hay wad dahab, Témara",
+        "phone": "0667-341798",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwTvOHIS00c1fy4xbEWddvbUhr3E3ld5GEadQyPZrivdH1rGSKuLxHU32xP3e5KiUZho0oP2aUjbsoqM7HMVTUL3ge9pDJfggGxZGAlc9PvnaWT26NB-4kvJTtA8M1WelAhPXWp676BHTNJ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx36zclkLd7STdHsJp5RBfK0uQxc245E30ltxSP2RrXXgoIwMbxosevNNJDI5Lunzh0pVzZZdel_7z_r5Gy72tJF_nD3oFNBvq_WJNSE7zSaxc_cbqhFjuoRfCdElCmMYMtLND53KrEwMbA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwtTHgaV2ZidpOLW2BLsbGf4DYTNinSy09v5kM03831cNUNGY9tVLGs3ujkFwbmb277dkUre_hDMpRIP7nSy-9xkdVuyCXCm57QRhGd3Q-5tlOERZezK3AUCg7ob346U6Y-gmf4XlIDljg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyqPDV4V5LpKLb8V7DKJIP1uX_vT09m_zTC7ZlyAsVLgJc0MWiUZdB7F_zttqqG-bi7VGNraCG9OB-u5IO5XvNaDPXebPvgeiKjU_eGPpXBM0YOl8onH4qxnvPwsROdgEO8-JEG-DvVq9o",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy7L9NFSps3qZYM2-JI7nUOHV25ojlXxco3oOj_edfnx-GQi-CvefQ92FE2bOkcHlTExI6VY4_zxNT-xFiqOpcr1oZ5p1HkFy2yDnT0qNwlBTlWPV6ifBQfHhtr-bGkfSekb5CP8c4zbfM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy8iPwyM9K4eo5Si-YxSNjFjCob7KuhGLUYE5zXgeGwNkr5I1vw8pUaKNXv7KVg39pogwbFyTRcWg7Y0BCNVJJnWqbzEvvGDHKpJQc4HXI5VcjWeqaiID8UxrRRfQArnY9AJRPwXk-_cyM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyXWVjCj8vBuQrOSO67YttyjEgVRghwXbMN0hkTLigc6-b_-TseqGBvuYFwFtjctqjZKWZOA-FTnrCCbbHH0L1BwK3mX6XLO3tAvPtbgEwKjgqsSXKOwvPZVpoXL7K8rZa0-M2X4-xZDZM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz94IL58uYMhTYAd20rmEjMXYYGQG3R3nPsFTVYzf939zdouNjHsOdQpx0zndNR7CFMIgvTt3r7zsLco3yYbdHjcmTWApD6mJMYqaB3R25LsoRY4gFfitiV8ES0T__hmXXjS7cfjaTknzIh"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwTvOHIS00c1fy4xbEWddvbUhr3E3ld5GEadQyPZrivdH1rGSKuLxHU32xP3e5KiUZho0oP2aUjbsoqM7HMVTUL3ge9pDJfggGxZGAlc9PvnaWT26NB-4kvJTtA8M1WelAhPXWp676BHTNJ"
+    },
+    {
+        "title": "Hair_shop",
+        "rating": "5,0",
+        "location": "111 rue amazmiz hay wad dahab, Témara",
+        "phone": "0667-341798",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx36zclkLd7STdHsJp5RBfK0uQxc245E30ltxSP2RrXXgoIwMbxosevNNJDI5Lunzh0pVzZZdel_7z_r5Gy72tJF_nD3oFNBvq_WJNSE7zSaxc_cbqhFjuoRfCdElCmMYMtLND53KrEwMbA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwtTHgaV2ZidpOLW2BLsbGf4DYTNinSy09v5kM03831cNUNGY9tVLGs3ujkFwbmb277dkUre_hDMpRIP7nSy-9xkdVuyCXCm57QRhGd3Q-5tlOERZezK3AUCg7ob346U6Y-gmf4XlIDljg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyqPDV4V5LpKLb8V7DKJIP1uX_vT09m_zTC7ZlyAsVLgJc0MWiUZdB7F_zttqqG-bi7VGNraCG9OB-u5IO5XvNaDPXebPvgeiKjU_eGPpXBM0YOl8onH4qxnvPwsROdgEO8-JEG-DvVq9o",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy7L9NFSps3qZYM2-JI7nUOHV25ojlXxco3oOj_edfnx-GQi-CvefQ92FE2bOkcHlTExI6VY4_zxNT-xFiqOpcr1oZ5p1HkFy2yDnT0qNwlBTlWPV6ifBQfHhtr-bGkfSekb5CP8c4zbfM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy8iPwyM9K4eo5Si-YxSNjFjCob7KuhGLUYE5zXgeGwNkr5I1vw8pUaKNXv7KVg39pogwbFyTRcWg7Y0BCNVJJnWqbzEvvGDHKpJQc4HXI5VcjWeqaiID8UxrRRfQArnY9AJRPwXk-_cyM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyXWVjCj8vBuQrOSO67YttyjEgVRghwXbMN0hkTLigc6-b_-TseqGBvuYFwFtjctqjZKWZOA-FTnrCCbbHH0L1BwK3mX6XLO3tAvPtbgEwKjgqsSXKOwvPZVpoXL7K8rZa0-M2X4-xZDZM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz94IL58uYMhTYAd20rmEjMXYYGQG3R3nPsFTVYzf939zdouNjHsOdQpx0zndNR7CFMIgvTt3r7zsLco3yYbdHjcmTWApD6mJMYqaB3R25LsoRY4gFfitiV8ES0T__hmXXjS7cfjaTknzIh"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx36zclkLd7STdHsJp5RBfK0uQxc245E30ltxSP2RrXXgoIwMbxosevNNJDI5Lunzh0pVzZZdel_7z_r5Gy72tJF_nD3oFNBvq_WJNSE7zSaxc_cbqhFjuoRfCdElCmMYMtLND53KrEwMbA"
+    },
+    {
+        "title": "GOLDEN BARBER",
+        "rating": "4,2",
+        "location": "Residence Narjis, Témara",
+        "phone": "0670-454170",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwTvOHIS00c1fy4xbEWddvbUhr3E3ld5GEadQyPZrivdH1rGSKuLxHU32xP3e5KiUZho0oP2aUjbsoqM7HMVTUL3ge9pDJfggGxZGAlc9PvnaWT26NB-4kvJTtA8M1WelAhPXWp676BHTNJ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwTvOHIS00c1fy4xbEWddvbUhr3E3ld5GEadQyPZrivdH1rGSKuLxHU32xP3e5KiUZho0oP2aUjbsoqM7HMVTUL3ge9pDJfggGxZGAlc9PvnaWT26NB-4kvJTtA8M1WelAhPXWp676BHTNJ"
+    },
+    {
+        "title": "Salon bader",
+        "rating": "5,0",
+        "location": "W4R8+86X, Av. des Oudayas, Témara",
+        "phone": "0666-264955",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzA96mpihp8gxsfYmthYz-q0dVfSRCCHOnfqgTELAibNbA4qpqCJRUlfDPQQb6j0fQNedUW7qEGdac1Eg_4lHYKaiUNJtSp72ej8b82kTaJw0w0i-g4APP795OoJVSrldWI-HBX4LmQVv04",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyigl0Y27Ii0JCV0ZLe1tEE-U4IndDUIm_IUjjB15-ZIFAhTNolKWNr8YC8PC2qDA0QBQ7rYr2cqYq6i-n5ByLX1a8Aeo2h3KLQeZ39b0EUkkufuVLA-w1071cFEqWl60azAto2Qdes8SJJ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzF6ZY_6VGS12n1DipLUuhPdDSteA1gDmxgLZyqCN-g_2K5T3ANBqCsI8W9ZAs-9bImVFtd4dMZ5azrwTNlr61QPDLv4DZY3I_b-VXO2i7wMASdSM1eR_xjOUGFicTH7ggjc3s742HYBKLC",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzwpeNYk79OJVdRorjVYBbfMa-K-nj9U_TJr7B-gG9B0oH-hLwkYwYByuE45jJA1-JnQCgN5yy8-0_N27A13LaU4fVU8udh2Vn7X5OJtDNJIlSrA9gVzAdtsXhr0Q2bpfpkJJN3bPoLe2U",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxql0UH4Uv0QF3rFB_4OCbt7lm1xATk6ZFB1vx01TC43ijwCOTThTqQ1kxN7iFzdcvHvoI9JMKnyuViK6ZU8nrc-Ep1_J9WzJUNO1jS2vDKyW328Thh9FRkfNknuj41Cc0Unnk9X5jy0CeS",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwTpsDURdTQZGA70_-UnPBhnUGqlO3o_KPKbjGS-veLv3Ku41W0E-sqI4ZJudwXrZQy5t4KTvYV72GTAWmRRt3Yn5ux2P7z0LEiouYXLBEk08yjYhP-MuVBCoZq0OlIkGcjhElwpfczy-oG"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzA96mpihp8gxsfYmthYz-q0dVfSRCCHOnfqgTELAibNbA4qpqCJRUlfDPQQb6j0fQNedUW7qEGdac1Eg_4lHYKaiUNJtSp72ej8b82kTaJw0w0i-g4APP795OoJVSrldWI-HBX4LmQVv04"
+    },
+    {
+        "title": "Barbershop.simo1",
+        "rating": "5,0",
+        "location": "W4G4+4J7, Témara",
+        "phone": "0621-330027",
+        "description": "N/A",
+        "website": "https://instagram.com/barbershop.simo1?igshid=YmMyMTA2M2Y=",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "The Barber Fayçal",
+        "rating": "5,0",
+        "location": "W3CC+P2Q، Rue Alhae, Temara",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhA4wG2EzdyCLMALyD6xJGrwor4JSnDlWXO92lXqdPe6CDISmH6eUbxBoGv-W-iGyjVDgRDzlaGEN_UHLTspgiXRQVNfzY5eRIp5v0QAsdbLd78AbcZ7BsrK2XubKToQIFhKwPzMgczkUV"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhA4wG2EzdyCLMALyD6xJGrwor4JSnDlWXO92lXqdPe6CDISmH6eUbxBoGv-W-iGyjVDgRDzlaGEN_UHLTspgiXRQVNfzY5eRIp5v0QAsdbLd78AbcZ7BsrK2XubKToQIFhKwPzMgczkUV"
+    },
+    {
+        "title": "RACHID BARBER",
+        "rating": "5,0",
+        "location": "Av. Khadija Bent Khouailid, Témara 12040",
+        "phone": "0660-750150",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipP0Pfs1RX7HseY0j8gaWtg-VUp9rzkFqNMIa7W6",
+            "https://lh3.googleusercontent.com/p/AF1QipO3KvQB7pZkH_A75fTtAd_riD0x_NkHBwNF-qTC",
+            "https://lh3.googleusercontent.com/p/AF1QipP5zKZ1-oHAKTCHTmbCws9HfNOA2IvQkNtVMtIC",
+            "https://lh3.googleusercontent.com/p/AF1QipN6_EpnblR4VVhBCqC9-LQHSYVM5QniJxZdVGgi",
+            "https://lh3.googleusercontent.com/p/AF1QipOYQrLdtqywY7SEtRTwQzMsg-3P_DSd_UGk4tGF",
+            "https://lh3.googleusercontent.com/p/AF1QipN9zerihLMqIo8gqPfO2Ri83EfGjnn-vaewfBck",
+            "https://lh3.googleusercontent.com/p/AF1QipOsoXmrd1vTU6hXNYDAU_mBsiyXrq-5UP93XorI",
+            "https://lh3.googleusercontent.com/p/AF1QipOYEtrulQ58OOdUETX6Fixb2SAt0GnZs-29OwJO"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipP0Pfs1RX7HseY0j8gaWtg-VUp9rzkFqNMIa7W6"
+    },
+    {
+        "title": "Barber Shop King Bear",
+        "rating": "5,0",
+        "location": "W3FW+67R, Bd Cheikh Maa El Ainayne, Témara",
+        "phone": "0606-171741",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzr7WnL8ED5UFZtXE58JYMapXOFAlm5nbSs3B-E6Iopp4LzFhFUjHz2ufNuEqAIZ8A8p5i0qpcFxUbgY_yADOsF5go9O1cANoX6ExoSncx8Mg3OnAgJnP6PaVAg_0N3oDx1pA7J",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwHYjVPSYrBtqUFpil_R3Bo9ffRcQYtDLNXK9AhQpNE543j3qVP_HIfBhRbg3s86PKOXoqN3Xz8pMmn9drMtQVIg44SWm1nPPozmj_6hu3BNDIFhlt4NlzMJJxp8UrV_4TiP6nL"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzr7WnL8ED5UFZtXE58JYMapXOFAlm5nbSs3B-E6Iopp4LzFhFUjHz2ufNuEqAIZ8A8p5i0qpcFxUbgY_yADOsF5go9O1cANoX6ExoSncx8Mg3OnAgJnP6PaVAg_0N3oDx1pA7J"
+    },
+    {
+        "title": "Salon de coiffure chez Khalid",
+        "rating": "5,0",
+        "location": "Nassim2 Magasin 4- al wifak, Bd Al Khansae, Temara",
+        "phone": "0641-355411",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Barber cham",
+        "rating": "4,1",
+        "location": "Magasin 10, Residence Saad, Témara 20000",
+        "phone": "0626-911594",
+        "description": "N/A",
+        "website": "https://www.facebook.com/chamekittycoiff/",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzGkrhMxI0GApm1o2N9-8j7NkvQfX7YEEVmY6pk79RMwZ3YLDe6I1BORGdd8SRloXyUfFs0BBEwVulBtq42bl2W1hSdUr8c_jxywq1NQVqbjTfZ1RT7le5X2Y819O2iKaZ7UjD3qQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzGkrhMxI0GApm1o2N9-8j7NkvQfX7YEEVmY6pk79RMwZ3YLDe6I1BORGdd8SRloXyUfFs0BBEwVulBtq42bl2W1hSdUr8c_jxywq1NQVqbjTfZ1RT7le5X2Y819O2iKaZ7UjD3qQ"
+    },
+    {
+        "title": "Barber shop marouan",
+        "rating": "5,0",
+        "location": "V3XC+JF9, Avenue Abdelkrim al khattabi, Témara",
+        "phone": "0634-839185",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxqwH-9721r03c8C8Zy3gS4qOtNhnyXnMT4yQVLMGAc0ADeTxU3vCoPxRAojH2JAHL0-LTlGhsdJR1DOxZYc4vsSowMDCwrq_dnUmJRJzJcO9NrkzndGLQ9wxUVBrjyo8x7izp37NuIsnE",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBEYE5eI673KXPufYyGMBbr04U6XOPcbpNp7V5usuBVWoOPGmSDRPN5pxQFPSv69m5meCRiaUTfGaSbmuVq9JzpTmiW1DoVRgovHwYJvRrLsqAIPyF1W44fjqtTBVn_SOhWml6tDES2gs9",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwELjZ30lJaHu3ciBS6MyL99gIJsJw3ylJupOe2Uo-0iNo-LiT9n_k3BcaFjX2LgSLXH3d7iYblq2YGo5ZFn6Nczpn9E4JKZbN1G0XrtVnTVKLPMLuWQKZRL4ge4VGRuPOU0ZaKmRXYA5_K",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzYKKxPPK8krJnu2INHPicuSjbB9a2gJHoY6-9yEOU1kK_Rus_WMqUOD8afVSNJeF7VRXKoobPN5JwZJI57XxCXanVkWihaPNtZ80ywJ4Xadtfc15W7fqH3X6Jb88dB3xJJB4JS5e2GG33C",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyJxacf7ufG7IcQ4R-APpJQxgRMQ1SoYol5xSBaXM1Vtb_zFIxroxVYkaA4n3fKWgzbAtslfKyQF7eUnha3gVwxnQcOvSp9LJQQtx1I9_3o91KRX2SEejD-_eALDKGbRlQvQYIX_clIZQUP"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxqwH-9721r03c8C8Zy3gS4qOtNhnyXnMT4yQVLMGAc0ADeTxU3vCoPxRAojH2JAHL0-LTlGhsdJR1DOxZYc4vsSowMDCwrq_dnUmJRJzJcO9NrkzndGLQ9wxUVBrjyo8x7izp37NuIsnE"
+    },
+    {
+        "title": "Barber Shop Nadir",
+        "rating": "5,0",
+        "location": "W3G8+RM5, Bd Amina Bint Wahb, Témara",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "SALON EDDIR COIFFURE",
+        "rating": "5,0",
+        "location": "W36Q+RMP, Av. Tarik Ibn Ziad, Témara",
+        "phone": "05386-43554",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw0-vPMJvl306zKYRQNqgKIGKPITXfJ0BSuFd3dJWEruSa9H2m7Zu6WiWOlzOxjJP28PRMR9Z_s-zp6fJI959v5lyYwiJZF5JhKV8hKNC_tqrYrmy6GuRN_ugnxvsSVWrdVkoc7zWJ8ue4n",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxmqAXhPcCvWffvT6aluoyrsNHWpItx0TnxuAwl-u4T2u_AL9b5_eWNjXsGTBvpYFl6zancRv8GY6pdGJZgFjy4WXIgd4NpJzsVnCt_td8_oHa6l_vU57oPie6lXv2E-pgxnsMymFZWsq0",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx7MNM58Un80ZP6VaiGfj16XoLki216-wS4rJ3oNVr-KcqM8VE4tTwMxkIbEgmrhKzs4zPYqN1TLASeW9sNui0tgm_hFGb33WCHCnP7wGipd5xywqv4jU4iRtONsrVi5SFRUxZ3nzyr8vL5",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx-vB7eKLkfe5PXGf4OczTBp_zbqaISHXJuqVCY67avqwkBJnokqRGzwFc9Ds0GDKLfQ62G0yprbi7myRS48dasrCpTB62K9TC2v24VduG8CUknpnlZTvp5CRQMWowx8R2jRsu_d7lkojk",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw8kooWARao1wKFXJpUxYBJJqjbIU-9GFOgN0NadrSWOpr0OJSOmpH9Hd04FVZjOaxjrtavWHARLst5Dnz16ifIa8f8c2k3n1Knc446v4jtO5k9dQJwlB2kJrNuEW3oNSeJHW_xPX7Waa9D",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx04nm--cYuXcZQkUsEayhFhVN8hIkL4morDbjpzDWbHuQR-BMMQdwRbRZPGyYgfmlvnkm6LU6LfvWgFu6Xktf8awtR7Q_k23Sr5SkM6hwWymJ93OTq1LUV8tWh4Nnnu7JcFiHC12I8CTMf",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyrNbcNXkX-MBfW_-HDLRnk1AXNor88X_2kzHyTFk-bHVligcxuGh0IrA254M-KdaN05X1G1vzhly5J7UnZPLnDZN_yFEVRjc4WDboSeFoWHCPj8srLizqUiIgxTxr_Gq0Fwy-u4UY_X4M_",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyfhrJr8ZFZuRue4zp1kX8jDGflxDslD_aggkhBdbSOlQhOCAspvGhFtByA5w2CjfxBoTrA4CfC1BCEJiRizfeh-SZoO9qHxgotg8aj6QKGJyEGVgmDONIrVVgOVDq0VknmuSsUL8n_N_c"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw0-vPMJvl306zKYRQNqgKIGKPITXfJ0BSuFd3dJWEruSa9H2m7Zu6WiWOlzOxjJP28PRMR9Z_s-zp6fJI959v5lyYwiJZF5JhKV8hKNC_tqrYrmy6GuRN_ugnxvsSVWrdVkoc7zWJ8ue4n"
+    },
+    {
+        "title": "Barber Shop Achir",
+        "rating": "N/A",
+        "location": "W37G+RVW, Av. Mohammed V, Témara",
+        "phone": "0649-501352",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxI8kVyb58N4u0OXgGWzUxveHRWDtup5TJPPDdUSlTGsOPSxhxDp9asYmRt8wIYFCUNwHFYEHeOewuy6oYkA524fIbCcGDccdW_DDXZ9XkpkjPBIUGfVmNzh-FIX8h6l2A4U3t5eIOYvrGH",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy66EHw5u56qj6B3qI1a-i9UP1zLB78JCd-_sCMbD_p1demukUzuOILSAAPBHVGjFQujzTNbzhihyJSw08VIhrP0YHQCDd-ByDfL35NZEb4uho1EUjqF0Wf2u1T5N29Mwl5jVDVQ1KHMn0m",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwhLlgFDtch4EFyaQl_RsmGi1fglbPVkkVSKp4R313LEcYc4hJQ13SujuB9fDrKaQpq2nHieupiY0IBtPm9_uF8eDcXIkmL44V4UsDfv912NQXX1ac3lHwg6YlHs_DkckBmtc_n9dx0fm03",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwZS2mO3SjOf87DuGfnX3LjKF_czhRlaB-HpC7se08NrwBqyG_QBKMY-4kLofwJbMXsD5UeXBEfoIpM2ef-iCp-BHm6uowmv7wweziVD_g-FjI1NkNAwd7iY5EXbXr2fi5isfoZPQ4Rdz0",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy035SXbZCMG5pYPByOLWVSnsuANIfNi2BTiY-_6QXCwex8qtWvE04dhpLELkW_rXwjgX3qE6H8_lAkmaRhjug3d5YBvAjIgkmJYNLy031hOM6rLNVrEdpUJ-Nir0Wz3fSmgZyeP8D9BZmO"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxI8kVyb58N4u0OXgGWzUxveHRWDtup5TJPPDdUSlTGsOPSxhxDp9asYmRt8wIYFCUNwHFYEHeOewuy6oYkA524fIbCcGDccdW_DDXZ9XkpkjPBIUGfVmNzh-FIX8h6l2A4U3t5eIOYvrGH"
+    }
+]

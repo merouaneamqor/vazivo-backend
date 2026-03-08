@@ -1,0 +1,6 @@
+# Sidekiq-cron schedule
+geocode_businesses:
+  cron: "0 2 * * *"
+  class: "GeocodeBusinessesJob"
+  queue: default
+  description: "Geocode businesses without coordinates"

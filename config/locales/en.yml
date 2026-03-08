@@ -1,0 +1,45 @@
+en:
+  # Category names/slugs are now in the database (categories.name_* / slug_*) and edited in admin. Kept for reference only.
+  categories:
+    acts:
+      salon-de-beaute:
+        name: "Beauty Salon"
+        slug: "beauty-salon"
+      barber:
+        name: "Barber"
+        slug: "barber"
+      hammam:
+        name: "Hammam"
+        slug: "hammam"
+      massage-spa:
+        name: "Massage & Spa"
+        slug: "massage-spa"
+      nail-salon:
+        name: "Nail Salon"
+        slug: "nail-salon"
+    subacts:
+      soin-visage: "Facial Care"
+      maquillage: "Makeup"
+      epilation: "Waxing"
+      soin-cheveux: "Hair Care"
+      beaute-regard: "Eye & Brow Care"
+      coupe-homme: "Men's Haircut"
+      taille-barbe: "Beard Trim"
+      rasage-traditionnel: "Traditional Shave"
+      soin-visage-homme: "Men's Facial"
+      coloration-homme: "Men's Coloring"
+      hammam-traditionnel: "Traditional Hammam"
+      gommage: "Body Scrub"
+      savonnage: "Soaping & Wrap"
+      massage-hammam: "Hammam Massage"
+      soin-corps-hammam: "Full Body Hammam"
+      massage-relaxant: "Relaxing Massage"
+      massage-therapeutique: "Therapeutic Massage"
+      massage-pierres-chaudes: "Hot Stone Massage"
+      spa-jacuzzi: "Spa & Jacuzzi"
+      aromatherapie: "Aromatherapy"
+      manucure: "Manicure"
+      pedicure: "Pedicure"
+      ongles-gel: "Gel Nails"
+      nail-art: "Nail Art"
+      pose-americaine: "French Manicure"

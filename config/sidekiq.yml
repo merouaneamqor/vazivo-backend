@@ -1,0 +1,4 @@
+# Queue list: default (weight 1), image_uploads (weight 3 — tune for Cloudinary rate limits)
+:queues:
+  - [default, 1]
+  - [image_uploads, 3]

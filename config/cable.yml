@@ -1,0 +1,14 @@
+development:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL", "redis://localhost:6379/0") %>
+
+test:
+  adapter: test
+
+staging:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") { ENV.fetch("REDIS_PUBLIC_URL", "redis://localhost:6379/0") } %>
+
+production:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") { ENV.fetch("REDIS_PUBLIC_URL", "redis://localhost:6379/0") } %>

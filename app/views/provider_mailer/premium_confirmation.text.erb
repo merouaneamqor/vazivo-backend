@@ -1,0 +1,8 @@
+Premium confirmed
+
+Hi <%= @user.name.presence || 'there' %>!
+
+Your premium subscription for <%= @business_name %> is active.
+<% if @expires_at.present? %>It runs until <%= @expires_at.strftime("%B %d, %Y") %>.<% end %>
+
+— The OllaZen team

@@ -1,0 +1,106 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'db/migrate/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - 'log/**/*'
+    - 'config/environments/**/*'
+    - 'config/initializers/devise.rb'
+
+# Layout
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'config/routes.rb'
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+# Metrics
+Metrics/MethodLength:
+  Max: 25
+  Exclude:
+    - 'app/controllers/**/*'
+
+Metrics/AbcSize:
+  Max: 25
+  Exclude:
+    - 'app/controllers/**/*'
+
+Metrics/ClassLength:
+  Max: 200
+  Exclude:
+    - 'app/controllers/**/*'
+    - 'app/models/**/*'
+
+Metrics/BlockLength:
+  Max: 50
+  Exclude:
+    - 'config/routes.rb'
+    - 'spec/**/*'
+    - 'test/**/*'
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+# Style
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/WordArray:
+  EnforcedStyle: brackets
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: true
+
+Style/IfUnlessModifier:
+  Enabled: true
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+# Naming
+Naming/VariableNumber:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+# Lint
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+
+Lint/MissingSuper:
+  Enabled: false

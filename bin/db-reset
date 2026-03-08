@@ -1,0 +1,17 @@
+#!/bin/sh
+# Stop services that hold DB connections, reset DB, then start again.
+# Run from project root: ./bin/db-reset
+
+set -e
+cd "$(dirname "$0")/.."
+
+echo "Stopping api and sidekiq..."
+docker-compose stop api sidekiq 2>/dev/null || true
+
+echo "Dropping, creating, migrating, seeding..."
+docker-compose run --rm api bundle exec rails db:drop db:create db:migrate db:seed
+
+echo "Starting api and sidekiq..."
+docker-compose start api sidekiq
+
+echo "Done."

@@ -1,0 +1,45 @@
+# Arabic. Category names/slugs are now in the database; these keys are kept for reference only.
+ar:
+  categories:
+    acts:
+      salon-de-beaute:
+        name: "صالون تجميل"
+        slug: "salon-de-beaute"
+      barber:
+        name: "حلاق رجال"
+        slug: "barber"
+      hammam:
+        name: "حمام"
+        slug: "hammam"
+      massage-spa:
+        name: "مساج وسبا"
+        slug: "massage-spa"
+      nail-salon:
+        name: "صالون أظافر"
+        slug: "nail-salon"
+    subacts:
+      soin-visage: "العناية بالبشرة"
+      maquillage: "مكياج"
+      epilation: "إزالة الشعر"
+      soin-cheveux: "العناية بالشعر"
+      beaute-regard: "العناية بالعينين والحواجب"
+      coupe-homme: "قص شعر رجالي"
+      taille-barbe: "تشذيب اللحية"
+      rasage-traditionnel: "حلاقة تقليدية"
+      soin-visage-homme: "العناية ببشرة الرجل"
+      coloration-homme: "صبغ رجالي"
+      hammam-traditionnel: "حمام تقليدي"
+      gommage: "تقشير الجسم"
+      savonnage: "الصابون واللف"
+      massage-hammam: "مساج في الحمام"
+      soin-corps-hammam: "العناية الكاملة بالجسم في الحمام"
+      massage-relaxant: "مساج استرخائي"
+      massage-therapeutique: "مساج علاجي"
+      massage-pierres-chaudes: "مساج بالحجارة الساخنة"
+      spa-jacuzzi: "سبا وجاكوزي"
+      aromatherapie: "العلاج العطري"
+      manucure: "العناية بالأظافر"
+      pedicure: "العناية بالقدمين"
+      ongles-gel: "أظافر جل"
+      nail-art: "تزيين الأظافر"
+      pose-americaine: "مانيكير فرنسي"

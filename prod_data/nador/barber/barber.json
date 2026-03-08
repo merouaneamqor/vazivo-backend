@@ -1,0 +1,782 @@
+[
+    {
+        "title": "💈The Barber Shop 💈",
+        "rating": "4,4",
+        "location": "Ave Sidi Mohammed, Nador",
+        "phone": "0658-312818",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMdAlyAIVwB2kmRfD-Aoe2aWeIWIHvBksWhOBc6",
+            "https://lh3.googleusercontent.com/p/AF1QipPuo5VNvemFkiuVK2hpeb2jruC_fxaxVSYFIyww",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxwGfnCJ8cmtyBXNeFukNySL91NARvnwOedx9FWE-fB_Qvb4tf2z4UQ0guYuirHfqwJKsQi_IS-pW3cjt-JBY0575isepSBvx6wkCr5iNKWaiWoJH98SuWitgJGA2KolNUyJjK0",
+            "https://lh3.googleusercontent.com/p/AF1QipMVnOVn2g2WuXAAF0jf584QloNmnn6-6Gc8laX6",
+            "https://lh3.googleusercontent.com/p/AF1QipOzbt4knRfeF8-4MUEKazedmIVLupY8iboKsyxD",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxHn8YlOxqUOB-Z5kZ5jlzRZaqjOwt5-pW7wDZmPD_tBUFy_dqojeUOV-4VYu3-9qmF6jbzOTxMB4pKE2DbOV2QrcBTKl7KDrdwrfacJ0AkWQQVt3ti0vgCB2e8GLLJveKExAhA",
+            "https://lh3.googleusercontent.com/p/AF1QipPRAWRj_dH-bAXNtZfZUjcK3OVBXuOtcqohZ1or",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxBwnVXMpof-LiB8uRUDITyHheIj1fdrDXB1h45aBRe3bbrn0uxugqdtNfNeX_H6xawCz9blXqgeFlm0uBBJnb7YS3l9EM3RA2_iA7oufWXW6Y_j4k0lN6_LXYHpfP9vXKf-9Q2Qg"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMdAlyAIVwB2kmRfD-Aoe2aWeIWIHvBksWhOBc6"
+    },
+    {
+        "title": "Barber Shop Berlin",
+        "rating": "4,4",
+        "location": "Barbershop Berlin, 42 Rue Bruxelles, Nador 62000",
+        "phone": "05363-20788",
+        "description": "N/A",
+        "website": "https://instagram.com/barbershop.berlin?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx6qCwmyfQWz2BaJ9--O-anPdm6N8fHHKoCa3KlM6fPTsjp2dWxqsSi00HizcF6JAKuMXJZK4dW6dR-ww0dGfYlkIGQiNJ2aLhp2JNcG7Us59gF28TolRS66EimfdcSj-1uOa0btA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz-rBH9waxbBmiwEYfMLwr5H7j5XMBuIxVXjsf7F9xUFHiXncJawfrFj9mR31JZ7nrHv0vBvyE02_TeqIKPZJ5_fXTlxniLsANGUWJu3VXPDmbsHxYlbtctlX4W0F6jBjXxhDQ1",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyz2qA4sLVqYgSgUMQodSZIUnGBuyifCqh-P1WLzvSriPP3XLYW8Ut7Qp-IkMT6bFQk_KUZLqQzWm89KwL1fOKXllEXPNOxIL5MgAk379pYViklnZo8k3Y0Xvd8DOC2AU-v21w_",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz3hA9nS9F1pDv6gpWUyZ_bLvsqr5X1oXuYOEuUK4z-4wnuRZ6HpSK0nHQsqs2CWolnV2tSysa-iS38i9W0s53jVCILyQBKz63r6kSSIOKtRCyVFz4bpD1GRy9j5uh6_GAoBo5k",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxFQXaa_5nQU5dbMMOnjyuIhy5t0GNEyFSZjvB54NHSxdoFT4Rq5e7GPcWbMWg7mYsVpbD_ahWRoyOT3JWygGCWoLZPjgwtOvEoSQsG9qAeAxApmtTVc5WzV9TtCH75wBP7vBW0",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwcbttFa7mbGcZ2nupdvNk9DGOc-oqBAB6keTO-YzI7PwdhME22xWT1sBrn-JYpmKDkc4eWxR96m8_lJHxOShHhF8pU_Z2CtabSZvFoTqgFZeAHOPNGvlGGciwiVoMiUGLjB_1l",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSydtT9h_Rew3LGtGhZUuzfW8W9OXZ6y9GO-Mrmppsl1_PXz8ZSYzFyiALHj0zflfj78ix-Vqa_s9FfIw6PEiC9R-7CEMgZUVnmM2pRu3V52QhzhS-xUmCDUaO9DQ0E_T9I4dsHn",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyutLPZFUniuF2pRBc5MFeBgiK-6FRRxJy_-qRnxjZvC-6rffglrXGGGSSdVPDuCoMHiyQPYtNon4uLJFktOH_YTnmFUkf6Znk2Yw3BOeOK7f6N29VGbwv7lQTfcIpjxNHw8UHb",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxr53T8Frna2Od9CrNYBtcTX-K1y4QPc1taWwNjChunuM6_qRbjZ9UXAKrdntHIbQGxPPdqYelCEbpmw9L28lQDglPpPl6jSSwvyothNmqJXBnBTZ4OK8swUGzwzN9x5tZnu_T8UQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxlNyAYAlaM5tb99rHjlaLk2_zhT30Oi5wPVljbT6yWkb56ku7pKkRc46jfYtklPXcdBKFBglmrPwt5dXCqQTXYKeJvMUNRiEC9eqSDZSkuH98SHSf2rm-rVbq0uphMsNenzws",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSysjiAEXcefSnkqLPKVSjoJ5K5nWDx38qPi7CbDnZ9kf7jXkCBWU8JpdZp2q30SdjZw_r4S6NG7NEL-NFgtjJRcwXxBzxi7Xn5qm7j5KLXpjkOkbTGSi8IDpFiRRtPTkvAIleio",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwf4mFT1KYZhdogVXxbrAx4vXP7b8BiE3v2WPIepnagQf4EbHAEsFRJn1vpJDJgxcztlrMjV2JkyqG1NA58DdgtOlfBwOGiAWiXM46PRmRshOkjA_fAIyAo72HRlOlHVaqKjdeSVg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz2uZVD02erEieakkPK6ZNCZQWSePL7iZhfaJBJMen2PeG86tEyaC3h_f_W1PSc59L6cLpRUjThZS-eDRU4vRXGKYc1u8k1swRsgEAM9VOK4uE7YvbanwCwhrXecnHchN-VJBAVug",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxtJJMwZIRiv12AXCVm7RjC73yvd6ZR1KnquJk_gr7CJ62JgJbzq1wuMJrOwWbCgm7fSEkSM_tLMdsZDKD58D0nsub9imSPE_U6xs3jpE6thQ0uMbxFMjJWo6QCYfH_a_GpYn-26A",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzON3r8y53lA8na3L_Rhq-eTFSCYpGvqOaJ6x8sHK2Dwk9LlboJpf8YvIYg7q2v66lE4XV7xsOvH-40rpRvOHUbJfB66EdyPMKv9uhg8mvlFnIBBJik4ZJ9NbKOLbQJHjLFypbvkA"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx6qCwmyfQWz2BaJ9--O-anPdm6N8fHHKoCa3KlM6fPTsjp2dWxqsSi00HizcF6JAKuMXJZK4dW6dR-ww0dGfYlkIGQiNJ2aLhp2JNcG7Us59gF28TolRS66EimfdcSj-1uOa0btA"
+    },
+    {
+        "title": "Barbershop Art Of Hair Nador",
+        "rating": "4,8",
+        "location": "N3, Bloc Fatima El Fihria, Rue Al-Arin Sheikh, Nador 62000",
+        "phone": "0603-164206",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwHuVBmkBBUpQM3VyyiYFsfPtqmybyV5izF4IxIWX8qWeZi8AhoyT_ZvNNhS-wZJXvD_QPMA0EzHkTfrnmekSg9BtrWdKQkOL2WMFPH7w-8f8y6BxklzIWsVyyJ3exJj9A1DHnu_TR1jwPP",
+            "https://lh3.googleusercontent.com/p/AF1QipMyLzEWrK61KoMpNk1DQ1CdhAkYjfJ8cB30REO2",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxOqw6pDWDI3FJmk35OeYPaWoTDFzPkaHtB4V-IYROEZ2Ps1sfJdaWsVqKnRcU_8EJkHz5Ifnfr4rRVXEotI7d0TSEV7FsdkKvqW7-GkArAkoIjN7R0B68IVnjBAEoVulIhwUUAexXY821R",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwd8ZWzLdCvY-jpbrxTPwVu8uZx9kT0C58t9y7QSguv3AMTu-pBLSiWIvu_OZqXAcaSE7f_kKlx8p0lJvIPD6rV5jmaCGhXy2hbwV5ZymhA6HYCECSsbkSMRdzfA35LOv2Hnjm4AmiOrHg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzkbWW_YcSd4v1YHa_ZokgOGjBM0q_DjHVBYEYj-mGSWxnRb9Yeq1So7xZO2KDQJmPMDYUXrYILwpCt1Jmc_-GAPqIAAYOqWviQ5iZph_vWM1REC9qCLrDkZdU_FVduvwHE08fdspVs9A0J",
+            "https://lh3.googleusercontent.com/p/AF1QipMOILcHJDGbrFMUHDoc2z1KOx27GkUuISb7A7N8",
+            "https://lh3.googleusercontent.com/p/AF1QipN4uP1_wLtyMrBXXLJHhgRXYzAp55JzSItf-KnS"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwHuVBmkBBUpQM3VyyiYFsfPtqmybyV5izF4IxIWX8qWeZi8AhoyT_ZvNNhS-wZJXvD_QPMA0EzHkTfrnmekSg9BtrWdKQkOL2WMFPH7w-8f8y6BxklzIWsVyyJ3exJj9A1DHnu_TR1jwPP"
+    },
+    {
+        "title": "المقص الذهبي",
+        "rating": "N/A",
+        "location": "Ave Des Far, Nador",
+        "phone": "0622-790948",
+        "description": "N/A",
+        "website": "https://www.instagram.com/thebarber.gold?igsh=NDZhc2ZmdHo2NXJw",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Barber Nour",
+        "rating": "4,9",
+        "location": "N° 611 Av. Hassan I, Nador 62010",
+        "phone": "0626-375558",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMtcN9sOoLU-Gz61zPdn3iG5pyFOiMwnu8GkTfl"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMtcN9sOoLU-Gz61zPdn3iG5pyFOiMwnu8GkTfl"
+    },
+    {
+        "title": "Barbershop Najim",
+        "rating": "4,7",
+        "location": "N227, LOT EL BOUSTANE, Nador 62000",
+        "phone": "0667-304544",
+        "description": "S'identifie comme géré par une femme",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMv4R7hkRCdtLpWlng6_3tx4VmYBtbTo3i24ahD",
+            "https://lh3.googleusercontent.com/p/AF1QipMjNdoMjh2Vcyy9NETWV-w6X7D6wBnPqVgKXkl4",
+            "https://lh3.googleusercontent.com/p/AF1QipOymK5nVnkF03JtwBZvopRZvl2NBMGEfZlrZnFA",
+            "https://lh3.googleusercontent.com/p/AF1QipOt9RRlin-A5opxjncAbQtR-Zb8WtCYl8YgGT0n",
+            "https://lh3.googleusercontent.com/p/AF1QipNYEX87H6I70JwC1LxRr0p1MaqK6ToGEyt3ksC6",
+            "https://lh3.googleusercontent.com/p/AF1QipMnEGYgFbPQRaWZisLWCQRlNPEb2gMGkKnqdfMl",
+            "https://lh3.googleusercontent.com/p/AF1QipNjU7fcTbqv-UnyxdDJ6cF5piITsCbXHnO2AOky",
+            "https://lh3.googleusercontent.com/p/AF1QipNToHZi3TddhFaqW1ygCisOQ3ZORQGkIO2h4YzC",
+            "https://lh3.googleusercontent.com/p/AF1QipPAKzOu1PsMypP6QrjsPxgH7ilGBmVgGsXc9uBk",
+            "https://lh3.googleusercontent.com/p/AF1QipN6yxpsxPTRTkckJcyZ86O098ODaD-oITr_EF-J",
+            "https://lh3.googleusercontent.com/p/AF1QipNmCIpDVMwmx82qlaJa-Rvp8sDLOzzmqj8bGZSS",
+            "https://lh3.googleusercontent.com/p/AF1QipPwEOLR3CT0B79Cc3sV1A04UIff_Vmv9b36hr72",
+            "https://lh3.googleusercontent.com/p/AF1QipNjjiocZpVldCRvk3JAm2gPWyq8aJvp7pI6If9H",
+            "https://lh3.googleusercontent.com/p/AF1QipNUmQkOA4SwHoC90elZu6f0cGDWkr8nw5bQqMvi",
+            "https://lh3.googleusercontent.com/p/AF1QipMYHZlrOs3k_EFD_5JYMIggkdpsAqlBdK22TqH3",
+            "https://lh3.googleusercontent.com/p/AF1QipN72cYbplirQu_sLiGpHQ_Br15Ebs6NR-JjCXau",
+            "https://lh3.googleusercontent.com/p/AF1QipPYBbWhtf0e9l9_SmEK2dbQt5zcmgOIgDLwY0gl",
+            "https://lh3.googleusercontent.com/p/AF1QipOi0-aPiGev-qI6VjVg9136yvsQ_E9ocF3A-MX-",
+            "https://lh3.googleusercontent.com/p/AF1QipP_s4yYPUKtthdkq3c_Ta370XG0XYrMI2FqWbhB",
+            "https://lh3.googleusercontent.com/p/AF1QipPGrYo1R0P39JTWVDk4xLNYG-0OVBo65E1I4Cjg"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMv4R7hkRCdtLpWlng6_3tx4VmYBtbTo3i24ahD"
+    },
+    {
+        "title": "Barber shop, salon de coiffure Homme صالون الحلاقة للرجال",
+        "rating": "4,3",
+        "location": "N° 6 Rue Nador, Rabat",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMW6pXpVhskej471yUFJbVHD5PjCGSCmJSbmmbo",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw4FletsN_c_MUryibJUIOtxtv3HqkCWwtA1okwzVe2Oa_aV56FdqkNbasFYQT-M1tvNrxS7BQuYpOb98Acbgj_Er9gBgACG1FJOFqmoPbkl_tEchVRn-5EBnpq42mzRLaMkXa8",
+            "https://lh3.googleusercontent.com/p/AF1QipMtKP0FyJ5RslyvXF7DKedM2-q24XL9gSX5wMc3",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxr7posDnClnxFSzT6Ri_tVxR-PoTMchx9H-Zx9jgbtOOsxrluOYknVz7T1S9gKdilQaURif0vMrkimJ_yjknOoJ6d7Toh4-ebsrm-srZwO4sK0h6B871Fte-wybz89vR0pCiCmlG3AqRU"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMW6pXpVhskej471yUFJbVHD5PjCGSCmJSbmmbo"
+    },
+    {
+        "title": "Ajmal Barber",
+        "rating": "5,0",
+        "location": "53GC+9H6, Nador",
+        "phone": "0666-066686",
+        "description": "N/A",
+        "website": "https://www.instagram.com/ajmal_barber?igsh=eTZyaXR2ZWlsdg==&utm_source=qr",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz52AoYDwjm4Kl92BwxAlkDscrP-D80Nfyd0wdCusVx372o2IbNwnv32H7m3-q0vYVkvpJ9u1sVyq1PBCYeV5w-GWqkgXiZWK1YN1_Ba7jZrt9dhDvLo4-G_hoGwlahEYJ_oQLG",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwIzRb90Vgycj8bVPC4Kr3XHeIfVBo4m224SxWGCK6hByBcffzxoxYXmDZ5ceSHLsd2CBjtN3V6hanunB5r96Nyuy1ewAxlgU-f-1hNisquIatbZjKzekxeb7vKZ1YkwG1hhoYp",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxYqzYJqksTwH2fHUtIeEr_PJ-otIGoDJiI-syabP_PYz6DS8oJsDp7cSWNMqnSIZPRPpfmOWay10ALK02MBcZChudmawjpAhWi3EW282o0Esl0MjeBpTk3DEd3Ah2MUxtniNwM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwcBCAIVNrwV6GJmTSYxW2dvuBwL9don_7FXNTtgURhOgyR392VcIPEdhzztbrnjFavPaPDzN15NktFaY2D7f26vlPptKk_F1JZVsHXt8OKBtKtxqR4liuRT3OYw1WFuy29ldo",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyWk7bdvRqTi8bW3xGbN3uaJxqGCwwomIFPLZmFhctJaQ_vIKODzqrjKrQaO7JuaQQL99lfR5EcpwkrM6pwiSVAVbFPH-K8H6yyH67VBK9nDB7UHsHJ9oKnGt1fzemTUDeHGpEB0ln0wiY",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxXdwrMQe1oPuZCjjRko-p4QCKDZaYpPtHOqpaW3_sFzHOGyP7_BQjOHYSflvrYePApJznp5uppanLGQQIyd8XL58jXq1E4npGUHoRAvjmgctgxvrZEKH92xUIoZERm7gYoS-wV",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx5fuBpyndGydY9zbGd-PizTrifR7WNuCSJ3afZpAdPjy88uztqdd5b660w5EJvT137DmWVqCZxiytUylsS3zFZ4uXtnQ9Oqn7f7U-zNq5JONYSYc0diWxIaZWp_3CGJQxvJJ4Q"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz52AoYDwjm4Kl92BwxAlkDscrP-D80Nfyd0wdCusVx372o2IbNwnv32H7m3-q0vYVkvpJ9u1sVyq1PBCYeV5w-GWqkgXiZWK1YN1_Ba7jZrt9dhDvLo4-G_hoGwlahEYJ_oQLG"
+    },
+    {
+        "title": "BARBER KING BARBERSHOP",
+        "rating": "2,3",
+        "location": "AVENUE SIDI MOHAMMED, N176, LAARASSI, Nador 62010",
+        "phone": "0680-302698",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSywNQWa2wjm30l7z2ze1r5ygf6V14EvQ02z6Cxc8jqzLZapmU6txDd5miJxS9BTP_KsPKeacrPKMPaWf0XN_a9tQr-L2CRM6q8gONUJdjZ2rR3VPVCmN5TA5OkwLaNuFcQJG7dUaPh86owM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwXuM8xaOLYuBR_T_fhlLtKRmO24vMD0eMumfx5d69kqLrnF5LQBGEm6-Yoai92j6UZCenSGDMPZyCZtJ0iliODmDisSNJ_czWQRcMfjscmk7-33Y4poexwW9Xl7Hed5IPGvo-r-HSs7WLP",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyFy-0MPa1FyCvvKpGO4XeJmgn-g86sQisM_P5JhFQ8vo2mP6FV5V-_YrPNnn-KzRiaPWrV0iNSagp9bpYt21Xvze0uCS5Dke5_RnxWOhPpTkMu79cD0XvefDG-B6k1nNkIKUt0"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSywNQWa2wjm30l7z2ze1r5ygf6V14EvQ02z6Cxc8jqzLZapmU6txDd5miJxS9BTP_KsPKeacrPKMPaWf0XN_a9tQr-L2CRM6q8gONUJdjZ2rR3VPVCmN5TA5OkwLaNuFcQJG7dUaPh86owM"
+    },
+    {
+        "title": "Netherlands barber",
+        "rating": "5,0",
+        "location": "nr 10, Arrid 3 rue 321, Nador 62000",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipN1I-exvT1Dk3-_HF4hxvd6IUHCTSeru_LbCJrZ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzeqKYgfDDewowYT3bhIFyeBEElwl1z3vbSFXtpEHx-vwGeBvfKvLsY_3CM6F84ihraLK8rkqlVi0gMyD4wAgFHDE4yPXdmDvkbhlwF3hewVfDvb6NBGNdQNinghM8cFt2XSDXkRg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzC3HQA9nosJ0N7eaHVE4mt1K5LiBHv6JMGlVSYkN0w_H3FRL8y73LSvV4wYvY2Ng3uPXzCU55DWHKmznhIMhBPlPtO2f135q2M_T9EhOqrwR71w-o5WLn4yGBVtiopkbr9btswrA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwucw5t8DIor6HgmBwA-CyKoRyKOHV11bEhfwzaxVIpyqMyRa_n1FGacfT767gmuCnPDdO11Qx_AYX-mYpx92sEc3KDrA_wDZIEpFif7KtwUlamnK1b0iBWEl3Dqyyq4mKI5B-l",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyJiiKddFJElKsllKor-5rNNNocoBr_Ci1XBFgj3L0tp0V_l3hU8ih0vwNk5g38I_4yTjR3U0p0Jcm2cW7gPuK866fkYb8iglagFXO3jRWaQuGjUvzQzizYewaZn7WtwjRJn924",
+            "https://lh3.googleusercontent.com/p/AF1QipNYejcys_GBaH01P-7n6LDHObkcbp2U-yDNhKT4",
+            "https://lh3.googleusercontent.com/p/AF1QipM_ey3uhMdreFPWFVVI2aXEwv0BCAQUvu9knWbr"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipN1I-exvT1Dk3-_HF4hxvd6IUHCTSeru_LbCJrZ"
+    },
+    {
+        "title": "Luxe Barber Nador",
+        "rating": "5,0",
+        "location": "Rue IBN al haitam, Av Al Massira, Nador 62000",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMtKP0FyJ5RslyvXF7DKedM2-q24XL9gSX5wMc3"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMtKP0FyJ5RslyvXF7DKedM2-q24XL9gSX5wMc3"
+    },
+    {
+        "title": "Barber Shop Badi",
+        "rating": "4,9",
+        "location": "5229+RW9, Nador",
+        "phone": "0661-995144",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzY8eDk-tV1JoN9kVL5JSQajPg0BWReA6XVBquoPZC73lHGgJvVZdU6CIyN1pvmloMG1axQBAuCViSw3Xe1nMTgHAbeCtXdDW2kbY0V1CUFCgof4_9KPx92ql2cBK2CCKaczUkgOg",
+            "https://lh3.googleusercontent.com/p/AF1QipOMPMgF_1uxNZU6UB0_inbeeFdMc7P_5ulGTSPS",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwPUO_UX9lnD-aC0tb48FAnIL4BLqTGDISB9oDH2JCP5mQPklKOOmZyvpHUf1E6bkOKjdZAhL9lILnZcY_Rygq0_MZI5n-6GzulC13pUaWOUURSwxcwZXeUqdjcTWTPz26KuT92",
+            "https://lh3.googleusercontent.com/p/AF1QipMuRxgwB-lXqfFaAMDENQYqzex2QSQSWoeoIwMr",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy-aYOJB-x1bG4yY17_4Rvvyk48xImCRPtTFfqfgccWEW_4lLv88fp7KmqkMHJNuSNkL3C6YDFMvcyTLmRH_SfrcDIlC6xo1wsCqieALEhwCqKqVHUMSFLRTcwg-XTvuAAKescf",
+            "https://lh3.googleusercontent.com/p/AF1QipNh_q8FOAd6xaX7z1MRYF_o4Ukf6L5cyyVGujTK"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzY8eDk-tV1JoN9kVL5JSQajPg0BWReA6XVBquoPZC73lHGgJvVZdU6CIyN1pvmloMG1axQBAuCViSw3Xe1nMTgHAbeCtXdDW2kbY0V1CUFCgof4_9KPx92ql2cBK2CCKaczUkgOg"
+    },
+    {
+        "title": "Barbershop Gentlemen’s Nador",
+        "rating": "4,8",
+        "location": "JFGX+WV Torremolinos, Espagne",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxaY5253tBdhcMy5I3ZR1mNviyAD8K_qNJHh3jyU960B5noSDSchHalsquItKSEYemXGGV9glaZgFf2A762W2owZoqaoC-xUBPXRl_SaicnOCw-t5HKZ92BG-H3MtipEuGrGXBj",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwnLcsTz3k_EQHIFRo4gs9GtMIcXNlI0nIVcIPtCeCqCVPh4Kzyzfdvr4gWuVxE3VmnnG6LnZF3sK5lMOlwyASDEuBRu4lSASom2ZkJ3GuAxqnUg5qRJ1oZ9LodD5xlgXfBDxU",
+            "https://lh3.googleusercontent.com/p/AF1QipNhSEF76DZXh58svscephTBndbcNIff35YGUm9P",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxHhaCVQr45m-GZuy5TzM7Sgp0OEMLh6bK9OjrDDxbgGU3Yxg1-wN0Xm1iNwTeOnJJBG0ec8FoqvsGID0c7OELa3t-90H86V_IrZMLcOsNM2WdjV2PiJPTGwFsumN4AqiwQIGGZ",
+            "https://lh3.googleusercontent.com/p/AF1QipNMU4GzRk8HY9c9MRlxVEd0Bb6_159dayN-qwrA",
+            "https://lh3.googleusercontent.com/p/AF1QipPwt7N4xNE-ECLO3xXKnGorp5pr7wM-jBRUKcK9",
+            "https://lh3.googleusercontent.com/p/AF1QipMM60FRbPVkQOEi0RZ-NgxJoGPusSywsMdqhTbz",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwA_Ikz1VAOvDuatMVrsECtBNTGio0rG9Gey4mR6zB_Q9kFVRmApjyni_L4vNSiSZIS_QEge61qH2QsR3vPRL8DmSphpB-YA5CW2Js3OT6Z-7WYSugZSDpgdwLR8TWTVXLzeLED",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyJ8vorYmsoecygxZVS3dhVoQD30sJ5LydcGPJz1GzhcGxb-PSIwwOA4EvqYjOG6KJDJ3tqZqqMDjCXykoD50Z2z3pLJInNyR-hClwYdCMdP0FTYnyrv-Exde-ZrpteG1v94ezg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwaKiUx2f5s3Air9ADCzPZupV2Ej62q9taaezO3xLZc1N9DPxxtixVzjdV_E7E6JuNP97Z3PROj6ccFIzSfPm60Z0b3myHFkpRwqWgdWhNaL3F6BVpEouQTEc2PUVrxni4GvfU",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwkDCiqKCg2XfUKw0abH1lE_2qU3EASH4uVphNvCZ-uzpDz3jJNnKb-nFc6RRJLSAJDDkY1Bk8NLjcddHbX0yGRf1TG2-rU_Xy-kJ_v7EO1cOXRtMfOLJU_ZOxyVzFkWhlKWNk",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzaQS3wztcOu3GNYKnbm-Uf7v0LWL5vbkdehkFvt-wBPIzVMxx5HSTyi-LIJQvod3--ZVnGYb2hHYsgA4-KLFwm6NO86YXpkJ-pyQ-IzNqIo4FIve89155klqA5jnvKg8ft2XtR",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwXwaqbPoXpBl0zPWS6jdb-MRtj_o0L2NoHIT10Wm35_rpt_eNOhcRDCM4ef0BaV_kEeJRcwKnc0rEsQTDeYcoO7hRTz2Tpd524a5-CVOJINhPJWq8QUfFvb1ub20R7EbawCNd1LQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxaY5253tBdhcMy5I3ZR1mNviyAD8K_qNJHh3jyU960B5noSDSchHalsquItKSEYemXGGV9glaZgFf2A762W2owZoqaoC-xUBPXRl_SaicnOCw-t5HKZ92BG-H3MtipEuGrGXBj"
+    },
+    {
+        "title": "barber hakim",
+        "rating": "5,0",
+        "location": "Rue 22, Nador",
+        "phone": "0623-783404",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz6JJNeUGwCSVBTPaXfa6ne4bmssixxWR4cmSTBs5-9Qw0YPOdVi_R74xoQdd5qArNPAza95lHO1zWMPfFPDcf1MSd5acifieg6U_V5XXyJ-pla6b9Taw0eRQ6Y51VaD0-7K0WzuA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx5Rk9l6JEfw3Dbv6oFofb2vtNX9aOBPwFIAwiAxjd3fFYVaNl0c6qbZhuAYcPetIVKLlmw4ZOOyEXdVulSeQHgL3S448RLRUdK65zar1pZn0xOZ3eh4vFiKc6hIevDpJw555qo",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxC2l5HTSo7k3iG8QLd7XxaZ5dnhSPIPd1S38S51QRRLxIJ_Nn3t0SiPIXlSee688yFIXIr7FvTLLGU2fE9vkYC_1ayMYOmhIoPymZH-IG8tfc1Z2jnHk1aoSyEakW4e7CpqXbD4A"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz6JJNeUGwCSVBTPaXfa6ne4bmssixxWR4cmSTBs5-9Qw0YPOdVi_R74xoQdd5qArNPAza95lHO1zWMPfFPDcf1MSd5acifieg6U_V5XXyJ-pla6b9Taw0eRQ6Y51VaD0-7K0WzuA"
+    },
+    {
+        "title": "Barber shop el baghdadi",
+        "rating": "4,9",
+        "location": "Rue ASSALA, Nador",
+        "phone": "0670-345588",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipPc4NZyKBI25A3QWd9x5Z3iT0jZtXiiFFvDBeQ6",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyyI3P3456LzwL4eZWmUnW2bTgr0-dtQC7w-Jq1DgYp_vKjxjSnhmagpWYG_4KfAUVaVD1MIENyzTA3yoOAskjgk4N7g_8RavHlMHwbi2IKphk9WH0tbb-7Ehan5wxltHUyw3w",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBMHg7V7vpJMPyMsMwDWDZigR-sUzmgCAhiDhsvFbZNWq5JaVMS6NxZ9VH6yu_Y_eX7D-HJgHy7ITW7UwFh1SBg_7TaFTH-wHrdZ--LXZ1TK3_N8Rar6Y9CtTpzwt52OUiAlvM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzf3g_DfcIbDOeZTVKJPcIkQl8OdvOztYZ-e8XyRwOp99iszrR2xGfMPk1sysWzCo5Q0V-EvideykZsSEikpGLreaecIYdjRoWsal2kpB0hLZH-anYlfphplI7Gm_SUtcuWH-Y7SQ",
+            "https://lh3.googleusercontent.com/p/AF1QipNBQ6aE1EvRI-yl6dqzHSWKoWIeH7eNSyPVJlZx",
+            "https://lh3.googleusercontent.com/p/AF1QipP-4-oKyq-jXRGFqA5dkR6oFETnGrovneX_upUC",
+            "https://lh3.googleusercontent.com/p/AF1QipMn8kCMNVXrrt21SiPuoAR3Xie-yqBL2t8oj8h_",
+            "https://lh3.googleusercontent.com/p/AF1QipNqKsSAqMF2nAUA-1ZThtE3b5HwllmPXkWE0OAI",
+            "https://lh3.googleusercontent.com/p/AF1QipMuqLohe1lDBCci2KAmWgh3ZdEoE1t-71F5p-bv",
+            "https://lh3.googleusercontent.com/p/AF1QipP-Ng6XgnJ-Nm6MEiWl9b2Xe3I8M07kewdLn1ZK",
+            "https://lh3.googleusercontent.com/p/AF1QipMb4RZBB21ApQ_0bi4nwLe8WEMmtAFQuJDvO-lF",
+            "https://lh3.googleusercontent.com/p/AF1QipNd9VpkChN44BpW2zaGf3kEydCZMGOKrMwQ82r-",
+            "https://lh3.googleusercontent.com/p/AF1QipPx6gAk-6AKJl-vrwcHQyDmG6s54G1F5GvUHM8d",
+            "https://lh3.googleusercontent.com/p/AF1QipP4y9LoLlmhtpiGGfX2IrYfyvUdNnPI-ZA_98hp",
+            "https://lh3.googleusercontent.com/p/AF1QipMuZ5iWzI7jR5RfCKjpCXJYsgrYtq7VvYL2Z-27",
+            "https://lh3.googleusercontent.com/p/AF1QipOf7E05518UnypM28M_v92gOUya2lVBso9gr7Kx",
+            "https://lh3.googleusercontent.com/p/AF1QipNdoY0OaByuhTylSh77Zpomrk1yeyZIo6tBXEL8",
+            "https://lh3.googleusercontent.com/p/AF1QipM4TsBFGBy6mn5Jy9bGV-7hW6ydsED5vVnDVibR"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPc4NZyKBI25A3QWd9x5Z3iT0jZtXiiFFvDBeQ6"
+    },
+    {
+        "title": "Barber Shop Youssef",
+        "rating": "5,0",
+        "location": "5X4V+9H5, Rue Yasmine, Nador",
+        "phone": "0659-525475",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyEFm8L9gmmEVEC_5N0llYp9yI3HS2tFOv9zlZOTetEIMj81dtMPGVhnHEqWZzExP9oOG4S4X3jS_tDvqzSay5QvqAAzjZ_ru6yR8lzOhzgtcRQ2Hbar6aJBlPxfve7FoGjY4CLwg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz639HoneEXuXFnMBt8accU47Lp2hNGnL-YRHQkDmsPmbrxLFgH8ZmziyEnPE_yWlUtXtddC3xB2FiGYeHttCyUlz8JByCu_QpUeLCWZ5Unm7HZA6a2kq0Dx8HBZRB6VGdVw7YS",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxxkTxVISCiwViFpjdG4ioPPmxQHnoSTVM3QxLitn4eVYgZs2pJGZbcS0BD3k6bHxYepXcz77wBbe-voVVWDKCmRqxcIz3tSRtIGeSY1kdYdhgJV2UwaEp0G93Ii7XFmgMnmvlr"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyEFm8L9gmmEVEC_5N0llYp9yI3HS2tFOv9zlZOTetEIMj81dtMPGVhnHEqWZzExP9oOG4S4X3jS_tDvqzSay5QvqAAzjZ_ru6yR8lzOhzgtcRQ2Hbar6aJBlPxfve7FoGjY4CLwg"
+    },
+    {
+        "title": "Barber amsterdam",
+        "rating": "N/A",
+        "location": "5368+9H, Av. OULAD LAHCEN, Nador 62020",
+        "phone": "0660-650329",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+    },
+    {
+        "title": "Kapper Barbershop",
+        "rating": "3,3",
+        "location": "Ave Des Far, Nador 62000",
+        "phone": "0612-095933",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Barbershop",
+        "rating": "5,0",
+        "location": "528F+24G, Nador",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwKxmw6Mb06yYucp2yEsaiHUcwtaHY6EmwkdemHquoKaoMXl3EhKF-lSX2t1L2GtgQUEyxMauCGBBNd2JUghhl3CtKWNirs86ZlJniejWakWK6mFaBll_SsTuh_uWYLFaTx-1g",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyKY66dLRoXpo6BKv6L1QZQAAl2wv-UINbNo3STesn5r4CJNa5zO_t_FY_TaGxumhM04Vd8SOxmKsaycjrCKsG5fVBbA3edC8drqwhJfDonVgz6osEjfCCdLlHUuhOge3aAfLbO9vqTc6o"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwKxmw6Mb06yYucp2yEsaiHUcwtaHY6EmwkdemHquoKaoMXl3EhKF-lSX2t1L2GtgQUEyxMauCGBBNd2JUghhl3CtKWNirs86ZlJniejWakWK6mFaBll_SsTuh_uWYLFaTx-1g"
+    },
+    {
+        "title": "LUXURY BARBERSHOP",
+        "rating": "1,0",
+        "location": "Rue Mauritanie, Nador 62000",
+        "phone": "0602-272577",
+        "description": "N/A",
+        "website": "http://luxurybarbershop.io/",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+    },
+    {
+        "title": "Golden Barber Abdu",
+        "rating": "5,0",
+        "location": "405 Ave Sidi Mohammed, Nador",
+        "phone": "0632-820137",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Massimo.Mane",
+        "rating": "5,0",
+        "location": "N°4, N°20 Rue, Nador 62000",
+        "phone": "0660-091745",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipPmA_GOcMUiL0NmKrNGKGKrcCK_VPFlMX_ZVbc",
+            "https://lh3.googleusercontent.com/p/AF1QipPD_xrTSa3dx8ygNEqSYjqo3vkgm55Z-FjzbpY",
+            "https://lh3.googleusercontent.com/p/AF1QipOCEJJojvk9PKj48_JwWBcqrMAi7uveVwGUbA8",
+            "https://lh3.googleusercontent.com/p/AF1QipNp3U-xfuniNTcy0etTgxj1OnpBOjrXniu9iRI"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPmA_GOcMUiL0NmKrNGKGKrcCK_VPFlMX_ZVbc"
+    },
+    {
+        "title": "Barber shop ayoub",
+        "rating": "N/A",
+        "location": "43JC+X6M, Nador",
+        "phone": "0627-743326",
+        "description": "N/A",
+        "website": "https://www.instagram.com/barber_sho_ayoub?igsh=cnhubXlkaDl1aHll",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+    },
+    {
+        "title": "Barber Shop Art & Beauty",
+        "rating": "3,8",
+        "location": "2.922195, 35.15564, Nador 62000",
+        "phone": "05363-83862",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipOxMlINdZMRJJ7jLTG9jg-pC5VL4lrAR95h4Ls",
+            "https://lh3.googleusercontent.com/p/AF1QipNUJWO6o9iL_fbYv_uTnIm01Tqsy88UfIUymqw",
+            "https://lh3.googleusercontent.com/p/AF1QipO8NG7Xy_yTvUg0ecn_rfhU5iHXZWWRn-w-MY0",
+            "https://lh3.googleusercontent.com/p/AF1QipNxan-TqZmMg5pBQA27S3g7oUi-8GQOL5jr4RI",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy5jqXy1H-o7nVROvNm_LmE-QBObtYDBDDlQ-VbXloW9bYTnyTPZSZ2oM_4PdR9VR4-qZrCdEZ3tKizwDQ746B5DVtuRSVpo_MEOF5jXDKMzFh7YlNRskzUi9_NVvvDrHdR2sf3WeDRjJ5h",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzzKnMN0vclh0JWEs348KxEIfaH9fkSlkx_9svbE_B_wcj8k9VByb9kBymQi0y20TtuLdrtq5Bq1JLNewbF75_k5d-jI1d2T7G3VBSyqjWKX4feyJuWFqwV6s3D5lRVQEyPpqoAvg",
+            "https://lh3.googleusercontent.com/p/AF1QipO6litnNiv7_qREMoCWtAGmNofhuqHw9zFSMbk"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOxMlINdZMRJJ7jLTG9jg-pC5VL4lrAR95h4Ls"
+    },
+    {
+        "title": "Coiffeure Elégance حلاقة الاناقة",
+        "rating": "N/A",
+        "location": "Rue Marrakech, Nador",
+        "phone": "0681-718600",
+        "description": "N/A",
+        "website": "https://www.instagram.com/othman_coiffeur1/",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Coiffure Rayan",
+        "rating": "5,0",
+        "location": "53JG+J69, Bd MOHAMED AMEZIANE ERRIFI, Nador",
+        "phone": "0676-211291",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipO8W9GKEv4v9PIh3mLU8BAu360aqUcZUqWobuXK",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzC5Qh8IhluXfvMJucQU5_ytrRfdMzuCWkQTyX6B6vU17y3HdR-6okz4zN3_onQm6rHHsWwrLLN460KiBQRukmXsAx8yRdsVibisXKrX8YgBrE87hFvwTp3QxbGU9ZJcfco2-ZDSw",
+            "https://lh3.googleusercontent.com/p/AF1QipNbN8sZ5wYIPs3vpvAG7h9Pkjq0AT_lZa3MEfuT"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipO8W9GKEv4v9PIh3mLU8BAu360aqUcZUqWobuXK"
+    },
+    {
+        "title": "Barbershop Mohamed",
+        "rating": "5,0",
+        "location": "Zone Industrielle Secteur 2/3, Lot 8, Nador",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+    },
+    {
+        "title": "Otman Barber Shop",
+        "rating": "5,0",
+        "location": "43QC+MP7, Nador",
+        "phone": "0622-197017",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Barber shop annassr",
+        "rating": "5,0",
+        "location": "Qt old lahcen, Nador 62000",
+        "phone": "0606-112207",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipPYCfoGcml-_llgPlnkHSO5bNwxOE3Mkw-EYVMj",
+            "https://lh3.googleusercontent.com/p/AF1QipOKfEv_8dnmicN7TVdTXNy-8wNvOro13KNyW2Y8",
+            "https://lh3.googleusercontent.com/p/AF1QipPTVCNCZacv6yXSOEd7WGrZFAkLcXj_F1vc6Q1H",
+            "https://lh3.googleusercontent.com/p/AF1QipMlN77pT1eOo69R236C8BUqGk_0M5JOMoZlldV7",
+            "https://lh3.googleusercontent.com/p/AF1QipPR_tnr4VuftNktauDK2tIeRDFvNdBM4_cjB-E2"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPYCfoGcml-_llgPlnkHSO5bNwxOE3Mkw-EYVMj"
+    },
+    {
+        "title": "Coiffure Royale",
+        "rating": "N/A",
+        "location": "Nador ichoumay Rue 36, Nador",
+        "phone": "0627-326324",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Coiffure El Bachir",
+        "rating": "5,0",
+        "location": "53JF+FVP، شارع علال بن عبدالله, Nador",
+        "phone": "0608-787944",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+    },
+    {
+        "title": "Coiffeur hicham",
+        "rating": "5,0",
+        "location": "ط إ 6209،, Nador",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwf2ViHcA-KV49Z1HOTKdm2A74_nXPz13F7COH0wTOZDw1fX8AAFMhyDi7oQpbl-qN53WoX1QyXaJ0UqyAhPeFzb4YsVKxYlO-_yNB1eD8Oa6QGN96rHKMxE4yAuuNXN5rCjE6r",
+            "https://lh3.googleusercontent.com/p/AF1QipMuy0PUhBVzfHAKmztwyH7zj7ZaGK4ibdwD0y7v",
+            "https://lh3.googleusercontent.com/p/AF1QipOLQpYL23b3jpjuWKmN2Iq_cCCEztuATsKVRTx7"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwf2ViHcA-KV49Z1HOTKdm2A74_nXPz13F7COH0wTOZDw1fX8AAFMhyDi7oQpbl-qN53WoX1QyXaJ0UqyAhPeFzb4YsVKxYlO-_yNB1eD8Oa6QGN96rHKMxE4yAuuNXN5rCjE6r"
+    },
+    {
+        "title": "Salon_amine2 Barber",
+        "rating": "5,0",
+        "location": "N 18, QU TAOUIMA RUE 44, Nador 62000",
+        "phone": "0658-175012",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipM4WHfOgM8RAVDFAUpB2k3x2EGCHiR4605Y-HEW",
+            "https://lh3.googleusercontent.com/p/AF1QipOO-l_ReUI_KgrFIG9aWO9HdDjeIx_L583aNaPc"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipM4WHfOgM8RAVDFAUpB2k3x2EGCHiR4605Y-HEW"
+    },
+    {
+        "title": "حلاقة الاسماعيلية",
+        "rating": "4,8",
+        "location": "53FF+MH4, Nador",
+        "phone": "0672-488945",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxsDameuAtazLgFvForPcmZg7ZFKc8MugGG3fzbiWtk7HnlL1OdoATZE22bxCZZXvKUPZECR4DN8E1zCGyucz2YUTg-Puu9aleEKpuL6fCLpnjBevYei0AmJCuhwuD_w1_4iZIN",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz1lSarZYr2GB3ay6g3lSk4lwuXB3m4FBzPDWzZd4K5guQ4xJHn5ZoL2G6kPBHXJjqpc_wTlIzJkKAThyKG9ei_ARQWBmNh-WuZBPzVeJJtD7QWEGyBcLpTx89gIpfjdV84NsM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxmNoa3monBWpAh7y9PefS8Dx5Iu6LHsdYzRDQ5xef5kQkNRugb27DzFNwQcp5sMZSVArXw01cJJGfillzXXOfxLzcste_LyRFL6R-zymk6PG4epC9Txjc2pDxfde6p4fIvcM3xGA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzWxQRLQKIpIGgjZIYD8uYd43uGnE7938QT2eZAeszgLtZzvzCxeLelUZIy2J2NpMc3F7-4xq4A_yly2EPqWCU7WVez-LZd8Z5Ml3Es15o-ITWljMujHBw6aQ74Cd4Id9_WODZI"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxsDameuAtazLgFvForPcmZg7ZFKc8MugGG3fzbiWtk7HnlL1OdoATZE22bxCZZXvKUPZECR4DN8E1zCGyucz2YUTg-Puu9aleEKpuL6fCLpnjBevYei0AmJCuhwuD_w1_4iZIN"
+    },
+    {
+        "title": "Barber Santa Coloma",
+        "rating": "4,5",
+        "location": "N/A",
+        "phone": "0699-812127",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxi_MPnrNAym5RoWkQinaKdIvBaHwSG5qBevY-yXNKwzi1SjinsYl0tFlZAnDbSHwDWsQ4wc7yUKE76mwGobIzqmXJ8vkaI5mg29LIP3Gw52XGq2AUJpV3DkcxQDvLNPTPlXgYJmg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyvzX8lFaB0_1GZIExsr0zvipb5tGI8t3XJ5PUo8aOVhhxVqxZIKIPreVWJAny78mzJjTn5kRd_2lFDJ9yIdKOxspJNxbWzN_betkTFqEw9pY6p8j2vKyiRsUjyPL-Ve68s9ThdJw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyWw8TRqWwXfhcwmPzGMCsErsKS5zmrV1jqeUtO8ehzDKsFSEzO6jGgmx3eKGp8BoTc6Ey-iUmsB_UVm5x_BanTj78FcnfYD1UXQlC-LR8kJJNKTor2-6D0KlTWiThtL6KbNtdR",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw-X-GZ9GB6OAkyw7gR2xuZRoes-DgsUKm4Fy_AxCgGPLiG5Ix372FhZqTJ1o5RJ3my2LHXSPUEuP4IVzsiYdnevFC7swXLmt_UhjAMF7bmfYO49J7ARQcuCpITO_4nNb0f-MvMww",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwKCAn9sdQ0j0NhRz5fD5SVPRC64ixDKpWlzmGfZpReq4zXC93sXOsfI3TTeGzaQrw1v_fV7JKrv-I6Rk0U9laPDEOE_lTDFk3ia7Sxh3tce0nzo376jSVAyHEzhW7dg9tsgpI",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSymcrvPeHaMzA0RfYzz5i9jKRDFbsJ5BQfCZ1JO50DA1UpoAucRVoZBd6sYO7zcIszrf9Y-WrNY8aZipLElW2YCn5T-tG4Q28V3y-GaG_plg91GElogSK_tTdetwxKM4xWzMR5L9A",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxjia2dLV8cg_4FK-x1wr9ZrmMHKMUL4nzwghvUis4fpjJ9_zKKD33gaDZ_myVaRM0Ix5imLAi_JZyq6msEhFCjWNiv9B3dS6C6miuL2BpPUyLppHmWEr1vh4_ivChH7pK986y4Iw"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxi_MPnrNAym5RoWkQinaKdIvBaHwSG5qBevY-yXNKwzi1SjinsYl0tFlZAnDbSHwDWsQ4wc7yUKE76mwGobIzqmXJ8vkaI5mg29LIP3Gw52XGq2AUJpV3DkcxQDvLNPTPlXgYJmg"
+    },
+    {
+        "title": "Outhman barber shop",
+        "rating": "5,0",
+        "location": "525J+W6H, Nador",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwtufji_taPTxHIBR_Vln4cVOhT00ZkSTQCMZIjyZbUmvs1Ekb7XJYTK6ZOjSIr4jd7ZTlHhTtIXIOK7u0_EifMiEsLUuiNJvUhB2zqwe89S6nazMl9Wih8tDVmeXaDMRrfLUOLyDvUlUo",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwOs1AVKtDgmeGlfpX_hD_-O-gDCZO1sF2dmJEVm6jmm1N2PMbFx5OUTdNUbSAeAxdqJ-ZUl_pX2taahoPVjZcJXbgr8o3AzagBGZOl9cpwQfsYkUlSv9qMBoD3ZKx0njpcAT53Tes31CuB",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw0e3bLVjdx0rfzMgsjMa6ksL-ra1Iq1Ym_JvUfSS4AOCHepY4vKBghEbnUOv492gDeVCTP8Ru0Fm2gpYdoXAnTsReVS7jd60lQIfV67rAjkRiyNnFF0iKmkaUhYhs4ZennOCL0tim6rSPx"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwtufji_taPTxHIBR_Vln4cVOhT00ZkSTQCMZIjyZbUmvs1Ekb7XJYTK6ZOjSIr4jd7ZTlHhTtIXIOK7u0_EifMiEsLUuiNJvUhB2zqwe89S6nazMl9Wih8tDVmeXaDMRrfLUOLyDvUlUo"
+    },
+    {
+        "title": "HM-BARBERO",
+        "rating": "5,0",
+        "location": "Lot al omran Lot al omran,selouane, Nador",
+        "phone": "0682-840640",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxD8F9zVAg7hOhmnopFdKN6kEZrTLbFDgZ0Sfn2FDmUjTjiskCGm3jtirADIiBdKOvrJdsrOQN6PReNRN6HVBahkTdJUeg0hWYdE2TCY4rsET_UKzqvWKgj2EmdARSVLM_Quzc",
+            "https://lh3.googleusercontent.com/p/AF1QipPo0N2RRkyLrI0-jeQUm195MZvg4eU5-0_Wy_06"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxD8F9zVAg7hOhmnopFdKN6kEZrTLbFDgZ0Sfn2FDmUjTjiskCGm3jtirADIiBdKOvrJdsrOQN6PReNRN6HVBahkTdJUeg0hWYdE2TCY4rsET_UKzqvWKgj2EmdARSVLM_Quzc"
+    },
+    {
+        "title": "Barber Oussama",
+        "rating": "N/A",
+        "location": "536C+MC8, Near Source De Vitalite، bd lmassira, rue, Nador 62000",
+        "phone": "05366-05741",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+    },
+    {
+        "title": "Barber Oussama",
+        "rating": "4,5",
+        "location": "536C+MC8, Near Source De Vitalite، bd lmassira, rue, Nador 62000",
+        "phone": "05366-05741",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Manhattan barber shop",
+        "rating": "N/A",
+        "location": "53F8+H8C, Nador",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+    },
+    {
+        "title": "Salon Beautiful de Coiffure & Ésthetique",
+        "rating": "4,3",
+        "location": "Av. EL FARABI, Nador",
+        "phone": "0698-690980",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMFBuIFGBLrynnUiUwVd-uL7cIHfNNkzsVn9ao",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzIn7w9x9c4vnWs4n7yTxufr4bCxIFtGmKNr4ee-IOa5_Cb0l5iIJRKBrVV5JNgpIVT_bNK8o1iYJ6lKjW1r0Mmy0smGDnxxKWqL2EDw4G6Y_7lL1QM0P3xLd4EK0R86Jam4dD3",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyUXyF-ghZdBLGhjM4jw7VtFCLhUZq8Qjw8yjFDmIWr1WPPjPE1rqSSXxpH6xQqbBi-9_h7_eMjK4Lmuz5_tXPdh0yrMHPhXuiqSs2tI3E3ZvASXou_Z2fMzNf8VVnc4Ce7Njff",
+            "https://lh3.googleusercontent.com/p/AF1QipMbI5Wm73-WJSDiLNyrE5FftKxqCWz0cbPFes0",
+            "https://lh3.googleusercontent.com/p/AF1QipMwObMh9IbV96eCNnCKjkhkjnzydxyFcuV6CEY",
+            "https://lh3.googleusercontent.com/p/AF1QipNhGu9geP9qkqPJZdfw0vJO9Bc2KqnxGU10uQw",
+            "https://lh3.googleusercontent.com/p/AF1QipP-QPDrAU69BaDzO5NbaHUg8aEJz8uWRqJFU28",
+            "https://lh3.googleusercontent.com/p/AF1QipOl9AdGX5TwnIjkAex-MAFOPplfBQMXGTQInpk",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyrVrLvCR2z9zyYRr6k0yaKHHOusIY9HGDkSbdrH6FZMg4m4nXupMG55imWIh6KuUF0IvtGgJf5jTPlbgBae03lN2opKUT6Ycmh0Zexrb0VXHFr2oU_NNDZ7bXbgNtnP5Kq8aI",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwZVk-BN29SzXkjYT87b_hfVMEbHQYafPpjVBDAnXMD2GbS7vGgj1DbuDjwqiEBlIs1CeSEubbwlUYGOe_O2w9WqzxibMDBg3hFrvGE05jkBvjqAxX70LdjzJZv7GQVrrgejJLAvg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyeCjD2bT3QklC00PEIpBZCVUpOxgwQK6gcSyFFoY0JsAgC7YP7-G5-w0o0ZTXfCI6tW8qJWVerMsP0xtO38kcx-2WwEwwgZzL1ycTGNVUkF3czjyEmDhml43xKUpuHsMrjfY7O",
+            "https://lh3.googleusercontent.com/p/AF1QipPhZDVyAx2Lmf-PFvnNsgbim3hKt89CpYxnEMY",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx4FfzQpsJe3AfORAINKUxXq78TWGuz1DLYufdPKNfu-d6efN1XUZ-T-J9JmW6qk70W3qgkXH9bvkUrO2YTdGe_yskjfMhq3BrO8frguH-hny1NEb_irJpnV9zPIa_oNi7oa1jUAw"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMFBuIFGBLrynnUiUwVd-uL7cIHfNNkzsVn9ao"
+    },
+    {
+        "title": "Ayman coiffure",
+        "rating": "5,0",
+        "location": "N/A",
+        "phone": "0627-731678",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzqSCJLz_AYWJsk6vxqAuK5bQFdhMyCd-XhZzNzad6l66F0537TZRCPD997SgIBZ2LdhEjcN6_GSEuLlxJm611LPNkdOlknArsveYHXa0OSoKduVPDp-dD2sjKZHeZ7h2WTu0P2mctfcCc",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy_rE37k_PDetKVwMfbXNHrdqWPviJgTv1tUUZhhACGHVKiltaDmhwMgrX3Es4_iNyJqvscMa0gUE-7SBV4FspPPdi7kgDhcdc2icN-gEuwsj0zzyE_2FQ4iaINi9Az09CMXNk",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxlMeyRcbGkFXB-38_FLWgrXTI7cwhVZQPnQz-3piD0B-Y9paYpuCOHJeGXlR4WJejn-IUbshAjTFKPI0wYtDcvYYkMazOexORH9tTliNf-xhHxSQingPUN3cumCJxaIOdZbHE9",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwuqSzSz8W2ru93D_TXuwIcEf33UtNsxdN9L3E3GZda5X1phLTxsykuvmb9G_ELXcPCil5ZH7P56emsYGdbwHlgJV15YqhIBX69iYGBUQRsk3KlM-U7qhx98Zww7ZOpxsn_nGWw5_z04cXb"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzqSCJLz_AYWJsk6vxqAuK5bQFdhMyCd-XhZzNzad6l66F0537TZRCPD997SgIBZ2LdhEjcN6_GSEuLlxJm611LPNkdOlknArsveYHXa0OSoKduVPDp-dD2sjKZHeZ7h2WTu0P2mctfcCc"
+    },
+    {
+        "title": "COIFFEUR ISTANBUL",
+        "rating": "5,0",
+        "location": "539C+CQP, Nador",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy95PR4rsnZvU2Ed0FbvWbkj4O8FDHwTnZVzV6vpEDGxoasFMQwgOqKS7FFXl8gfR8HfYAlFNZI3ApaEpa8WisvODe5sD2Z-xb5vdlTOwXIvhm9Y_b51tTrEzfEnfk19IkkcEVo",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwseHHqB9Oa9mplLw_iuAJj7494SOD6oqdMd8IOUkHpPboLrg9EvsFH6cuqIqQVAutlzFOi-IeD97H9DeT_muYBYNOT798KgOFX2tiw9kFh56aKk_wpZ93N4bBVXAubXRvp6mDThw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzaw9MBtXKmeYjq1xQ80m3YMFvolYsSGnj3UOmNmDTk73BMYAOkCQ73vgSIxVoBH9asp4SlnlDlcpUhT74-EU37NfJAKI2oznbhZZNoEpsaPKHURjGp2Em222RMKdJ-HAZ4DGDheQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy95PR4rsnZvU2Ed0FbvWbkj4O8FDHwTnZVzV6vpEDGxoasFMQwgOqKS7FFXl8gfR8HfYAlFNZI3ApaEpa8WisvODe5sD2Z-xb5vdlTOwXIvhm9Y_b51tTrEzfEnfk19IkkcEVo"
+    },
+    {
+        "title": "Coiffeur",
+        "rating": "5,0",
+        "location": "53HG+W78, Nador",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+    },
+    {
+        "title": "Barber happiness",
+        "rating": "2,2",
+        "location": "53G3+J49, Rue JEMAA GDIMA, Nador",
+        "phone": "0648-420454",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Coiffeur oussama&kharshal",
+        "rating": "N/A",
+        "location": "N/A",
+        "phone": "0629-034560",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz9FW7-77BpJZw6ikm0mBceGuHNT2ESzlREMr5XsqPQhL5028hyLSCWkrxIEmSRts0gp9LNz_-EmIcnw78PtZpeJzp5HytErYFL_IMKu4L-bckYuAMJSLBnGSpErxgXi0wo4nlW",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwWRVl44KHgH-878Zr8zhEb4qvCJkN3f4-w4nkeDn2qZmxnlMRmjQELaKROQNBr-QMigL8xUytE2RgKy4v4--Q0UIZ7NqJhQY24JNMAo8_aFCZkK32qSKWN4ThIIRvtgYaV76XM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxsa1YtMThssmKmZ9kGEFDLPJUva8mM4ZhrIdtYOj4SeZuw_FOQST7iA9tsS5br4rGNw3qb1wyALwzdVBgNCH_Li_f9j2ukmWWriZVRwoqGq3yjs-2CwzYtTfyzmyTph5YX6yBX",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwJQoA7QZ36SkvcB8F3xKD8aYAIWk3a8sjWXJEQM_mDQmmw6F6OAsO2ozgKS-wBUWl2x2EiR_QKaxoeLCG8zHhOneDUiUomLP2mjHtlosbfIt1RcgNK6yptjLB8vNRMgtgEDXc9W280IHw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwTmPksmHL33RgZ3Udfou5XA0trUDwPPEADKR3NDmngtcCSFi0_ADm7h0VYvlggsQLQOBvb0_XtxNetNTeUbQRL-775j90EoOyygrb3jcujstogoTUQlIF934vm5eJttkJzBlNe",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxNLDbnLnTFX4vRSY4EfJE3hZ30QP5pxnaeZnDCdDmeYZ9N2dNTdL_db7vpMAuhOb-bcPmHKW84UAgxQhdhaA94WAO9QO37TcrcuhFhckqsY7TuPQqkBAGBa0PhUp0WtTm8YRg-",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxBnGCW84D3rPaQq6FaKKjEOqGNvj4qH2BnKM5QUHQx5xs9glgRMpk3r-zfCLwMqsNuCixU7Hh4P9r7VqKzfoHUeN3tNbiS179Erv6XQ7jeQXMgHUs-nWyLPcNqqU9kW0slzSbG",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxZ2ac0wb7cq31QDrHsJsnvqnnzQmj9PG07e1CqHUAHiNLn2GHFNILMIv-TmOnQzSzpS2CAOWyW4d3b_kLb9-KQ3rLHXap4X4zHL3uzH2HQXkatkrZfZD42OaaCdJOtxKh868w-euGAN16r",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxsU9LMFXhyWpT9wxgcsio6NSuB3qle6gdxXyUnlfryewo3EZD2Wc4PJHYWcdM8OwA7Q2pozlWJlNhtyNF6Kvf_7UIj4KWJQdmEOM2OUA2hgsg_TYtankpDGySSkug1UvvECk42",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyepGE3hXA-WDBonRLDJnmav2YYRdywawiJRFR_SabrpsAaPfMurvde4QlWNcYUCCy6UKhDNdMaffONphf5USQ9L6VNBHSOLxS2oPc2CrE8OS7ZkGoP1Kw7IEw_x9f3jtSIaTrH_Q",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzIt5GB4bjX1d9ll_Nr-yNxPdfVav64d8SfeFJ0AogS72pyapkSWgUEwC4OjvBkFMT1zHpRlsfD8khjZ1ZGCxyDdUvrf6nYpXeMVztQpJeX9UcCk21RtzPi4pw5YAVAiD7NUh4",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyBO03Hu9XMXOGkaTzt3Mg_RpSwCRaV3vMjvZ_beWm3BIeWP1Zulu-9_avTGy7vBSp0wGRJGSCrg57eF-0PkY9xzuryVDKeNN0xszmIYqz0ERkiaPS1aaLEhVwJjZ8YsPkY8Rw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx0nvcbeXX-tMLBIVVUCSDjy6h_SlKAw6UEebfE2n7EuMPAf0JPOUp_-1xjEQuI89gc2UqFWdM-fbY1Dshkkts4tJ3RWlVMwpYJ3UIVEZbOSmJ_fL8B96naHHMOrOGUwkh9HbSW_w",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxbrxR2kUGSRCvJSwpcKHmY2HRqAKnkWOnw68LfsCb5p_aqyg6FPqKN_axCIZKgHcBS9v0RlK6B2KUVhBZIdHiVYwh5mgiwwsW5Npvsl_AcMqCpc5fZ67Cbo6BfPnlMHV1gCA6pHw"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz9FW7-77BpJZw6ikm0mBceGuHNT2ESzlREMr5XsqPQhL5028hyLSCWkrxIEmSRts0gp9LNz_-EmIcnw78PtZpeJzp5HytErYFL_IMKu4L-bckYuAMJSLBnGSpErxgXi0wo4nlW"
+    },
+    {
+        "title": "Coiffeur Mohamed",
+        "rating": "4,2",
+        "location": "رقم 28, تويمـــة، زنقة 24, Nador 62000",
+        "phone": "0654-534572",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipO5eGc7G-3IHUNNG_3H9NvoUMKv3JYJfRwSwJfq",
+            "https://lh3.googleusercontent.com/p/AF1QipMKssr_jbGlws4WSjE7-NxkSrux4nFZztmtu4ZF",
+            "https://lh3.googleusercontent.com/p/AF1QipO3VgKygw9TG8Gzl4u8yn6bBESPIB3OhsUoR1xg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxE8nhmn_bNy_7QGEic4CP8jsfa1gAn97JvI1VJWMdrKv4cZdnYWEbqMM9OCBILOdp2d7mmBz6Dwv6_wJzDY1R2kwZJSD0Z7hoxGG1BFWP8RZ3FOt_eaE_PGF97FRUosnmkiUpD",
+            "https://lh3.googleusercontent.com/p/AF1QipOkjEesUrxwwmNrrFIXgy2mhMYR_N3gEpZDPhqn",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxUVXX4Bors0PcgXvT_SFwviNV-wgTmuOg0uZtkp2FIGsp2jE2BKjLTZbaAF_Og0PgXJnZia-zUFG_RnsDQfZTaIwjDJL1iq-ym3Jq8dxhClGxCUeoJyBKgVRtenMdaqaGpNxUE",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxB9OznaRevr2HgLyFcKM-Tn4D_AA99VTALsnSVnfZy9NhSThaUvIToPRzCyjpdcK8OGnHpzfYlOL8mLJbPZnLEvFLUpsujTTGRpSAAZC-bfSz0aGvTKB3Nll00ygszkL-C4Gud",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzWACZAQlVk8GrwPolRKlCF0zdWuuxcrPsryornlbKsPs3GuzUBYSEJ4o0BcB87QxdGvaBRGSdMHVgcEC0HvI7rMks0IkhFwlunaOCVxynjts_uTQR79OL7fYTtAUOeCUveWbek",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw1TrNtcJhRV3lH-k9BUuS87jg1f2e4jcZh6mLu-5T92lkkyXqUpz5jl6WZ52bJpLSrYX0llYFmM-oSh7ycG0yE0aL8Iqe6MNe_l0iQP6ALFVYWJmGo0Xm2t3aEy67MfVrNUqPL",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzZy44LShyanFdX3oEc1DvoRbqc2rupJXeIzRfzqIx7mLYEDRdcy4Ita-ySYDv4F3PsTGhqo9JHwLVfmZEyeMi-a6mcnZcRAzIm24zM6ELKMJw644i_rg8l3rinQ0abWEh8icGw6g",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwXWlRF0ZEPVGQZobj7YjdJsDcA24N3q8rl5HvftJZX3ktsPieRw9zxhUDvobjwMOJpp2th94ewq_Bcyuk0jvSCSgJTnqTLEzPi-V8_lgHUuhwX6cIadOr86nMd-4t9f-bT5J4",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzIRiKZNyo35xbYdhNZNo1fY1cSTQVRAjG94nZuZazj4BV295Cj1MJ_jnSB-j7xS02Rvegq0b-Ls7ABuFVckNBZQWVxSqapQ5TuJTXBNvi03vKETYZljENspNQzPUdZCWWDrr03",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx2KsVhCltvYw0C9QNcTR9IPcRou6tZp6nMtyaLKim7llX-Fj5giyJSzzUWmEQQOW5y5rRDv4ratirA_du1JS-L7XF87HXP32uA-np3IHvaw0CtdpI23RP2cR6E98aczgphtPxj",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSypDAfAS-Qci7bIzPUn9zV28QdC3VCqWflNNptGxlxSdQWKOpt_HxPwAnj0jP7pqxLnOjdWBn6ZsDfUF42608OYTD_348SiwroPCDVMksXZ4hixK5h9IUcJI8_TFfxMGlit1HyBmQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxDSZnkUq4xfjn7St-3xWVb5s6IXwfVjQUERUIJasHPbrdw5t0uyVSImGNZPaGpmBkp-CLREJm0b6HlatEIK5AXkESs3hLZpCh7YcGlO2ArFZY7_tqkht2RT5phCRexphowSEsL",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx0XRUYpvoKIZrTvHZ8hBW6gNtBF0bIdj5qm8xUB46_WZnXyP8KabVh1unOsMUE2tMQlXC-9xmXyuSViWb3PCSfHVkBW7WgDh7aSGJvt58tcs8BFAojegdFGHr_tZJeTKj5iQsh",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzEaaKlt7TmNfiUt6aHVixeSvlPebeoBzUKGp_V1eUYRJWRSvqZQ_jsMULlFK0bYZ_Y8TPEto1Wb4o-T5biNlO9E26-P7GurYov8-f-XZTAsgmjqUKiW4UtjISD-dlvY9dXKPGZfA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyqgo0bstWw8L_BJu21fUAc7F7WoJ7g_4m4QKlok9gGt0nQhWoKijZRBPiXl0wgxpW-LALa47ODNIe6ZI21sWV7A9gJ2ynUalMz2CZS0A_1x6mxhOqLZT86ldGywA3n5OuFFgok",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz7PJozgPguet8SAZ75QOqrwR8n_n-u6jPowL7mV4FBtCt_oaOLWIUca0xdzCQ3DXDvueSUE7puWa5n9Hcwnkbp0pLYxZfkBibeSV7HwEgWCauNe8l-5tmnhwoWOPhLiks4ds6L",
+            "https://lh3.googleusercontent.com/p/AF1QipODL5oNKQWcGNwM7By0B8xCrOLkmuLwRWqRylK_"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipO5eGc7G-3IHUNNG_3H9NvoUMKv3JYJfRwSwJfq"
+    },
+    {
+        "title": "صالون الحلاقة حسام",
+        "rating": "4,1",
+        "location": "Quartier gaymo rue 3 N15 boulevard el massira،, Nador 62000،",
+        "phone": "0671-187513",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyrnIlVWXLpoT_vz9EyL5Wp8dYWgyvaYl-8XMsFZSRRCaKnpGydxTCa_DDN6Guns5PVaKY_oRv-5K2Ppm7sCbC-bjCvJMZJ5zYgbe5BDr7u9soGTUAsnRc89mP_nInZgqCbptBwcQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzv6O4rfkj5MFt9wByISg2h7sYDJ_r5qKu9NpccWhD6DiZBhIz4EYXkdAUOnOzVViNRzyP1fnQsWav6IC335kHacIcDrCsk-Wg_2PV-c24X4BXVDbf6FLGAxYtK3H-9OdkmAU0",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzFEv1po1ePp4Br854tJxS97Y1v3dyj4pouwHB53f5cu6wdB6pJzF9DRpx5yuTs85U4ud0UgG1NITazbeJGv2Mh3GRGqe5ucklfv1HW5y8ecTyHaSAYBd4ZTVyB4wyPB74tnzr14A",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy7oXpF54vraNZFtJ3i56-5ymdA6ew3JC3VSQf5ARemG5y28-ihYgiNuWAdYLqwI-k6cJeQtRpKOdgcgVf0qw_W8RMSeTQSaYPsI4gI_6XUz03uBwtuUmtFVOJdNnQ7hTi6cSL5qw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyknbJePkk7gdbG93MrPF01LhXFHEKCkwIM0BOVSL4dtVaeNnU0GipoYl8-FCizZpBElp9c-YiLrIvomlH2US1xK9KZTCvTFYF95OJlE7KFeokgZ3OaSYsQl8BfIirdbzUyHE8",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyXRbjcxo2OP95B64JtixT4XAglbJ1q9Tf9F6h6PrlxkVAW_2HIP3lKJK4b3I5smEZw3aSJpdfUXr_EzNowIr-fUzUzJUScxcdICJIGXbe4Gi8v8UN8lUYpBs8owrNBgOUYZJw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyJXtcI4LjJBM8jylSl5pLpFcUyZErry4VDMKw5d0rtZdY9qKvzl1yD6xdemac5EoriUCJ9LKaNIThkpqV8bbckpbtqFPMRamUgCt27wpd-kNFWupUbZcmc916IVk3Tg4w_XNE",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxvhBCnU4D67G1Gjpqetj-LupntjpTesojWSLIXEERAEEx7-G7jmw0zQMVcRegGcS3UHI6ZxMv4-7TYZNgTlmscd5G5XM2Auh3k45M90MnQH4a0VUvZlMDNyKi8eDARu32Fq0Jg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz2aGsel-6AEbILsNsZO9R_PRXkDXhZe9w8GD0dWKL3vNGA-OvCT7a_c8jpYVxh7xpI-LtgAwU1Wm9qOvJvvWWCKCQ3Zb_VvudrapC_o5M4Qq8XZw_f_rpkiVxibTVabmehZA5i",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSytWozw9CaFXhOT9eBFDiSKxvEL7KziqXqVwQqXw1SaPtcxo1w9MDqiEww-XxJXuYB92WoLMu6xtgPut7Vm27PDC6uOuagFehfXWS_qTclQl0F7MfHKwc0dKUHlRqpb2wfiRyQKpA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy6SsMF9XyLu8Uxs_WhqBTTTOGKnfOrQPUtKCo0fyeX5s6_zqGL8iDrVZTdxBjN8rnTEhF40BU1mWWPZwvGof-qJtibEFdhqmUqJZvnI0vJbccZGtxBkUk4Wj7jdhSkDUE_bfJ5",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyMXYxV6Z9cVPv2r-C5KEdN2x5MqTx-3MRDNJ8jyj7WpDbirZrMLhP-IHtWZaVjlQvtpnxqfZ6nbAlnO_mT-nv8hGyyXBKdxumj9Txhx0QdjfY7igfpOsfE8hwBTpdoxGAvbieuRQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwrXdQ06IqPjetsiG8iIomGM28JHpPrGQHzhmlguAaDvd3HwvBezHmhNN0GmsevT6Sg1_Pblz-V9OYlIQEY59CP9M0akxJ5RfvCPUXeTLxtYNN3SJgLBVHw9Mocdj8UjEEqjVfj7Q",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSysbN_heTPSS7kjc_TpWAeTlX6rRtQAIsO_6Eg5Q5Uu2H7lmpH9IJVsGlv2KJzqZv0HG_wpsv-cE-PyQz_rE71_iAjsr_kTOo3hLmBm0HdaHi0w0iXYuAgp-a6Hd2i9RAxaSI48",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxJPnl0BZdKFe3Sqz_E477ai6djjuTFfrBw53ZRtGD1hfG7_dG16MnFGUW3Xyi3wGNo2WFyYbdEpCIMDIrHbIPIVc0AqiXvOao4FiCE-hYOD0O77kVe29-7LMAwTUyXawMXK35p",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyrOjnziausVEZdqA1bglHRRpukcbrJPbLqAxUkb7c-MiJAkb19afwm2PRhRzPZCPMjN-Cy0kwyPKAIKew2cWetT5CncmUjwuHm24BmnOqvVpCsZ1WOFtMqBtU4XF0gI1Lsrxfo",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSywqgfzVRFTN7NyTx4OTxxbIGEAYonPHP4vB_pV0fCYWQX9YA8bX-xElwa9Qa2A6Zviw7CfH2LnORr6ZeAZt8hB-ihIEb0N9AGnBMGSvKZ_ANFn2D49LHdAyqnlNHHiyRa1Vt3tOA"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyrnIlVWXLpoT_vz9EyL5Wp8dYWgyvaYl-8XMsFZSRRCaKnpGydxTCa_DDN6Guns5PVaKY_oRv-5K2Ppm7sCbC-bjCvJMZJ5zYgbe5BDr7u9soGTUAsnRc89mP_nInZgqCbptBwcQ"
+    },
+    {
+        "title": "Taouima",
+        "rating": "N/A",
+        "location": "43M8+8MM, Nador",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_etG2USsOH1X2CRwMC5hqNeIvaUbCOLuuF3V-qDsD60c9RIMtMJSA-dTPt9Wmp7fpnztKDTjCLPQFhNmw-Wr69BbyJb351zmsmjym6HNynI6RRd3QAsfKQeCjCLtPQYJo-mzjTg"
+    },
+    {
+        "title": "Barber Prince",
+        "rating": "4,0",
+        "location": "532G+442, Nador",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    }
+]

@@ -1,0 +1,952 @@
+[
+    {
+        "title": "Salon Espace Signature",
+        "rating": "4,5",
+        "location": "Résidence au printemps, Rue de Tunis, Meknès 50000",
+        "phone": "0532-800801",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipP25f8dJQDlMOYlaaoawZOYr-ZOVGQot3R7vzGC",
+            "https://lh3.googleusercontent.com/p/AF1QipMr4JQj9_bsqkPwWM9sxKw367qv614m4ftnnCgq",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwdZPXgxCvwtaPTlReM45mG0UGRNb579fUubsnTLIV0d_b1mlJJwzJAAXMiFqcxHwKNcBN0vTCUHwID79H1VMhgSZEl4X7TDknCyCFG9s_dVeqYoCI2V4lk4pJJmzvII8GfXnYu",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzP1FWNmeJNaXTnhRKcMiFn5V0pAY_KdHSnhGd_iUXGM3DMeVgyWW_fPo7KyMVrCIbS5QD4nJZ-PX4DyAlWXrg7sgLN3ssScoCt87WKhznha7D1xat-1mARux0Dxyd6OowJOQxD",
+            "https://lh3.googleusercontent.com/p/AF1QipNhjPJL5iAqjc9cGH_NXmRHDSDsaS_hhY673_eo",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzZhF2VdJAnS-dZRZYtNF4X9cO_41WuvcVayKGHKaIK_jaCNWSeMjkxpCEioNUfPw89_Nejr3RYi7UVi41ZsJpZbGCNQuT80aWWphJNr2Jyvj-VcgTzVywc9WXWe9AmCDKiOZBHKpWMk0fd",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwSrGOIl4KU63QbpSyTK2Qk46_2kYQ5CK0pVb1QX14xZNYmp_OLQFS1pIKFULAK7wjayuL4FWBHQsto4CKco2ZtyhlR0nFcFHbYI8nddCqT4xNAJEq4kxdEj_KIEf_5k_xndJ9c-Q",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzYnHz3eJP2vrqB94jHFI3fMqEf42KawTmWaEL2ucBQkVquD21hZsTmmywf0gyHel20ff0nEzG16z7QwSGuwXhMpQd5ZFO6Ymg2YRJdxrywg2S9BM9d_ggoQmKCwpC_G4b7dQd7",
+            "https://lh3.googleusercontent.com/p/AF1QipNTNzzbRRTdK9IkH-eVi9aPtGnR_Irb4h2e3Y-z",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxypySCmKBLAT4nVt6w94M2ZzU-gwwe97r7fmzNXNDyhSSAzlsyExLvb-YOjArvUEW5Ag-dK1-yn8r7tqjhRxCCv_nDm3xKBEVO9WNNXej_kpJRFbiA6bc37KFAjc3hO1qROjeK",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwIy7qx82UatH6WZOejCQ-KLTvLR5icvYvAEifBK5Wz8sdaTrEQ-WGUII95su8J_rR_Nn7zZdVFNmxWDk6UGJsbI88eFXQYu9UzVU2w9PfdDVZ69LnIa7Jnu7zx7OqvSntG_Kh9",
+            "https://lh3.googleusercontent.com/p/AF1QipPK3wVuqt_XjCOqRNOxDwxiM0WOGQMjUpMUhA0-",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwjxC2Qpob0G3XLO39NOjkFT-3_USWdIIAq9t7XrIw8OsksQy5T7svcDZCiaFuBeyptC9r4DJHRcPQ0DuTo1URIj64jLLHJxMS8m6gI--iQuJS0Pkl03TVzeu1tTNpYQAE8kycF",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzgtcW0ugFy0VOuXdslPYrk8AKPbMA1lKRU1vXApnP7pOTUrcwTBAEuivczxHO7f61uzNy0q_-fcH1wukU0AJ-0yCW0pafaoyr6bm7CkwxjSpDx3Mg0Q9lzAWDHAf3Fo8j7S87tAw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxEPEtPGTVknoN5rzIsO27gCozhTMBx-4bxTiEUqODHHJ2ftVVI7up9th-4xE4VD7DrYACdfvJP-QcQJrSUk0qpnCxLT4c4QjvYKhKWVVqc19Fd_9JEU0j40X2r5EEGilhRVVKDSXAK5MVv",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSytoH4-eYeg_LQho7kFuv7KxusPsdyYC4qiPWuvnJckrf8JebnWz_mZN0o72VobnXwf9UtZRqsA-1d9dCbFr7_qtEl63Mofej2YVJPxwiVxjRF8ryK3gprxYarvKq41hRvO3kVx60FSk1c",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwCZ1oz2DQkjvfT-sOo5XCnZvsamAbrbdpk2GK1JRpVZQdSdYpCxggGn5YOQpV0sFy60dxFr44M3aeDH34krmVrKsPdit3UXOMfOyxbCH0TasUZjZ0FRRzA-FXEJGMNw4d8phf_c7wyMlfx",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwipXKUzXIq1XDLq-h7oBj1Q-ohfwhL5qoETFH1QjL228egke2dQHg_-bAGuIbcF2mirGwZxIRqqaXZdSVIPZd_dfZfYokU-bSMt1WNVLCAm78JXq5MiIRXzWFC813Xcl5LgWuImWTpkYlb",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy4_ocpFJHsnnGOtJYTDc5bD4DDoA4wDOubaDTwVZUAxnnW4cjxR16zf4FAZTCqHAzGaR9_NVxVxT8EDl2NxdM9z3wK47QUxRr53cqOnuYkGjDYo5mnNI_AoWGT8_FwheEHjd4w7khNouPN",
+            "https://lh3.googleusercontent.com/p/AF1QipN213QOX1EAH2EP81axdMx84R1EqzxH8K7_5W7y"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipP25f8dJQDlMOYlaaoawZOYr-ZOVGQot3R7vzGC"
+    },
+    {
+        "title": "MESTARI BEAUTE",
+        "rating": "N/A",
+        "location": "Rue London, Meknes",
+        "phone": "05355-27725",
+        "description": "N/A",
+        "website": "https://salon.mestaribeaute.com/",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Salon al Ainaya صالون العناية",
+        "rating": "4,7",
+        "location": "Rue 7 hey el wahda, Meknes 50070",
+        "phone": "0619-796549",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMZjA6h32i357tPQQWQJ6mlO6gR3O1zhWlHIaJ6",
+            "https://lh3.googleusercontent.com/p/AF1QipNZjTmdeEAEQ-KFIreLs1ExpO9BFtcG_hMiUQmj",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyvNGLbc05310-rRPNK0P9wZGuteK5RzQ1ZtEVSG08onfUM1yvexIaMfkMwl-wjlVDLvBNM7HpKYaa0t42gj0zu_5Ila7fr3aeIFDXnkrblUEo5Zzds9EfDv7YYLlhbmRlT55Dq",
+            "https://lh3.googleusercontent.com/p/AF1QipNXuQKXfePXCN6E_unkdanZ-LAO30LW1C7XXHBW",
+            "https://lh3.googleusercontent.com/p/AF1QipM4lKYRWdcYKFnUGjGnPGO-Z0SYtSuUhlnb_NTY",
+            "https://lh3.googleusercontent.com/p/AF1QipPraNMhQPEau9cpAa0gQdgrk1cDDRxDlT1JoPDX",
+            "https://lh3.googleusercontent.com/p/AF1QipO9nvgmuKo_ohClZ0V308c5MAtCb3jT7TfauL3K",
+            "https://lh3.googleusercontent.com/p/AF1QipM441FF7EJZqJFSekD_NdpRe95tOw8Ijm0Z4V_T",
+            "https://lh3.googleusercontent.com/p/AF1QipNtfXVKnC1h67OOHdFJtPWyo8AiH7j2_3uVZQ0Z",
+            "https://lh3.googleusercontent.com/p/AF1QipNIVfJAyYzYQi3RHHvbC4mLbOFGClZTfZrV9asF",
+            "https://lh3.googleusercontent.com/p/AF1QipMPp6hUvtFdVmrA6inINK3MpaW19JCR4tQeeXJb",
+            "https://lh3.googleusercontent.com/p/AF1QipNzgrzcoDlHTwTdBDyLpAwXceN2SuCRoJyMRkjs",
+            "https://lh3.googleusercontent.com/p/AF1QipOn1EPMl0TT6Pxz3RnbNZr8hzmX5trJvwPGrypV"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMZjA6h32i357tPQQWQJ6mlO6gR3O1zhWlHIaJ6"
+    },
+    {
+        "title": "NUANCE CENTRE DE BEAUTE ET SPA",
+        "rating": "N/A",
+        "location": "RESIDENCE KHAWLA, RUE ISMAILIA, Meknès 50000",
+        "phone": "0532-865015",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "BarberShop Meknes City - Hamria",
+        "rating": "4,6",
+        "location": "3, Résidence Al Ghofrane, Mag N 1 avenue des forces armées royale, Meknes 50000",
+        "phone": "0622-105939",
+        "description": "N/A",
+        "website": "https://www.instagram.com/barbershopmeknescity/?hl=fr",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipNyGUOp29KWTlYMiQE_GEzGdvDnRyy-J5o_06Tv",
+            "https://lh3.googleusercontent.com/p/AF1QipPWlFTi87s2dhfmjJbIe0ZhiO4FWKrudnHN0XZq",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSygm_enmUBKK_BwGbdLOe3Nfu2WiZIyZ9sp-knntVcAc-FNr7pDR-xPGHvzNn-u3_g5avGtjHuuUgzHHjFTj5yf03cs6UqG3WQk6yT8bZLN7jd3IV8fAuLccR70ytNl-RBcHxPpf_UZdwj0",
+            "https://lh3.googleusercontent.com/p/AF1QipONXZEVPALBQRajPJNJkriwhPFewqZ6u0MAq7IG",
+            "https://lh3.googleusercontent.com/p/AF1QipOJt2oGtNdNfzGpf4JYiQ-YbEqUN58KsRbT6czt",
+            "https://lh3.googleusercontent.com/p/AF1QipNjXzWLxqcGuBcEBvhKlGj_BRME4ukaMGmDj-CC",
+            "https://lh3.googleusercontent.com/p/AF1QipOErStMi6jTg5IvwXY-_77QvX9lgC2IaLogqJX9",
+            "https://lh3.googleusercontent.com/p/AF1QipPXZ-JEGbkIleDmHLT9FV0XALxjqq3uLJC1UjH6",
+            "https://lh3.googleusercontent.com/p/AF1QipM4SuzOPMXZ5Hzh45PtLqKLxZRZ-CvGGz_qo9L3",
+            "https://lh3.googleusercontent.com/p/AF1QipOk1TnPPNYxvxeynNn8k6vIdDGXaGU_BzkkIOIX",
+            "https://lh3.googleusercontent.com/p/AF1QipO6KNnXV8kErZ7bYyJKc5riuk7l0H9TD4VwkZvs",
+            "https://lh3.googleusercontent.com/p/AF1QipPQfrzC7iV-KFKMBl3P849weJRSGOXLmAzWiXSq",
+            "https://lh3.googleusercontent.com/p/AF1QipOV7dEkzlipZ9d3DW5mfiEYU0qME8P7qVG0_hoa",
+            "https://lh3.googleusercontent.com/p/AF1QipNFWv7642MEGRSVvKIdA271ibVJnCnrorWP3BpT",
+            "https://lh3.googleusercontent.com/p/AF1QipOUyTyAzIVsfLdKPeRHTA7GulqSZEAOqQ4mtVBJ",
+            "https://lh3.googleusercontent.com/p/AF1QipO3Almv-rSmD-nOc3cAjdTxtsnmyRVft35jjhbM",
+            "https://lh3.googleusercontent.com/p/AF1QipOlqi_G3XmIR51-ceo48D2NwB9SF3JDKSo2K_Xo",
+            "https://lh3.googleusercontent.com/p/AF1QipNLxxArMiomyxdP6SqEHkTJsyFdZjgZMZtGOQbG",
+            "https://lh3.googleusercontent.com/p/AF1QipM0obPf6EfHJ-ijqtsjAsJneyQepeM7Xk_rT9vl",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxa7e60EHkv9fkkcHFOi8pmNhxWR7t9E3zn406k7JUwWeguWRH-MeUXNtpBX1YkhHyfUQzVphK6AacaBVF1BSzkmRPZ4_g0xVmZTUb_mODdDWwpfkVdWVcuqaBpN-G9YkzIpZUuSQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipNyGUOp29KWTlYMiQE_GEzGdvDnRyy-J5o_06Tv"
+    },
+    {
+        "title": "centre mestari beauté",
+        "rating": "4,7",
+        "location": "Av Far rue N°7, Résidence Zoubida, Meknes",
+        "phone": "05355-27725",
+        "description": "N/A",
+        "website": "http://www.mestaribeaute.com/",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMGYiyDge7NKs27wYEGdL6iryaCtzdkL7r1Ejfq",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyVF4nxmnoSwIEJrB2cCouxNXLrXCLNVN-XvZVwlhEQLwCZOA0gYyTH_ExB0vvy4WLX8kvA8Bxz_oA1XHhvsbv1L3ykQlTHzjMPkIkwexux59FlKuL9VH3PfkzD1xK2GSmMhEWjWw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzL5i97-HWYKbDxlPrq0bRY9mUBFjuCZNy7lUb8vaYD4eOFHQ5eXT3twXjpcFJ65bi61mLe90tc1yJvfwHOkpj-NRoV4qDb9ckG9rX3ajCdD1ZiYwmTflmt1CE4LmyAGzunewmW",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz80bm3qbmXqFgOX7v8ihn9nm_8s12AoG5x-kO6fxma7_1dJrmitCrCKSwp30it1od-GhoGR1_QdWylqEYhbTDDm9bwH-YWc3_UxC0ON_YXUaYWns26c2tMr3n-jnFaacWuS6EZ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyzi619R3_LXfBm_yAxvyyzzJ-lVC6D6ix4n-DJrLir5iqR-lOaFChNDbQPgzosi5NmVs_5veYxc6_T5UV52eBKPB67cAq0BZN5ifjYVNsXokRPu6dfc-ZdyCJZ2u0-u2owU5iO",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSycae77n97Ejt7W1pu_9yFjuGK-k-kEMgS4WIRSiLlDyyR-qGFDmPqOyLnmHDWO6iQbvTSyXpLVTRArYREuMpa3Z0YbZYxM5U-0KM_Y5SnmghjpeQGHHRSc6yFgGD4qRF_83Ypz",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw0vK4AZHZUv5uLXYDQZeFVGcDYia83aV2TtcJQRRclI2f8jDlJBeCujmN95otSMIUsKPqNwCnnkP8M0iovEaXowA1GuHT3YyA8oKlykf4JmGSGxRkOU-eC-IFGZA0Pun5SMRGR2Q",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxPFGc6XCR67h7ARJKuKcEq5Sy9dQNRJFGAdJoSzJhDNHOWEFSb2GxoEfd5Sf94ynFUglKD4yjCQcNp-kypilC2oGgXDQZMNRvIYEl0o-AmYDdHLcBSO0zMs1P67DcKvTWC3Ljj"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMGYiyDge7NKs27wYEGdL6iryaCtzdkL7r1Ejfq"
+    },
+    {
+        "title": "Le Salon Vert",
+        "rating": "4,6",
+        "location": "Unnamed Road, Meknes",
+        "phone": "0638-115980",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipO4MM39ebNo80SWYGWpRw8y9e-njyQWz8KmF9zd",
+            "https://lh3.googleusercontent.com/p/AF1QipOqanTJVXG_8tClio-BUZ14S9BtZmxdbQLe6H72",
+            "https://lh3.googleusercontent.com/p/AF1QipPEtF-bXUwn9ro93VkebAwvoDIu0tNnHHYjt6Gs",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxUXUmQEJBRbuC-mI93wdjBvp_UQMQqMRObvW0QYKfrAG8xrwQo_1TFHx8MRdJkLAJlJdtrolyWRhGu0i1CVpVOAhcNvp4y2MtdaMDMVcZoHnZMZdi6kPtfkSR6nIv3_ImAtiNpBA",
+            "https://lh3.googleusercontent.com/p/AF1QipNfXpMXqrILYSxODlwJzyGCAhozH50veAisE5nT",
+            "https://lh3.googleusercontent.com/p/AF1QipN8Ng4o1n4GQaQYnknIw2bo9CQ18-Ae5BtbbZBf",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSypg9Uh-OwOMJggLZ8hiyxA_nwwW7ODX8BJDyerJq0jIu5Y5BC3UWqpp5pSECzR-Pp4OHBgTrrmWOtxchKVah6g7JYKVr1ktuO8SfuiSlDZmrrd3g1d6tTPSkRg7IoDNzTIRlpZOg",
+            "https://lh3.googleusercontent.com/p/AF1QipPFe5Uif_JuvGOMZTtC6HhrTum1IwSs1QdxtPEW",
+            "https://lh3.googleusercontent.com/p/AF1QipNahnM2IGRl8oTZMxbnM2om5bmHh7tDcQJ-UPTJ",
+            "https://lh3.googleusercontent.com/p/AF1QipOCBMSvVwt41zWUbnYrVI7KTNqUkGfSe2ezpK61",
+            "https://lh3.googleusercontent.com/p/AF1QipPSa_AOKkwE2o0azw8KaOL8Tnk36oHV3phpcxqc",
+            "https://lh3.googleusercontent.com/p/AF1QipN9-7z1opmIJsIdxuPujHymAyVvbL7yrRGPCxW4",
+            "https://lh3.googleusercontent.com/p/AF1QipPoDkbbhP4YRvcrU1fftJzsmLMrj0P_rdDRco-g",
+            "https://lh3.googleusercontent.com/p/AF1QipPs9flPi_n0iF3wmeOZN8D23fX1Nv1a48w-kzb3",
+            "https://lh3.googleusercontent.com/p/AF1QipOLqZiNoIz55A_pvjhTL0vj95ERWg2D4yPfiYd-",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSySOFNbuBwbc3TCfCT7M5JwhXrj3Z7hEsUezkk6mi2KfhVNQhSM7cS6reNMHvRePrcxLnhaqFZuW0DnPhouReW8_USoH_fYkXVlG4sKGeLpz-i9inxvL4cLJ_GLrnazwX_faGc",
+            "https://lh3.googleusercontent.com/p/AF1QipMgiIedLqVYfW3xdSWY6mFL0PA1obRYRB4lxePj"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipO4MM39ebNo80SWYGWpRw8y9e-njyQWz8KmF9zd"
+    },
+    {
+        "title": "Salon Rhiz Beauty Meknes",
+        "rating": "4,5",
+        "location": "no 22, residence moukhtara, Rue Kenitra, Meknès 50000",
+        "phone": "0619-233676",
+        "description": "S'identifie comme géré par une femme",
+        "website": "https://www.instagram.com/salon_rhiz_beauty/",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMjigeVNg5UU5aCIXGRDNEBcio6yhWWchkD6NKT",
+            "https://lh3.googleusercontent.com/p/AF1QipOwP_K_QrnajAvIPGWqVqdXvXZuQdW7bXj_t90h",
+            "https://lh3.googleusercontent.com/p/AF1QipNTSh57WzUwihqy_h46Jg8KQddpPSiwghzkz2iu",
+            "https://lh3.googleusercontent.com/p/AF1QipO_llUWkayD-rib4NwGRiBURDcmOhWGzHqonCRG",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSygktZNK08P-owa92u2d3rN-FNLgdm8OKF5vXuPL3HWFRWt5KgNXu9IxmBlt27G9VvgHWmmb15hnc0qrPOrwnTrRNloi2WLm60lZ9F13xzGHx1xNx1ogTL_gszt9jOm5c5vfgVQK7W3dRw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy0bXou_nXvgBwk_my7oIqnovB4T7U79BBTriBc5HsduckTYEkiUvyFoL-tPjzxr4K55diGvZfdBAaHczzepfx-nbSi0LqTHgEfUCUE2BMEjahTYFDuA1yOFjZ1mMVbpDfSGwq-aSojgtI",
+            "https://lh3.googleusercontent.com/p/AF1QipNO-s79E2uK_OgJGFhKereAvelm67YMQM3VM9vU",
+            "https://lh3.googleusercontent.com/p/AF1QipPKV2vE-rl4CQRqLpEzNZYVrNcOLuAYfSh4CH1-",
+            "https://lh3.googleusercontent.com/p/AF1QipPLk-TXxvRa5lAtvrantaNiCWNnoVsh8h2vxu9R"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMjigeVNg5UU5aCIXGRDNEBcio6yhWWchkD6NKT"
+    },
+    {
+        "title": "VICTORIA - COIFFEURE- ESTHÉTIQUE- BIEN-ÊTRE",
+        "rating": "4,5",
+        "location": "immeuble 2, 2 Boulevard Ibn Sina، Meknès 50000",
+        "phone": "0662-172818",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipP8GTAt6uMv6fTtCO6jmtu0FhFT-osrnb0Pxn72",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyY5XAcUm33XOK_Lx6Tm2aJxcUvJDMQk6fXVLqDhJGhie-AyJKvSrgK581yomL4g5gNRo7jGRpMWr9i37-hmd6HBRQIupGra_fvC9i45UhoGirMzQn3F8le5icma7ghuNXobOji",
+            "https://lh3.googleusercontent.com/p/AF1QipOMu2b4nhoF5wS799Sqz11KHyN0nGg7RhOlCtPC",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy-zaa_T08nlFY35z0e7fAQk039Y0OYrtosxqlhqB1tPEtoUAqVfHMFAbp77vYDWO6vcMGXX4w66MMWWBSck0oq1vXHIMvb1PS_HmX2g3ADJuyIzWw2rq8kMYs85Zgs2JcBztUDtQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxBmdHolGHRLVVb7sqPNUEVg6DMamlnUpwF4hQDPfo-wvgJ28FZifqOn2JYw28dTqhgQRJavD4vLOV-_XDWEdZzAxXKYoqE1ELEI5oZNAmVeB5yOkln5OTphlXjXkPjwRj8LcEH8A",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwAKX1kOD5G3unv1Vc2_CQWTvqTyCzHa_tb81MQJS56OpcHatQdgdZ6zS0TaAeupRrghtOWrKDEC8DPLi8ZEv0uZ2FG19UJhcOdry-TLumcTq76TROTfBjq5bnOjC_f35WjUD2v",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzuy5LrUfj_wtU4adEdi9TSnMFWFpXI_QuXg8164ey_UM0p7AO320UwrwsyUr8k4oh7WPp-NSLik70mtqGV_frUsXm3GK1u_cOAsFXUvvvzW4kCwfd5MSCWTcD82Cs9M3ZGXzkU",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzyJQvHEYJhP9YY8NUCCOVqS7FoYUixuFAkZRhXrmewYwwxrpUq1e7tm44uG-795xB7k44-x2hF8d779iljThex5O4wNodqOOP0y2l0vDYbeIkU1sWExdTlxyHOBP6Ue5nRcieHMA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxym7jBD4FMY0NluU7KZnhxQOJOH8HfagkJmc2Ot8OludBVU1ER0dEczBii83OyqYVWcHPFiyj9gBMrS3HOZaIc-7fEFwoqs6QrY8a-ubG7e_03qTTNzmF9XncsoxC5KqgVazX1Dw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx0Rb_55BrpqZLi52tQ2zlYXqbLKTM4MsqVFZrcPvFjME2uolhkV2WlLamVyK2p5nJV5ZWJzBfpc9--qLEaCUKzb4UisKA9X9DYfDIJsuLVenhoeOT2XvufRyJ_7OHM-za2HFDH",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyEYcUXclf-eKQoDU2wqxTMLkTfDnN-rSOcdMi4TQnpQNqdKLgCWAOn3c2RXN_mXU8niqUE9izaKHPqPW7rxXry06epTUypqr4Ka2tBOYvGQ7cnpk-N9ei0_Zu-2sr9rPtDvxnyaA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwn5dhleY7YX-juyG8hy5IAO0KR6ARy2MQHYunm_5vDDyDNzEy42pbTcjjpTkCTg-iXEQlRIMpo3xYpEBbZqWiTvd1HsQDh5UvRT0Z5AcIiwC5MU9FkRy5VZ7m6IUNflLaDdfnLIw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyKrVwXOn2ONiwwwPASb6SYb8p_mE60ksUt04swo1_dnL1rUTBgqbH8k2HNLHINv7GNRMGliDNo4Q2DIUBEbdlWu-C3ck8ifNLaJYpJcpdQ8w7tVNLoiFxdhOtVLRECTb-ulF6V",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxQG9207ajgdHHdJAzcSh1UTYhvNX_E1Dc34VVIfSKIV2sdcApcVANs8GDZrjedNfuTiBRhOxSQfIMyycADwqihO3IC1al6paHEwpYNR2AMGkFootvFfIOaI8Ig-6pfvS4EQDKb_A",
+            "https://lh3.googleusercontent.com/p/AF1QipMptMLMAG1fMGSx25D4bPHOoc-5xILrbeDeI-vc",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxpdCsi99eih8tydTS3fBSlO211N2CZHc-51DOvuUm_blfdO9KbdV21yZ8gEXNTyD5AVkRUqclyoE4h6-p4sBOtYQp3aqjelRxru48wirbU9qaifZCk3eLfpCV0s0eSpLIePO6s",
+            "https://lh3.googleusercontent.com/p/AF1QipNxQ-jwhi-vb3rOxRzy1Gvh3WhJu33YtdPyW4VZ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSygOCV36QBsDub1zXJdsm5DTyhj0w-VEP5HegYwGlvkwxxIk6gFCv9CFmzFc56jHrMjqe6dkJUcDYda8-eGXr9ukdar6JGClOizBxOdDMqdxMf3jAIUF_u4LX95LDnTGHgCnO56Zw"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipP8GTAt6uMv6fTtCO6jmtu0FhFT-osrnb0Pxn72"
+    },
+    {
+        "title": "Mia bella",
+        "rating": "4,8",
+        "location": "RCWR+V7J el mountazah 1 à côte de atacadao, Meknès",
+        "phone": "0694-101923",
+        "description": "N/A",
+        "website": "https://www.instagram.com/mia.bellaa2?igsh=eXBzcDlpaTJkZzF0",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzqcto-DsbqxH4qaa8fnXCzmKAIE3vHclx1gjX3ozkgigcecRngJ7WrQXy6AQEfCQnTUqu_0hypX4y0l4NEn0KhSpHRaf6t46qpBJlhS9jXacw7HmkxCQj1TMfPkdUc15-0nWFOa95T-gTr",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw2iTkHDBQtK0C5I5dhA4WPdsJW45B8syJInU6PWsbl5-JFlqz5K-gIQAQsXVUA86xZT8m1nNJwFiZeSVXAP2eN3R_6MK-IXTh9AjSUyrnSRPbwU0znr6wO3xhB4R7hYGjtk35mtFMHgJ0",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxxjJSBxG9IUyv78VowyKH4_nSt3nhEnPV0InZ6RHC0LVcduNdmq0RL8lDm84wLCZBgI6mcvyCGAweFz23FT6ATAbw0wCAz6MLWiWY5z2GckpCroJM1UWZ-2gNqlUQ4AElnK9wjOqBsorXq",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwJZKyVdCbNI0sc4gl8Vh252ZciOfXXLe66jXEqsR_OxeMAPtpGJTvOw5N7IF9nD0nqjzWXcAH2swoko_zUqd1gDIze8MSQQ-ITcAs4LtUqWg4GTaKCoohmH047buOf0gBknPFSbplk_L5h"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzqcto-DsbqxH4qaa8fnXCzmKAIE3vHclx1gjX3ozkgigcecRngJ7WrQXy6AQEfCQnTUqu_0hypX4y0l4NEn0KhSpHRaf6t46qpBJlhS9jXacw7HmkxCQj1TMfPkdUc15-0nWFOa95T-gTr"
+    },
+    {
+        "title": "Maison LM",
+        "rating": "4,2",
+        "location": "Villa n 50 elmontazah 2 ait ouallal, Meknès 50000, Meknès 50026",
+        "phone": "0613-317514",
+        "description": "N/A",
+        "website": "https://www.instagram.com/maison_lm_?igsh=MXZidDM0bTZzN24wNg%3D%3D&utm_source=qr",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwSWibzRCTAczS6CCBocd13a6ZKjnQFdSzw6qnBna8ec2F0CMDUNLGNCnCLMNpYeTJ5kaUS0XAjOaVIyYu-NEf7mWv_46lBxfnYv73W6Py_lVxPYTHVSEiHgr8hKOBPb7E9DP405S1kbUw",
+            "https://lh3.googleusercontent.com/p/AF1QipPd4uA585Ha6sSlX62Cx3UXwobq4UlNnYuHEIgF",
+            "https://lh3.googleusercontent.com/p/AF1QipNeMQd8FPLXSMEvOQYfeo8EjgixTZOKpt8RQTlt",
+            "https://lh3.googleusercontent.com/p/AF1QipN8yOK7mZJnsTMqCMBpA08guIaIyQUvMxNYg4Pq",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxwMCIiwtHoMtP-FC-kMmqhDFcHUtdqhl6qNc-Nz7Xnfo5c_7FdMBP_IvNS_KSjb8Re-CaE1jiYdF5HhdGwR4p9CqA72fumolfAFSxSWd7UhNAsasYG56l3-pU6xCWrHsn4IDPv4O4Hn9mI",
+            "https://lh3.googleusercontent.com/p/AF1QipM6hrmcRaP9UALLRDJ0ciX2O5OaJkT4yFMD9WKR",
+            "https://lh3.googleusercontent.com/p/AF1QipMHBVLkZnIKXOTZo6KTe4fWd4uvsPmufgFAJjBX",
+            "https://lh3.googleusercontent.com/p/AF1QipM-aqYJk9eIzNM27IJ31WEku-XdvyHrmI8cv7cY",
+            "https://lh3.googleusercontent.com/p/AF1QipN-NxK5QLmABMoEpBtqRpPZOfBtQNJBBoMCwwIO",
+            "https://lh3.googleusercontent.com/p/AF1QipODyEE-IFqmZDagbyb0uBRr8aTjOwZqERJDESS4",
+            "https://lh3.googleusercontent.com/p/AF1QipMOQW9Ys2HiTwb1LfBNEtJKe4J11luhlsK8Pq1M",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxngqDgz3_dxi-XBfFD1nSa8Z7CeJCesrBs5DY4JMu_7D5tJniyK06zvujjw4myJTnMv-iDZ0MdbkbcCnvXhNHB1OwWKYwJCJx8BUPoD9CJQySGkk9yaO1-x8H4Hp1rmtTh8_ZNP1EqQQVr",
+            "https://lh3.googleusercontent.com/p/AF1QipNM0E5eHi6X2X7d5c6mZoqPPqjRRznw-shE-EwP",
+            "https://lh3.googleusercontent.com/p/AF1QipNrRi3z4Dp3h2Lhe1l1nprjhU8Ss2fARZszS7Hd",
+            "https://lh3.googleusercontent.com/p/AF1QipMkhc5rAJ8eMU5ois4OyZVP6_GSTWQgTXsDomqf"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwSWibzRCTAczS6CCBocd13a6ZKjnQFdSzw6qnBna8ec2F0CMDUNLGNCnCLMNpYeTJ5kaUS0XAjOaVIyYu-NEf7mWv_46lBxfnYv73W6Py_lVxPYTHVSEiHgr8hKOBPb7E9DP405S1kbUw"
+    },
+    {
+        "title": "Sherazade Center & Spa - Meknès",
+        "rating": "4,2",
+        "location": "Lotissement Hafida, Immeuble 33, Mag. 1, Meknès 50000",
+        "phone": "05354-65659",
+        "description": "S'identifie comme géré par une femme",
+        "website": "https://sherazadewellness.com/",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMUmfYjDOAA-XQescA59Pg7blxa9r1VcQNxBttZ",
+            "https://lh3.googleusercontent.com/p/AF1QipO_xvL2p5YpsME0J5mtFb21jSQQpiFjAomFXDz8",
+            "https://lh3.googleusercontent.com/p/AF1QipP8DENbLi17UsqgXFsu53S2P6n3-AD388jmB7uk",
+            "https://lh3.googleusercontent.com/p/AF1QipPPYIJ5lZ-7CUUCuQI8ESm7yOjEK3x1Z1AmxxBn",
+            "https://lh3.googleusercontent.com/p/AF1QipP8NyFdrF__5yKObt8ogxbDZAvpgEEyGD_UZvwK",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBkPfsPsN-aVp1WIj1VwbN02evXCBcMph-1Cn1hYZ7V_wQh4_PcXftqQgqVONTBbTgUQ4a7TfB4puHcV_33Zevd2p4pAkrA95apyHEOuaFIA8Si7cNTGHiTZFaeEo5lM61j7il",
+            "https://lh3.googleusercontent.com/p/AF1QipPnCqKySAZmTgDvp4CZg0RomB7xD9iQqb1RpfnB",
+            "https://lh3.googleusercontent.com/p/AF1QipOzy93V1ebsy683VZUBrwZxWe7-ygByrYWCK0aq",
+            "https://lh3.googleusercontent.com/p/AF1QipNdyAh_jK25hJvRTUbwluC0oYMj9e_dTvVuyLXd",
+            "https://lh3.googleusercontent.com/p/AF1QipP8QdTYgQcl_p8dEpZbGqqmbrfn8dZ25Z8zm-H-",
+            "https://lh3.googleusercontent.com/p/AF1QipNSR0rljvFUU2P0WbrkSzF8uj5mWB41pfHDrgOl",
+            "https://lh3.googleusercontent.com/p/AF1QipMcI2EmRiiMH_qC1oC5lFMwV7xIG9TSUttdgKoe",
+            "https://lh3.googleusercontent.com/p/AF1QipOPI1ggT-EmCZxlsIQg42o8VKtbWMJQsBLh3hLv",
+            "https://lh3.googleusercontent.com/p/AF1QipPwZQwTpjAW4NSNmso-C34tRNmPNDruunbM_zh4",
+            "https://lh3.googleusercontent.com/p/AF1QipN-J1HNK0RyBeEnKF4ZfdP7IgS57WqPPqavJSnU",
+            "https://lh3.googleusercontent.com/p/AF1QipP1gZI-PnR9WIYDZESg5wBhuclBozVMfTjT43ZL"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMUmfYjDOAA-XQescA59Pg7blxa9r1VcQNxBttZ"
+    },
+    {
+        "title": "Salon Al Akhawayn Kessou",
+        "rating": "4,3",
+        "location": "VC7C+3PH, Meknès",
+        "phone": "05354-70500",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy-wV0rN3lM59M_93k9hbnW2LqbcqO73FEby92BKLNPY6scvAMmri-Tx4MdpJbPTW5JXmRXKSaw8vyYbHRhq9OSsTGXzXQyHt4hBzxWg_pJvqXhK76n_DRxcXwKvtLvfqvyg5dFdA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxdPMbIavzzE0ENW2ErmK2yJLdi9nD9cZfGVERGRDSre85MshcCvN5Vx4LCT4JXxLAGiQTN1dszH1CpPKp3p4LolMJXIzsKhRpJjr60zKfoRQDv7CRU0NotV8MWlP2CyHPFXqSe",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOjJDot-qAaOVzCNnBKQLJ-oUXmBhEjz-AE4HIG6MdaajH4wRfQBxc9vAOrc3V8yZWrloJP3Wi6AHd5iCGxyiujtrFRbdm11p2iX2Vp8CUkagkCE1ElhZgwhaDEu6aIuoO0DVN",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwzmynusjFSOuFSGLrPC_i7df1acAKFkrT5mNDUqVc68AM1GXllsyCd7WquKYzQfXoF2PE9NSQplvwLabxJb6m6MnKLxa5GyelKYs1pW_d0ZGLERzVD01Bw2VzcLNBSu6Dp_nBZIQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz7g2qHb4TSx2d-1n7-PN0izXNqLFf_HSSj3oSjg1CPNafFZEKMVXdN4rBDCl0uEfMtU0teO0iPTv_GUtHy3sgx6ng_DVlpL_BAPJn-9SIFjnY24fRwTgEZO9Il2T1A1IZuC2Cp",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz7ubqKi6MP8DbRrOde8GRhmAyrDx1UX0aqeRLcTS1A_JCcbREr633ZTXjjkM616CdBIxh0APbLZX18ohCHFTTQAIDek5iUv7iuQG9gr0pyEB-vsiXXRi-cA_p7Hd52RYrUkInMog",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwJvVh3X7fqa4d1eIjQXsaT6q7Xq-lkuyzbHa0jw47lW28vrnJign0CCVLKc_WJ_1jmD_gC6NScrmvvp5GuLn0acmEaeSALmluj1giCmwSmI3wOnqTny68Rm93_-FZgdhN1JQmS",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwvszM7bDQu36Px9yeqjebc7Q9_QTRFAFnu5IYax4kmvSUtpvDLp1j_lzcNVckn-ExBYqX8oXBDqMH7N7lQ6pqF7fL6vraZr7kn7XAmlQjL3LzMWWNwHPg7fTCGBwb1VkAJkdAYHg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyZEyzg0-ZM7E_5X6Uls9Vphgd2J9g4Ic1h8MOQq-VziPLwZLGtwoGmBRe0ozt3F02wT5J8xkhvTJjtliBqL5gwPojwv-cb03EKwYCBEYqCyI3sk56VHDAYh-DrtdLGfqAof-g"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy-wV0rN3lM59M_93k9hbnW2LqbcqO73FEby92BKLNPY6scvAMmri-Tx4MdpJbPTW5JXmRXKSaw8vyYbHRhq9OSsTGXzXQyHt4hBzxWg_pJvqXhK76n_DRxcXwKvtLvfqvyg5dFdA"
+    },
+    {
+        "title": "Green Barber Meknes",
+        "rating": "4,9",
+        "location": "VF68+2X2, Meknès",
+        "phone": "0698-834212",
+        "description": "N/A",
+        "website": "https://www.instagram.com/simolakhdar0/profilecard/?igsh=dGpiZ2ExMWR2ZHk3",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipNDHnAULduuSOur3K-z9sXxYdtG15dCtcqZAGgR",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwHUM9UmLdVK9z59Ag_NYuZOM_SPQzfyrOXBZzt033PyKJaF7l4UTItS9SAJAPNY4sXGj7Eci-kEpYdrwKkyvIBwghS_wl7kGtLYm5hz6rgGY9u_vbddhkzEvEpefPiALJKPvY"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipNDHnAULduuSOur3K-z9sXxYdtG15dCtcqZAGgR"
+    },
+    {
+        "title": "Raya Relax Meknes (100% Femmes)",
+        "rating": "4,9",
+        "location": "5 lotissement, E28 magasin, Meknès 50050",
+        "phone": "0644-445370",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipNIf1cDLkIWTouKpyE8mTneLfX6cfz4thcqOoD2",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhvclVAVDt_yuIeC8eTQIfgzOfT5ezgsVW9Z9V1pWe3LIiXYuf4dcn36B0km-mBSOZQLLWHC9WJ4izPb3t2ovF9Ethtz1nchP4b3J_br1vXqyrnrg69e_bE-D7SVrf-DGR9JNG8g",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxX_3k3lPCbJH1GHbihiXLmqOlx6pHsUX1oWxb08-4hQe-xgDEQUr75ypTutoezJGx_NB-HxVNJgnG_VqQyWWHTMVpv8P57zToQsmtQCbrGfBj_VwPHnmy7dmazGpxoaEwSNaPxPGihWpm1",
+            "https://lh3.googleusercontent.com/p/AF1QipNLISDVOK_BclwqdygBr8T7uXHNqf_HXk1od3Yr",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzsTC6C-NFtRfYUvxXrBLiQmWY3mFx6T71zJCV-_a-4Rjl-2WiDpz1BxDdQp4c6hedwE2oKRRb1f0eL5PX68kT9Z1WGklrR3s2NbFfB9DTI4HGxp0vbW5fi1Y0r6J3Uj3HpCaNt",
+            "https://lh3.googleusercontent.com/p/AF1QipOJbhsFKJaSTFjA00djUC5k0Nl0b7yNM88mlg9D",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxVIsmMEM04xXPXdv2Ozf_4ZnLnHTBkdFldDB908PziEV0qR3zcem5yO192BZcQ9o2kc61j804NM3ZgDAgW4_9K_6YerQhgxxy2_WxW_CxYB4D1afdZgM_LYiHe_WI1k9qbNZethg",
+            "https://lh3.googleusercontent.com/p/AF1QipMyJo52sXYTaG_7Wolo_n-HOztt5xc0qjXbt8oZ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyiIIwhUKJ7TZjaleSC-JS9K67GWfLG9OjPqq_v3bUWedS1y0GsOfUCzOcWoYPGZD7NhL9kbb5fosi37s7oP0oMxLCf_xth7ghIPlKzbIvURLBNYmnu1qWVVeC6X4akpuyXbAexaQ",
+            "https://lh3.googleusercontent.com/p/AF1QipPXCuQdPkjvktn4FxccumuOes5vbyu9Duz1U7OD",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyNkdU6MqOeIiGQlVzEeRZNbi_cBIV_xmRyC52x6GFWmR5DHK2W8M_i-BXNpVDcGgY7IGuXcM9L6g5rvsc3IR-xazHizN7b1nwGtIPwVdJ98Pq8n9k2O9bGdK-fTshsfO2zqKjPe2S05bPK",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxhnXyBve8A3cOYRGDr7dQ4Rp7tIwOjFmqQ7xWbYsMIsemfHJ0bRynEwDWVo_fymBytMiYcAQ0qyUSdtvfIpPwzHvtqnSM7uxGcjMAoTWc3m6NYSjtEbXHqGptoJSrGyOC2IL0C",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy2YI66PcnIO0k2mPVPBLely7SUqG-GULQxb9wikvscvP3aF4cw-M5I9FnCuiRVJ8Ap0Ym8MmY2aLU9OhBDvguTUlIeWgtu-_y-Ak0lXYAG5_egq5_Bt_sV-38MLAT-6PqFGPkg3A",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwMHOPn5j8JxeRN8NQNgw2ufflwiVjWiK9PqderyYXd0lidBazC__kUpPy6WFJJd6_oFVMgWMV6pJWwCQvslDbVkS4l5EfRJub6jQgVxyvZjvrcWQ3kUsJ79OllCbmRyXOUoJahmA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSytKnbZUKBi5feFqA50rwefQd_yrSo-KxovVeSZ31b7v6olwiwub6MyEBxZ1mDqJE9uJkuWt23V6XExu22ic3vU9NFvYe1N2PAllIAFQ8CMFvvP8IWp9udvOS7TS8lkud6Mxy9qsg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSydb3Bqht4qzbL_e7R3kR8oSB6av0uBZIbgp-2tfcGOibNQmCZ6_kKF_hmcr7xgjqlwYQDL_iZGqLiKee08mBh6QygKV7k4BCCQ7bfsT3SYiKYpWhgCpG2AZPBh696lRRzBdXu89w",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzPjm8LvLlhOC500RE7tgafscO8ndwYksfNidpinLn50GZOI2yzBnsT6QSC2Ee3wVscDIehpOfZquoRDIU74azrnEMCJawNWAIxHKwHAKXQklRfYNB4wPRClNOFFB-cvX4uHbg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwH7dO53XJxDoDAVKrQ9E_gta-cDcwzWiBFtWWb3Sn-G88FcESkPL8uanCos4NlaQo6ue6_HfVnp6aW3fVwn-ktjpwlhFfw-pLNnYwTXaUKW30JA953LOAQCki16nbuTkmVpgj4ixZ3V4bE",
+            "https://lh3.googleusercontent.com/p/AF1QipPbxmuTU73NRMz4U_Us0vt0zDSwBxaHfLglBej8",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxs17TZbl-Cgx63MEiV2RGXGQjBU2HjCA01l6L9r7Z0SGQrfVCIbdju_G9ZK3oQuUe_DcNGNeN5OD9nDx13wnBp7cVdHqW9bdSBrcIbkHyCU1nYfHGLTNLwo21tiAOBCW2kHggL"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipNIf1cDLkIWTouKpyE8mTneLfX6cfz4thcqOoD2"
+    },
+    {
+        "title": "Dermo Spa Meknes",
+        "rating": "4,6",
+        "location": "TADAMOUN 02, N° 69, Meknès 50000",
+        "phone": "0778-473077",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxr8b5JD3SC6a40HrimSsOxWmWa7zepVOYvVzWeIQ8ClaRLqFs3frGqDPyjoqRQ9q5_xRVg4jyyc_iRTCWAcNRKD8vaQ8q4cCW3CMxPtvLgnkuWQyYFAaXswOzYUV-ESLHo5_jC",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwmMvXMdS7cY_HFj1e5nMVfz-ZYmb34txzakPIX3Nwf08rOnQD2cIkx0ZK3qaAnIh3kMvw0ERJXV3tQWX2h2uBwV1IKgbcaGWEZ3uyV_iiCnY2QxdVFVpl3hcSoLKt_MnKGa8t4JA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxs785nL6g5Hjd3oOoGncHPKPgPx9M7gX6pKk6G1xbKDZnCSqLh6W-s9oJCQLQofc2IhoaxxQU-EaQSHIc8IyhErL4C4RdF61rjsQ63uwh6kVIR_M-iTGPdj5MuSDcNESs6DNiyzQS79dz1",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyqqeMgaDWc2PCVpDQaCqsV72CbJCKQIKf4vCPULCZcIujJvQCPUrV--jPKGObdsLmBeQ6_bKx1k3NHDrr1ttugY_x7XUoPlFxl_nLkF1w2bFUekshLXl63qPuTz-KsdvRQIIi1",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzM-uil4qbBJw3HIo0mnSVzsA0ui83FkS5IekwIgcQnixSd4gNRJz4N1Hv6sSny8VKiptWeBjggUW2xke_bUGKEKMI7SK3WXFLdEgUQUuQj-g2EvaaEASIEqzFKu5CvzdnJUHGq",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwnLG8ELfpESV82b_Fv3U1-QfThMLSdIIbj_bOCyjDqDbxNs1ACw4EX-4Cg_87piftByV0TPiN0fFm03O7nVaMqUIr2yOUYZW_PlSCtECuVFJ4cfMNOjgy1N0fp_Xz4KcMS2R45aQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxr8b5JD3SC6a40HrimSsOxWmWa7zepVOYvVzWeIQ8ClaRLqFs3frGqDPyjoqRQ9q5_xRVg4jyyc_iRTCWAcNRKD8vaQ8q4cCW3CMxPtvLgnkuWQyYFAaXswOzYUV-ESLHo5_jC"
+    },
+    {
+        "title": "Pirate barbershop",
+        "rating": "5,0",
+        "location": "N, 85 Av. des F.A.R, Meknès",
+        "phone": "0619-050803",
+        "description": "N/A",
+        "website": "https://www.instagram.com/pirate_barber_shop?igsh=MXFka2E1azJ4N2xmbw==",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxCx8fCelZDvPpPS64Y6tCj6egzyDnA0aPYu0adqpQKVvrkibsyV09Ro89tXdwIfKeTkrdCa3dpUvzi3wOmgn3bn-3ykl_lxMTAD0sSOxXyEs1IMs-3w7aosjdpxwJgxwzyRBLBgO_W_6Aj",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzLSNjAY675rVER-A_DxNrceg3q18xxmt8xom6IacOtKRGJ2z1yTx4LQDXGSzNHh_hgxA01Hq6JLkM3nZ9dSh6nURhiz_AomTTLNcqvv9PQmvS0uZL8zCav1cpyAhZVJ8cW2IYTRWxXVG34",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxrWMy6fslnv20BpgN1AmuiYkboDq2etc9CgnYc8c5ztikCK_DygbRsViEPZylJqbA0-uMPRTsttm6auRdWOjeBDgecsvOVN63b14c125VN7d178G-FZJFYIZt0XZJ15QHJ8MwXi5OzKLw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy15YMIj1MgNV8pF_UJaadbLPS6Dz89Dn8Kh_c6SBkgOaFuOzs3d3F4_PVF-XmtzMSBo2iDLZvPSjxwg8nHYX1cc9j7xbsgMChUFEKZolUGhUw_UeiACMcMrWNNXO03Re3yEkYLvg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw3kyEzLK4KBIH_oGyWA9HyhBx-hCd-Wgz54_lNpzj1prQd_FZOYzbi9cAN2htvIZJ2KwU_VeZnSiUW0MlNKmPZMSipauxsotc4B9z5_K9ESqbYMLJj4IdEbhBJXnJc1n8ID6LrfxSYQeo",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzzf2qHShHFLco7jQne2rSiX-moZ2ERIdYjDEtu5uTt6_PCJrKjzs3TAC0cSWZEnfOWXZMyeNaEFmYjwTwkNY8VKgEfbbe9Bwhmzo49eAbJQKCgin9oC0vc02jcKauHVCOjfu9YYDs8UA0",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz66R6e0SHJjPyWGNVwd0DQLMLLBS6kTqgF9Z0mKU13qesSfQJej721-W51ZD3DcqnKbh6dzZPq0GPHMZqFASey9NLFNOyARX1w3WJ6S1i4GGUGL8Ucmr-36i99qUdkZHnVZ7TUNrR16To",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyXY7FOq9bHbLNdgNULDtqWxFvL_bX6yhiL_l9jZtFCU8DLuy5ietBMM1S1z5lm32Jy6xzsI3nWsHvsVnDGNfXp4_Qm4NoJLZLVYbh96cn94CHUF3W6mmhUI4IDDwo-LoxCZnTxqPOjIxdH",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx5tBhdzE-Jqxai0KRAEwzHHfKwYMMl5uoUdcyHWnUMBNXLHaDBwaggKO2AJGwBmCC8D1p65dr56ZvHeP0POL3BJULqfFa0Sw6gkKgbYX6O-Ukag2D87R0laoR5eg0eK-E3tqPSBXEQ_wqG",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzX8DtI2O8KpA-PTLmpoCug7Ue-rdDiAxwRN1V__GAD1IY84YZ6DvSQyaBIE5R3kAjzrgpiyyOnM_6YF03ueDfqtoP8wfKt-OH9JzfcK4BIQNb3X0xWlvY0fSKVsIqH3rsmIPgEkeO_xxPE"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxCx8fCelZDvPpPS64Y6tCj6egzyDnA0aPYu0adqpQKVvrkibsyV09Ro89tXdwIfKeTkrdCa3dpUvzi3wOmgn3bn-3ykl_lxMTAD0sSOxXyEs1IMs-3w7aosjdpxwJgxwzyRBLBgO_W_6Aj"
+    },
+    {
+        "title": "Salon_3na_biya",
+        "rating": "5,0",
+        "location": "tranch a, Riad zitoun, 50000, Meknès 50000",
+        "phone": "0614-405845",
+        "description": "N/A",
+        "website": "https://instagram.com/barber_l3inaya?utm_medium=copy_link",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipOUImwFYPlPmBkx-aRwly-JE3UkMUK9Ik_xFI0c",
+            "https://lh3.googleusercontent.com/p/AF1QipPkRIQr3qy4D6jWa8O5vvpdaaqp6NeRN1-L0wgp",
+            "https://lh3.googleusercontent.com/p/AF1QipOpvdv4hUMxVSZJz_K1dmtDRaxqOoiNF6iJn-Nu",
+            "https://lh3.googleusercontent.com/p/AF1QipOWniVOHuODwUj5fSk-xhaUjePZ06vzRlJML_4z",
+            "https://lh3.googleusercontent.com/p/AF1QipN0c9F4XoLsaHm92sUoa7Wb6q-P36WLEoQu20oG",
+            "https://lh3.googleusercontent.com/p/AF1QipMYDxXIQheCb3TYSEPSYQlOC4l8eZPF48if3whL",
+            "https://lh3.googleusercontent.com/p/AF1QipPuCevu-0GzPCYGLJaPlCd_gmcRWaGFWZgxHDMX",
+            "https://lh3.googleusercontent.com/p/AF1QipMWgLGyB0j54Tg9QI_kxqi9EMKUXtrNNHW5qZ3_",
+            "https://lh3.googleusercontent.com/p/AF1QipP3hD9d850unYREBCX9Y8XmhWqTogMsxS-ZLbJk",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxVX9752O5GrVEa52lJd2ly_c_eTqA0wRlvGqQ-UEY5jdFvB26eID3ztdjrbtORbkVWzO8ZPq3554WjTNePP9OSCOG2hcul9btqdJTPJN2yP9R2dd-rcOp2vOpjCfAw4ln3P8gl",
+            "https://lh3.googleusercontent.com/p/AF1QipPwQAwwjX-TcB5G-WVvrQKknNvhVlADoXzYzJg9",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzCGxughW37imDfiK8Tw8uAiSThHBiOTYELujnMOavQBMX-_DhzGvIx5dtJ6-7HDwDvq2z4iCOwMdpqg36KjoYEc8J8RO3TRxV9GQ32ImLAzGyqkF7ycSLXxyYpBfOfq7p-Sh5vzw",
+            "https://lh3.googleusercontent.com/p/AF1QipP5TpEgxaTPmCKBPzCdrv9vOd73T0R-MgXGA3qa",
+            "https://lh3.googleusercontent.com/p/AF1QipMtGrG3XjnGANh1tgzObeTa-DKRi-GkokMLaNjw",
+            "https://lh3.googleusercontent.com/p/AF1QipNuMwGy78_Kw2P371u0VMKunWUKwH7bhT5s_9aB",
+            "https://lh3.googleusercontent.com/p/AF1QipMbMZwYncOuXBkYHkEEJQrtHZhQBxCndI4iV1NW",
+            "https://lh3.googleusercontent.com/p/AF1QipPF_W_Bpv8QfBMvPfMnHp2-vx5iWmMLwmZuvmc5",
+            "https://lh3.googleusercontent.com/p/AF1QipOlpY3YQWGi8Z_TB7T0sv91eY-Y-yHOxMR_CF_y",
+            "https://lh3.googleusercontent.com/p/AF1QipNMU-anl0wBzBZOG-_j2AKA0ktlWDFUhkfDNjI8",
+            "https://lh3.googleusercontent.com/p/AF1QipN5cmfu7WKfwnnwXlZ9nat7QRKkppZCvTzntJJI"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOUImwFYPlPmBkx-aRwly-JE3UkMUK9Ik_xFI0c"
+    },
+    {
+        "title": "Via Beauty Spa Meknes",
+        "rating": "4,1",
+        "location": "N°, 1304 Boulevard Mohamed VI، Meknès 50000",
+        "phone": "0631-723164",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipON2FtJUcgt4l4GJUQ3Pxpsnv--8f1SQrOO2SDL",
+            "https://lh3.googleusercontent.com/p/AF1QipOZNL8MiqPsChwAF2zNq4iVJ-hvJTR4Tm00Y66n",
+            "https://lh3.googleusercontent.com/p/AF1QipO8sikjLoDSxPGRBJLuJMD_sqObuk_JZfSd4H29",
+            "https://lh3.googleusercontent.com/p/AF1QipMHAWYCUUfmlJ2XFtCBRT660CPHfyC9O2UpMB2Z",
+            "https://lh3.googleusercontent.com/p/AF1QipOTlHJGV0SYYohUfnM7AT256ugBmHayH8MjR0_Y"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipON2FtJUcgt4l4GJUQ3Pxpsnv--8f1SQrOO2SDL"
+    },
+    {
+        "title": "Salon Escal Souad SPA",
+        "rating": "4,2",
+        "location": "54000, Meknès 54000",
+        "phone": "0648-833212",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMdGJXj35c-1kUYW59DXxUWNHlK8gV4orhG_u63",
+            "https://lh3.googleusercontent.com/p/AF1QipODDwF1cvvzdj4lscDl8HZlvTurTVjP9TMPRR95",
+            "https://lh3.googleusercontent.com/p/AF1QipOWcQXkdo1rrD5-8-2laduzbEyQjtM3epX3Fp5-"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMdGJXj35c-1kUYW59DXxUWNHlK8gV4orhG_u63"
+    },
+    {
+        "title": "Palais de beauté",
+        "rating": "5,0",
+        "location": "5 Av. Chaouia, Meknès",
+        "phone": "0614-081716",
+        "description": "N/A",
+        "website": "https://www.facebook.com/profile.php?id=100093377241908&mibextid=LQQJ4d",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxNKhD82OxTDaE5ckoUqZ7T83LDb0CxXiiTEfKZn3guG_fQ2o3DxUjldrCqICqAuW1_WRDTs8dyBhO0J2Ul6bR0yA8y6i0IcYZry8vU9v6mkZT40ohTql_dxSU1PzxfZSIUW7Ab",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwLO_lIb3pnuVvomZa1l6WuUE6mMhWwZlIWl7sXQjSt6eGRJfbstA3nWMAmtc4rTJDsX5KQ-zsDrD0V5RZ4viLB9kVs0fOjJjV4bUcxc7I_DZ_LAJykUsR5Mui3t9CCii82oafDQQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxR944guCaP3964eCsZjlP_wCVndRRRvZlYZkTM6vggA6_oc04L5LziZeGbhJbD9L91_ad86WtZ1yui8odckheSJ8LOD3ZzunC2SMmhKHQLEfjbAwtx6A2l77dSBikJVnow8YBW",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxIr1TYiW2WvZ6cBXq1D2nCveLgOmDW9Z9oGVQuz1gq_SdeECZMWqhpmE2Gmm-RxxYuU5qPIXplmzgMQy7SXiNrH9eZptxu41NOWhkmbrdmJgeYY8pwFfZAgZyp6E3EQmNvVu5o-A",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwTVeEoi0MJ2-CCoPBPs4c_hdNNX8V5qtRQ4Qm7RRtYfER8xNsC35jktTGk6jkcgGqJG7jARLgPKyCb1Y1OS7tEP-jY4kxYD06ryF4TdSZF70L8acOh5LNL1O1J821Ovi4xnorX",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwiKoZ3PMxn0WDXRZQFB6-8GdYMvb0937Vg2VNtoXS482l-Hwer3P-vQFGaFP1zgEiotPy8HlBzPrfBmtUfEj7U0x6h9pg-Bg7h0q1fAiYXFsREQTJmdSwpZWbhR9eNJ0-1DwX7zA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxsZnbV2QTKE5BuQpMkJ09FG5yqCuhTcFjkz6UK_vtDyNwm38J3DlJwZJ_fom6gw7UxoEShgKJSEH7-wijywRJ7LQEqlvPkPTB0oZWkhcoKhbq1ybpkyNEe_ENwOzEpcrOUiMXJ8w",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz2pbXICgFVATPIM5mie_cL-sxal4JmnBL6ne4oD8iOzBoE11y0qhmIaWQI8NAq_47acnov-4hBIk6z43sGEuzYMZv3BFxepCtx_1fhWwN96vH03oiZryvkGT-oz0FTCKdF19hAsg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxNKhD82OxTDaE5ckoUqZ7T83LDb0CxXiiTEfKZn3guG_fQ2o3DxUjldrCqICqAuW1_WRDTs8dyBhO0J2Ul6bR0yA8y6i0IcYZry8vU9v6mkZT40ohTql_dxSU1PzxfZSIUW7Ab"
+    },
+    {
+        "title": "CHEZ MADAME SPA & BEAUTE MEKNES",
+        "rating": "5,0",
+        "location": "lotissement El Fadilia, 14, Meknès 50010",
+        "phone": "0669-761252",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipNCV1IRzjXki1Xo7BGUpeebZvHN6EmtDBBb1iMo",
+            "https://lh3.googleusercontent.com/p/AF1QipOiPdsX5Td1xZZzPc5su_oxE_1VmTjBFYOuOH-k",
+            "https://lh3.googleusercontent.com/p/AF1QipPGnjH8CVwOxzVrJUVn66EbGI6N3yw3UTvKLxUq",
+            "https://lh3.googleusercontent.com/p/AF1QipMVwxHxrC5evClV9pwGZZzAxtdeb61e3IfOsOK-",
+            "https://lh3.googleusercontent.com/p/AF1QipNbUUinLk1zTvwOW888vQ_TB2_C4sXZo1SrY5i3",
+            "https://lh3.googleusercontent.com/p/AF1QipNt1BpADoZLN_golDLOGmL7mH4iAoGX7X2VMmUp",
+            "https://lh3.googleusercontent.com/p/AF1QipOtbVd9ZGEnBjDlq2pW4y-RU8wJOrGEFpSLQqXJ",
+            "https://lh3.googleusercontent.com/p/AF1QipMFLTjhibsT0zwGu-AYBzd008gDQkHRTxS973dU"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipNCV1IRzjXki1Xo7BGUpeebZvHN6EmtDBBb1iMo"
+    },
+    {
+        "title": "Coiffeury_badr",
+        "rating": "5,0",
+        "location": "VC5Q+X9J, Meknes",
+        "phone": "0669-604734",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzKBamz-ltwURgOnrECit8eKNb7896K0PjBZDpqGXBiaGXfOEgvFkYYRFrGc6cKjx4z7QiI0dH7gxkjNdI3s5oHRPtcj8xFOQzM7PWq9BsnbFHGYSeZsiLJc2jLHCkNLpifqGIIQg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw5A_EBYVhTgkHvV5Vrmz-vFiNVsN-GOdNFjx8sOnS31OzvM41azATQ6HsEbnb8hXbAFdlbCg1V3bs01MIKqmXkwvIWLgyFJe_dygyi5y1qz5NMMMd5to4BIdc_khO6vXrwxUhE",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyQVySsyqkHZ1nI7sztJ6BIM5Psk4p_svRJKTaXKi-XTdHWPZSk_RobOZKr8CkNF8MhtJYOXipUUVgLGXY63gYboLTuZZruVYHHWpjNJNmUWIvV8QM26ozR20C-BDmTvdDjcEdr",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyDNszw_iKKJjweVlOrGAfzdykyfXmrXI6GUxwlhuxSNFLCE-9KBSZvlbguvCoyNMmDrssm5IicIRV8dOc0jcw2f5OVErhNe8sIOSBJMWK_lXWQuPHIvUYaiePSMj-sAQJj5cKZ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyYRFf_g3Gk6p4E23V2vG9V2QGi-LTZHX1dmb8QWEllrk8vXojk5h7E3T_EqIr95xkdv_i-SGLCEIULp6jwkDsAwiL937Ee3zS5PZfa9ORM0OZB3eKa3lkRcsCKFoMvK6O46BVa",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw2Vbvl8Neb7zITOj2R4ArjD6UZRAF-oNGjU6jPjMbwHHqVJUNXuUbNX5RejK5Ke8W0Fiqek_Wyqz0naP6jwPF1jn7kbFpGOVjYKs6hBAx1_PEhDPvX0lv9uY8_A9WbbqEAhro",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxeVmmWNCbUHCYyfpEPiit7PHS_gevAxw5UmhIsdyh9sjQTWvFna3CtWtiYKNasOklGyx7d5DMOnLRvscLBnYj1fv-Qm9nwP_GlVkpth0QVI5-VnfSwOzqltEspj7YacdA1pqg57g",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxvgCBuTw4ELa-DKPRa9pMUNBMapHqBZ6rvzMXv8ERQIRteHsuxnRjCdmlvs9ph6GrTBt3QZAuRhavswyrrsLHgs_-H85AaKoV-ZQiWzdF-a8DRO_PNJHNnE6lekgJecoah6xuR",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzxIBiq5sQ8HWu1YcDE1O9h5BnWFdOVkS6T715SXPPvKEY9Bs_zaMiyo51wkwieK_m00XMhfTLkGzFca0cdbcb4o93dfUS1dIfUyzL4x8tiBB66OjcO8cNdHiVvcYALp4YS4ZmVtg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyMjS16tzLciVcXRjud8OuX6gye0n1-etEdtuPhCfvJN2smfPArshyDj_FzDzmKsAZFJMWV7laVvWNHRU70mewLoMmU9Jji_Rd0-tVgo-asvHorL9H8tz0f0J6w2D1a-OwPDtPn",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwwXQ7GAWqyKzMYPrwpNgHHWpDPFF8br_FV5gSuBa4UeUmmJqTYfiKWdcCqvKm3NLCh9qC1UyhP4yNzPLEWPjL9KNv6ehRezYE_B8JSlTjkDXdKQXV5IqUqAFAM4ysMsWzsToogQg"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzKBamz-ltwURgOnrECit8eKNb7896K0PjBZDpqGXBiaGXfOEgvFkYYRFrGc6cKjx4z7QiI0dH7gxkjNdI3s5oHRPtcj8xFOQzM7PWq9BsnbFHGYSeZsiLJc2jLHCkNLpifqGIIQg"
+    },
+    {
+        "title": "Lotus Spa",
+        "rating": "4,3",
+        "location": "5 Rue Pasteur, Meknès 50000",
+        "phone": "N/A",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyMF6x2RTnMA1UciMCzl2lj4CX5IDq0MDGyGM3l1DpzbeBsbDxUmeEiYzeACJaU7Yl_hVpgq2wYuWESQp7ngz_khNmTp_9zKRgksVd_tA1xDqxZaHuOL6npBawUYnXEwDr9d6VPyVGoZ1JY",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxM23ekJ0KdSiPDw2ru0ijtGZh6wK4DIY0JezmFunDHi_iO72G2qHyF--eNsIrKx5bbO7zUx0uMG1LipUH-ZK65KNG9yqSg4AXUMAe9nNdsOMfhTAuVHIkmipTtc2Fqu6-SciSyH7q63AXh"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyMF6x2RTnMA1UciMCzl2lj4CX5IDq0MDGyGM3l1DpzbeBsbDxUmeEiYzeACJaU7Yl_hVpgq2wYuWESQp7ngz_khNmTp_9zKRgksVd_tA1xDqxZaHuOL6npBawUYnXEwDr9d6VPyVGoZ1JY"
+    },
+    {
+        "title": "The Barber Shop HK",
+        "rating": "4,8",
+        "location": "VFW4+3QC, Meknes",
+        "phone": "0600-769689",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSykJe5ugwvLqAytb_PPrshQbM45AgcMmctesE2v2oA3zXqaBw-xUPndUT-bcibxGIxivxHwJWLBztYdKsmOzyJbzgPA1gfE3SSGVZREWvSWiQ_H7maE7aGRTQlNekzt0kk9JVNj",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyInar-6VO2rFxo5QnsZjymJZYuhZEV9UANISIWNXVuQe4bgZJogtU9J_ZF-GEEZu5aDut4l3lWJbft8vSiB4rWFuKilbKiBoa74IUCoTlgJEAZYRFD2vqIyOuKab8SgPkwirWXng",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxENFvUQtB8heKgO510--Pv7DXmPeT_EuQQKY0Jcn-ifhC3NOzDA4IEuy8ZywIQAcjKUGgM9pEBU6K-c4cFOcE019M4pLm1WwpnmclFZCAm5EIVd4AG3TuzDYIMjJwka1eNxH-n",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy4g2Ilst8_gK59FVNWE7Ikk3HtNp3btyoeaOPS6pA9OK5EIBQGeBRsJCGxr0x1uj5jtVkwUwXSvWkKEfs-y2guFWDHwlxPmH3qFbLbkAMDRN6_jKYEb5IP5wXron_rokRroMsp",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxsLVpBLwqHJq6M4bveMeLseK877FEXUsoQRcFNOLUU-3Cn0OPzE1n8hzELTcaNKiTp-Elg_r4IuMCzrAuNvXPgavGloy8W6BT-yNStDUNdoppTtYTjlrIDdHb9PdgJNy1e5zpKhg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxgMYgQUL4FguZXK_5u3GthI91zn8VXnxgDs5zksVFypYj03VZd69LzfBMMNXKF_BVTy8AFf04u8aiy8zFTIYhVHqyBS-JP94YzLgNdKRDhwXqbbF7WtBgLImh20ww8QiLA1zza8A",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxMQGnN5cJLovEEckeGLNy-ufU1RoPGtf3AUXVncuTAgVIU-402k7wfIcQg8jxdMi9tApo5A1iIWxjWFIw7BkJoPg0ULBtFEDITSGdxsKxphvP7pxzMdfyOo5bXvm8jD1Oj9oWZ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSykJe5ugwvLqAytb_PPrshQbM45AgcMmctesE2v2oA3zXqaBw-xUPndUT-bcibxGIxivxHwJWLBztYdKsmOzyJbzgPA1gfE3SSGVZREWvSWiQ_H7maE7aGRTQlNekzt0kk9JVNj"
+    },
+    {
+        "title": "Bogssni barber Meknes",
+        "rating": "4,2",
+        "location": "IM 43 MAG 5 LOTIS HAFIDA, Meknes 50050",
+        "phone": "0668-413711",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwV29GmN0mqxszx-VaGhk0euNL5-UhjdSxkRx7sjYXewIeYHDjjPseeDAjN0M_zL5XPTeMOzHnsRu0KAm7a5Ul3p8ph0uXVnyFDEzAquD-EAFAgbwp9uG3wVowi9-v6pToQYGM",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzcG2y4V16MUURiuAbGFyKCVdjQNGV7IAUpA4Aeotim30pt6q3rYm2tJw8nlgizpphGkSzmoEQw6aDzlPed8BLiRIH7iR0UWUfyABmQfAT_Wohd3nZeQxcMtM5RaTOmgACdOK1NQA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwJVtVvVgSjXWowAou9SXCsnfcq93tPz_e2Wg-3vgK59uynP9d5SEpFTnR_v_aAoN53E1FFTBsIEvAbU3iDTNOV97aeirYcjUUdRUWwx6XFkOtnWoQJOtNmZZSOHFTpngg_No4J",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwp_rXKWJWceH2K_Dqy4soxJrBPSJ3FNMjPg4_eKSQel8QvH9vLHhSmsXyUigKvsDj1lMsJzzbMT1C9AjqsQ9iz_309GSJQRJvPqCjTR64YylXLJOoAgS77HB8A38pIPkKPw-7xuEgufKyy",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxxj61V1c9iF30JPJcOgdqiNAOZdL4zUouXmszDtZ2BTSWDElJu_78OmqpdkJyVKzFym-_XIZx6nguBUzvYpeoh6e5fUrzIkPyNzwXa_io52HmkCicl0CApfZQESRaTwZWaQfchBS40ulU3",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzUg2sm1-hffa_5cdDfhuEh8dr7aAvY1vQPL_-p2-2llRZPzkqZXcN3GPHvLgc9zN_nCSl9wAZnujVaOqi8ouk_VAPpN61sdn4ufGwggF-IKoHZ0NeNcFVGNRxgSIIbeYIyVFQH",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzhusu4yLT6BIiRGXYuf-ANds7DLa-OnIY2slMt8DX2b58kVqZtltIWMuwjk3NOYXXbIVfLw2uZP6qhy4Q2DKSa7WuriS0fN59KAkwPdJjKqB3Ew1RCyMD8Iff6BpG-sP2-MpfBgDMM-lw",
+            "https://lh3.googleusercontent.com/p/AF1QipNVQjHS2ZLuOfRYKReeNLHK_xB5edCdrmZEwLBT"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwV29GmN0mqxszx-VaGhk0euNL5-UhjdSxkRx7sjYXewIeYHDjjPseeDAjN0M_zL5XPTeMOzHnsRu0KAm7a5Ul3p8ph0uXVnyFDEzAquD-EAFAgbwp9uG3wVowi9-v6pToQYGM"
+    },
+    {
+        "title": "Jean Louis David Meknès",
+        "rating": "3,6",
+        "location": "VFXF+868, m Wellness Centers, avenue de la gare, résidence Naim, Meknès 50000",
+        "phone": "05355-12396",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwsPx0vQdKXLBaWx2SdtB7l_ovg2LNH04AuEO9OluFhXSunjp4hmY-yQlM4oVXyatysx7t3CM9SQuwsY2K9rhkWUX9UYhRhu-_UKU7xH-WWCJFcp6K942qMwMXBSAVHQw6NXMOL",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzIAoLQbP8VzDu90mQwszlU-MpHsRA3zOW1txhd-tH3PMmkZ6MMo7MRL9ujEk5cwzxLQ5tuSTPFywu5f5EXDEVcZ5UzeUSNbh3q-7-smOgEb_PzBkVGg85w4i5irOiGa0rtlA82Rg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyEolYQXRIYeBJFMmlyOXwGFmORDAfeQdhzeT58ODv9pRGzxNOlB9ENmsmZt4DxrF98VUyGHKUDdbLi-UF071-dXXbpKZp-fjLTx-u1u1OXlHt9V8Qyh5ww7D89kc4aUAydjlq1DQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSysAmRRt7nC1Rrk5hkRI6k0TzcXZV-tWFjtghXE1h4-kGFIgsijDEHQPjo9DPQC0usEer1tJz8EurgiVJsyRt9ws8euBunjV5CVtOvLVIxGACdwTPJi3JHAtVSJ40QtFKB9lXIJfjX02MKU",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwETPeLxF7-0TyeSI2bW1B8_XPAJpAo-cNs5klPPkm6C0kFT23McGHz02Xd5cBjMveMYEg2go4qXztReM56Q3xwmf17Gw9Vu1essG_6O1Dpk8z7xky1mNesFtYL9dF1P2KumV4",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy3oVPDWdIzw8tlDD38UiZD4RBO0O6MYVVQqVVSPuX8tKwYZe2a8t6y3kjU9-M4nK9lgYe-B5xxVC6bs3aFyudE6SLtaAoTohAZBO2QORB4ezXaoRVWPdMMpX2P3dcyu00XViQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwsPx0vQdKXLBaWx2SdtB7l_ovg2LNH04AuEO9OluFhXSunjp4hmY-yQlM4oVXyatysx7t3CM9SQuwsY2K9rhkWUX9UYhRhu-_UKU7xH-WWCJFcp6K942qMwMXBSAVHQw6NXMOL"
+    },
+    {
+        "title": "ASMAKECH Spa & Centre De Beauté",
+        "rating": "4,6",
+        "location": "VFXJ+Q96, R718, Meknès",
+        "phone": "0662-639383",
+        "description": "N/A",
+        "website": "https://asmakech.online/",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw3rTaMNC-skvykjJ3Bjlr53xnLUVJnCyiPU55Min4HdXoOxIWIpt6e3nLmxTE53t1Wp_7phfQfHKGA546reWGk-S5KGrXjjnZZi-oKFLmjWt2tXpyf7KvvdQZ55D6kcMG06HEfFA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxIQ7HFqKzxHx4aV6Z-eRtwnPWhJ-sZ2Ppw5xw8pRNtyNy8urcEWBsZaPYmJW0PEVLHs2CwQ-r7LAu119v0GhDei1T7vpDOaiEokHXLI_v5sWsKHimKJQIMfnWkSJH9mpCj8m2Hnw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw0ZxhUUHL1eSQ7nS_2KG6aOTNByt459hsGzQuP3LNx05TecaBYol5kM2BRQ7g9cafMLO1WCDvSlK-Qes3gjuE1JALLh1i3ujL9qvHtjT_uernJibh_vQliyugMd28O30PxrsSJ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw-vSy_3V_tdKSQz2Jctrdef2INKm2Prs1BKb60fGHym-qO4SwH1hgDoFlwFeiNuwuQk-5MzNE7vREVToMZZqVJ56_ofRFLMY2TXbfRxGzqssthgcUPlUCx9WBi4FlOVUvzSg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx6fXhPDGmAzUNbC2dZ1r4rmd1qySwibpuPik9SEuLgGmP54icrLVbqyQLOA3BxlAqbp8UDJNCK729ytOKdmjwjzYJQ2vBYbxxf4_19eUlr3ZjD9FsRpW86EQn-acwKmWvZpCmU",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxaKOme0PR9Y8sdQj1AyjMmzmA24qSg1mbtAZG3u0rkpFtLVRamUaPvszoEGs_cBMOgbXbo1SYoBofZ02VCwRIfkAzW37wTIA2XVoRmLv1G4V96GwlqzvnmCEcozmXlClFTcBB5",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx5wVPd1J4NkKVxSIFYosZqAT7B1uN8wPmB8yv7M_Xknl8LOvG64E0fjvaeFEdOI_A9ahCTZV1ZokNTx-SARuXtD8O3BjAw3mzameGm6vQ1oGlo1dbMRRmav3BrUufGZ34tc-yIVQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwtRppGhiq83qZaTJQRH_1MLWqXFNRFJXGUo7X9d-w59ACkdpTdOqO1IBSLSMaCU42hR2GNJHqZqm-9bqV-PN7gSCUsfxtmPaPfGHaVgOVvlEwJB5aDngg2D1WxvBaU6if62aFz3Q",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz69tOlWKkD3k-q8vcqZ4pGG32NRC73CMskSj536miFIBPOdNK58U-2ex4jMCtEVIX66KTWZkl1ObSDgK7eL3MGKjZTiV7bmN4A2bw1MeyOxCfzT6H-g5MXA9uuD1wtuqIM8bfh",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwrOgTP5-F2EtGFw-VFY28gDxDoRAzrHUw9__q-ifnpu3FXOghfMwSraQlRxpdJefklepgPlrF-RjzulbaLRZMwforAgzUhsQjoduTTPzQkgb7ygt4eZBT4pSCB_aDBIdgEFK34",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzehC_96MH831gTLXoFtybLWhCDSnX9ogPD5RF4VCn4Vr1lxlVcRVG39DJ2mhMLsFhyCUs7-6a-9crTw_Ux09D7Wb8m6U_niaLpEdM-jXk3nptkf5639CvIcDBv6CMBNlSFAYmPkw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwYUF1fOhu71LzJbs2_qifTJfmn1LSWR8yfCvVerkJMjzsn0YnHnBPDW1h8VKDO_obHsqF6TAPcrcZBnyc7TQJ3RqGqDAq_88cG9MNh0u6y-FsLReHIOfpd7VYiLB9oxPM-x0lo6g",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzR4jNk_2DoKoNPXIVM3a60JOVd9bhYrtWSDP53KVCZPskF7kbLWYoAxjh1kL2JUMHsouZKDL7oMAm_ROINg-n-Z6223rMZpa9xyepUTpwl-o_QguP6UhnE--f8Zx3zmxWPIPU",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyHbtNzwuKaA-M2yxsdyTzytoo6Lq6OP7LoavOiXLsdzDEKFIiyP0H-pqEkb7ohYOhBn-jmZI9MTZ8JjxONESsma5ITQ3XPYFjnsaBRODEnCWhFilbsiA7f7KaoJ_HtSPhGdpeY",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxTY4emJS4a08yUEm9790GgsxrLwZ0Elzit_pQcBJh5SlU02l9y8qLKiBQiSKLIbklbkwqCXm0vwltdUDTruayf4yLQKMuCtM0zGrYzEK1MMppZHFMOrE21Qcshqij3MZoozgY"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw3rTaMNC-skvykjJ3Bjlr53xnLUVJnCyiPU55Min4HdXoOxIWIpt6e3nLmxTE53t1Wp_7phfQfHKGA546reWGk-S5KGrXjjnZZi-oKFLmjWt2tXpyf7KvvdQZ55D6kcMG06HEfFA"
+    },
+    {
+        "title": "RIMAS Beauty & Spa Meknes",
+        "rating": "5,0",
+        "location": "33 Rue Oukaat Zallaka, Meknès 50000",
+        "phone": "0667-820344",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipOpXTBc2KKv3AublCXvSux92IAizMTWxbkOftXq",
+            "https://lh3.googleusercontent.com/p/AF1QipN9_nOO7uWUqz8E7JH5WBTiwwSxWO0aR55p9KJh",
+            "https://lh3.googleusercontent.com/p/AF1QipPQlim3GVOaoDCR7qYVc5QyCX0HGjUQdjvQ7wdt",
+            "https://lh3.googleusercontent.com/p/AF1QipPD7h2Y-SDTz6eAEaA7tE59V1wX2EIwR4Rxeh8h",
+            "https://lh3.googleusercontent.com/p/AF1QipNk7Za2ITv4o1MqHShSqHDYOv5kIVhQEjmkoKyi",
+            "https://lh3.googleusercontent.com/p/AF1QipP8Up8DuZUsYdHqzbSjeg6n7jArwm5yaWriC7BM",
+            "https://lh3.googleusercontent.com/p/AF1QipPpDHeF7P1ee4MeTI_K8DjYNMdqYL9lXBoX99Or"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOpXTBc2KKv3AublCXvSux92IAizMTWxbkOftXq"
+    },
+    {
+        "title": "Salon El Karnak صالون الكرنك",
+        "rating": "N/A",
+        "location": "Rue de Safi, Meknès",
+        "phone": "0639-284075",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipNsPEifJ5m-R3gDGuE9rBb84u9mU9kewLR1Kpq3"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipNsPEifJ5m-R3gDGuE9rBb84u9mU9kewLR1Kpq3"
+    },
+    {
+        "title": "ANAIS Spa",
+        "rating": "3,9",
+        "location": "résidence Nour, Rue London, Meknès 50000",
+        "phone": "05355-20378",
+        "description": "N/A",
+        "website": "https://www.instagram.com/anais.salon.spa?igsh=bGNoNWVmeDhpcngz&utm_source=qr",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipN8z41AIKQ2E8-09UhdpKFxkIe6FS_Vnz7Na48k",
+            "https://lh3.googleusercontent.com/p/AF1QipN9ZohrmL8LqMzpm2eaUElj9w6AdijGXvGNI_OH",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwAZGZdjNBbmz3qrVCzCd4B8Q5rndmlV_Y4V-CTngK42Pb-fxNc2htq9tax6eDTS6Uk497EXa0OP5KT31WTWySMquIW6g_foSGyqlu5A_VL_MuLOEzgekZeHG6G2RzqPqxq5Eds",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyWDIvZyiAQYavXwTUDEzzzR7Rr3exktutPxcuijQ5k9WuPy4LGinqwFg5Kxw5SlRfoy0bsD73t5yPG2mEuuKukHF1GXjeGWfRE1sDX63Ta3ItUEUBTkkxl3PQ6rRhKcy6tvVk",
+            "https://lh3.googleusercontent.com/p/AF1QipMJ19bUU3gZbtfJCC1UeJJka7SE55JfBa0V5h2F",
+            "https://lh3.googleusercontent.com/p/AF1QipO0-tuHtNtL4exZAP1SzMDNtuZ3BhKd6LmD6cqF",
+            "https://lh3.googleusercontent.com/p/AF1QipP5OudopHMs0xOD4PXQLywIpTPZFFeMK98kabHx"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipN8z41AIKQ2E8-09UhdpKFxkIe6FS_Vnz7Na48k"
+    },
+    {
+        "title": "Nails Art Sun",
+        "rating": "4,8",
+        "location": "1099, Meknès 50050",
+        "phone": "0665-896682",
+        "description": "S'identifie comme géré par une femme",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipPDUbL-cblZpWkffNRWF6fk0W6DnZrlYisnyUXO",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwTzlrqPjm-qlEQa1pceGkq9x8mW5YEt7Fw_siE_gnjsDmYch37IYJTW7Rw9lOmkLJmFY5j9Pc5jHADYO6sy6l8arEQ64_w3pOqg8svnDpIscoQD3Sk2He0YO6POV5qCofhwAQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwbgxCOB2ezJGTTi-V3s5I5LTovFvrI04SHqEjRzqv1MlR95pR6On9kX8pTt3xIOsEPVMPf62w_s64A7yLRSeMHqiIaUlqgGmQlA5ii6j31nNrQcmge7bChFICCVGQ422tg171B",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxjlsMQzG-zHOZgfMWPEy-Reaep9oagB5je11-rYO9GSvnB2geW70pTFck2sVV9WwXWpx0bGfU7l8VyVIsycXsOyDwJN8INtAzz-oNiOuy0Te69MIq_o9omFZ1fH-a6xVfCD3MD",
+            "https://lh3.googleusercontent.com/p/AF1QipPez3leCy2MhgBjOcw_whacB5ROzYQB9zS6T43b",
+            "https://lh3.googleusercontent.com/p/AF1QipNtY5BOXFNswFFM1oU_FHjGU2pI_JnFV-PJDJFH",
+            "https://lh3.googleusercontent.com/p/AF1QipMfrWuBeMbojQPxMOys0ikPI9K0xN2vX6nY4sr4",
+            "https://lh3.googleusercontent.com/p/AF1QipNb6ORIgv6SpJmwT8T6eLkUVS5QO-nsiq6ewTyb",
+            "https://lh3.googleusercontent.com/p/AF1QipOKUyyFSc8anCspscQCfU8M0xawU6NdtQbE9ST-"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPDUbL-cblZpWkffNRWF6fk0W6DnZrlYisnyUXO"
+    },
+    {
+        "title": "BARBER KING",
+        "rating": "N/A",
+        "location": "6, Meknès 50000",
+        "phone": "0669-604734",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Natur-elle Beauty & Spa",
+        "rating": "4,7",
+        "location": "N° 16 Bd Brahim Roudani, Meknès 50000",
+        "phone": "0614-162325",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipPm-0OZ_I-nKMfQYsMcphKbk1lDUDOgNorBbGkS",
+            "https://lh3.googleusercontent.com/p/AF1QipPTILm6lXHj-G_Fq-Zt4PyxZLKjx-0wkdoiginx",
+            "https://lh3.googleusercontent.com/p/AF1QipNn3J9MLnKZSqxp-thWQ_PLm2pn_yLQmehLgy_c",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzoaLeJBebqp3tE1RGpqMPTNHiOR5LbK5GcHGFVTJNXcjANegtE3ju6rvS56hAoM3EyjZy6F_CCV17WcdYa7wRFurUAFwNqg36gxPpElP1UeEfXWNO-DLgHFoUe6yq0bcUi_SQ",
+            "https://lh3.googleusercontent.com/p/AF1QipPYexOKtC19XzwtDlmmu2rPnwS3ikt9L9i57lps",
+            "https://lh3.googleusercontent.com/p/AF1QipOhv65gP5-EqulFy6eygjZzr6hdaegrUIIbDybS",
+            "https://lh3.googleusercontent.com/p/AF1QipPxMjDfxhXkCtP7VaczkgplAgkgsJfVi290BpuS",
+            "https://lh3.googleusercontent.com/p/AF1QipNxjF1Q7Lk324SInIHXL2UcN53jkR0whj-sis-d"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPm-0OZ_I-nKMfQYsMcphKbk1lDUDOgNorBbGkS"
+    },
+    {
+        "title": "Ô Barbershop 2",
+        "rating": "5,0",
+        "location": "Meknes N2 NAKHIL5 BLOCA, Meknès 50000",
+        "phone": "0661-064415",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipNGq-SEoKpXdqhBgxzo4CsNtx4fAlgnMRielb5W",
+            "https://lh3.googleusercontent.com/p/AF1QipP0wLQzmj6d3r3Sj3cg5Vv7hSE1zbdvarI47pdy",
+            "https://lh3.googleusercontent.com/p/AF1QipOI7k28gaFzP-0thpqB5CfUxWLy55QKBQvg9FPL",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyl6YBKlfFBjlboBO1xuZOPkZmKoqVf6yuho-4MCR8lxxWfPR9-ytHPFKHXuSIdjhHG_I4jYE2UbWbgS6X7BRP_CHqq24rkVkqaVoHb887-46VxZgBqAu_7uF7vEzURO7YZHsTIiwNPfdIt",
+            "https://lh3.googleusercontent.com/p/AF1QipPik1OzwEymEbj3qd8neEth4JCnDu9FBtWdzO-e",
+            "https://lh3.googleusercontent.com/p/AF1QipMUFt2qzPD1NfvCW-OpB0K_CCcACxhjlYDpe2Ub",
+            "https://lh3.googleusercontent.com/p/AF1QipNrR4Xbg1F-hIGKG4DhEWg_2IVwG4NTe_ES1hAw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz6fd69VbZ16Af3Ky1SPtevxUp_4aV7JWNFanu6JezdZXPgKCMDBpyrxWBxtWmFGykYM5iV8SANj8BUeRE84K1VvF-o1213RLx_SlY2U-uB4Fb7NCa8LF-QXmz_VPiSF1vpWcbqD6yg5o-R",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzNe9q2fFqF3wA47Nx27in_aWQN30OvIR8_G5zNWL9XjUwPKpRnillTzhYW6vVaVHj76HXb0MjWtmPLFfajL3Rf2QmgY88TLXMF1mHyuuiRBH4DVD1s-UW02pcS7TVwGUQ1r_I0LKVDRhQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipNGq-SEoKpXdqhBgxzo4CsNtx4fAlgnMRielb5W"
+    },
+    {
+        "title": "Salon souad élégance",
+        "rating": "5,0",
+        "location": "Lotissement ennour elfadilia, Meknès 50000",
+        "phone": "0718-006259",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipOI7k28gaFzP-0thpqB5CfUxWLy55QKBQvg9FPL"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOI7k28gaFzP-0thpqB5CfUxWLy55QKBQvg9FPL"
+    },
+    {
+        "title": "bogssni arjouk",
+        "rating": "4,2",
+        "location": "Avenue Mohammed VI, Meknes 50000",
+        "phone": "05354-70500",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwqZY7mjLOLV2zDv4ThckMJwsvY6qqoHNei7L7VSWmMjkQgukRxDmsrqEcqJYNFJ_tjjhNBc4JxbyCuqEAxpmtfVyXdwPux-I78oSjMPFtHIbIwFajvl9SRScco64Zdo9nFRMKtWw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwt8ZBid278ghBolebEgXPBznxM6Yy6PqDVq6rFKsDPEUNdmB9l3ql7hMMrW4s5i3cGPt8sifOP9jwSeJSDzKzs5Y4U41CDXECHXvGYOOgP7ptE_WDLnxjQPm5d8-T0az1tdxBg1w",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzfoDncTCUwqVFQSHq9uhLg2TahRaGDV3WsF6oNZr55GSpx_jtmkgyuSgAw9dJuLmUfmTgi1QARtQrKXnIPP_MO-I6mtf7lT3ZX1ovXROUSUiVkJWaLA4acEn5TwDbj87JmS2I",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy9vC0hwOlZilex_zRUI5CA4xqcdnaO-l1u7jTcRbs1WfXFs1VH8W8RccR0jguzsuMwcE2uh4aJehdmzoHpGIaRq6B0ye8g3KVI_m6Yw6SDMvTgKvWYksJqClH40Iw1DFc93ReMnw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxeuYaH_YKRD7ebVkCRaZRWMuotimad9swVoFW2zWPDIPRgG41ISh8eorvYscriI8rQScx4PbpEb_0LpX7AEzb1ODJ-ZSqwBvL3DYQ6YIq2wM7eGsvX3RwctEjt8mQN0nlATHTURA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxeJ-DRfUrsU7eoPdOb3lKQon8XvLcQn7Qu9wnbaHwL1JmJ4JCortunAcV80_HqLEkO5PYaeAZ22jtwY8gvXqfWd0u1oR9U8oMCWai2Gg918-wpyrkZDVFtMwR3fVSFitLHDPh-",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxkd5x4u9MCrbw2L5n7zRPJzXHx9OQn7SXvq4DoNKnrjfQgtOlPuMIICnaxpBvz0PWASHC0vKhg6iTOiUiI1dtBMTqgUD7DUKwln2-JhZypYSZrkDnkV52KVKce9PCqz3lufvA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyVOlpyMvvSiK_WNDflWOTfpn-Un450KE5W4R08P4AaId6uVA7wizhiKY8S-94kqo-SRPvg3oXXiGVhIkUK6Nox27-91qbg4FbDnAMzSUsTRV8zqlstS7zUH3sIE2k9HMMcaagt",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx5GNjTLELyzNItG9XDM0lycN4Zg-cl2zoJu8jD6C7BjE0oeUcZnw2uXe51N1i1ydYHHUqsuEUfDwcePd2LQ6TT2HfpMYnsT8WzL0PKOjAD3HvO_djPlz6yagXSolAkUKgGYfl6sA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwSZFY3gVXfxtHV559AIF9M6iXpyf1B-8asLaq43Nhji09pB8A0FoiItmDDKZ8oxUe8_hqdDxu8Dt_ebtZDeAZCHMhwtifgapNnUk033w36Hrf-0D1vqyrIFcuu6Ezaa3rk67LP",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxrALF2XNiy_mstu3rYiyfffnPxi-4673da-FKwlQEmzSRUm_GJeLaN4Wkd5Yq0L0FW465EjmFmUavjtevKSvKFHDu80DTN_mUoyAzl8vObjU2QNxTSIGYTj07FQy3xIpkEChS7_A",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyTwiZwx8t1V2hy-PsnZ8jcPjm22kkr_WiUgGv1N_8GBG78m0twh7DFAgLRf5DuxSCuNclkdgIklJkA0XIAv5kneS24kh5juXLcBsuS2p7IM7HWEze-HC5Q52zMUoPYLJ7gDyhB",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwJOnqA4izSJbNXXW6PiWs9Vk-bhC3ApWinEAuJmV3WDvXfom2NbdMje8_yMFtU9Tsy-fmCCYAAPmvYHBX4TKma99xMu0wf8csdrKMs7aXOw0ZW-yZoxb7b6YD7Gij3SRGMv_bA9Q",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwP2hAHFIcGX3bE2FVcqEFrTZk2gk69-3HltfXKgtBGPYWFJ7MnXAM6u8fKg75O7SJXRd5yrunycYu0dSkppvfHvoOkIZiC-bCwZcJBGHI_rkdTPWbDunmQkrLp2IzOFqRzr9KT"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwqZY7mjLOLV2zDv4ThckMJwsvY6qqoHNei7L7VSWmMjkQgukRxDmsrqEcqJYNFJ_tjjhNBc4JxbyCuqEAxpmtfVyXdwPux-I78oSjMPFtHIbIwFajvl9SRScco64Zdo9nFRMKtWw"
+    },
+    {
+        "title": "salon au soin de soi",
+        "rating": "4,6",
+        "location": "306 MAG:6 RIAD ISMAILIA, Meknès 50050",
+        "phone": "0659-322241",
+        "description": "S'identifie comme géré par une femme",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipPecj51Vznnsstl3ZntRtBu8_cUElMFUkjH8qGn",
+            "https://lh3.googleusercontent.com/p/AF1QipM40TfkPiMk4TVzgHuxYWdQ3rOdbCDYlxdUHf8_",
+            "https://lh3.googleusercontent.com/p/AF1QipNxzKzwo7CxvvQxMDgbIu4lKiblIkLcJpuTZgCb",
+            "https://lh3.googleusercontent.com/p/AF1QipPwUH8Kcx46qWwZ64LYkBF9mOZdQ_8ree1COUtc",
+            "https://lh3.googleusercontent.com/p/AF1QipNJnfyffV0jPaSWFcweP_rkqZQ6n-rDtEq1m3bI",
+            "https://lh3.googleusercontent.com/p/AF1QipMdC93ARTz63ldfPWEGkMeqd-EsBtHWyPiPWEJL",
+            "https://lh3.googleusercontent.com/p/AF1QipPTToAEgMd1CbvdA-TLgmFnsTpEM8wm42e3Ye4E",
+            "https://lh3.googleusercontent.com/p/AF1QipNA0vVmpYlXXMXURougniLJ4FhcVYz8ii9egoTr",
+            "https://lh3.googleusercontent.com/p/AF1QipNA1eZKMmFMnb8dyH3V5XwXdbDhyFYaS6lxIrvv",
+            "https://lh3.googleusercontent.com/p/AF1QipPUE_qxoDPfHfzdXtnCQVYBzHveONKcELJcItV8",
+            "https://lh3.googleusercontent.com/p/AF1QipMlcmlInJvAWdUOteUPT6qBHTmA4j4Wnxr6LyWv",
+            "https://lh3.googleusercontent.com/p/AF1QipOnSLLX8ZTdpH2o-udbKLXYSKG_LDLWdZjtbQDz",
+            "https://lh3.googleusercontent.com/p/AF1QipNrjXK5XxAI6XznsPfnU4y9wSBHHc42Z9LVySfW",
+            "https://lh3.googleusercontent.com/p/AF1QipNAfwbIgL7rBHmoA3Rw6x6vibcacZKXnLVFh2WZ",
+            "https://lh3.googleusercontent.com/p/AF1QipOKrx4SvfnUVQ28jQ9gB6mAlzwQQYtCRPshZRWP",
+            "https://lh3.googleusercontent.com/p/AF1QipOMYI5Eqh-nRH4zKBKuClG_TTYcBH8LaP3Wrq2b",
+            "https://lh3.googleusercontent.com/p/AF1QipOwRpaii_dBw6nXg2uYyDB-KctpUPQziMMgOnPT",
+            "https://lh3.googleusercontent.com/p/AF1QipO7VFDPOipl4MxE82nemokCwBcfcQZl0-KmlhKe",
+            "https://lh3.googleusercontent.com/p/AF1QipMkKmVt_zs6B07cvX4XQgOWX1UV7i90WCJkyto4"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPecj51Vznnsstl3ZntRtBu8_cUElMFUkjH8qGn"
+    },
+    {
+        "title": "Buddha Spa",
+        "rating": "5,0",
+        "location": "ZT-KENITRA, Res HAMOU AZHAR3 BUR-13, Meknes 50000",
+        "phone": "0688-472823",
+        "description": "N/A",
+        "website": "https://www.buddha-spa-meknes.com/",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyyUQhOrM8kKpx50cXtpSFkz6j3F1n203JQjeaYBdujjpAg_keFHY3NzsY3FKbIMF6xueHfOaxzW2fPu6q7suk9Edrlc4vHgw32xY7y8B374MzPl3xo1FILNftRlcfQKQUL6zFC",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzVmIP325lBa3zzkvd_HCFWXqaD5GjEAs4lXFIAU5JhPJJTSPfOQ5nZPDlsP3C2o54DRNQeB-ebjZqAQYOLUsTrirQUrHfh3NdeIyXZwQ63oOkU-ksew5p82guQDoYHiM1ORXI",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz5iuAgJwpGBuE4s7ZblPOpfidH6IyNaLjU0RmZ9689HYgt8I2IzrxFH608g4bjXT5favVqFpOzXJjWc2_osxE2UvP2zvGhH6UbCx4LL8PhF82BaA2CG6_0Hg2M5rqV3-oFgul1Gw",
+            "https://lh3.googleusercontent.com/p/AF1QipMxm91h_lOR9RapKdTMXzzkiTF11on8f0nISJme",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz07_yacWine5ijhQG0mrKBt0CesK-xZcr_C8QARXv3nO6PlwTEqwcxqHhQziH2DZkSjQedFdq9DotvBjScvUojF-BNEMAONbjYz3pG4PedH-pFcTv2LeJW7NKBpai9FFKuf8xjYBHo3Dn1",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxOtEI3D-B61Gyxqsv5urzhiebUq19FoV7fajY1HUVOz11TiJAbt-4sAui3R0j2miS5oH-epvBmYMscAqos3zDh2EeaMKNVdcONwW4pO7hHP39DMw3hhBrE_UqI7HCvxk9bXilrzagv6j8e",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxdmZwkEgRLh3XJCvGR1mZlDH98FHsXKxHKDBALVk5ikGdxCleVGUxd74vsQIP-T7-sHj8scf19lqpgioHFTyeClnYE0lOxpfhdKsjn7d3ZOvHzVoZSn0K-sSWC6qo44VJTSS6-Cw"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyyUQhOrM8kKpx50cXtpSFkz6j3F1n203JQjeaYBdujjpAg_keFHY3NzsY3FKbIMF6xueHfOaxzW2fPu6q7suk9Edrlc4vHgw32xY7y8B374MzPl3xo1FILNftRlcfQKQUL6zFC"
+    },
+    {
+        "title": "SALON BIYA",
+        "rating": "5,0",
+        "location": "ENNAIM7 11R, Meknès 50000",
+        "phone": "0606-788299",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxTYd9EFJyx8RdumCfSeOTqbBv4pfwXcLGTSL53gZmLpHICvB9AHHzzgqyRkaiDnHgC6kiRmeSXMhhVx43nscmhp_p4IFOTIRJZgYrKynpcyqPWDTzJety5vLkbwaWto6-4YnNsew",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzkROb2WBgG1W-CrmqQXYF8sC2UYYrccWjO1vg17T6wS1MoUKNRjrZZ-esuKqS_Jrx251tSkiYWvT2KijlzcACrQTsR-wradLSKtLWn-Tc8LmSqGhMclfH8CuMRM3CjiF1bxPyx"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxTYd9EFJyx8RdumCfSeOTqbBv4pfwXcLGTSL53gZmLpHICvB9AHHzzgqyRkaiDnHgC6kiRmeSXMhhVx43nscmhp_p4IFOTIRJZgYrKynpcyqPWDTzJety5vLkbwaWto6-4YnNsew"
+    },
+    {
+        "title": "Prestige Barber Lounge",
+        "rating": "4,7",
+        "location": "VF63+VWP, Meknès 50000",
+        "phone": "0660-209016",
+        "description": "N/A",
+        "website": "http://prestigebarberlougne.com/",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipNyNFuQB1BcM6K71UCeE2JzGflm2F-XGXnBO-uf",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxhw3LZfQZSPsJfA6PinxhuHPxOuvbP3bUV_4og8pQ7JWdT094AMtK8UDNKtZ5LTTknGpcQHQsoQQp_3nIgq0RqxDUP5OJsvgvZao8M82h-VB44Didn-YK2V4UwSce-BnYRycopiw",
+            "https://lh3.googleusercontent.com/p/AF1QipOVqYyfoiRRS5cTYbozTEzaw4jLwGLOBOfy-ykZ",
+            "https://lh3.googleusercontent.com/p/AF1QipNLieY24t32kF3y4a201avMdLT2pjmSVtfZpZJh",
+            "https://lh3.googleusercontent.com/p/AF1QipPPSaHnzHpTQ5o6SCQvkEhNAYpNEWHqsSxrHL5I",
+            "https://lh3.googleusercontent.com/p/AF1QipOyks-FpD2HVobJl6Wq7lkyuP9XLCGHZLkGcrQK",
+            "https://lh3.googleusercontent.com/p/AF1QipNf37qAr0MhutcL6uM6Ax6lGq3TvOZhm_CMiXZs",
+            "https://lh3.googleusercontent.com/p/AF1QipOa7tZOm3BU_va90k-S5sEIi5EPndDj5ZBYHGeQ",
+            "https://lh3.googleusercontent.com/p/AF1QipP2jm-r5xatVuXn-pelCJygQiiQfsefmwZv1DVu"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipNyNFuQB1BcM6K71UCeE2JzGflm2F-XGXnBO-uf"
+    },
+    {
+        "title": "Lilly Rose spa",
+        "rating": "3,7",
+        "location": "En face du jardin de la gare de meknes, Meknès 50000",
+        "phone": "0624-548531",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Flowers Salon",
+        "rating": "4,1",
+        "location": "riad al ismailia, Meknès",
+        "phone": "0776-379313",
+        "description": "S'identifie comme géré par une femme",
+        "website": "https://www.instagram.com/flowers.meknes",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMkMBtEUhHv50Eq0ItUfhQt3Fhn-RPrJvAoz08",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyq2v69Ckgs8vRW3wMZsCR4mvkZ_aZM0aXyc02wyRm-yrYOz8CSY1Il_Hlf0rdtqguEiDRWgp54AMIYzegCLgMsY-LfsakcqwuI5TXe0IN1KAC7QOYDyW6oDtqgVqaHpD9O6MuR",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyfBiuW4bgsEUEqvYc4d5cshrAXUKVyomiqka_iVmdGL5f69ueadGLOdPa1ZyCoQeWmEfwc8_eTJZ8yWbVK2HgGd1vjypCqXOSLwaNwqeVp80R8qqugz2Br3ICk6ysWyWw5HcF-tA",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSytrqmtVtgI43aPIAyhdCDBXOJ8x3UZXZa2_99BE0gOcl_yyLBWBW6NLIbA4wzIMyu2ELKQjfKGdiULSc0-tntxMEhSbRlwdEJTgB1zze-wgRY11iaUzPGu6QnkZGoL2Ii7WjiAVQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy7wkcagTIfGwNhbZ1aRiF-cWt8wkS8f9Gdy7BvkMDd7XCro4dUMvJ21mpYp_WOrO7af8c163BVv703O8R_9ElyyYOb4MajvPNhT5FFJ9VWIHCzo2lkXIox_hhiGl-5azvmG_c",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSychD8TzWJX7br-avfjwcyl14_Pw491swrZJ8DyFcTyEHreHuaHZnvu8RsjMCJe8AREkF8pdCdnY22Cv7jGiBAOVwKRkaaqdPz2BaVPTM_IjHKvYJbxUHzre91E3h5XTLj2OidM",
+            "https://lh3.googleusercontent.com/p/AF1QipO3Tdxjy8Dkb08MdblgRgzAbW_nJxCz0ErK0Rs"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipMkMBtEUhHv50Eq0ItUfhQt3Fhn-RPrJvAoz08"
+    },
+    {
+        "title": "Polish Nail Bar",
+        "rating": "N/A",
+        "location": "WF25+C63, Meknès",
+        "phone": "05355-11570",
+        "description": "N/A",
+        "website": "https://m.facebook.com/polishnailbarmks",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyrmMzHsLm8VZxQkAoMJ-6CRJZIZn33GUVe5_CQNBrg1tOLA-y5tupHifb7Vt3ngscOd6C_YQb5cyYMWxo4Jz7pRILqZb82uhBFDqYI5OJ37G7kOgFlcR76w582TunEsESwE8aG"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyrmMzHsLm8VZxQkAoMJ-6CRJZIZn33GUVe5_CQNBrg1tOLA-y5tupHifb7Vt3ngscOd6C_YQb5cyYMWxo4Jz7pRILqZb82uhBFDqYI5OJ37G7kOgFlcR76w582TunEsESwE8aG"
+    },
+    {
+        "title": "Coin De Sourcils",
+        "rating": "4,3",
+        "location": "VFX5+Q57, Rue Ifni, Meknès",
+        "phone": "0662-172818",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyKNYMZp2P4T882eyLYH1v8HWhTR2q-DcxhAJbz6uyhKYKxT5qQ9CuRcynem47455J7W33Ce5Ca3mF2zlQ3DadUV2Tvytyc_txKIM3L4DH5ntnb0_ggmJvjJtcFCcb_b7TMgH60"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyKNYMZp2P4T882eyLYH1v8HWhTR2q-DcxhAJbz6uyhKYKxT5qQ9CuRcynem47455J7W33Ce5Ca3mF2zlQ3DadUV2Tvytyc_txKIM3L4DH5ntnb0_ggmJvjJtcFCcb_b7TMgH60"
+    },
+    {
+        "title": "Salon majorelle SPA",
+        "rating": "3,5",
+        "location": "IM-A Bloc19 Residence Attahrir 50050, Meknes،, Meknès",
+        "phone": "05354-66137",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyF3Wf5jNO9gurc9ceFWGPN14GK3VLnfMmf7FdcFmTVnLpWycPB_ZJTysUI_dTYJVoS0nsxfbkD9tsKHjQB7u5j65xNxktMtzrXAZ-D9Zye2w09h6t4nvXq4FEnFylZBzORa2UJ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx_puJmS6IBA_Pj7VhQnpCV1-2R78ic2ggvrUEgzsttiueB6RZB0yBjHf46Xa-d1Lv1kavv5EjBZxAE71UtorSinGnnYP524zlkHdwIXQ-Vp_QmSVYM6iM56lJ5vuBwDeFhZeyC",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzxQm4m10X69AJaXhtf590_pNTFn7oFjYcdNnYgrAp49YhClsZu2m97EUvdOyvaxMfoNaL9UC5Zk3VGLmh745KvLDKhSgWjFMGuWZhhnPUSTtXT2h16YxqpSihQJlib_iMlCxPHlg",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzwmcY6GL_LtMkqigyM4UFKtOXWISJ3gzVsV4Bz4Qd-nuaxxmlv8W74brywOevyn3SUH8Ot6gCe37CCqZda0eiRKvaNF1jXwyQ4RUa70TpIEwpr9AcAHo0YMX-rBWowPWwxHcfL",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSymXrDr1LBR1oZLW7yprMjjt-NbImjKq_0Ln8-JiqeL1y-PzRm4oX3er3SIZy0wNrrShSli-N0r-ecyl-tSUWIKJRqif3UVwam20K2S0e8Kt_FQRI5tOXHcru7SMR06P7VfosVU",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwHiUOc4-p7c518vPzkAEQlkie65hNrZz2Q8mu71vv-yDJh10W4Vbgy3YMzj7Rz3O8QcPv5oVkW8LzCWdiMSrVv_vGoZqbJ0eMgbk3MZG68zigoxdZs8MV338kA0VlFnZoshuX3jQ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwuySudurCF3TPZHUhP6KZ85CUQuo4bHE7HGe05ReiV32aIkV42YIB8iYjSWXSDFUioLvD1UMxelL9xImsArXLUi6lrcHUx82CRVV681BJCrE5fJoIrgH9rUUQ-s6C4oqXQjAk"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyF3Wf5jNO9gurc9ceFWGPN14GK3VLnfMmf7FdcFmTVnLpWycPB_ZJTysUI_dTYJVoS0nsxfbkD9tsKHjQB7u5j65xNxktMtzrXAZ-D9Zye2w09h6t4nvXq4FEnFylZBzORa2UJ"
+    },
+    {
+        "title": "salon lamassat souad",
+        "rating": "5,0",
+        "location": "400 Quartier El Mansour, Meknes 50000",
+        "phone": "0662-457353",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipOeXLFgta8pJSg92KHTgSViAKsRY22Ed99kEMDS",
+            "https://lh3.googleusercontent.com/p/AF1QipOvg9JifOtijhJQ1pQg-iPcDFyjiUQmD3nJrj-L",
+            "https://lh3.googleusercontent.com/p/AF1QipPY4ev_8MXSxlHzGaIGUNfXLrj3WzlnZ267d1VV",
+            "https://lh3.googleusercontent.com/p/AF1QipPPVoHs62yspKIKi8ctH9eoT3vNcEBixFJ2picv"
+        ],
+        "image": "https://lh3.googleusercontent.com/p/AF1QipOeXLFgta8pJSg92KHTgSViAKsRY22Ed99kEMDS"
+    },
+    {
+        "title": "BLEU LAVANDE - Centre de beauté & bien-être",
+        "rating": "4,1",
+        "location": "N°3, Rue Tadla - Résidence Sami Park B, Meknès",
+        "phone": "05355-12049",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzPOwBCLkozrsgmR9SkGGYrQewq3aEgvAKtUZ-Ax3vuxRAK6jDVfe72179O_hCDGUZYefdvJI2KWezIQ4T1eGGJM9wTvjUptT_d5LWxSxkrL9t5x4-Jbw5QJCcDgaruPVUASdepSw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzYf46ZmE4_e7mQmaaVvDW22OrXfuT7LFFW0kdc_5BVWOf7ML2aAyWhL-0QGpa6rx5ATUcMv0Gl110lcG7w9xJVNcMDJ6mmP7kHFUc-xjRoRw0UhIZEF5v33Wb_5YIxajXXmugJ",
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSynymdLq00aKyP8ZOQlDub8wVnaNhVDj8zDyUJRv4OZeBFdN48v6Ndg3xlKcFy8QnZQMXGzXjyIM3qtwufrF3Dd-jdQYNUZKHNQmJ-X1yXaMyLeYYzLHig5MGvdUbMeH8LJcQvxeQ"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzPOwBCLkozrsgmR9SkGGYrQewq3aEgvAKtUZ-Ax3vuxRAK6jDVfe72179O_hCDGUZYefdvJI2KWezIQ4T1eGGJM9wTvjUptT_d5LWxSxkrL9t5x4-Jbw5QJCcDgaruPVUASdepSw"
+    },
+    {
+        "title": "Salon Adil De Coiffure",
+        "rating": "4,3",
+        "location": "VFX6+67P, Rue de Tunis, Meknès",
+        "phone": "0675-914969",
+        "description": "N/A",
+        "website": "N/A",
+        "images": [],
+        "image": "N/A"
+    },
+    {
+        "title": "Hyperminceur Meknès - Rajeunissement, Épilation, Minceur",
+        "rating": "4,8",
+        "location": "Rue Ouakaat Zalaka, Meknès",
+        "phone": "05355-25042",
+        "description": "N/A",
+        "website": "http://www.hyperminceur.ma/",
+        "images": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy6eVtb731Og0pO-mOUbBFGdkdJkdbSThpp0d20HfV04HBY-6r1VDMQqoqQdGKvv_LeuZttI7RqGPIbdfl-rcGwQxd5In74qYsiBR68iR69OkeZ6xRNevL5iBzlgW0ii3bgm4F1",
+            "https://lh3.googleusercontent.com/p/AF1QipM5hbjvoUT8ftwNVyffvMTrllE5Z3sZpK-B86Kc",
+            "https://lh3.googleusercontent.com/p/AF1QipOoQoaoGsDPlKTnSlbrcsJMGr6lW7ZvGdxOHfFU",
+            "https://lh3.googleusercontent.com/p/AF1QipNOo-X3YGwSv0FnUK7fBieZ0OmEcaSH6yug3trQ",
+            "https://lh3.googleusercontent.com/p/AF1QipOqL8XA10V1bkKBcJlj3GEqTn4HAL4ee_tBveoP",
+            "https://lh3.googleusercontent.com/p/AF1QipO_AH-_EC0L1WuuMKY84jym1Nh16IcrFd_M9OKm",
+            "https://lh3.googleusercontent.com/p/AF1QipM8yqSYblImExHugYXwMTdRTfV7-8lWoQGcS-s_",
+            "https://lh3.googleusercontent.com/p/AF1QipOjwfkHAWnSB3EpGxhxeDql_ub1mZ7Qs0JW5D5v",
+            "https://lh3.googleusercontent.com/p/AF1QipPh4ABCZxNjpeov15DXlqDnHTmUf4UfLjyJrvvY"
+        ],
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy6eVtb731Og0pO-mOUbBFGdkdJkdbSThpp0d20HfV04HBY-6r1VDMQqoqQdGKvv_LeuZttI7RqGPIbdfl-rcGwQxd5In74qYsiBR68iR69OkeZ6xRNevL5iBzlgW0ii3bgm4F1"
+    }
+]

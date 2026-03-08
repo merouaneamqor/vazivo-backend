@@ -1,0 +1,16 @@
+# Railway config-as-code: https://docs.railway.com/guides/config-as-code
+# Sidekiq: create a separate Worker service and use Dockerfile.sidekiq or Custom Start Command.
+# See docs/RAILWAY_SIDEKIQ.md and https://docs.railway.com/guides/rails#set-up-workers--cron-jobs-with-sidekiq
+
+[build]
+builder = "DOCKERFILE"
+
+[deploy]
+# Run migrations before each deploy. Pre-deploy has no private network, so use DATABASE_PUBLIC_URL.
+# Set DATABASE_PUBLIC_URL to the *public* Postgres URL (e.g. *.proxy.rlwy.net), not the internal one.
+# See docs/RAILWAY_DB_MIGRATE.md if you see "Connection refused" during migrate.
+# Worker service: in Railway dashboard set preDeployCommand to empty or "echo skip" so only web runs migrations.
+preDeployCommand = "sh -c 'DATABASE_URL=\"${DATABASE_PUBLIC_URL}\" bin/railway-migrate'"
+# No startCommand here so web and worker can set their own (Puma vs Sidekiq) in the dashboard.
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10

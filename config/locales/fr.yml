@@ -1,0 +1,45 @@
+# French. Category names/slugs are now in the database; these keys are kept for reference only.
+fr:
+  categories:
+    acts:
+      salon-de-beaute:
+        name: "Salon de Beauté"
+        slug: "salon-de-beaute"
+      barber:
+        name: "Barber"
+        slug: "barber"
+      hammam:
+        name: "Hammam"
+        slug: "hammam"
+      massage-spa:
+        name: "Massage & Spa"
+        slug: "massage-spa"
+      nail-salon:
+        name: "Institut Ongles"
+        slug: "nail-salon"
+    subacts:
+      soin-visage: "Soin du visage"
+      maquillage: "Maquillage"
+      epilation: "Épilation"
+      soin-cheveux: "Soin des cheveux"
+      beaute-regard: "Beauté du regard"
+      coupe-homme: "Coupe homme"
+      taille-barbe: "Taille de barbe"
+      rasage-traditionnel: "Rasage traditionnel"
+      soin-visage-homme: "Soin visage homme"
+      coloration-homme: "Coloration homme"
+      hammam-traditionnel: "Hammam traditionnel"
+      gommage: "Gommage"
+      savonnage: "Savonnage"
+      massage-hammam: "Massage au hammam"
+      soin-corps-hammam: "Soin corps au hammam"
+      massage-relaxant: "Massage relaxant"
+      massage-therapeutique: "Massage thérapeutique"
+      massage-pierres-chaudes: "Massage pierres chaudes"
+      spa-jacuzzi: "Spa & jacuzzi"
+      aromatherapie: "Aromathérapie"
+      manucure: "Manucure"
+      pedicure: "Pédicure"
+      ongles-gel: "Ongles gel"
+      nail-art: "Nail art"
+      pose-americaine: "Pose américaine"

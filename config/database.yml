@@ -1,0 +1,31 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: <%= ENV.fetch("POSTGRES_HOST") { "localhost" } %>
+  port: <%= ENV.fetch("POSTGRES_PORT") { 5432 } %>
+  username: <%= ENV.fetch("POSTGRES_USER") { "postgres" } %>
+  password: <%= ENV.fetch("POSTGRES_PASSWORD") { "password" } %>
+
+development:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { "booking_development" } %>
+
+test:
+  <<: *default
+  database: booking_test
+
+# Staging (e.g. Railway): use real URL; if DATABASE_URL is placeholder (user:pass), use DATABASE_PUBLIC_URL
+# Prefer internal DB link (e.g. postgres.railway.internal) for app↔DB traffic.
+staging:
+  <<: *default
+  url: <%= ENV["DATABASE_URL"].presence || ENV["DATABASE_PUBLIC_URL"].presence %>
+  database: <%= ENV.fetch("POSTGRES_DB") { "railway" } %>
+  reaping_frequency: <%= ENV.fetch("DB_REAPING_FREQUENCY", "30") %> # clear stale connections (e.g. internal link idle timeout)
+
+# Production: use DATABASE_URL when set (e.g. Railway/hosted Postgres). Prefer internal DB link when available.
+production:
+  <<: *default
+  url: <%= ENV["DATABASE_URL"].presence %>
+  database: <%= ENV.fetch("POSTGRES_DB") { "booking_production" } %>
+  reaping_frequency: <%= ENV.fetch("DB_REAPING_FREQUENCY", "30") %>

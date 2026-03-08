@@ -1,0 +1,9 @@
+<div style="font-family: sans-serif; max-width: 560px; margin: 0 auto; padding: 24px;">
+  <h1 style="color: #111; font-size: 24px; margin-bottom: 16px;">Premium confirmed</h1>
+  <p style="color: #333; line-height: 1.6;">Hi <%= @user.name.presence || 'there' %>!</p>
+  <p style="color: #333; line-height: 1.6;">Your premium subscription for <strong><%= @business_name %></strong> is active.</p>
+  <% if @expires_at.present? %>
+    <p style="color: #333; line-height: 1.6;">It runs until <%= @expires_at.strftime("%B %d, %Y") %>.</p>
+  <% end %>
+  <p style="color: #333; line-height: 1.6;">— The OllaZen team</p>
+</div>

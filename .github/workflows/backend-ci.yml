@@ -1,0 +1,219 @@
+name: Backend CI/CD
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'glow-backend/**'
+      - '.github/workflows/backend-ci.yml'
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - 'glow-backend/**'
+
+env:
+  RAILS_ENV: test
+  DATABASE_URL: postgres://postgres:postgres@localhost:5432/glow_test
+  REDIS_URL: redis://localhost:6379/0
+  JWT_SECRET: test-jwt-secret-key-minimum-32-characters
+  JWT_REFRESH_SECRET: test-jwt-refresh-secret-key-minimum-32-chars
+  COVERAGE_THRESHOLD: 80
+
+defaults:
+  run:
+    working-directory: glow-backend
+
+jobs:
+  lint:
+    name: Lint & Code Quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          working-directory: glow-backend
+
+      - name: Run RuboCop
+        run: bundle exec rubocop --parallel --format progress
+
+      - name: Check for pending migrations
+        run: |
+          bundle exec rails db:migrate:status || echo "No migrations to check"
+
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          working-directory: glow-backend
+
+      - name: Run Brakeman
+        run: bundle exec brakeman -q -w2 --no-pager
+
+      - name: Run Bundler Audit
+        run: |
+          gem install bundler-audit
+          bundle audit check --update
+
+  test:
+    name: Test Suite
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: glow_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          working-directory: glow-backend
+
+      - name: Install PostgreSQL client
+        run: sudo apt-get install -y postgresql-client libpq-dev
+
+      - name: Setup database
+        run: |
+          bundle exec rails db:create
+          bundle exec rails db:schema:load
+
+      - name: Run RSpec with coverage
+        run: bundle exec rspec --format progress --format RspecJunitFormatter --out tmp/rspec_results.xml
+        env:
+          COVERAGE: true
+
+      - name: Check test coverage threshold
+        run: |
+          if [ -f coverage/.last_run.json ]; then
+            COVERAGE=$(ruby -e "require 'json'; data = JSON.parse(File.read('coverage/.last_run.json')); puts data['result']['line']")
+            echo "Coverage: ${COVERAGE}%"
+            if (( $(echo "$COVERAGE < $COVERAGE_THRESHOLD" | bc -l) )); then
+              echo "❌ Coverage ${COVERAGE}% is below threshold ${COVERAGE_THRESHOLD}%"
+              exit 1
+            fi
+            echo "✅ Coverage ${COVERAGE}% meets threshold ${COVERAGE_THRESHOLD}%"
+          else
+            echo "⚠️  Coverage report not found, skipping threshold check"
+          fi
+
+      - name: Check for pending/skipped tests
+        run: |
+          if grep -rq "pending\|skip" spec/; then
+            echo "❌ Found pending or skipped tests"
+            exit 1
+          fi
+          echo "✅ No pending or skipped tests"
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./glow-backend/coverage/.resultset.json
+          fail_ci_if_error: false
+          flags: backend
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: backend-test-results
+          path: glow-backend/tmp/rspec_results.xml
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: backend-coverage
+          path: glow-backend/coverage/
+
+  build:
+    name: Build & Validate
+    runs-on: ubuntu-latest
+    needs: [lint, security, test]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          working-directory: glow-backend
+
+      - name: Validate routes
+        run: bundle exec rails routes > /dev/null
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./glow-backend
+          push: false
+          tags: glow-backend:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  deploy-staging:
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    needs: [build]
+    if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Staging
+        run: |
+          echo "✅ All quality gates passed"
+          echo "🚀 Deploying to staging environment..."
+          # Add staging deployment commands
+
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs: [build]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Production
+        run: |
+          echo "✅ All quality gates passed"
+          echo "🚀 Deploying to production environment..."
+          # Add production deployment commands

@@ -1,0 +1,9 @@
+<% if @booking.status_confirmed? %>
+Your booking has been confirmed.
+<% else %>
+We've received your booking request. The business will confirm it shortly. You'll get an email once it's confirmed.
+<% end %>
+
+<%= @business_name %> – <%= @service_name %>
+Date: <%= @date %> at <%= @time %>
+Reference: #<%= @short_booking_id %>

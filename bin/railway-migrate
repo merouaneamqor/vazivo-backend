@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+# Run db:migrate with retries. Use in Railway preDeployCommand when DATABASE_URL/DATABASE_PUBLIC_URL
+# may point to a DB that is not immediately reachable (e.g. cold start). Requires DATABASE_URL to be
+# set by the caller (e.g. DATABASE_URL="${DATABASE_PUBLIC_URL}" bin/railway-migrate).
+set -e
+max_attempts="${RAILWAY_MIGRATE_ATTEMPTS:-5}"
+attempt=1
+while true; do
+  if bundle exec rails db:migrate; then
+    exit 0
+  fi
+  if [ "$attempt" -ge "$max_attempts" ]; then
+    echo "db:migrate failed after $max_attempts attempts."
+    exit 1
+  fi
+  echo "Attempt $attempt failed; retrying in 5s..."
+  sleep 5
+  attempt=$((attempt + 1))
+done
