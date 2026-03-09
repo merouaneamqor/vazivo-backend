@@ -100,7 +100,10 @@ class AuthService
 
   # Reset password with token
   def reset_password(token, email, new_password)
-    return { success: false, errors: ["Token, email and password are required"] } if token.blank? || email.blank? || new_password.blank?
+    if token.blank? || email.blank? || new_password.blank?
+      return { success: false,
+               errors: ["Token, email and password are required"] }
+    end
 
     user = User.find_for_database_authentication(email: email&.downcase)
     return { success: false, errors: ["Invalid token"] } unless user

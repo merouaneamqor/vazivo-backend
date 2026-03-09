@@ -4,11 +4,11 @@ module Api
   module V1
     module Public
       class WebhooksController < BaseController
-            # POST /api/v1/webhooks/stripe
-            def stripe
-              payload = request.body.read
-              sig_header = request.env['HTTP_STRIPE_SIGNATURE']
-              endpoint_secret = ENV['STRIPE_WEBHOOK_SECRET']
+        # POST /api/v1/webhooks/stripe
+        def stripe
+          payload = request.body.read
+          sig_header = request.env["HTTP_STRIPE_SIGNATURE"]
+          endpoint_secret = ENV.fetch("STRIPE_WEBHOOK_SECRET", nil)
 
           begin
             event = Stripe::Webhook.construct_event(

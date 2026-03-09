@@ -2,11 +2,12 @@
 
 class Business < ApplicationRecord
   extend Mobility
+
   translates :name, backend: :column, locale_accessors: [:en, :fr, :ar]
   translates :description, backend: :column, locale_accessors: [:en, :fr, :ar]
   translates :slug, backend: :column, locale_accessors: [:en, :fr, :ar]
 
-  LOCALES = %w[en fr ar].freeze
+  LOCALES = ["en", "fr", "ar"].freeze
 
   # Provider
   include Discard::Model
@@ -174,12 +175,12 @@ class Business < ApplicationRecord
   # Full address string for geocoding (address, neighborhood, city, country).
   # Prefer read_attribute(:city) when city_id is set to avoid loading the City association (e.g. during seed).
   def geocoding_address
-    neighborhood_name = (respond_to?(:neighborhood) && self.neighborhood.respond_to?(:name)) ? self.neighborhood&.name : read_attribute(:neighborhood)
+    neighborhood_name = respond_to?(:neighborhood) && neighborhood.respond_to?(:name) ? neighborhood&.name : read_attribute(:neighborhood)
     city_name = if self.class.column_names.include?("city_id") && city_id.present?
-      read_attribute(:city)
-    else
-      (respond_to?(:city) && self.city.respond_to?(:name)) ? self.city&.name : read_attribute(:city)
-    end
+                  read_attribute(:city)
+                else
+                  respond_to?(:city) && city.respond_to?(:name) ? city&.name : read_attribute(:city)
+                end
     parts = [address, neighborhood_name, city_name, country].compact_blank
     parts.join(", ").presence
   end
@@ -300,10 +301,10 @@ class Business < ApplicationRecord
   # Prefer read_attribute(:city) when city_id is set to avoid loading the City association (e.g. during seed).
   def generate_slug
     city_name = if self.class.column_names.include?("city_id") && city_id.present?
-      read_attribute(:city)
-    else
-      (respond_to?(:city) && self.city.respond_to?(:name)) ? self.city&.name : read_attribute(:city)
-    end
+                  read_attribute(:city)
+                else
+                  respond_to?(:city) && city.respond_to?(:name) ? city&.name : read_attribute(:city)
+                end
     base_slug = "#{read_attribute(:name)} #{city_name}".parameterize
     slug = base_slug
     counter = 1
@@ -342,11 +343,12 @@ class Business < ApplicationRecord
 
     raw = read_attribute(:categories)
     arr = raw.is_a?(Array) ? raw : []
-    self.write_attribute(:category, arr.first.presence) if arr.any?
+    write_attribute(:category, arr.first.presence) if arr.any?
   end
 
   def generate_slug_if_needed
     return if read_attribute(:slug).to_s.start_with?("seed-")
+
     self.slug = generate_slug if slug.blank? || name_changed? || city_changed?
     self.slug_en = read_attribute(:slug) if slug_en.blank? && read_attribute(:slug).present?
   end
@@ -360,14 +362,15 @@ class Business < ApplicationRecord
     if read_attribute(:description).present? && description_en.blank? && description_fr.blank? && description_ar.blank?
       self.description_en = read_attribute(:description)
     end
-    if read_attribute(:slug).present? && slug_en.blank? && slug_fr.blank? && slug_ar.blank?
-      self.slug_en = read_attribute(:slug)
-    end
+    return unless read_attribute(:slug).present? && slug_en.blank? && slug_fr.blank? && slug_ar.blank?
+
+    self.slug_en = read_attribute(:slug)
   end
 
   def sync_canonical_name_description_slug
     self[:name] = name_en.presence || name_fr.presence || name_ar.presence || read_attribute(:name)
-    self[:description] = description_en.presence || description_fr.presence || description_ar.presence || read_attribute(:description)
+    self[:description] =
+      description_en.presence || description_fr.presence || description_ar.presence || read_attribute(:description)
     self[:slug] = slug_en.presence || slug_fr.presence || slug_ar.presence || read_attribute(:slug)
   end
 

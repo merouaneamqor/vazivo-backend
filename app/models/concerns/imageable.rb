@@ -21,9 +21,9 @@ module Imageable
 
   def validate_gallery_images_count
     return unless gallery_images.is_a?(Array)
-    
-    if gallery_images.size > 10
-      errors.add(:gallery_images, "cannot exceed 10 images")
-    end
+
+    return unless gallery_images.size > 10
+
+    errors.add(:gallery_images, "cannot exceed 10 images")
   end
 end

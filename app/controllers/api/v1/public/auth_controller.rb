@@ -19,7 +19,7 @@ module Api
 
           if result[:success]
             set_auth_cookies(result[:tokens])
-            
+
             # Send welcome email with error handling
             begin
               UserMailer.welcome_customer(result[:user]).deliver_later
@@ -27,7 +27,7 @@ module Api
               Rails.logger.error("Failed to enqueue welcome email for #{result[:user].email}: #{e.message}")
               # Don't fail registration if email fails
             end
-            
+
             discord_notify_new_user(result[:user], "customer")
             render json: {
               message: "Registration successful",
@@ -50,14 +50,14 @@ module Api
 
           if result[:success]
             set_auth_cookies(result[:tokens])
-            
+
             # Send welcome email with error handling
             begin
               UserMailer.welcome_provider(result[:user], result[:business]).deliver_later
             rescue StandardError => e
               Rails.logger.error("Failed to enqueue welcome email for #{result[:user].email}: #{e.message}")
             end
-            
+
             discord_notify_new_user(result[:user], "provider", result[:business])
             render json: {
               message: "Registration successful",
@@ -170,18 +170,21 @@ module Api
           if result[:success]
             render json: { status: "success", message: result[:message] }, status: :ok
           else
-            render json: { status: "error", error: result[:errors]&.first || "Failed to reset password" }, status: :unprocessable_entity
+            render json: { status: "error", error: result[:errors]&.first || "Failed to reset password" },
+                   status: :unprocessable_entity
           end
         end
 
         private
 
         def register_params
-          params.require(:user).permit(:first_name, :last_name, :name, :email, :phone, :password, :password_confirmation, :role)
+          params.require(:user).permit(:first_name, :last_name, :name, :email, :phone, :password,
+                                       :password_confirmation, :role)
         end
 
         def register_provider_user_params
-          params.require(:user).permit(:first_name, :last_name, :name, :email, :phone, :password, :password_confirmation)
+          params.require(:user).permit(:first_name, :last_name, :name, :email, :phone, :password,
+                                       :password_confirmation)
         end
 
         def register_provider_business_params
@@ -223,7 +226,7 @@ module Api
             same_site: Rails.env.production? || Rails.env.staging? ? :none : :lax,
             expires: nil, # set per-cookie below
           }
-          
+
           # Set domain for production/staging to work across subdomains
           if Rails.env.production? || Rails.env.staging?
             domain = ENV["COOKIE_DOMAIN"].presence || extract_root_domain(request.host)
@@ -244,23 +247,24 @@ module Api
             expires: 7.days.from_now,
           }
         end
-        
+
         def extract_root_domain(host)
           # Extract root domain (e.g., "vazivo.com" from "infra.vazivo.com")
           parts = host.split(".")
           return nil if parts.length < 2
-          ".#{parts[-2..-1].join('.')}"
+
+          ".#{parts[-2..].join('.')}"
         end
 
         def clear_auth_cookies
           delete_options = {}
-          
+
           # Must use same domain as when setting cookies
           if Rails.env.production? || Rails.env.staging?
             domain = ENV["COOKIE_DOMAIN"].presence || extract_root_domain(request.host)
             delete_options[:domain] = domain if domain
           end
-          
+
           cookies.delete(:access_token, delete_options)
           cookies.delete(:refresh_token, delete_options)
         end

@@ -36,7 +36,8 @@ module Api
           page = SeoPage.find(params[:id])
 
           if page.update(seo_page_params)
-            log_admin_action(:update, "SeoPage", page.id, details: { message: "Updated SEO page ##{page.id}" }, update_resource: page)
+            log_admin_action(:update, "SeoPage", page.id, details: { message: "Updated SEO page ##{page.id}" },
+                                                          update_resource: page)
             render json: { seo_page: serialize_seo_page(page) }
           else
             render json: { errors: page.errors.full_messages }, status: :unprocessable_content

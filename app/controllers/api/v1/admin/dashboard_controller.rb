@@ -71,7 +71,9 @@ module Api
               reviews_by_day: reviews_by_day.transform_keys(&:to_s).transform_values(&:to_i),
               new_customers_by_day: new_customers_by_day.transform_keys(&:to_s).transform_values(&:to_i),
               bookings_by_status: bookings_by_status.transform_keys(&:to_s).transform_values(&:to_i),
-              rating_distribution: (1..5).index_with { |r| rating_distribution[r] || 0 }.transform_keys(&:to_s).transform_values(&:to_i),
+              rating_distribution: (1..5).index_with do |r|
+                rating_distribution[r] || 0
+              end.transform_keys(&:to_s).transform_values(&:to_i),
               top_cities: top_cities.map { |k, v| { name: chart_label(k), value: v } },
               top_categories: top_categories.map { |k, v| { name: chart_label(k), value: v } },
             },
@@ -87,6 +89,7 @@ module Api
         def chart_label(key)
           return "—" if key.nil?
           return key.to_s if key.is_a?(String) || key.is_a?(Numeric)
+
           key.respond_to?(:name) ? key.name.to_s : key.to_s
         end
 
@@ -116,6 +119,7 @@ module Api
 
         def safe_translated(record, method)
           return nil if record.nil?
+
           record.public_send(method)
         rescue StandardError
           nil

@@ -137,13 +137,17 @@ module ProdDataLoadHelpers
 
     # Set logo from first URL
     business.remote_logo_url = urls.first
-    
+
     # Add all URLs to gallery
     urls.each do |url|
-      public_id = url.match(/\/v\d+\/(.+?)(?:\.[^.]+)?$/)[1] rescue SecureRandom.uuid
+      public_id = begin
+        url.match(%r{/v\d+/(.+?)(?:\.[^.]+)?$})[1]
+      rescue StandardError
+        SecureRandom.uuid
+      end
       business.add_gallery_image(url, public_id)
     end
-    
+
     business.save
   end
 
@@ -161,7 +165,11 @@ module ProdDataLoadHelpers
     return if urls.empty?
 
     urls.each do |url|
-      public_id = url.match(/\/v\d+\/(.+?)(?:\.[^.]+)?$/)[1] rescue SecureRandom.uuid
+      public_id = begin
+        url.match(%r{/v\d+/(.+?)(?:\.[^.]+)?$})[1]
+      rescue StandardError
+        SecureRandom.uuid
+      end
       business.add_gallery_image(url, public_id)
     end
   end
@@ -171,9 +179,13 @@ module ProdDataLoadHelpers
       business.remote_logo_url = url
       business.save
     end
-    
+
     if attach_as_image
-      public_id = url.match(/\/v\d+\/(.+?)(?:\.[^.]+)?$/)[1] rescue SecureRandom.uuid
+      public_id = begin
+        url.match(%r{/v\d+/(.+?)(?:\.[^.]+)?$})[1]
+      rescue StandardError
+        SecureRandom.uuid
+      end
       business.add_gallery_image(url, public_id)
     end
   rescue StandardError => e

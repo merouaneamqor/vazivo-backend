@@ -45,4 +45,3 @@ class ProviderPremiumUpgradeService
     { success: false, errors: [e.message] }
   end
 end
-

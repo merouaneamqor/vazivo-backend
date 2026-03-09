@@ -7,7 +7,7 @@ class Booking < ApplicationRecord
   belongs_to :business
   has_one :review, dependent: :destroy
   has_one :booking_payment, dependent: :destroy
-  has_many :booking_service_items, class_name: 'BookingServiceItem', foreign_key: 'booking_id', dependent: :destroy
+  has_many :booking_service_items, class_name: "BookingServiceItem", foreign_key: "booking_id", dependent: :destroy
   has_many :services, through: :booking_service_items
   has_many :booking_events, dependent: :destroy
 

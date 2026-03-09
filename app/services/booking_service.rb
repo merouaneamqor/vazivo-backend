@@ -57,9 +57,7 @@ class BookingService
     )
 
     Booking.transaction do
-      unless booking.save
-        return { success: false, errors: booking.errors.full_messages }
-      end
+      return { success: false, errors: booking.errors.full_messages } unless booking.save
 
       booking.booking_service_items.create!(
         service_id: service.id,
@@ -187,7 +185,8 @@ class BookingService
 
   # Create one booking with multiple service line items (booking_services).
   # Params: :services => [{ service_id:, staff_id?:, price?:, duration_minutes?: }, ...], :date, :start_time, :customer_name, :customer_phone, :customer_email, :notes
-  def create_with_services(params, skip_availability_check: false, confirm_immediately: false, skip_business_hours_check: false)
+  def create_with_services(params, skip_availability_check: false, confirm_immediately: false,
+                           skip_business_hours_check: false)
     items = params[:services].to_a
     if items.empty?
       @errors = ["At least one service is required"]
@@ -205,7 +204,7 @@ class BookingService
         service: svc,
         staff_id: (h[:staff_id] || h["staff_id"]).presence,
         price: h[:price] || h["price"],
-        duration_minutes: h[:duration_minutes] || h["duration_minutes"]
+        duration_minutes: h[:duration_minutes] || h["duration_minutes"],
       }
     end
 
@@ -421,7 +420,10 @@ class BookingService
     end
     user_id = provider_flow ? nil : @user&.id
     customer_name = params[:customer_name].presence
-    customer_name = [params[:customer_first_name], params[:customer_last_name]].compact.join(" ").strip.presence if customer_name.blank? && (params[:customer_first_name].present? || params[:customer_last_name].present?)
+    if customer_name.blank? && (params[:customer_first_name].present? || params[:customer_last_name].present?)
+      customer_name = [params[:customer_first_name],
+                       params[:customer_last_name]].compact.join(" ").strip.presence
+    end
     {
       customer_name: customer_name,
       customer_phone: params[:customer_phone],

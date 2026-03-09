@@ -26,7 +26,7 @@ class ApplicationController < ActionController::API
     {
       user: current_user,
       impersonator: @impersonator,
-      **policy_context
+      **policy_context,
     }.compact
   end
 
@@ -35,7 +35,7 @@ class ApplicationController < ActionController::API
     {
       request: request,
       params: params.to_unsafe_h.with_indifferent_access,
-      time: Time.current
+      time: Time.current,
     }
   end
 
@@ -148,7 +148,11 @@ class ApplicationController < ActionController::API
     return unless exception.is_a?(Exception)
     return unless defined?(Sentry)
 
-    dsn = Sentry.configuration&.dsn rescue nil
+    dsn = begin
+      Sentry.configuration&.dsn
+    rescue StandardError
+      nil
+    end
     return if dsn.blank?
 
     Sentry.capture_exception(exception)

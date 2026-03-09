@@ -2,10 +2,11 @@
 
 class Neighborhood < ApplicationRecord
   extend Mobility
+
   translates :name, backend: :column, locale_accessors: [:en, :fr, :ar]
   translates :slug, backend: :column, locale_accessors: [:en, :fr, :ar]
 
-  LOCALES = %w[en fr ar].freeze
+  LOCALES = ["en", "fr", "ar"].freeze
 
   belongs_to :city
 
@@ -49,9 +50,9 @@ class Neighborhood < ApplicationRecord
     if read_attribute(:name).present? && name_en.blank? && name_fr.blank? && name_ar.blank?
       self.name_en = read_attribute(:name)
     end
-    if read_attribute(:slug).present? && slug_en.blank? && slug_fr.blank? && slug_ar.blank?
-      self.slug_en = read_attribute(:slug)
-    end
+    return unless read_attribute(:slug).present? && slug_en.blank? && slug_fr.blank? && slug_ar.blank?
+
+    self.slug_en = read_attribute(:slug)
   end
 
   def sync_locale_slugs_from_names

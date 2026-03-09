@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SeoPage < ApplicationRecord
   belongs_to :business, optional: true
 

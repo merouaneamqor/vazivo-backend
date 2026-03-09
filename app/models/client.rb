@@ -13,6 +13,7 @@ class Client < ApplicationRecord
   scope :for_business, ->(business_id) { where(business_id: business_id) }
   scope :search_by, ->(q) {
     return all if q.blank?
+
     pattern = "%#{q.to_s.strip.downcase}%"
     where(
       "LOWER(name) LIKE :q OR LOWER(first_name) LIKE :q OR LOWER(last_name) LIKE :q OR LOWER(COALESCE(email, '')) LIKE :q OR phone LIKE :q",
@@ -35,11 +36,13 @@ class Client < ApplicationRecord
 
   def sync_name_from_first_last
     return if first_name.blank?
+
     write_attribute(:name, [first_name, last_name].compact.join(" ").strip)
   end
 
   def at_least_one_contact
     return if phone.present? || email.present?
+
     errors.add(:base, "Phone or email is required")
   end
 end

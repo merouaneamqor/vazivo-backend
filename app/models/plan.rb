@@ -2,9 +2,10 @@
 
 class Plan < ApplicationRecord
   extend Mobility
+
   translates :name, backend: :column, locale_accessors: [:en, :fr, :ar]
 
-  LOCALES = %w[en fr ar].freeze
+  LOCALES = ["en", "fr", "ar"].freeze
 
   validates :name, presence: true
   validates :identifier, presence: true, uniqueness: true
@@ -35,7 +36,9 @@ class Plan < ApplicationRecord
   def backfill_plan_locales_from_canonical
     return unless self.class.column_names.include?("name_en")
 
-    self.name_en = read_attribute(:name) if read_attribute(:name).present? && name_en.blank? && name_fr.blank? && name_ar.blank?
+    return unless read_attribute(:name).present? && name_en.blank? && name_fr.blank? && name_ar.blank?
+
+    self.name_en = read_attribute(:name)
   end
 
   def sync_canonical_name

@@ -30,7 +30,8 @@ module Api
           plan = Plan.find(params[:id])
 
           if plan.update(plan_params)
-            log_admin_action(:update, "Plan", plan.id, details: { message: "Updated plan ##{plan.id}" }, update_resource: plan)
+            log_admin_action(:update, "Plan", plan.id, details: { message: "Updated plan ##{plan.id}" },
+                                                       update_resource: plan)
             render json: { plan: serialize_plan(plan) }
           else
             render json: { errors: plan.errors.full_messages }, status: :unprocessable_content

@@ -29,7 +29,8 @@ module Api
         def update
           review = Review.find(params[:id])
           if review.update(review_params)
-            log_admin_action(:update, "Review", review.id, details: { message: "Updated review ##{review.id}" }, update_resource: review)
+            log_admin_action(:update, "Review", review.id, details: { message: "Updated review ##{review.id}" },
+                                                           update_resource: review)
             render json: { review: review_list_item(review).merge(comment: review.comment) }
           else
             render_errors(review.errors.full_messages)

@@ -34,7 +34,8 @@ module Api
           user = ::User.kept.find(params[:id])
           authorize user
           if user.update(user_params)
-            log_admin_action(:update, "User", user.id, details: { message: "Updated user ##{user.id}" }, update_resource: user)
+            log_admin_action(:update, "User", user.id, details: { message: "Updated user ##{user.id}" },
+                                                       update_resource: user)
             render json: { user: ::UserSerializer.new(user).as_json }
           else
             render_errors(user.errors.full_messages)
@@ -67,7 +68,8 @@ module Api
         def force_password_reset
           user = ::User.kept.find(params[:id])
           user.send_reset_password_instructions
-          log_admin_action(:force_password_reset, "User", user.id, details: { message: "Sent password reset to user ##{user.id}" })
+          log_admin_action(:force_password_reset, "User", user.id,
+                           details: { message: "Sent password reset to user ##{user.id}" })
           render json: { message: "Password reset instructions sent" }
         end
 

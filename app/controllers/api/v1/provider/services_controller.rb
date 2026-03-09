@@ -56,61 +56,70 @@ module Api
         # POST /api/v1/businesses/:business_id/services
         def create
           @service = @business.services.new
-          
+
           # Set basic attributes
           @service.category_id = params.dig(:service, :category_id)
           @service.service_category_id = params.dig(:service, :service_category_id)
           @service.duration = params.dig(:service, :duration) || 30
           @service.price = params.dig(:service, :price) || 0
-          
+
           # Set name for all locales
           name_en = params.dig(:service, :name_en) || params.dig(:service, :name)
           name_fr = params.dig(:service, :name_fr) || name_en
           name_ar = params.dig(:service, :name_ar) || name_en
-          
+
           @service.write_attribute(:name, name_en)
           @service.write_attribute(:name_en, name_en)
           @service.write_attribute(:name_fr, name_fr)
           @service.write_attribute(:name_ar, name_ar)
-          
+
           # Set description for all locales
           desc_en = params.dig(:service, :description_en) || params.dig(:service, :description)
           desc_fr = params.dig(:service, :description_fr)
           desc_ar = params.dig(:service, :description_ar)
-          
+
           # Use AI if English description is empty
           if desc_en.blank?
             ai_service = OpenRouterService.new
-            category_name = @service.service_category_id ? 
-              ServiceCategory.find_by(id: @service.service_category_id)&.name : 
-              "beauty service"
-            
-            desc_en = ai_service.generate_service_description(name_en, category_name, locale: :en) || "Professional #{name_en} service."
+            category_name = if @service.service_category_id
+                              ServiceCategory.find_by(id: @service.service_category_id)&.name
+                            else
+                              "beauty service"
+                            end
+
+            desc_en = ai_service.generate_service_description(name_en, category_name,
+                                                              locale: :en) || "Professional #{name_en} service."
           end
-          
+
           # Use AI for missing translations
           if desc_fr.blank?
             ai_service ||= OpenRouterService.new
-            category_name ||= @service.service_category_id ? 
-              ServiceCategory.find_by(id: @service.service_category_id)&.name : 
-              "beauty service"
-            desc_fr = ai_service.generate_service_description(name_en, category_name, locale: :fr) || "Service professionnel de #{name_en}."
+            category_name ||= if @service.service_category_id
+                                ServiceCategory.find_by(id: @service.service_category_id)&.name
+                              else
+                                "beauty service"
+                              end
+            desc_fr = ai_service.generate_service_description(name_en, category_name,
+                                                              locale: :fr) || "Service professionnel de #{name_en}."
           end
-          
+
           if desc_ar.blank?
             ai_service ||= OpenRouterService.new
-            category_name ||= @service.service_category_id ? 
-              ServiceCategory.find_by(id: @service.service_category_id)&.name : 
-              "beauty service"
-            desc_ar = ai_service.generate_service_description(name_en, category_name, locale: :ar) || "خدمة احترافية #{name_en}"
+            category_name ||= if @service.service_category_id
+                                ServiceCategory.find_by(id: @service.service_category_id)&.name
+                              else
+                                "beauty service"
+                              end
+            desc_ar = ai_service.generate_service_description(name_en, category_name,
+                                                              locale: :ar) || "خدمة احترافية #{name_en}"
           end
-          
+
           @service.write_attribute(:description_en, desc_en)
           @service.write_attribute(:description_fr, desc_fr)
           @service.write_attribute(:description_ar, desc_ar)
           canonical_desc = desc_en.presence || desc_fr.presence || desc_ar.presence
           @service.write_attribute(:description, canonical_desc) if canonical_desc.present?
-          
+
           validate_category!
           return if performed?
 
@@ -119,7 +128,7 @@ module Api
           if @service.save
             # Translate name in background if not provided
             TranslateServiceJob.perform_later(@service.id) if name_fr == name_en || name_ar == name_en
-            
+
             render json: @service, serializer: ServiceSerializer, status: :created
           else
             render_errors(@service.errors.full_messages)
@@ -129,19 +138,20 @@ module Api
         # PATCH /api/v1/services/:id
         def update
           authorize @service
-          
+
           # Set basic attributes
           @service.category_id = params.dig(:service, :category_id) if params.dig(:service, :category_id)
-          @service.service_category_id = params.dig(:service, :service_category_id) if params.dig(:service, :service_category_id)
+          @service.service_category_id = params.dig(:service, :service_category_id) if params.dig(:service,
+                                                                                                  :service_category_id)
           @service.duration = params.dig(:service, :duration) if params.dig(:service, :duration)
           @service.price = params.dig(:service, :price) if params.dig(:service, :price)
-          
+
           # Set name for all locales if provided
           if params.dig(:service, :name_en).present?
             name_en = params.dig(:service, :name_en)
             name_fr = params.dig(:service, :name_fr) || name_en
             name_ar = params.dig(:service, :name_ar) || name_en
-            
+
             @service.write_attribute(:name, name_en)
             @service.write_attribute(:name_en, name_en)
             @service.write_attribute(:name_fr, name_fr)
@@ -153,13 +163,16 @@ module Api
             @service.write_attribute(:name_fr, name)
             @service.write_attribute(:name_ar, name)
           end
-          
+
           # Set description for all locales if provided
-          if params.dig(:service, :description_en).present? || params.dig(:service, :description_fr).present? || params.dig(:service, :description_ar).present?
+          if params.dig(:service,
+                        :description_en).present? || params.dig(:service,
+                                                                :description_fr).present? || params.dig(:service,
+                                                                                                        :description_ar).present?
             desc_en = params.dig(:service, :description_en)
             desc_fr = params.dig(:service, :description_fr)
             desc_ar = params.dig(:service, :description_ar)
-            
+
             @service.write_attribute(:description_en, desc_en) if desc_en.present?
             @service.write_attribute(:description_fr, desc_fr) if desc_fr.present?
             @service.write_attribute(:description_ar, desc_ar) if desc_ar.present?
@@ -212,14 +225,10 @@ module Api
 
         def validate_category!
           # Service category is required for all services
-          if @service.service_category_id.blank?
-            render_errors(["Service category is required"]) and return
-          end
+          render_errors(["Service category is required"]) and return if @service.service_category_id.blank?
 
           service_category = ServiceCategory.find_by(id: @service.service_category_id)
-          if service_category.nil?
-            render_errors(["Service category not found"]) and return
-          end
+          render_errors(["Service category not found"]) and return if service_category.nil?
 
           return if @service.category_id.blank?
 

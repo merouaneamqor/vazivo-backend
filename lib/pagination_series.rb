@@ -28,7 +28,7 @@ module PaginationSeries
     tens = (1..10).map { |n| (n * 10) + (current_hundred * 100) }
 
     (left_window_plus_one | inside_window_plus_each_sides | tens | right_window_plus_one)
-      .select { |x| x.between?(1, total_pages) }
+      .grep(1..total_pages)
       .sort
   end
 end

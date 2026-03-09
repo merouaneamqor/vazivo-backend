@@ -2,12 +2,14 @@
 
 class Category < ApplicationRecord
   extend Mobility
+
   translates :name, backend: :column, locale_accessors: [:en, :fr, :ar]
   translates :slug, backend: :column, locale_accessors: [:en, :fr, :ar]
 
-  LOCALES = %w[en fr ar].freeze
+  LOCALES = ["en", "fr", "ar"].freeze
   # Only these top-level categories are used. For Vazivo these are cuisines.
-  CANONICAL_NAMES = ["Moroccan", "Mediterranean", "Italian", "French", "Japanese", "Seafood", "International", "Street food"].freeze
+  CANONICAL_NAMES = ["Moroccan", "Mediterranean", "Italian", "French", "Japanese", "Seafood", "International",
+                     "Street food"].freeze
 
   belongs_to :parent, class_name: "Category", optional: true
   has_many :children, class_name: "Category", foreign_key: :parent_id, dependent: :destroy
@@ -52,7 +54,9 @@ class Category < ApplicationRecord
   # Ensures exactly the 5 canonical acts exist. When translations are given (e.g. from prod_data load),
   # sets name/slug for en, fr, ar; otherwise sets only name_en/slug_en from CANONICAL_NAMES.
   def self.ensure_canonical_acts!(translations = nil)
-    list = translations.presence || CANONICAL_NAMES.map { |name| { en: name, fr: name, ar: name, slug: name.parameterize } }
+    list = translations.presence || CANONICAL_NAMES.map do |name|
+      { en: name, fr: name, ar: name, slug: name.parameterize }
+    end
     list.each_with_index do |t, position|
       slug_val = t[:slug]
       cat = Category.find_or_initialize_by(slug: slug_val)

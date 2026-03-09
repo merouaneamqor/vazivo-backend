@@ -7,13 +7,16 @@ Rails.logger.debug "=" * 60
 # Safe category label for a business (column or first from categories jsonb)
 def seed_business_category(business)
   return nil unless business
+
   if business.class.column_names.include?("category")
     val = business.read_attribute(:category)
     return val.presence
   end
   return nil unless business.class.column_names.include?("categories")
+
   raw = business.read_attribute(:categories)
   return raw.first.presence if raw.is_a?(Array) && raw.any?
+
   nil
 end
 
@@ -115,14 +118,22 @@ end
 # CATEGORIES: Cuisines (top-level). Each has one "Table reservation" experience.
 # ============================================================================
 SEED_ACTS = [
-  { name: "Moroccan", slug: "moroccan", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
-  { name: "Mediterranean", slug: "mediterranean", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
-  { name: "Italian", slug: "italian", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
-  { name: "French", slug: "french", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
-  { name: "Japanese", slug: "japanese", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
-  { name: "Seafood", slug: "seafood", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
-  { name: "International", slug: "international", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
-  { name: "Street food", slug: "street-food", subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table", duration: 60, price: 0.0 }] },
+  { name: "Moroccan", slug: "moroccan",
+    subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Mediterranean", slug: "mediterranean",
+    subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Italian", slug: "italian",
+    subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "French", slug: "french",
+    subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Japanese", slug: "japanese",
+    subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Seafood", slug: "seafood",
+    subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "International", slug: "international",
+    subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table for dining", duration: 120, price: 0.0 }] },
+  { name: "Street food", slug: "street-food",
+    subacts: [{ name: "Table reservation", slug: "table-reservation", description: "Reserve a table", duration: 60, price: 0.0 }] },
 ].freeze
 
 CANONICAL_CATEGORIES = SEED_ACTS.map { |a| a[:name] }.freeze
@@ -208,6 +219,7 @@ Rails.logger.debug "\n🏢 Creating businesses..."
 # Returns city_id (or nil) and never loads a City record so validations cannot be triggered.
 def seed_city_for(name)
   return nil if name.blank?
+
   @seed_city_ids_cache ||= {}
   return @seed_city_ids_cache[name] if @seed_city_ids_cache.key?(name)
   return nil unless defined?(City) && City.table_exists?
@@ -367,15 +379,19 @@ businesses = businesses_data.map do |data|
     opening_hours: opening_hours,
   }
   attrs[:category] = data[:category] if Business.column_names.include?("category")
-  attrs[:cuisine_types] = data[:cuisine_types] if data.key?(:cuisine_types) && Business.column_names.include?("cuisine_types")
+  if data.key?(:cuisine_types) && Business.column_names.include?("cuisine_types")
+    attrs[:cuisine_types] =
+      data[:cuisine_types]
+  end
   attrs[:price_range] = data[:price_range] if data.key?(:price_range) && Business.column_names.include?("price_range")
-  attrs[:table_capacity] = data[:table_capacity] if data.key?(:table_capacity) && Business.column_names.include?("table_capacity")
+  if data.key?(:table_capacity) && Business.column_names.include?("table_capacity")
+    attrs[:table_capacity] =
+      data[:table_capacity]
+  end
   business.assign_attributes(attrs)
   business[:city] = data[:city]
   business.city_id = seed_city_for(data[:city])
-  if Business.column_names.include?("categories")
-    business.write_attribute(:categories, [data[:category]].compact)
-  end
+  business.write_attribute(:categories, [data[:category]].compact) if Business.column_names.include?("categories")
   business[:name] = name_val
   business[:slug] = slug_val
   business[:description] = desc_val
@@ -523,10 +539,10 @@ if defined?(Faker)
       next unless svc_cat
 
       finder = if Service.column_names.include?("category_id")
-        business.services.find_or_initialize_by(category_id: subact.id)
-      else
-        business.services.find_or_initialize_by(name: subact.name)
-      end
+                 business.services.find_or_initialize_by(category_id: subact.id)
+               else
+                 business.services.find_or_initialize_by(name: subact.name)
+               end
       finder.tap do |s|
         s.service_category_id = svc_cat.id
         s.category_id = subact.id if s.class.column_names.include?("category_id")
@@ -564,10 +580,10 @@ def seed_services_for_business(business, acts_subacts_seed)
     next unless subact
 
     service = if Service.column_names.include?("category_id")
-      business.services.find_or_initialize_by(category_id: subact.id)
-    else
-      business.services.find_or_initialize_by(name: subact.name)
-    end
+                business.services.find_or_initialize_by(category_id: subact.id)
+              else
+                business.services.find_or_initialize_by(name: subact.name)
+              end
     service.service_category_id = svc_cat.id
     service.category_id = subact.id if service.class.column_names.include?("category_id")
     service.write_attribute(:treatment_type, "service") if service.class.column_names.include?("treatment_type")

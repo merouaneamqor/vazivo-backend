@@ -2,10 +2,11 @@
 
 class Service < ApplicationRecord
   extend Mobility
+
   translates :name, backend: :column, locale_accessors: [:en, :fr, :ar]
   translates :description, backend: :column, locale_accessors: [:en, :fr, :ar]
 
-  LOCALES = %w[en fr ar].freeze
+  LOCALES = ["en", "fr", "ar"].freeze
 
   include Discard::Model
 
@@ -121,6 +122,7 @@ class Service < ApplicationRecord
 
   def sync_canonical_name_description
     self[:name] = name_en.presence || name_fr.presence || name_ar.presence || read_attribute(:name)
-    self[:description] = description_en.presence || description_fr.presence || description_ar.presence || read_attribute(:description)
+    self[:description] =
+      description_en.presence || description_fr.presence || description_ar.presence || read_attribute(:description)
   end
 end

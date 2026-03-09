@@ -5,11 +5,12 @@ class OpenRouterService
   FREE_MODEL = "deepseek/deepseek-chat-v3-0324:free"
 
   def initialize
-    @api_key = ENV["OPENROUTER_API_KEY"]
+    @api_key = ENV.fetch("OPENROUTER_API_KEY", nil)
   end
 
   def generate_service_description(service_name, category_name, locale: :en)
     return nil unless @api_key.present?
+
     prompt = build_prompt(service_name, category_name, locale)
     generate_text(prompt)
   end
@@ -17,6 +18,7 @@ class OpenRouterService
   def translate_text(text, from:, to:)
     return nil unless @api_key.present?
     return text if to.to_sym == from.to_sym
+
     from_lang = language_name(from)
     to_lang = language_name(to)
     prompt = translate_prompt(text, from: from_lang, to: to_lang)
@@ -25,15 +27,18 @@ class OpenRouterService
 
   def generate_seo_description(service_name, category_name)
     return nil unless @api_key.present?
+
     prompt = seo_prompt(service_name, category_name)
     generate_text(prompt)
   end
 
   def generate_structured_content(service_name, category_name)
     return nil unless @api_key.present?
+
     prompt = structured_prompt(service_name, category_name)
     raw = generate_text(prompt)
     return nil if raw.blank?
+
     parsed = parse_json_from_response(raw)
     parsed if parsed.is_a?(Hash)
   end
@@ -47,13 +52,13 @@ class OpenRouterService
         "Authorization" => "Bearer #{@api_key}",
         "Content-Type" => "application/json",
         "HTTP-Referer" => ENV["APP_URL"] || "https://vazivo.com",
-        "X-Title" => "Vazivo"
+        "X-Title" => "Vazivo",
       },
       body: {
         model: FREE_MODEL,
         messages: [{ role: "user", content: prompt }],
         max_tokens: max_tokens,
-        temperature: temperature
+        temperature: temperature,
       }.to_json
     )
 

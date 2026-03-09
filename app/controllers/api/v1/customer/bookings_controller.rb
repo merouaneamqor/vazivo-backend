@@ -39,7 +39,10 @@ module Api
         def create
           user = optional_current_user
           result = if user
-                     first_service_id = booking_params[:services]&.dig(0, :service_id) || booking_params[:services]&.dig(0, "service_id") || booking_params[:service_id]
+                     first_service_id = booking_params[:services]&.dig(0,
+                                                                       :service_id) || booking_params[:services]&.dig(
+                                                                         0, "service_id"
+                                                                       ) || booking_params[:service_id]
                      service = Service.kept.find_by(id: first_service_id)
                      provider_or_admin = service && (
                        service.business.user_id == user.id ||

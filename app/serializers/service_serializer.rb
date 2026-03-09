@@ -11,10 +11,11 @@ class ServiceSerializer < ActiveModel::Serializer
 
   def service_category
     return nil unless object.service_category
+
     {
       id: object.service_category.id,
       name: object.service_category.name,
-      color: object.service_category.color
+      color: object.service_category.color,
     }
   end
 

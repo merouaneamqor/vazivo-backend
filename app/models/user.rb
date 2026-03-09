@@ -123,6 +123,7 @@ class User < ApplicationRecord
 
   def sync_name_from_first_last
     return if first_name.blank?
+
     write_attribute(:name, [first_name, last_name].compact.join(" ").strip)
   end
 end

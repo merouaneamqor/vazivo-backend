@@ -95,9 +95,11 @@ group :development do
   gem "bullet"
   gem "letter_opener"
   gem "letter_opener_web"
+  gem "rails_best_practices", require: false
   gem "rubocop", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
+  gem "rubycritic", require: false
 end
 
 group :test do

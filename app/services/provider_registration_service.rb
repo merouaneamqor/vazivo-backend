@@ -13,10 +13,10 @@ class ProviderRegistrationService
 
     ActiveRecord::Base.transaction do
       name = if user_params[:first_name].present?
-        [user_params[:first_name], user_params[:last_name]].compact.join(" ")
-      else
-        user_params[:name]
-      end
+               [user_params[:first_name], user_params[:last_name]].compact.join(" ")
+             else
+               user_params[:name]
+             end
       user = User.new(
         name: name,
         email: user_params[:email]&.downcase,

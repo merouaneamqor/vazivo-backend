@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RecalculateBusinessRatingsJob < ApplicationJob
   queue_as :default
 
@@ -21,5 +23,3 @@ class RecalculateBusinessRatingsJob < ApplicationJob
     RebuildBusinessSearchIndexJob.perform_later(business.id) if defined?(RebuildBusinessSearchIndexJob)
   end
 end
-
-

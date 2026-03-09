@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class StaffService < ApplicationRecord
   belongs_to :business
   belongs_to :staff, class_name: "User"
@@ -23,4 +25,3 @@ class StaffService < ApplicationRecord
     errors.add(:service, "must belong to the same business") if service.business_id != business_id
   end
 end
-

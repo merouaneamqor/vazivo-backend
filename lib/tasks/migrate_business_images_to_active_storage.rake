@@ -29,6 +29,7 @@ namespace :business_images do
       gallery = Array(gallery).compact_blank if gallery.present?
 
       next if cover.blank? && gallery.blank?
+
       if business.logo.attached? || business.images.attached?
         skipped += 1
         next
@@ -37,7 +38,9 @@ namespace :business_images do
       urls = [cover, *gallery].compact_blank.uniq
       next if urls.empty?
 
-      unless dry_run
+      if dry_run
+        migrated += 1
+      else
         begin
           helper.attach_business_images_from_urls(business, urls)
           updates = {}
@@ -50,8 +53,6 @@ namespace :business_images do
           errors += 1
           Rails.logger.error "[business_images:migrate_to_active_storage] Business #{business.id}: #{e.message}"
         end
-      else
-        migrated += 1
       end
     end
 

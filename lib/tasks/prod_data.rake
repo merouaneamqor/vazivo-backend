@@ -37,6 +37,13 @@ require "net/http"
 #   DISCORD_WEBHOOK_URL    - Optional progress notifications
 #   DISCORD_PROGRESS_EVERY - Notify every N businesses (default 100)
 #
+# Alternative: TripAdvisor-shaped single file (prod_data/seed_file.json)
+#   bundle exec rake prod_data:load_seed_file
+#   Uses cuisine categories (Category::CANONICAL_NAMES). Additive by default (no cleanup).
+#   ENV: PROD_DATA_SEED_FILE_PATH (default prod_data/seed_file.json), PROD_DATA_SKIP_IMAGES,
+#        PROD_DATA_BATCH_SIZE, SEED_PROVIDER_PASSWORD, DISCORD_*
+#   Async: rails prod_data:load_seed_file_async
+#
 namespace :prod_data do
   PROD_DATA_DIR = Pathname.new(ENV["PROD_DATA_DIR"].presence || Rails.root.join("prod_data")).freeze
   SEED_PROVIDER_PASSWORD = ENV.fetch("SEED_PROVIDER_PASSWORD") do
@@ -83,5 +90,34 @@ namespace :prod_data do
     puts "🔄 Resetting categories from businesses..."
     ResetCategoriesFromBusinessesJob.perform_now
     puts "✅ Categories reset."
+  end
+
+  desc "Load businesses from TripAdvisor-shaped JSON (prod_data/seed_file.json). Uses cuisine categories; additive by default."
+  task load_seed_file: :environment do
+    path = ENV["PROD_DATA_SEED_FILE_PATH"].presence || Rails.root.join("prod_data", "seed_file.json")
+    unless File.file?(path)
+      puts "❌ Seed file not found at #{path}"
+      exit 1
+    end
+    unless User.table_exists? && Business.table_exists?
+      puts "❌ Required database tables are missing. Run: rails db:migrate"
+      exit 1
+    end
+    ProdDataSeedFileLoadService.call { |msg| puts msg }
+  end
+
+  desc "Enqueue prod_data seed file load in Sidekiq; run: rails prod_data:load_seed_file_async"
+  task load_seed_file_async: :environment do
+    path = ENV["PROD_DATA_SEED_FILE_PATH"].presence || Rails.root.join("prod_data", "seed_file.json")
+    unless File.file?(path)
+      puts "❌ Seed file not found at #{path}"
+      exit 1
+    end
+    unless User.table_exists? && Business.table_exists?
+      puts "❌ Required database tables are missing. Run: rails db:migrate"
+      exit 1
+    end
+    ProdDataSeedFileLoadJob.perform_later(cleanup_seed_users: false)
+    puts "✅ Enqueued ProdDataSeedFileLoadJob. Load will run in Sidekiq. Safe to disconnect."
   end
 end

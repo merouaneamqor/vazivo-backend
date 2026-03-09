@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   # Letter Opener (development)
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if defined?(LetterOpenerWeb)
-  
+
   # Sidekiq Web UI
   if defined?(Sidekiq::Web)
     if ENV["SIDEKIQ_WEB_PASSWORD"].present?

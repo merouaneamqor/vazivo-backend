@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RebuildBusinessSearchIndexJob < ApplicationJob
   queue_as :default
 
@@ -7,8 +9,9 @@ class RebuildBusinessSearchIndexJob < ApplicationJob
 
     first_name = business.read_attribute(:category).presence || Array(business.read_attribute(:categories)).first
     primary_category_id = if first_name.present?
-      Category.find_by(name: first_name)&.id || Category.where("LOWER(name) = ?", first_name.to_s.downcase).first&.id
-    end
+                            Category.find_by(name: first_name)&.id || Category.where("LOWER(name) = ?",
+                                                                                     first_name.to_s.downcase).first&.id
+                          end
 
     index = BusinessSearchIndex.find_or_initialize_by(business_id: business.id)
     index.city_id = business.city_id
@@ -21,4 +24,3 @@ class RebuildBusinessSearchIndexJob < ApplicationJob
     index.save!
   end
 end
-

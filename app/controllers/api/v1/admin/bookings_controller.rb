@@ -40,7 +40,8 @@ module Api
         end
 
         def show
-          booking = Booking.includes(:user, :services, :business, :review, booking_service_items: :staff).find(params[:id])
+          booking = Booking.includes(:user, :services, :business, :review,
+                                     booking_service_items: :staff).find(params[:id])
           payment = BookingPayment.find_by(booking_id: booking.id)
           customer_json = if booking.user
                             UserSerializer.new(booking.user).as_json
@@ -72,7 +73,8 @@ module Api
         def update
           booking = Booking.find(params[:id])
           if booking.update(booking_params)
-            log_admin_action(:update, "Booking", booking.id, details: { message: "Updated booking ##{booking.id}" }, update_resource: booking)
+            log_admin_action(:update, "Booking", booking.id, details: { message: "Updated booking ##{booking.id}" },
+                                                             update_resource: booking)
             render json: { booking: booking_detail(booking) }
           else
             render_errors(booking.errors.full_messages)
@@ -91,7 +93,8 @@ module Api
           payment = BookingPayment.find_by(booking_id: booking.id)
           if payment
             payment.update!(status: "refunded", refunded_at: Time.current)
-            log_admin_action(:refund, "Booking", booking.id, details: { message: "Refunded payment for booking ##{booking.id}" })
+            log_admin_action(:refund, "Booking", booking.id,
+                             details: { message: "Refunded payment for booking ##{booking.id}" })
             render json: { message: "Refund processed", payment: { id: payment.id, status: payment.status } }
           else
             render json: { error: "No payment found" }, status: :unprocessable_content

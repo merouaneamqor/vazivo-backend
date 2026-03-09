@@ -94,7 +94,7 @@ class BookingSerializer < ActiveModel::Serializer
         staff_name: bs.staff&.name,
         price: bs.price,
         duration_minutes: bs.duration_minutes,
-        position: bs.position
+        position: bs.position,
       }
     end
   end

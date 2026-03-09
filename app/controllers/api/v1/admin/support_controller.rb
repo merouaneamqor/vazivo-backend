@@ -27,7 +27,7 @@ module Api
           @pagy, logs = pagy(scope, items: params[:per_page] || 25)
           render json: {
             logs: logs.map { |log| log_entry_json(log) },
-            meta: pagination_meta
+            meta: pagination_meta,
           }
         end
 
@@ -42,7 +42,7 @@ module Api
             resource_type: log.resource_type,
             resource_id: log.resource_id,
             details: log.details,
-            created_at: log.created_at&.iso8601
+            created_at: log.created_at&.iso8601,
           }
         end
 

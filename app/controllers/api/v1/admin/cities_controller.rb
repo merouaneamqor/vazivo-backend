@@ -33,7 +33,8 @@ module Api
           neighborhood = city.neighborhoods.build(neighborhood_params)
 
           if neighborhood.save
-            log_admin_action(:create, "Neighborhood", neighborhood.id, details: { message: "Created neighborhood ##{neighborhood.id}" })
+            log_admin_action(:create, "Neighborhood", neighborhood.id,
+                             details: { message: "Created neighborhood ##{neighborhood.id}" })
             render json: { neighborhood: serialize_neighborhood(neighborhood) }, status: :created
           else
             render json: { errors: neighborhood.errors.full_messages }, status: :unprocessable_content
@@ -45,7 +46,8 @@ module Api
           city = City.find(params[:id])
 
           if city.update(city_params)
-            log_admin_action(:update, "City", city.id, details: { message: "Updated city ##{city.id}" }, update_resource: city)
+            log_admin_action(:update, "City", city.id, details: { message: "Updated city ##{city.id}" },
+                                                       update_resource: city)
             render json: { city: serialize_city(city) }
           else
             render json: { errors: city.errors.full_messages }, status: :unprocessable_content

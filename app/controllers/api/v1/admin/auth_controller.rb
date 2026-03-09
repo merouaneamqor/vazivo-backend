@@ -52,13 +52,13 @@ module Api
             secure: Rails.env.production? || Rails.env.staging?,
             same_site: Rails.env.production? || Rails.env.staging? ? :none : :lax,
           }
-          
+
           # Set domain for production/staging to work across subdomains
           if Rails.env.production? || Rails.env.staging?
             domain = ENV["COOKIE_DOMAIN"].presence || extract_root_domain(request.host)
             cookie_options[:domain] = domain if domain
           end
-          
+
           cookies[:access_token] = {
             **cookie_options,
             value: tokens[:access_token],
@@ -70,11 +70,12 @@ module Api
             expires: 7.days.from_now,
           }
         end
-        
+
         def extract_root_domain(host)
           parts = host.split(".")
           return nil if parts.length < 2
-          ".#{parts[-2..-1].join('.')}"
+
+          ".#{parts[-2..].join('.')}"
         end
       end
     end

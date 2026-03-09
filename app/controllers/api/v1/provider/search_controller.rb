@@ -182,7 +182,9 @@ module Api
             .includes(:user, :business)
 
           if like_patterns.any?
-            conds = like_patterns.map { "LOWER(users.name) LIKE ? OR LOWER(users.email) LIKE ? OR LOWER(business_staffs.role) LIKE ? OR LOWER(businesses.name) LIKE ?" }.join(" OR ")
+            conds = like_patterns.map do
+              "LOWER(users.name) LIKE ? OR LOWER(users.email) LIKE ? OR LOWER(business_staffs.role) LIKE ? OR LOWER(businesses.name) LIKE ?"
+            end.join(" OR ")
             binds = like_patterns.flat_map { |p| [p, p, p, p] }
             rel = rel.where(conds, *binds)
           end
@@ -228,7 +230,9 @@ module Api
             .includes(:user, :business)
 
           if like_patterns.any?
-            conds = like_patterns.map { "LOWER(users.name) LIKE ? OR LOWER(reviews.comment) LIKE ? OR LOWER(businesses.name) LIKE ?" }.join(" OR ")
+            conds = like_patterns.map do
+              "LOWER(users.name) LIKE ? OR LOWER(reviews.comment) LIKE ? OR LOWER(businesses.name) LIKE ?"
+            end.join(" OR ")
             binds = like_patterns.flat_map { |p| [p, p, p] }
             rel = rel.where(conds, *binds)
           end

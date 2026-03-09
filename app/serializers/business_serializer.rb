@@ -56,7 +56,9 @@ class BusinessSerializer < ActiveModel::Serializer
   end
 
   def categories
-    (object.categories || []).map { |c| c.respond_to?(:name) ? Category.translated_name_for(c.name) : Category.translated_name_for(c) }
+    (object.categories || []).map do |c|
+      c.respond_to?(:name) ? Category.translated_name_for(c.name) : Category.translated_name_for(c)
+    end
   end
 
   # Return city name string: legacy column first, then association (for API/SEO paths).

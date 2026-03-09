@@ -36,7 +36,8 @@ module Api
           authorize category
 
           if category.update(category_params)
-            log_admin_action(:update, "Category", category.id, details: { message: "Updated category ##{category.id}" }, update_resource: category)
+            log_admin_action(:update, "Category", category.id,
+                             details: { message: "Updated category ##{category.id}" }, update_resource: category)
             render json: { category: serialize_category(category) }
           else
             render json: { errors: category.errors.full_messages }, status: :unprocessable_content

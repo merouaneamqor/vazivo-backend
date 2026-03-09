@@ -5,7 +5,7 @@
 # (e.g. in production/staging). Get your DSN at https://sentry.io → Project → Client Keys (DSN).
 if ENV["SENTRY_DSN"].to_s.strip.present?
   Sentry.init do |config|
-    config.dsn = ENV["SENTRY_DSN"]
+    config.dsn = ENV.fetch("SENTRY_DSN", nil)
     config.environment = ENV.fetch("RAILS_ENV", Rails.env)
     config.release = ENV["SENTRY_RELEASE"].presence
     config.breadcrumbs_logger = [:active_support_logger, :http_logger]

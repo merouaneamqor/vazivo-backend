@@ -32,9 +32,9 @@ class SmsService
   end
 
   def self.send_sms(to:, body:)
-    sid = ENV["TWILIO_ACCOUNT_SID"]
-    token = ENV["TWILIO_AUTH_TOKEN"]
-    from = ENV["TWILIO_FROM_NUMBER"]
+    sid = ENV.fetch("TWILIO_ACCOUNT_SID", nil)
+    token = ENV.fetch("TWILIO_AUTH_TOKEN", nil)
+    from = ENV.fetch("TWILIO_FROM_NUMBER", nil)
 
     if sid.blank? || token.blank? || from.blank?
       Rails.logger.warn "[SmsService] Twilio credentials not configured"

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     module Public
@@ -14,7 +16,7 @@ module Api
               meta_description: seo_page.meta_description,
               seo_text: seo_page.seo_text,
               city: seo_page.city,
-              service: seo_page.service
+              service: seo_page.service,
             }
           else
             render json: {}, status: :not_found

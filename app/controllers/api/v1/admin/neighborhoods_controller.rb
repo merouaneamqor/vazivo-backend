@@ -9,7 +9,8 @@ module Api
           neighborhood = Neighborhood.find(params[:id])
 
           if neighborhood.update(permitted_params)
-            log_admin_action(:update, "Neighborhood", neighborhood.id, details: { message: "Updated neighborhood ##{neighborhood.id}" }, update_resource: neighborhood)
+            log_admin_action(:update, "Neighborhood", neighborhood.id,
+                             details: { message: "Updated neighborhood ##{neighborhood.id}" }, update_resource: neighborhood)
             render json: {
               neighborhood: {
                 id: neighborhood.id,
@@ -28,7 +29,8 @@ module Api
         def destroy
           neighborhood = Neighborhood.find(params[:id])
           neighborhood.destroy!
-          log_admin_action(:destroy, "Neighborhood", neighborhood.id, details: { message: "Deleted neighborhood ##{neighborhood.id}" })
+          log_admin_action(:destroy, "Neighborhood", neighborhood.id,
+                           details: { message: "Deleted neighborhood ##{neighborhood.id}" })
 
           render json: { message: "Neighborhood deleted" }
         end

@@ -29,14 +29,14 @@ module Api
           frontend_url = ENV["FRONTEND_URL"].to_s.strip.presence || "http://localhost:3001"
 
           base = frontend_url
-                 .sub(/#.*\z/, "") # remove fragment
-                 .sub(/\/+\z/, "") # remove trailing slashes
+            .sub(/#.*\z/, "") # remove fragment
+            .sub(%r{/+\z}, "") # remove trailing slashes
 
           # Using URL fragment so tokens never hit logs, referer, or backend
           fragment = [
             "access_token=#{ERB::Util.url_encode(tokens[:access_token])}",
             "refresh_token=#{ERB::Util.url_encode(tokens[:refresh_token])}",
-            "expires_in=#{tokens[:expires_in]}"
+            "expires_in=#{tokens[:expires_in]}",
           ].join("&")
 
           redirect_to "#{base}/auth/callback##{fragment}", allow_other_host: true
@@ -46,8 +46,8 @@ module Api
           frontend_url = ENV["FRONTEND_URL"].to_s.strip.presence || "http://localhost:3001"
 
           base = frontend_url
-                 .sub(/#.*\z/, "")
-                 .sub(/\/+\z/, "")
+            .sub(/#.*\z/, "")
+            .sub(%r{/+\z}, "")
 
           redirect_to "#{base}/auth/callback?error=#{ERB::Util.url_encode(message)}",
                       allow_other_host: true

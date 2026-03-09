@@ -31,7 +31,8 @@ module Api
           permitted = staff_update_params
           user.assign_attributes(permitted) if permitted.present?
           user.save!
-          log_admin_action(:update, "User", user.id, details: { message: "Updated admin staff ##{user.id}" }, update_resource: user)
+          log_admin_action(:update, "User", user.id, details: { message: "Updated admin staff ##{user.id}" },
+                                                     update_resource: user)
           render json: { user: ::UserSerializer.new(user).as_json, staff: staff_item(user) }
         end
 
@@ -68,6 +69,7 @@ module Api
           permitted = params.permit(:first_name, :last_name, :email, :phone, :locale, :admin_role).to_h
           permitted = permitted.reject { |_, v| v.blank? }
           return {} if permitted.empty?
+
           permitted[:admin_role] = safe_admin_role(permitted[:admin_role]) if permitted.key?(:admin_role)
           permitted[:locale] = safe_locale(permitted[:locale]) if permitted.key?(:locale)
           permitted
@@ -75,12 +77,14 @@ module Api
 
         def safe_admin_role(value)
           return "support" if value.blank?
+
           ::User::ALLOWED_ADMIN_ROLES.include?(value.to_s) ? value.to_s : "support"
         end
 
         def safe_locale(value)
           return "en" if value.blank?
-          %w[en fr ar].include?(value.to_s) ? value.to_s : "en"
+
+          ["en", "fr", "ar"].include?(value.to_s) ? value.to_s : "en"
         end
 
         def staff_item(u)
@@ -93,7 +97,7 @@ module Api
             phone: u.phone.to_s,
             locale: u.locale,
             admin_role: u.admin_role || "superadmin",
-            created_at: u.created_at
+            created_at: u.created_at,
           }
         end
       end

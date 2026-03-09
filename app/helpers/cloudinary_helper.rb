@@ -4,7 +4,7 @@ module CloudinaryHelper
   # Generate Cloudinary URL with transformations
   def cloudinary_url(public_id, options = {})
     return nil if public_id.blank?
-    
+
     Cloudinary::Utils.cloudinary_url(public_id, options.merge(secure: true))
   end
 
@@ -23,7 +23,7 @@ module CloudinaryHelper
     {
       thumbnail: cloudinary_thumbnail_url(public_id),
       standard: cloudinary_standard_url(public_id),
-      original: cloudinary_url(public_id)
+      original: cloudinary_url(public_id),
     }
   end
 end

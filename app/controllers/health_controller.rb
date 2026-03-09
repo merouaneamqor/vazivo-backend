@@ -5,16 +5,16 @@ class HealthController < ActionController::API
 
   def index
     render json: {
-      status: 'ok',
-      timestamp: Time.current
+      status: "ok",
+      timestamp: Time.current,
     }
   end
 
   private
 
   def set_cors_headers
-    headers['Access-Control-Allow-Origin'] = '*'
-    headers['Access-Control-Allow-Methods'] = 'GET, OPTIONS'
-    headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    headers["Access-Control-Allow-Origin"] = "*"
+    headers["Access-Control-Allow-Methods"] = "GET, OPTIONS"
+    headers["Access-Control-Allow-Headers"] = "Content-Type"
   end
 end

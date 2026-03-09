@@ -13,16 +13,14 @@ redis_url = if base_url.include?("railway.internal") && ENV["REDIS_PUBLIC_URL"].
 
 Sidekiq.configure_server do |config|
   config.redis = { url: redis_url }
-  
+
   # Load cron jobs
   schedule_file = "config/schedule.yml"
-  if File.exist?(schedule_file)
-    Sidekiq::Cron::Job.load_from_hash YAML.load_file(schedule_file)
-  end
-  
+  Sidekiq::Cron::Job.load_from_hash YAML.load_file(schedule_file) if File.exist?(schedule_file)
+
   # Log email delivery errors
   config.error_handlers << proc { |ex, ctx_hash|
-    if ctx_hash[:job] && ctx_hash[:job]['class'] == 'ActionMailer::MailDeliveryJob'
+    if ctx_hash[:job] && ctx_hash[:job]["class"] == "ActionMailer::MailDeliveryJob"
       Rails.logger.error("Email delivery failed: #{ex.message}")
       Rails.logger.error("Job context: #{ctx_hash[:job].inspect}")
     end

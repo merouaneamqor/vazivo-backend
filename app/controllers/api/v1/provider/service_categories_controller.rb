@@ -10,10 +10,10 @@ module Api
         # GET /api/v1/provider/businesses/:business_id/service_categories
         def index
           categories = @business.service_categories.ordered
-          categories = categories.active unless params[:include_archived] == 'true'
+          categories = categories.active unless params[:include_archived] == "true"
 
           render json: {
-            categories: categories.map { |c| serialize_category(c) }
+            categories: categories.map { |c| serialize_category(c) },
           }
         end
 
@@ -102,7 +102,7 @@ module Api
             archived: category.archived?,
             services_count: category.services_count,
             created_at: category.created_at,
-            updated_at: category.updated_at
+            updated_at: category.updated_at,
           }
         end
 
@@ -111,7 +111,7 @@ module Api
             "Professional #{name} services tailored to your needs.",
             "Expert #{name} treatments delivered with care and precision.",
             "High-quality #{name} services for the best results.",
-            "Specialized #{name} treatments by experienced professionals."
+            "Specialized #{name} treatments by experienced professionals.",
           ]
           templates.sample
         end

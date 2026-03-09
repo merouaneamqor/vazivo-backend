@@ -43,11 +43,12 @@ module Api
           permitted = business_params
           logo_file = permitted.delete(:logo)
           if logo_file.present? && !valid_image?(logo_file)
-            return render json: { errors: ["Image must be PNG, JPEG or JPG and under 5 MB per file."] }, status: :unprocessable_entity
+            return render json: { errors: ["Image must be PNG, JPEG or JPG and under 5 MB per file."] },
+                          status: :unprocessable_entity
           end
+
           attach_logo(logo_file) if logo_file.present?
           attach_images(permitted.delete(:images)) if permitted.key?(:images)
-          
 
           if @business.update(permitted)
             render json: { business: BusinessPresenter.new(@business).as_json }
@@ -73,7 +74,9 @@ module Api
         # GET /api/v1/provider/businesses/:id/bookings
         def bookings
           authorize @business, :view_bookings?
-          bookings = @business.bookings.includes(:user, :services, :staff, booking_service_items: :service).order(date: :desc, start_time: :desc)
+          bookings = @business.bookings.includes(:user, :services, :staff, booking_service_items: :service).order(
+            date: :desc, start_time: :desc
+          )
           bookings = bookings.where(status: params[:status]) if params[:status].present?
           render json: { bookings: bookings.map { |b| BookingSerializer.new(b).as_json } }
         end
@@ -97,15 +100,13 @@ module Api
           authorize @business, :manage_staff?
           staff_list = @business.business_staff.active.includes(:user).order(Arel.sql("CASE role WHEN 'owner' THEN 0 ELSE 1 END"))
           # If business has only one staff member, they are automatically the owner
-          if staff_list.size == 1 && !staff_list.first.owner?
-            staff_list.first.update!(role: "owner")
-          end
+          staff_list.first.update!(role: "owner") if staff_list.size == 1 && !staff_list.first.owner?
           render json: {
-            staff: staff_list.map { |bs|
+            staff: staff_list.map do |bs|
               u = bs.user
-              role = (staff_list.size == 1) ? "owner" : bs.role
+              role = staff_list.size == 1 ? "owner" : bs.role
               { id: u.id, name: u.name, email: u.email, role: role, active: bs.active }
-            }
+            end,
           }
         end
 
@@ -116,17 +117,17 @@ module Api
           return render json: { errors: ["Email is required"] }, status: :unprocessable_entity if email.blank?
 
           role = (params[:role] || params.dig(:business, :role))&.to_s&.strip&.downcase
-          role = "staff" unless role.present? && %w[manager staff].include?(role)
+          role = "staff" unless role.present? && ["manager", "staff"].include?(role)
           first = (params[:first_name] || params.dig(:business, :first_name))&.to_s&.strip
           last  = (params[:last_name] || params.dig(:business, :last_name))&.to_s&.strip
           name_param = (params[:name] || params.dig(:business, :name))&.to_s&.strip
           name = if first.present?
-            [first, last].compact.join(" ")
-          elsif name_param.present?
-            name_param
-          else
-            email.split("@").first&.truncate(100) || "Staff"
-          end
+                   [first, last].compact.join(" ")
+                 elsif name_param.present?
+                   name_param
+                 else
+                   email.split("@").first&.truncate(100) || "Staff"
+                 end
 
           user = ::User.kept.find_by("LOWER(email) = ?", email)
           created_user = false
@@ -137,22 +138,25 @@ module Api
               role: "customer",
               password: SecureRandom.hex(16)
             )
-            unless user.save
-              return render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
-            end
+            return render json: { errors: user.errors.full_messages }, status: :unprocessable_entity unless user.save
+
             created_user = true
           end
 
           bs = @business.business_staff.find_by(user_id: user.id)
           if bs
             bs.update!(role: role, active: true) unless bs.owner?
-            staff_member = { id: user.id, first_name: user.first_name, last_name: user.last_name.to_s, name: user.name, email: user.email, role: bs.role, active: bs.active }
-            return render json: { staff_member: staff_member, created_user: false, message: "Staff member updated" }, status: :ok
+            staff_member = { id: user.id, first_name: user.first_name, last_name: user.last_name.to_s, name: user.name,
+                             email: user.email, role: bs.role, active: bs.active }
+            return render json: { staff_member: staff_member, created_user: false, message: "Staff member updated" },
+                          status: :ok
           end
 
           @business.business_staff.create!(user_id: user.id, role: role, active: true)
-          staff_member = { id: user.id, first_name: user.first_name, last_name: user.last_name.to_s, name: user.name, email: user.email, role: role, active: true }
-          render json: { staff_member: staff_member, created_user: created_user, message: "Staff member added" }, status: :ok
+          staff_member = { id: user.id, first_name: user.first_name, last_name: user.last_name.to_s, name: user.name,
+                           email: user.email, role: role, active: true }
+          render json: { staff_member: staff_member, created_user: created_user, message: "Staff member added" },
+                 status: :ok
         end
 
         # POST /api/v1/provider/businesses/:id/staff/:user_id
@@ -168,12 +172,11 @@ module Api
           authorize @business, :manage_staff?
           bs = @business.business_staff.find_by!(user_id: params[:user_id])
           role = (params[:role] || params.dig(:business, :role))&.to_s&.strip&.downcase
-          unless role.present? && %w[manager staff].include?(role)
+          unless role.present? && ["manager", "staff"].include?(role)
             return render json: { errors: ["Role must be manager or staff"] }, status: :unprocessable_entity
           end
-          if bs.owner?
-            return render json: { errors: ["Cannot change owner role"] }, status: :unprocessable_entity
-          end
+          return render json: { errors: ["Cannot change owner role"] }, status: :unprocessable_entity if bs.owner?
+
           if bs.update(role: role)
             render json: { message: "Staff member updated" }, status: :ok
           else
@@ -190,9 +193,7 @@ module Api
           @business.staff_members.delete(user)
           # If only one staff member remains, they are automatically the owner
           remaining = @business.business_staff.reload.active
-          if remaining.size == 1 && !remaining.first.owner?
-            remaining.first.update!(role: "owner")
-          end
+          remaining.first.update!(role: "owner") if remaining.size == 1 && !remaining.first.owner?
           render json: { message: "Staff member removed" }, status: :ok
         end
 
@@ -207,14 +208,12 @@ module Api
         def add_photos
           authorize @business
           files = Array(params[:images]).compact
-          if files.empty?
-            return render json: { errors: ["no images provided"] }, status: :unprocessable_entity
-          end
+          return render json: { errors: ["no images provided"] }, status: :unprocessable_entity if files.empty?
 
           invalid = files.reject { |f| valid_image?(f) }
           unless invalid.empty?
             return render json: {
-              errors: ["Image must be PNG, JPEG or JPG and under 5 MB per file."]
+              errors: ["Image must be PNG, JPEG or JPG and under 5 MB per file."],
             }, status: :unprocessable_entity
           end
 
@@ -230,6 +229,7 @@ module Api
           uploaded = 0
           files.each do |f|
             next if f.blank?
+
             result = CloudinaryUploader.upload(f, folder: folder)
             if result&.dig(:secure_url)
               attach_remote_url(@business, result[:secure_url], attach_as_logo: false, attach_as_image: true)
@@ -238,7 +238,8 @@ module Api
           end
 
           if error_message
-            return render json: { errors: [error_message], image_urls: @business.image_urls }, status: :unprocessable_entity
+            return render json: { errors: [error_message], image_urls: @business.image_urls },
+                          status: :unprocessable_entity
           end
 
           render json: { image_urls: @business.image_urls }
@@ -248,18 +249,13 @@ module Api
         def remove_photo
           authorize @business
           photo_url = params[:photo_url].to_s.strip
-          if photo_url.blank?
-            return render json: { errors: ["photo_url is required"] }, status: :unprocessable_entity
-          end
+          return render json: { errors: ["photo_url is required"] }, status: :unprocessable_entity if photo_url.blank?
+
           urls = @business.image_urls
           idx = urls.index(photo_url)
-          unless idx
-            # Try matching with trailing slash or query params
-            idx = urls.index { |u| u.to_s.split("?").first == photo_url.split("?").first }
-          end
-          if idx.nil?
-            return render json: { errors: ["Photo not found"] }, status: :not_found
-          end
+          idx ||= urls.index { |u| u.to_s.split("?").first == photo_url.split("?").first }
+          return render json: { errors: ["Photo not found"] }, status: :not_found if idx.nil?
+
           @business.images.attachments[idx].purge
           render json: { image_urls: @business.image_urls }
         end
@@ -268,14 +264,12 @@ module Api
         def create_image
           authorize @business
           files = Array(params[:images]).compact
-          if files.empty?
-            return render json: { errors: ["no images provided"] }, status: :unprocessable_entity
-          end
+          return render json: { errors: ["no images provided"] }, status: :unprocessable_entity if files.empty?
 
           invalid = files.reject { |f| valid_image?(f) }
           unless invalid.empty?
             return render json: {
-              errors: ["Image must be PNG, JPEG or JPG and under 5 MB per file."]
+              errors: ["Image must be PNG, JPEG or JPG and under 5 MB per file."],
             }, status: :unprocessable_entity
           end
 
@@ -291,8 +285,9 @@ module Api
           uploaded_images = []
           files.each do |f|
             next if f.blank?
+
             result = CloudinaryUploader.upload(f, folder: folder)
-            if result&.dig(:secure_url) && result&.dig(:public_id)
+            if result&.dig(:secure_url) && result[:public_id]
               attach_remote_url(@business, result[:secure_url], attach_as_logo: false, attach_as_image: true)
               uploaded_images << { url: result[:secure_url], public_id: result[:public_id] }
             end
@@ -305,19 +300,19 @@ module Api
         def destroy_image
           authorize @business
           public_id = params[:id]
-          if public_id.blank?
-            return render json: { errors: ["public_id is required"] }, status: :unprocessable_entity
-          end
+          return render json: { errors: ["public_id is required"] }, status: :unprocessable_entity if public_id.blank?
 
           # Find attachment by matching public_id in metadata or URL
           attachment = @business.images.attachments.find do |att|
-            url = att.url rescue nil
-            url && url.include?(public_id)
+            url = begin
+              att.url
+            rescue StandardError
+              nil
+            end
+            url&.include?(public_id)
           end
 
-          unless attachment
-            return render json: { errors: ["Image not found"] }, status: :not_found
-          end
+          return render json: { errors: ["Image not found"] }, status: :not_found unless attachment
 
           attachment.purge
           render json: { message: "Image deleted successfully" }
@@ -325,12 +320,13 @@ module Api
 
         private
 
-        ALLOWED_IMAGE_CONTENT_TYPES = %w[image/png image/jpeg image/jpg].freeze
+        ALLOWED_IMAGE_CONTENT_TYPES = ["image/png", "image/jpeg", "image/jpg"].freeze
         MAX_IMAGE_SIZE_BYTES = 5 * 1024 * 1024 # 5 MB
 
         def valid_image?(uploaded_file)
           return false if uploaded_file.blank?
           return false unless ALLOWED_IMAGE_CONTENT_TYPES.include?(uploaded_file.content_type.to_s.strip.downcase)
+
           size = uploaded_file.respond_to?(:size) ? uploaded_file.size : uploaded_file.tempfile&.size
           size.present? && size <= MAX_IMAGE_SIZE_BYTES
         end
@@ -375,6 +371,7 @@ module Api
           folder = CloudinaryPathBuilder.business_gallery_folder(@business.id)
           urls = Array(files).filter_map do |f|
             next if f.blank?
+
             r = CloudinaryUploader.upload(f, folder: folder)
             r&.dig(:secure_url)
           end

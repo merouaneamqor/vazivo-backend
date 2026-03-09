@@ -110,7 +110,7 @@ class Review < ApplicationRecord
   end
 
   def enforce_time_limit?
-    !caller.any? { |line| line.include?("admin/reviews_controller") }
+    caller.none? { |line| line.include?("admin/reviews_controller") }
   end
 
   def track_edit_time

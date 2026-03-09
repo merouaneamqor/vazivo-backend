@@ -10,7 +10,9 @@ module Api
           businesses = Business.left_joins(:user)
           businesses = apply_search(businesses, params[:q]) if params[:q].present?
           businesses = businesses.where(businesses: { category: params[:category] }) if params[:category].present?
-          businesses = businesses.where(businesses: { subcategory: params[:subcategory] }) if params[:subcategory].present?
+          if params[:subcategory].present?
+            businesses = businesses.where(businesses: { subcategory: params[:subcategory] })
+          end
           businesses = businesses.where("LOWER(businesses.city) = ?", params[:city].downcase) if params[:city].present?
           businesses = businesses.where(discarded_at: nil) if params[:status] == "approved"
           businesses = businesses.where.not(discarded_at: nil) if params[:status] == "suspended"
@@ -77,12 +79,11 @@ module Api
           attrs = provider_update_attrs(nil)
           business = user.businesses.build(attrs)
           city_str = params.dig(:provider, :city).to_s.strip.presence
-          if city_str.present?
-            business.write_attribute(:city, business.city&.name || city_str)
-          end
+          business.write_attribute(:city, business.city&.name || city_str) if city_str.present?
           apply_categories_to_business(business)
           if business.save
-            log_admin_action(:create, "Business", business.id, details: { message: "Created provider/business ##{business.id}" })
+            log_admin_action(:create, "Business", business.id,
+                             details: { message: "Created provider/business ##{business.id}" })
             @provider = admin_provider_detail(business)
             render :create, status: :created
           else
@@ -95,9 +96,7 @@ module Api
           attrs = provider_update_attrs(business)
           business.assign_attributes(attrs)
           city_str = params.dig(:provider, :city).to_s.strip.presence
-          if city_str.present?
-            business.write_attribute(:city, business.city&.name || city_str)
-          end
+          business.write_attribute(:city, business.city&.name || city_str) if city_str.present?
           apply_categories_to_business(business)
           if business.save
             details = { message: "Updated provider ##{business.id}" }
@@ -123,7 +122,8 @@ module Api
         def unconfirm
           business = Business.find(params[:id])
           business.user.update!(provider_status: "not_confirmed")
-          log_admin_action(:unconfirm, "Business", business.id, details: { message: "Unconfirmed provider ##{business.id}" })
+          log_admin_action(:unconfirm, "Business", business.id,
+                           details: { message: "Unconfirmed provider ##{business.id}" })
           @message = "Provider unconfirmed"
           @provider = BusinessSerializer.new(business).as_json
           render :message_with_provider
@@ -140,7 +140,8 @@ module Api
         def suspend
           business = Business.find(params[:id])
           business.discard
-          log_admin_action(:suspend, "Business", business.id, details: { message: "Suspended provider ##{business.id}" })
+          log_admin_action(:suspend, "Business", business.id,
+                           details: { message: "Suspended provider ##{business.id}" })
           @message = "Provider suspended"
           @provider = BusinessSerializer.new(business).as_json
           render :message_with_provider
@@ -151,7 +152,8 @@ module Api
           user = business.user
           tokens = JwtService.generate_tokens(user, impersonator: current_user)
           set_impersonation_cookies(tokens, user)
-          log_admin_action(:impersonate, "Business", business.id, details: { message: "Impersonating provider ##{business.id}" })
+          log_admin_action(:impersonate, "Business", business.id,
+                           details: { message: "Impersonating provider ##{business.id}" })
           render json: { message: "Impersonating provider", access_token: tokens[:access_token],
                          expires_in: tokens[:expires_in] }
         end
@@ -168,7 +170,8 @@ module Api
         def unverify
           business = Business.find(params[:id])
           business.update!(verification_status: "pending")
-          log_admin_action(:unverify, "Business", business.id, details: { message: "Set provider ##{business.id} to pending verification" })
+          log_admin_action(:unverify, "Business", business.id,
+                           details: { message: "Set provider ##{business.id} to pending verification" })
           @message = "Provider set to pending verification"
           @provider = BusinessSerializer.new(business).as_json
           render :message_with_provider
@@ -177,7 +180,8 @@ module Api
         def reactivate
           business = Business.find(params[:id])
           business.undiscard if business.discarded?
-          log_admin_action(:reactivate, "Business", business.id, details: { message: "Reactivated provider ##{business.id}" })
+          log_admin_action(:reactivate, "Business", business.id,
+                           details: { message: "Reactivated provider ##{business.id}" })
           @message = "Provider reactivated"
           @provider = BusinessSerializer.new(business).as_json
           render :message_with_provider
@@ -185,7 +189,8 @@ module Api
 
         def send_onboarding_email
           business = Business.find(params[:id])
-          log_admin_action(:send_onboarding_email, "Business", business.id, details: { message: "Sent onboarding email for provider ##{business.id}" })
+          log_admin_action(:send_onboarding_email, "Business", business.id,
+                           details: { message: "Sent onboarding email for provider ##{business.id}" })
           # Stub: enqueue job or no-op
           render json: { message: "Onboarding email sent" }
         end
@@ -225,7 +230,8 @@ module Api
 
           if result[:success]
             business.reload
-            log_admin_action(:upgrade, "Business", business.id, details: { message: "Upgraded provider ##{business.id} to premium" })
+            log_admin_action(:upgrade, "Business", business.id,
+                             details: { message: "Upgraded provider ##{business.id} to premium" })
             render json: {
               message: "Business upgraded to premium",
               business_id: business.id,
@@ -250,13 +256,13 @@ module Api
 
           # Clear impersonation cookies and set admin cookies
           cookie_domain = Rails.env.production? ? ".vazivo.com" : nil
-          cookie_options = { 
-            httponly: true, 
+          cookie_options = {
+            httponly: true,
             secure: Rails.env.production?,
             same_site: Rails.env.production? ? :none : :lax,
-            domain: cookie_domain
+            domain: cookie_domain,
           }
-          
+
           cookies[:access_token] =
             { **cookie_options, value: tokens[:access_token], expires: tokens[:expires_in].seconds.from_now }
           cookies[:refresh_token] = { **cookie_options, value: tokens[:refresh_token], expires: 7.days.from_now }
@@ -370,7 +376,7 @@ module Api
         end
 
         def provider_params
-          days = %w[monday tuesday wednesday thursday friday saturday sunday]
+          days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
           opening_hours_permit = days.index_with { [{ open: [], close: [] }] }
           params.require(:provider).permit(
             :user_id, :name, :description, :category, :address, :city, :neighborhood, :country,
@@ -398,7 +404,8 @@ module Api
         # Set only denormalized category/categories from params (no business_categories join).
         def apply_categories_to_business(business)
           raw = params.dig(:provider, :categories)
-          raw = Array(params.dig(:provider, :category)).compact_blank if raw.blank? && params.dig(:provider, :category).present?
+          raw = Array(params.dig(:provider, :category)).compact_blank if raw.blank? && params.dig(:provider,
+                                                                                                  :category).present?
           ids = resolve_category_ids(raw)
           by_id = Category.where(id: ids).index_by(&:id)
           names = ids.filter_map { |id| by_id[id]&.name }
@@ -424,7 +431,8 @@ module Api
             id = val.to_i if val.to_s.match?(/\A\d+\z/)
             id = Category.find_by(id: id)&.id if id.present?
             id ||= Category.find_by_slug_any_locale(val.to_s.parameterize.presence)&.id
-            id ||= Category.where("LOWER(name) = ? OR LOWER(name_en) = ?", val.to_s.downcase.strip, val.to_s.downcase.strip).first&.id
+            id ||= Category.where("LOWER(name) = ? OR LOWER(name_en) = ?", val.to_s.downcase.strip,
+                                  val.to_s.downcase.strip).first&.id
             id
           end.uniq
         end
@@ -433,42 +441,44 @@ module Api
           {
             status: b.discarded? ? "suspended" : "approved",
             owner: b.user ? UserSerializer.new(b.user).as_json : nil,
-            services: b.services.kept.map { |s| { id: s.id, name: s.translated_name, price: s.price, duration: s.duration } },
+            services: b.services.kept.map do |s|
+              { id: s.id, name: s.translated_name, price: s.price, duration: s.duration }
+            end,
             total_bookings: Booking.where(business_id: b.id).count,
           }
         end
 
         def set_impersonation_cookies(tokens, user)
           cookie_domain = Rails.env.production? ? ".vazivo.com" : nil
-          cookie_options = { 
-            httponly: true, 
+          cookie_options = {
+            httponly: true,
             secure: Rails.env.production?,
             same_site: Rails.env.production? ? :none : :lax,
-            domain: cookie_domain
+            domain: cookie_domain,
           }
-          
+
           cookies[:access_token] =
             { **cookie_options, value: tokens[:access_token], expires: tokens[:expires_in].seconds.from_now }
           cookies[:refresh_token] = { **cookie_options, value: tokens[:refresh_token], expires: 7.days.from_now }
 
           # Set impersonation markers
-          cookies[:impersonating] = { 
-            value: "true", 
-            expires: tokens[:expires_in].seconds.from_now, 
+          cookies[:impersonating] = {
+            value: "true",
+            expires: tokens[:expires_in].seconds.from_now,
             httponly: false,
-            domain: cookie_domain
+            domain: cookie_domain,
           }
-          cookies[:impersonated_user] = { 
-            value: user.name, 
-            expires: tokens[:expires_in].seconds.from_now, 
+          cookies[:impersonated_user] = {
+            value: user.name,
+            expires: tokens[:expires_in].seconds.from_now,
             httponly: false,
-            domain: cookie_domain
+            domain: cookie_domain,
           }
-          cookies[:original_admin_id] = { 
-            value: current_user.id.to_s, 
-            expires: tokens[:expires_in].seconds.from_now, 
+          cookies[:original_admin_id] = {
+            value: current_user.id.to_s,
+            expires: tokens[:expires_in].seconds.from_now,
             httponly: true,
-            domain: cookie_domain
+            domain: cookie_domain,
           }
         end
       end

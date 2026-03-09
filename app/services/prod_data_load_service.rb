@@ -122,6 +122,7 @@ class ProdDataLoadService
           candidate_base_slugs = batch.filter_map do |item|
             title = item["title"].to_s.strip
             next if title.blank? || title.length < 2
+
             helper.normalize_slug(title, city_slug)
           end.compact.uniq
           existing_slugs = candidate_base_slugs.empty? ? Set.new : Business.where(slug: candidate_base_slugs).pluck(:slug).to_set
@@ -151,7 +152,9 @@ class ProdDataLoadService
             description = nil if description.blank? || description == "N/A"
             image_urls = helper.collect_image_urls(item)
             item_cat = item["category"].to_s.strip
-            category_name_for_row = (Category.canonical_name_for_slug(item_cat.parameterize) if item_cat.present?).presence || category_name
+            category_name_for_row = (if item_cat.present?
+                                       Category.canonical_name_for_slug(item_cat.parameterize)
+                                     end).presence || category_name
             email = helper.build_provider_email(slug)
             user_name = title.length >= 2 ? title[0..99] : "#{category_name_for_row} #{city_name}"
 

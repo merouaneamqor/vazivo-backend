@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class StaffUnavailability < ApplicationRecord
   belongs_to :business
   belongs_to :user
@@ -18,4 +20,3 @@ class StaffUnavailability < ApplicationRecord
     errors.add(:end_time, "must be after start time") if end_time <= start_time
   end
 end
-

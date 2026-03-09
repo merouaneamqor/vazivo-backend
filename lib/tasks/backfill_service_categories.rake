@@ -31,4 +31,3 @@ namespace :backfill do
     puts "Backfill complete."
   end
 end
-
