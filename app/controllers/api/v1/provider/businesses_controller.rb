@@ -113,50 +113,18 @@ module Api
         # POST /api/v1/provider/businesses/:id/staff
         def invite_staff
           authorize @business, :manage_staff?
-          email = (params[:email] || params.dig(:business, :email))&.to_s&.strip&.downcase
+          
+          email = extract_email
           return render json: { errors: ["Email is required"] }, status: :unprocessable_entity if email.blank?
 
-          role = (params[:role] || params.dig(:business, :role))&.to_s&.strip&.downcase
-          role = "staff" unless role.present? && ["manager", "staff"].include?(role)
-          first = (params[:first_name] || params.dig(:business, :first_name))&.to_s&.strip
-          last  = (params[:last_name] || params.dig(:business, :last_name))&.to_s&.strip
-          name_param = (params[:name] || params.dig(:business, :name))&.to_s&.strip
-          name = if first.present?
-                   [first, last].compact.join(" ")
-                 elsif name_param.present?
-                   name_param
-                 else
-                   email.split("@").first&.truncate(100) || "Staff"
-                 end
+          role = extract_role
+          name = extract_name
+          user = find_or_create_user(email, name)
+          
+          return render json: { errors: user.errors.full_messages }, status: :unprocessable_entity if user.errors.any?
 
-          user = ::User.kept.find_by("LOWER(email) = ?", email)
-          created_user = false
-          if user.nil?
-            user = ::User.new(
-              email: email,
-              name: name,
-              role: "customer",
-              password: SecureRandom.hex(16)
-            )
-            return render json: { errors: user.errors.full_messages }, status: :unprocessable_entity unless user.save
-
-            created_user = true
-          end
-
-          bs = @business.business_staff.find_by(user_id: user.id)
-          if bs
-            bs.update!(role: role, active: true) unless bs.owner?
-            staff_member = { id: user.id, first_name: user.first_name, last_name: user.last_name.to_s, name: user.name,
-                             email: user.email, role: bs.role, active: bs.active }
-            return render json: { staff_member: staff_member, created_user: false, message: "Staff member updated" },
-                          status: :ok
-          end
-
-          @business.business_staff.create!(user_id: user.id, role: role, active: true)
-          staff_member = { id: user.id, first_name: user.first_name, last_name: user.last_name.to_s, name: user.name,
-                           email: user.email, role: role, active: true }
-          render json: { staff_member: staff_member, created_user: created_user, message: "Staff member added" },
-                 status: :ok
+          staff_member = add_or_update_staff(user, role)
+          render json: { staff_member: staff_member, created_user: @user_created, message: staff_message }, status: :ok
         end
 
         # POST /api/v1/provider/businesses/:id/staff/:user_id
@@ -319,6 +287,72 @@ module Api
         end
 
         private
+
+        def extract_email
+          (params[:email] || params.dig(:business, :email))&.to_s&.strip&.downcase
+        end
+
+        def extract_role
+          role = (params[:role] || params.dig(:business, :role))&.to_s&.strip&.downcase
+          role.present? && ["manager", "staff"].include?(role) ? role : "staff"
+        end
+
+        def extract_name
+          first = (params[:first_name] || params.dig(:business, :first_name))&.to_s&.strip
+          last = (params[:last_name] || params.dig(:business, :last_name))&.to_s&.strip
+          name_param = (params[:name] || params.dig(:business, :name))&.to_s&.strip
+
+          build_name_from_parts(first, last, name_param)
+        end
+
+        def build_name_from_parts(first, last, name_param)
+          return [first, last].compact.join(" ") if first.present?
+          return name_param if name_param.present?
+
+          extract_email.split("@").first&.truncate(100) || "Staff"
+        end
+
+        def find_or_create_user(email, name)
+          user = ::User.kept.find_by("LOWER(email) = ?", email)
+          @user_created = false
+
+          if user.nil?
+            user = ::User.new(email: email, name: name, role: "customer", password: SecureRandom.hex(16))
+            @user_created = user.save
+          end
+
+          user
+        end
+
+        def add_or_update_staff(user, role)
+          bs = @business.business_staff.find_by(user_id: user.id)
+          
+          if bs
+            bs.update!(role: role, active: true) unless bs.owner?
+            @staff_updated = true
+            serialize_staff_member(user, bs.role, bs.active)
+          else
+            @business.business_staff.create!(user_id: user.id, role: role, active: true)
+            @staff_updated = false
+            serialize_staff_member(user, role, true)
+          end
+        end
+
+        def serialize_staff_member(user, role, active)
+          {
+            id: user.id,
+            first_name: user.first_name,
+            last_name: user.last_name.to_s,
+            name: user.name,
+            email: user.email,
+            role: role,
+            active: active
+          }
+        end
+
+        def staff_message
+          @staff_updated ? "Staff member updated" : "Staff member added"
+        end
 
         ALLOWED_IMAGE_CONTENT_TYPES = ["image/png", "image/jpeg", "image/jpg"].freeze
         MAX_IMAGE_SIZE_BYTES = 5 * 1024 * 1024 # 5 MB

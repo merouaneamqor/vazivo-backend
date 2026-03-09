@@ -5,6 +5,11 @@
 
 set -e
 
+# Allow git in /app when repo is mounted from host (avoids "dubious ownership" in RubyCritic churn, etc.)
+if [ -d /app/.git ]; then
+  git config --global --add safe.directory /app 2>/dev/null || true
+fi
+
 MIGRATE_MAX_ATTEMPTS=${MIGRATE_MAX_ATTEMPTS:-12}
 MIGRATE_RETRY_SLEEP=${MIGRATE_RETRY_SLEEP:-5}
 

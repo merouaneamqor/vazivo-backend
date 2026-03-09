@@ -67,7 +67,7 @@ module Api
               status: booking.status,
               customer_name: booking.customer_name,
               service_name: service_name,
-              staff_name: booking.staff&.name,
+              staff_name: booking.staff_name,
               total_price: booking.total_price,
             }
           end

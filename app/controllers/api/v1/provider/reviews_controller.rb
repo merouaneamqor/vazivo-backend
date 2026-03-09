@@ -77,12 +77,12 @@ module Api
         def serialize_review(review)
           {
             id: review.id,
-            customer_name: review.user&.name || "Anonymous",
-            customer_avatar: review.user&.avatar_url,
+            customer_name: review.user_name || "Anonymous",
+            customer_avatar: review.customer_avatar_url,
             rating: review.rating || 0,
             comment: review.comment || "",
-            service_name: review.booking&.booking_service_items&.first&.service&.translated_name || "Unknown",
-            booking_date: review.booking&.start_time&.iso8601,
+            service_name: review.booking_service_items&.first&.service&.translated_name || "Unknown",
+            booking_date: review.booking_start_time&.iso8601,
             created_at: review.created_at&.iso8601,
             edited_at: review.edited_at&.iso8601,
             response: review.response,

@@ -8,7 +8,7 @@ class BusinessPresenter
 
   # City as display string (legacy column or association name) so API never returns raw City object
   def city
-    business.read_attribute(:city).presence || business.city&.name
+    business.read_attribute(:city).presence || business.city_name
   end
 
   def name

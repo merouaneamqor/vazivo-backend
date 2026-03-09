@@ -11,6 +11,12 @@ class Booking < ApplicationRecord
   has_many :services, through: :booking_service_items
   has_many :booking_events, dependent: :destroy
 
+  # Delegates for Law of Demeter
+  delegate :email, :phone, :name, to: :user, prefix: true, allow_nil: true
+  delegate :name, to: :business, prefix: true, allow_nil: true
+  delegate :owner_email, to: :business, prefix: false, allow_nil: true
+  delegate :name, to: :staff, prefix: true, allow_nil: true
+
   # Validations
   validates :date, presence: true
   validates :start_time, presence: true
@@ -50,6 +56,11 @@ class Booking < ApplicationRecord
   scope :for_date, ->(date) { where(date: date) }
   scope :for_date_range, ->(start_date, end_date) { where(date: start_date..end_date) }
   scope :active, -> { where.not(status: [:cancelled, :no_show]) }
+  scope :by_status, ->(status) { status.present? ? where(status: status) : all }
+  scope :by_business, ->(business_id) { business_id.present? ? where(business_id: business_id) : all }
+  scope :by_user, ->(user_id) { user_id.present? ? where(user_id: user_id) : all }
+  scope :from_date, ->(date) { date.present? ? where(date: date..) : all }
+  scope :to_date, ->(date) { date.present? ? where(date: ..date) : all }
   scope :for_guest_lookup, ->(email: nil, phone: nil) {
     rel = where(user_id: nil)
     normalized = normalize_phone_for_lookup(phone)
@@ -120,6 +131,30 @@ class Booking < ApplicationRecord
 
   def customer_display_name
     user&.name || customer_name || "Guest"
+  end
+
+  def business_slug
+    business&.slug
+  end
+
+  def customer_email_address
+    user_id.present? ? user_email : customer_email
+  end
+
+  def customer_phone_number
+    user_id.present? ? user_phone : customer_phone
+  end
+
+  def customer_full_name
+    user_id.present? ? user_name : customer_name
+  end
+
+  def primary_service
+    booking_service_items.first&.service
+  end
+
+  def primary_service_name
+    primary_service&.name
   end
 
   private

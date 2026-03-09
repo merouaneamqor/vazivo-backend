@@ -26,7 +26,7 @@ class ReviewPresenter
 
     {
       id: review.user_id,
-      name: review.user.name,
+      name: review.user_name,
       initials: initials,
     }
   end
@@ -34,14 +34,14 @@ class ReviewPresenter
   def initials
     return nil unless review.user
 
-    name = review.user.name.to_s.strip
+    name = review.user_name.to_s.strip
     return "?" if name.blank?
 
     name.split(/\s+/).map(&:first).join.upcase[0, 2]
   end
 
   def service_name
-    primary_item = review.booking&.booking_service_items&.first
+    primary_item = review.booking_service_items&.first
     primary_item&.service&.name
   end
 

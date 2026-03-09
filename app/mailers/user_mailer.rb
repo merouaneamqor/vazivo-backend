@@ -2,7 +2,7 @@
 
 class UserMailer < ApplicationMailer
   def welcome_customer(user)
-    return if user.blank? || user.email.blank?
+    return if user.blank? || !user.email?
 
     @user = user
     @name = user.name.presence || "there"
@@ -10,7 +10,7 @@ class UserMailer < ApplicationMailer
   end
 
   def welcome_provider(user, business)
-    return if user.blank? || user.email.blank?
+    return if user.blank? || !user.email?
 
     @user = user
     @business = business
@@ -19,7 +19,7 @@ class UserMailer < ApplicationMailer
   end
 
   def provider_upgrade_confirmation(user, business)
-    return if user.blank? || user.email.blank?
+    return if user.blank? || !user.email?
 
     @user = user
     @business = business

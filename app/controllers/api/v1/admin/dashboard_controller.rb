@@ -6,85 +6,94 @@ module Api
       class DashboardController < BaseController
         def index
           today = Time.zone.today
-          yesterday = today - 1.day
-          week_start = today.beginning_of_week
-          last_week_start = week_start - 7.days
-          month_start = today.beginning_of_month
-          1.month
+          kpis = calculate_kpis(today)
+          charts = calculate_charts(today)
+          recent_activity = fetch_recent_activity
 
-          bookings_today = Booking.where(date: today).count
-          bookings_yesterday = Booking.where(date: yesterday).count
-          revenue_today = ProviderInvoice.paid.where("DATE(paid_at) = ?", today).sum(:total)
-          revenue_yesterday = ProviderInvoice.paid.where("DATE(paid_at) = ?", yesterday).sum(:total)
-          active_providers = Business.kept.count
-          pending_providers = Business.kept.joins(:user).where(users: { provider_status: "not_confirmed" }).count
-          new_customers_week = ::User.customers.where(created_at: week_start..).count
-          new_customers_last_week = ::User.customers.where(created_at: last_week_start...week_start).count
-          total_bookings_month = Booking.where(date: month_start..).count
-          total_revenue_month = ProviderInvoice.paid.where(paid_at: month_start..).sum(:total)
-          premium_providers = Business.kept.where("premium_expires_at > ?", Time.current).count
-          verified_providers = Business.kept.where(verification_status: "verified").count
-
-          active_subscriptions = Subscription.where(status: "active").where("expires_at > ?", Time.current).count
-          subscriptions_by_plan = Subscription.where(status: "active").where("expires_at > ?",
-                                                                             Time.current).group(:plan_id).count
-          mrr_sum = ProviderInvoice.paid.joins(:subscription).where(subscriptions: { status: "active" }).where(
-            "subscriptions.expires_at > ?", Time.current
-          ).where(provider_invoices: { paid_at: 30.days.ago.. }).sum(:total) || 0
-          mrr = (mrr_sum.to_d / 30.0 * 30).to_f
-          new_subscriptions_month = Subscription.where(started_at: month_start..).count
-
-          bookings_by_day = Booking.where(date: (today - 30.days)..).group(:date).count
-          revenue_by_day = ProviderInvoice.paid.where(paid_at: 30.days.ago..).group("DATE(paid_at)").sum(:total)
-          reviews_by_day = Review.where(created_at: 30.days.ago..).group("DATE(created_at)").count
-          new_customers_by_day = ::User.customers.where(created_at: (today - 30.days).to_date..).group("DATE(created_at)").count
-          bookings_by_status = Booking.group(:status).count
-          rating_distribution = Review.group(:rating).count
-          top_cities = Business.kept.group(:city).count.sort_by { |_, v| -v }.first(10)
-          top_categories = Business.kept.group(:category).count.sort_by { |_, v| -v }.first(10)
-
-          recent_bookings = Booking.includes(:user, :services, :business).order(created_at: :desc).limit(10)
-          recent_reviews = Review.includes(:user, :business).order(created_at: :desc).limit(10)
-
-          render json: {
-            kpis: {
-              bookings_today: bookings_today,
-              bookings_yesterday: bookings_yesterday,
-              revenue_today: revenue_today.to_f,
-              revenue_yesterday: revenue_yesterday.to_f,
-              active_providers: active_providers,
-              pending_provider_approvals: pending_providers,
-              new_customers_week: new_customers_week,
-              new_customers_last_week: new_customers_last_week,
-              total_bookings_month: total_bookings_month,
-              total_revenue_month: total_revenue_month.to_f,
-              premium_providers: premium_providers,
-              verified_providers: verified_providers,
-              active_subscriptions: active_subscriptions,
-              subscriptions_by_plan: subscriptions_by_plan,
-              mrr: mrr.to_f,
-              new_subscriptions_month: new_subscriptions_month,
-            },
-            charts: {
-              bookings_by_day: bookings_by_day.transform_keys(&:to_s),
-              revenue_by_day: revenue_by_day.transform_keys(&:to_s).transform_values(&:to_f),
-              reviews_by_day: reviews_by_day.transform_keys(&:to_s).transform_values(&:to_i),
-              new_customers_by_day: new_customers_by_day.transform_keys(&:to_s).transform_values(&:to_i),
-              bookings_by_status: bookings_by_status.transform_keys(&:to_s).transform_values(&:to_i),
-              rating_distribution: (1..5).index_with do |r|
-                rating_distribution[r] || 0
-              end.transform_keys(&:to_s).transform_values(&:to_i),
-              top_cities: top_cities.map { |k, v| { name: chart_label(k), value: v } },
-              top_categories: top_categories.map { |k, v| { name: chart_label(k), value: v } },
-            },
-            recent_activity: {
-              bookings: recent_bookings.map { |b| booking_activity_item(b) },
-              reviews: recent_reviews.map { |r| review_activity_item(r) },
-            },
-          }
+          render json: { kpis: kpis, charts: charts, recent_activity: recent_activity }
         end
 
         private
+
+        def calculate_kpis(today)
+          {
+            bookings_today: Booking.where(date: today).count,
+            bookings_yesterday: Booking.where(date: today - 1.day).count,
+            revenue_today: ProviderInvoice.paid.where("DATE(paid_at) = ?", today).sum(:total).to_f,
+            revenue_yesterday: ProviderInvoice.paid.where("DATE(paid_at) = ?", today - 1.day).sum(:total).to_f,
+            active_providers: Business.kept.count,
+            pending_provider_approvals: Business.kept.joins(:user).where(users: { provider_status: "not_confirmed" }).count,
+            new_customers_week: ::User.customers.where(created_at: today.beginning_of_week..).count,
+            new_customers_last_week: ::User.customers.where(created_at: (today.beginning_of_week - 7.days)...today.beginning_of_week).count,
+            total_bookings_month: Booking.where(date: today.beginning_of_month..).count,
+            total_revenue_month: ProviderInvoice.paid.where(paid_at: today.beginning_of_month..).sum(:total).to_f,
+            premium_providers: Business.kept.where("premium_expires_at > ?", Time.current).count,
+            verified_providers: Business.kept.where(verification_status: "verified").count,
+            active_subscriptions: Subscription.where(status: "active").where("expires_at > ?", Time.current).count,
+            subscriptions_by_plan: Subscription.where(status: "active").where("expires_at > ?", Time.current).group(:plan_id).count,
+            mrr: calculate_mrr.to_f,
+            new_subscriptions_month: Subscription.where(started_at: today.beginning_of_month..).count,
+          }
+        end
+
+        def calculate_mrr
+          mrr_sum = ProviderInvoice.paid.joins(:subscription).where(subscriptions: { status: "active" })
+                                    .where("subscriptions.expires_at > ?", Time.current)
+                                    .where(provider_invoices: { paid_at: 30.days.ago.. }).sum(:total) || 0
+          (mrr_sum.to_d / 30.0 * 30).to_f
+        end
+
+        def calculate_charts(today)
+          {
+            bookings_by_day: chart_bookings_by_day(today),
+            revenue_by_day: chart_revenue_by_day,
+            reviews_by_day: chart_reviews_by_day,
+            new_customers_by_day: chart_new_customers_by_day(today),
+            bookings_by_status: chart_bookings_by_status,
+            rating_distribution: chart_rating_distribution,
+            top_cities: chart_top_cities,
+            top_categories: chart_top_categories,
+          }
+        end
+
+        def chart_bookings_by_day(today)
+          Booking.where(date: (today - 30.days)..).group(:date).count.transform_keys(&:to_s)
+        end
+
+        def chart_revenue_by_day
+          ProviderInvoice.paid.where(paid_at: 30.days.ago..).group("DATE(paid_at)").sum(:total).transform_keys(&:to_s).transform_values(&:to_f)
+        end
+
+        def chart_reviews_by_day
+          Review.where(created_at: 30.days.ago..).group("DATE(created_at)").count.transform_keys(&:to_s).transform_values(&:to_i)
+        end
+
+        def chart_new_customers_by_day(today)
+          ::User.customers.where(created_at: (today - 30.days).to_date..).group("DATE(created_at)").count.transform_keys(&:to_s).transform_values(&:to_i)
+        end
+
+        def chart_bookings_by_status
+          Booking.group(:status).count.transform_keys(&:to_s).transform_values(&:to_i)
+        end
+
+        def chart_rating_distribution
+          (1..5).index_with { |r| Review.where(rating: r).count }.transform_keys(&:to_s).transform_values(&:to_i)
+        end
+
+        def chart_top_cities
+          Business.kept.group(:city).count.sort_by { |_, v| -v }.first(10).map { |k, v| { name: chart_label(k), value: v } }
+        end
+
+        def chart_top_categories
+          Business.kept.group(:category).count.sort_by { |_, v| -v }.first(10).map { |k, v| { name: chart_label(k), value: v } }
+        end
+
+        def fetch_recent_activity
+          {
+            bookings: Booking.includes(:user, :services, :business).order(created_at: :desc).limit(10).map { |b| booking_activity_item(b) },
+            reviews: Review.includes(:user, :business).order(created_at: :desc).limit(10).map { |r| review_activity_item(r) },
+          }
+        end
 
         def chart_label(key)
           return "—" if key.nil?

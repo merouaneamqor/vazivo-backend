@@ -76,48 +76,53 @@ module Api
         end
 
         def search_bookings(business_ids, _query, like_patterns, phone_digits)
-          rel = Booking
-            .where(business_id: business_ids)
-            .left_joins(:user, :business)
-            .joins(:service)
-            .includes(:user, :service, :staff, :business)
-
-          # Build conditions: search across booking ID, customer name/phone, service name, status, business name
-          if like_patterns.any?
-            conds = []
-            binds = []
-            like_patterns.each do |pat|
-              # Search in both users.name AND bookings.customer_name
-              conds << "(LOWER(bookings.short_booking_id) LIKE ? OR LOWER(COALESCE(users.name, '')) LIKE ? OR LOWER(COALESCE(bookings.customer_name, '')) LIKE ? OR COALESCE(users.phone, '') LIKE ? OR COALESCE(bookings.customer_phone, '') LIKE ? OR LOWER(services.name) LIKE ? OR LOWER(bookings.status) LIKE ? OR LOWER(businesses.name) LIKE ?)"
-              8.times { binds << pat }
-            end
-            rel = rel.where(conds.join(" OR "), *binds)
-          elsif phone_digits.present? && phone_digits.length >= 3
-            phone_like = "%#{phone_digits}%"
-            rel = rel.where(
-              "REPLACE(REPLACE(REPLACE(COALESCE(users.phone, bookings.customer_phone, ''), ' ', ''), '-', ''), '+', '') LIKE ?",
-              phone_like
-            )
-          end
-
-          # Upcoming first, then by date desc
+          rel = build_booking_relation(business_ids)
+          rel = apply_booking_search(rel, like_patterns, phone_digits)
           rel = rel.order(Arel.sql("CASE WHEN date >= CURRENT_DATE THEN 0 ELSE 1 END"), date: :desc, start_time: :desc)
           bookings = rel.limit(LIMIT_PER_GROUP)
 
-          bookings.map do |b|
-            start_dt = b.date.is_a?(Date) ? b.date.to_time + b.start_time.seconds_since_midnight : b.start_time
-            {
-              id: b.id,
-              booking_number: b.short_booking_id,
-              customer_name: b.user&.name || b.customer_name || "Guest",
-              customer_phone: b.user&.phone.presence || b.customer_phone.to_s,
-              service_name: b.service&.translated_name || "Unknown",
-              staff_name: b.staff&.name || "Unassigned",
-              business_name: b.business&.translated_name || "Unknown",
-              start_time: start_dt.iso8601,
-              status: b.status,
-              price: b.total_price.to_f,
-            }
+          bookings.map { |b| serialize_booking(b) }
+        end
+
+        def build_booking_relation(business_ids)
+          Booking.where(business_id: business_ids)
+                 .left_joins(:user, :business)
+                 .joins(:service)
+                 .includes(:user, :service, :staff, :business)
+        end
+
+        def apply_booking_search(rel, like_patterns, phone_digits)
+          return apply_phone_search(rel, phone_digits) if like_patterns.empty? && phone_digits.present? && phone_digits.length >= 3
+          return rel if like_patterns.empty?
+
+          conds = []
+          binds = []
+          like_patterns.each do |pat|
+            conds << "(LOWER(bookings.short_booking_id) LIKE ? OR LOWER(COALESCE(users.name, '')) LIKE ? OR LOWER(COALESCE(bookings.customer_name, '')) LIKE ? OR COALESCE(users.phone, '') LIKE ? OR COALESCE(bookings.customer_phone, '') LIKE ? OR LOWER(services.name) LIKE ? OR LOWER(bookings.status) LIKE ? OR LOWER(businesses.name) LIKE ?)"
+            8.times { binds << pat }
+          end
+          rel.where(conds.join(" OR "), *binds)
+        end
+
+        def apply_phone_search(rel, phone_digits)
+          phone_like = "%#{phone_digits}%"
+          rel.where("REPLACE(REPLACE(REPLACE(COALESCE(users.phone, bookings.customer_phone, ''), ' ', ''), '-', ''), '+', '') LIKE ?", phone_like)
+        end
+
+        def serialize_booking(b)
+          start_dt = b.date.is_a?(Date) ? b.date.to_time + b.start_time.seconds_since_midnight : b.start_time
+          {
+            id: b.id,
+            booking_number: b.short_booking_id,
+            customer_name: b.user&.name || b.customer_name || "Guest",
+            customer_phone: b.user&.phone.presence || b.customer_phone.to_s,
+            service_name: b.service&.translated_name || "Unknown",
+            staff_name: b.staff&.name || "Unassigned",
+            business_name: b.business&.translated_name || "Unknown",
+            start_time: start_dt.iso8601,
+            status: b.status,
+            price: b.total_price.to_f,
+          }
           end
         end
 

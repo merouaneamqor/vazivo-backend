@@ -23,8 +23,8 @@ class BusinessDetailPresenter < BusinessPresenter
     return nil unless business.user
 
     {
-      id: business.user.id,
-      name: business.user.name.to_s.presence || "—",
+      id: business.user_id,
+      name: business.user&.name.to_s.presence || "—",
     }
   end
 

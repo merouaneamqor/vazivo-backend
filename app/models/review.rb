@@ -6,6 +6,12 @@ class Review < ApplicationRecord
   belongs_to :business
   belongs_to :user, optional: true
 
+  # Delegates for Law of Demeter
+  delegate :name, to: :user, prefix: true, allow_nil: true
+  delegate :avatar_url, to: :user, prefix: :customer, allow_nil: true
+  delegate :booking_service_items, to: :booking, prefix: false, allow_nil: true
+  delegate :start_time, to: :booking, prefix: :booking, allow_nil: true
+
   # Constants
   CORE_CATEGORIES = ["cleanliness", "punctuality", "professionalism", "service_quality", "hygiene"].freeze
   PREMIUM_CATEGORIES = ["ambiance", "staff_friendliness", "waiting_time", "value"].freeze

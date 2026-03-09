@@ -2,7 +2,7 @@
 
 class ProviderMailer < ApplicationMailer
   def provider_approved(user, business)
-    return if user.blank? || user.email.blank?
+    return if user.blank? || !user.email?
 
     @user = user
     @business = business
@@ -11,7 +11,7 @@ class ProviderMailer < ApplicationMailer
   end
 
   def premium_confirmation(user, business: nil, expires_at: nil)
-    return if user.blank? || user.email.blank?
+    return if user.blank? || !user.email?
 
     @user = user
     @business = business

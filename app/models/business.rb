@@ -38,6 +38,11 @@ class Business < ApplicationRecord
   has_many :categories, through: :business_categories
   has_many :staff_services, dependent: :destroy
 
+  # Delegates for Law of Demeter
+  delegate :email, :phone, to: :user, prefix: :owner, allow_nil: true
+  delegate :name, to: :city, prefix: true, allow_nil: true
+  delegate :name, to: :neighborhood, prefix: true, allow_nil: true
+
   # CarrierWave uploaders for images
   mount_uploader :logo, ImageUploader
   # For gallery images, use JSONB field: gallery_images (array of {url, public_id})
@@ -295,6 +300,14 @@ class Business < ApplicationRecord
 
   def current_subscription
     subscriptions.active.order(expires_at: :desc).first
+  end
+
+  def approve_provider!
+    user.update!(provider_status: "confirmed")
+  end
+
+  def unconfirm_provider!
+    user.update!(provider_status: "not_confirmed")
   end
 
   # Generate a URL-friendly slug from name and city (uses canonical name).

@@ -7,42 +7,7 @@ module Api
         skip_before_action :require_admin_role!, only: [:exit_impersonation]
 
         def index
-          businesses = Business.left_joins(:user)
-          businesses = apply_search(businesses, params[:q]) if params[:q].present?
-          businesses = businesses.where(businesses: { category: params[:category] }) if params[:category].present?
-          if params[:subcategory].present?
-            businesses = businesses.where(businesses: { subcategory: params[:subcategory] })
-          end
-          businesses = businesses.where("LOWER(businesses.city) = ?", params[:city].downcase) if params[:city].present?
-          businesses = businesses.where(discarded_at: nil) if params[:status] == "approved"
-          businesses = businesses.where.not(discarded_at: nil) if params[:status] == "suspended"
-          if params[:verification_status].present?
-            businesses = businesses.where(verification_status: params[:verification_status])
-          end
-          if Business.column_names.include?("onboarding_score")
-            businesses = apply_onboarding_filter(businesses, params[:onboarding])
-            if params[:onboarding_min].present?
-              businesses = businesses.where(businesses: { onboarding_score: (params[:onboarding_min]).. })
-            end
-          end
-          if params[:created_after].present?
-            businesses = businesses.where(businesses: { created_at: (params[:created_after]).. })
-          end
-          if params[:created_before].present?
-            businesses = businesses.where(businesses: { created_at: ..(params[:created_before]) })
-          end
-          businesses = apply_last_booking_filter(businesses, params[:last_booking_after], params[:last_booking_before])
-          businesses = apply_rating_filter(businesses, params[:min_rating], params[:max_rating])
-          businesses = apply_premium_filter(businesses, params[:premium_status]) if params[:premium_status].present?
-          businesses = apply_published_filter(businesses, params[:published]) if params[:published].present?
-          businesses = businesses.where(geo_validated: true) if params[:geo_validated] == "yes"
-          businesses = businesses.where(geo_validated: false) if params[:geo_validated] == "no"
-          businesses = apply_has_services_filter(businesses, params[:has_services]) if params[:has_services].present?
-          businesses = apply_has_bookings_filter(businesses, params[:has_bookings]) if params[:has_bookings].present?
-          if params[:neighborhood].present?
-            businesses = businesses.where("LOWER(businesses.neighborhood) ILIKE ?",
-                                          "%#{params[:neighborhood].downcase}%")
-          end
+          businesses = build_filtered_businesses
           businesses = businesses.distinct.order(apply_order(params[:order]))
           @pagy, businesses = pagy(businesses, items: params[:per_page] || 20)
 
@@ -65,7 +30,7 @@ module Api
             email: business.read_attribute(:email),
             website: business.read_attribute(:website),
             opening_hours: business.read_attribute(:opening_hours) || {},
-            neighborhood: business.read_attribute(:neighborhood).presence || (business.neighborhood.respond_to?(:name) ? business.neighborhood&.name : nil),
+            neighborhood: business.read_attribute(:neighborhood).presence || business.neighborhood_name,
             country: business.read_attribute(:country),
             category_ids: category_ids_from_denormalized(business),
             categories: categories_from_denormalized(business),
@@ -79,7 +44,7 @@ module Api
           attrs = provider_update_attrs(nil)
           business = user.businesses.build(attrs)
           city_str = params.dig(:provider, :city).to_s.strip.presence
-          business.write_attribute(:city, business.city&.name || city_str) if city_str.present?
+          business.write_attribute(:city, business.city_name || city_str) if city_str.present?
           apply_categories_to_business(business)
           if business.save
             log_admin_action(:create, "Business", business.id,
@@ -96,7 +61,7 @@ module Api
           attrs = provider_update_attrs(business)
           business.assign_attributes(attrs)
           city_str = params.dig(:provider, :city).to_s.strip.presence
-          business.write_attribute(:city, business.city&.name || city_str) if city_str.present?
+          business.write_attribute(:city, business.city_name || city_str) if city_str.present?
           apply_categories_to_business(business)
           if business.save
             details = { message: "Updated provider ##{business.id}" }
@@ -111,7 +76,7 @@ module Api
         def approve
           business = Business.find(params[:id])
           business.undiscard if business.discarded?
-          business.user.update!(provider_status: "confirmed")
+          business.approve_provider!
           ProviderMailer.provider_approved(business.user, business).deliver_later
           log_admin_action(:approve, "Business", business.id, details: { message: "Approved provider ##{business.id}" })
           @message = "Provider approved"
@@ -121,7 +86,7 @@ module Api
 
         def unconfirm
           business = Business.find(params[:id])
-          business.user.update!(provider_status: "not_confirmed")
+          business.unconfirm_provider!
           log_admin_action(:unconfirm, "Business", business.id,
                            details: { message: "Unconfirmed provider ##{business.id}" })
           @message = "Provider unconfirmed"
@@ -199,39 +164,17 @@ module Api
         # Grants premium to the business (params[:id] is business id). Body: { plan_id: (optional), expires_at:, paid_via:, amount: (optional), note: (optional) }
         def upgrade
           business = Business.find(params[:id])
-          user = business.user
+          return render_provider_error unless business.user&.provider?
 
-          unless user&.provider?
-            return render json: { error: "Business owner is not a provider" }, status: :unprocessable_content
-          end
+          plan = find_plan(params[:plan_id])
+          return render_plan_error if params[:plan_id].present? && plan.nil?
 
-          plan_id = params[:plan_id].presence
-          plan = plan_id.present? ? Plan.find_by(identifier: plan_id) : nil
-          if plan_id.present? && plan.nil?
-            return render json: { error: "Plan not found" }, status: :unprocessable_content
-          end
-
-          default_expires = plan ? plan.duration_months.months.from_now : 1.month.from_now
-          expires_at = params[:expires_at].present? ? Time.zone.parse(params[:expires_at]) : default_expires
-          paid_via = params[:paid_via].presence || "cash"
-          amount = params[:amount].present? ? params[:amount].to_d : (plan&.suggested_price || 0)
-          note = params[:note].presence
-          effective_plan_id = plan_id.presence || "premium_monthly"
-
-          result = ProviderPremiumUpgradeService.new.call(
-            business: business,
-            expires_at: expires_at,
-            paid_via: paid_via,
-            amount: amount,
-            currency: "mad",
-            plan_id: effective_plan_id,
-            metadata: { admin_granted: true, admin_id: current_user.id, note: note }.compact
-          )
+          upgrade_params = build_upgrade_params(plan)
+          result = ProviderPremiumUpgradeService.new.call(upgrade_params.merge(business: business))
 
           if result[:success]
             business.reload
-            log_admin_action(:upgrade, "Business", business.id,
-                             details: { message: "Upgraded provider ##{business.id} to premium" })
+            log_admin_action(:upgrade, "Business", business.id, details: { message: "Upgraded provider ##{business.id} to premium" })
             render json: {
               message: "Business upgraded to premium",
               business_id: business.id,
@@ -275,6 +218,65 @@ module Api
 
         private
 
+        def build_filtered_businesses
+          businesses = Business.left_joins(:user)
+          businesses = apply_search(businesses, params[:q]) if params[:q].present?
+          businesses = apply_category_filters(businesses)
+          businesses = apply_location_filters(businesses)
+          businesses = apply_status_filters(businesses)
+          businesses = apply_date_filters(businesses)
+          businesses = apply_metric_filters(businesses)
+          businesses = apply_feature_filters(businesses)
+          businesses
+        end
+
+        def apply_category_filters(businesses)
+          businesses = businesses.where(businesses: { category: params[:category] }) if params[:category].present?
+          businesses = businesses.where(businesses: { subcategory: params[:subcategory] }) if params[:subcategory].present?
+          businesses
+        end
+
+        def apply_location_filters(businesses)
+          businesses = businesses.where("LOWER(businesses.city) = ?", params[:city].downcase) if params[:city].present?
+          if params[:neighborhood].present?
+            businesses = businesses.where("LOWER(businesses.neighborhood) ILIKE ?", "%#{params[:neighborhood].downcase}%")
+          end
+          businesses
+        end
+
+        def apply_status_filters(businesses)
+          businesses = businesses.where(discarded_at: nil) if params[:status] == "approved"
+          businesses = businesses.where.not(discarded_at: nil) if params[:status] == "suspended"
+          businesses = businesses.where(verification_status: params[:verification_status]) if params[:verification_status].present?
+          businesses = businesses.where(geo_validated: true) if params[:geo_validated] == "yes"
+          businesses = businesses.where(geo_validated: false) if params[:geo_validated] == "no"
+          businesses
+        end
+
+        def apply_date_filters(businesses)
+          businesses = businesses.where(businesses: { created_at: (params[:created_after]).. }) if params[:created_after].present?
+          businesses = businesses.where(businesses: { created_at: ..(params[:created_before]) }) if params[:created_before].present?
+          businesses = apply_last_booking_filter(businesses, params[:last_booking_after], params[:last_booking_before])
+          businesses
+        end
+
+        def apply_metric_filters(businesses)
+          if Business.column_names.include?("onboarding_score")
+            businesses = apply_onboarding_filter(businesses, params[:onboarding])
+            businesses = businesses.where(businesses: { onboarding_score: (params[:onboarding_min]).. }) if params[:onboarding_min].present?
+          end
+          businesses = apply_rating_filter(businesses, params[:min_rating], params[:max_rating])
+          businesses
+        end
+
+        def apply_feature_filters(businesses)
+          businesses = apply_premium_filter(businesses, params[:premium_status]) if params[:premium_status].present?
+          businesses = apply_published_filter(businesses, params[:published]) if params[:published].present?
+          businesses = apply_has_services_filter(businesses, params[:has_services]) if params[:has_services].present?
+          businesses = apply_has_bookings_filter(businesses, params[:has_bookings]) if params[:has_bookings].present?
+          businesses
+        end
+
         def apply_search(relation, q)
           return relation if q.blank?
 
@@ -313,6 +315,31 @@ module Api
           else
             relation
           end
+        end
+
+        def apply_premium_filter(relation, premium_status)
+
+        def render_provider_error
+          render json: { error: "Business owner is not a provider" }, status: :unprocessable_content
+        end
+
+        def render_plan_error
+          render json: { error: "Plan not found" }, status: :unprocessable_content
+        end
+
+        def find_plan(plan_id)
+          plan_id.present? ? Plan.find_by(identifier: plan_id) : nil
+        end
+
+        def build_upgrade_params(plan)
+          {
+            expires_at: params[:expires_at].present? ? Time.zone.parse(params[:expires_at]) : (plan ? plan.duration_months.months.from_now : 1.month.from_now),
+            paid_via: params[:paid_via].presence || "cash",
+            amount: params[:amount].present? ? params[:amount].to_d : (plan&.suggested_price || 0),
+            currency: "mad",
+            plan_id: params[:plan_id].presence || "premium_monthly",
+            metadata: { admin_granted: true, admin_id: current_user.id, note: params[:note].presence }.compact
+          }
         end
 
         def apply_premium_filter(relation, premium_status)

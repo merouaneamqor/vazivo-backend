@@ -172,7 +172,7 @@ class ProdDataLoadService
                   role: "provider",
                   provider_status: "confirmed"
                 )
-                user.phone = phone.presence if user.phone.blank?
+                user.phone = phone.presence unless user.phone?
                 user.save!
               end
 

@@ -1,0 +1,5 @@
+# RubyCritic configuration
+# See: https://github.com/whitesmith/rubycritic#configuration
+
+# Do not open the HTML report in a browser (useful in Docker/CI)
+no_browser: true

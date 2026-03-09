@@ -2,7 +2,7 @@
 
 class BookingMailer < ApplicationMailer
   def booking_created_for_customer(booking)
-    email = booking.user_id.present? ? booking.user&.email : booking.customer_email
+    email = booking.customer_email_address
     return if email.blank?
 
     set_booking_ivars(booking)
@@ -11,7 +11,7 @@ class BookingMailer < ApplicationMailer
   end
 
   def booking_confirmed_for_customer(booking)
-    email = booking.user_id.present? ? booking.user&.email : booking.customer_email
+    email = booking.customer_email_address
     return if email.blank?
 
     set_booking_ivars(booking)
@@ -19,7 +19,7 @@ class BookingMailer < ApplicationMailer
   end
 
   def booking_cancelled_for_customer(booking)
-    email = booking.user_id.present? ? booking.user&.email : booking.customer_email
+    email = booking.customer_email_address
     return if email.blank?
 
     set_booking_ivars(booking)
@@ -27,16 +27,16 @@ class BookingMailer < ApplicationMailer
   end
 
   def booking_cancelled_for_provider(booking)
-    owner_email = booking.business&.user&.email
+    owner_email = booking.owner_email
     return if owner_email.blank?
 
     set_booking_ivars(booking)
-    @customer_name = booking.user_id.present? ? booking.user&.name : booking.customer_name
+    @customer_name = booking.customer_full_name
     mail(to: owner_email, subject: "Booking cancelled – #{@business_name}")
   end
 
   def review_request(booking)
-    email = booking.user_id.present? ? booking.user&.email : booking.customer_email
+    email = booking.customer_email_address
     return if email.blank?
 
     set_booking_ivars(booking)
@@ -45,7 +45,7 @@ class BookingMailer < ApplicationMailer
   end
 
   def booking_rescheduled_for_customer(booking)
-    email = booking.user_id.present? ? booking.user&.email : booking.customer_email
+    email = booking.customer_email_address
     return if email.blank?
 
     set_booking_ivars(booking)
@@ -53,11 +53,11 @@ class BookingMailer < ApplicationMailer
   end
 
   def new_booking_notification(booking)
-    owner_email = booking.business&.user&.email
+    owner_email = booking.owner_email
     return if owner_email.blank?
 
     set_booking_ivars(booking)
-    @customer_name = booking.user_id.present? ? booking.user&.name : booking.customer_name
+    @customer_name = booking.customer_full_name
     mail(to: owner_email, subject: "New booking at #{@business_name}")
   end
 
@@ -65,8 +65,8 @@ class BookingMailer < ApplicationMailer
 
   def set_booking_ivars(booking)
     @booking = booking
-    @business_name = booking.business&.name
-    @service_name = booking.service&.name
+    @business_name = booking.business_name
+    @service_name = booking.primary_service_name
     @date = booking.date&.strftime("%B %d, %Y")
     @time = booking.start_time&.strftime("%l:%M %p")&.strip
     @short_booking_id = booking.short_booking_id
@@ -75,6 +75,7 @@ class BookingMailer < ApplicationMailer
   def review_url_for(booking)
     frontend = ENV["FRONTEND_URL"].presence || "http://localhost:3001"
     base = frontend.chomp("/")
-    "#{base}/business/#{booking.business&.slug}?review=#{booking.short_booking_id}"
+    business_slug = booking.business_slug
+    "#{base}/business/#{business_slug}?review=#{booking.short_booking_id}"
   end
 end

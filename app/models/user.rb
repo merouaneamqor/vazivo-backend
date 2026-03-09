@@ -115,6 +115,10 @@ class User < ApplicationRecord
     write_attribute(:name, [first_name, last_name].compact.join(" ").strip)
   end
 
+  def avatar_url
+    avatar.url if avatar.present?
+  end
+
   private
 
   def downcase_email

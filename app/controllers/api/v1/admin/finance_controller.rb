@@ -15,73 +15,66 @@ module Api
 
         # Business invoices (ProviderInvoice — plan subscriptions paid by businesses)
         def invoices
-          invoices = ProviderInvoice.includes(:business, :subscription)
+          invoices = apply_invoice_filters(ProviderInvoice.includes(:business, :subscription))
+          stats = calculate_invoice_stats
+          @pagy, invoices = pagy(invoices.order(created_at: :desc), items: params[:per_page] || 20)
 
-          # Filters
+          render json: {
+            invoices: invoices.map { |inv| serialize_invoice(inv) },
+            meta: pagination_meta,
+            stats: stats,
+          }
+        end
+
+        def apply_invoice_filters(invoices)
           invoices = invoices.where(status: params[:status]) if params[:status].present?
           invoices = invoices.where(payment_method: params[:payment_method]) if params[:payment_method].present?
           invoices = invoices.where(paid_at: (params[:paid_after])..) if params[:paid_after].present?
           invoices = invoices.where(paid_at: ..(params[:paid_before])) if params[:paid_before].present?
           invoices = invoices.where(total: (params[:min_amount])..) if params[:min_amount].present?
           invoices = invoices.where(total: ..(params[:max_amount])) if params[:max_amount].present?
+          invoices = apply_invoice_search(invoices) if params[:q].present?
+          invoices
+        end
 
-          if params[:q].present?
-            pattern = "%#{ActiveRecord::Base.sanitize_sql_like(params[:q])}%"
-            invoices = invoices.joins(:business).where(
-              "provider_invoices.invoice_id ILIKE :q OR businesses.name ILIKE :q",
-              q: pattern
-            )
-          end
+        def apply_invoice_search(invoices)
+          pattern = "%#{ActiveRecord::Base.sanitize_sql_like(params[:q])}%"
+          invoices.joins(:business).where("provider_invoices.invoice_id ILIKE :q OR businesses.name ILIKE :q", q: pattern)
+        end
 
-          # Stats
-          total_revenue = ProviderInvoice.paid.sum(:total)
-          pending_revenue = ProviderInvoice.where(status: "pending").sum(:total)
-          total_count = ProviderInvoice.count
-          paid_count = ProviderInvoice.paid.count
+        def calculate_invoice_stats
+          {
+            total_revenue: ProviderInvoice.paid.sum(:total).to_f,
+            pending_revenue: ProviderInvoice.where(status: "pending").sum(:total).to_f,
+            total_count: ProviderInvoice.count,
+            paid_count: ProviderInvoice.paid.count,
+            by_month: invoice_stats_by_month,
+            by_status: ProviderInvoice.group(:status).count,
+            by_payment_method: ProviderInvoice.paid.group(:payment_method).count,
+          }
+        end
 
-          by_month = ProviderInvoice.paid.where.not(paid_at: nil)
-            .where(paid_at: 12.months.ago..)
-            .group("DATE_TRUNC('month', paid_at)")
-            .sum(:total)
-            .transform_keys { |k| k&.strftime("%Y-%m") }
-            .transform_values(&:to_f)
+        def invoice_stats_by_month
+          ProviderInvoice.paid.where.not(paid_at: nil).where(paid_at: 12.months.ago..)
+                         .group("DATE_TRUNC('month', paid_at)").sum(:total)
+                         .transform_keys { |k| k&.strftime("%Y-%m") }.transform_values(&:to_f)
+        end
 
-          by_status = ProviderInvoice.group(:status).count
-          by_payment_method = ProviderInvoice.paid.group(:payment_method).count
-
-          # Pagination
-          @pagy, invoices = pagy(invoices.order(created_at: :desc), items: params[:per_page] || 20)
-
-          list = invoices.map do |inv|
-            {
-              id: inv.id,
-              invoice_id: inv.invoice_id,
-              business_id: inv.business_id,
-              business_name: inv.business&.translated_name,
-              subscription_id: inv.subscription_id,
-              plan_id: inv.subscription&.plan_id,
-              total: inv.total.to_f,
-              currency: inv.currency,
-              status: inv.status,
-              paid_at: inv.paid_at,
-              payment_method: inv.payment_method,
-              created_at: inv.created_at,
-              metadata: inv.metadata,
-            }
-          end
-
-          render json: {
-            invoices: list,
-            meta: pagination_meta,
-            stats: {
-              total_revenue: total_revenue.to_f,
-              pending_revenue: pending_revenue.to_f,
-              total_count: total_count,
-              paid_count: paid_count,
-              by_month: by_month,
-              by_status: by_status,
-              by_payment_method: by_payment_method,
-            },
+        def serialize_invoice(inv)
+          {
+            id: inv.id,
+            invoice_id: inv.invoice_id,
+            business_id: inv.business_id,
+            business_name: inv.business&.translated_name,
+            subscription_id: inv.subscription_id,
+            plan_id: inv.subscription&.plan_id,
+            total: inv.total.to_f,
+            currency: inv.currency,
+            status: inv.status,
+            paid_at: inv.paid_at,
+            payment_method: inv.payment_method,
+            created_at: inv.created_at,
+            metadata: inv.metadata,
           }
         end
 

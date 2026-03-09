@@ -75,13 +75,13 @@ class BookingService
   end
 
   def self.discord_notify_new_booking(booking)
-    customer = booking.user ? booking.user.name : (booking.customer_name.presence || booking.customer_email.presence || "Guest")
+    customer = booking.customer_full_name || booking.customer_email_address || "Guest"
     primary_service = booking.services.first || booking.booking_service_items.first&.service
     DiscordNotifier.notify_embed(
       title: "New booking",
       description: "A new appointment was booked.",
       fields: [
-        { name: "Business", value: booking.business.translated_name, inline: true },
+        { name: "Business", value: booking.business&.translated_name, inline: true },
         { name: "Service", value: primary_service&.translated_name || "Service", inline: true },
         { name: "Date", value: booking.date.to_s, inline: true },
         { name: "Time", value: booking.start_time.strftime("%H:%M"), inline: true },

@@ -14,14 +14,14 @@ class BookingNotificationJob < ApplicationJob
     case event_type
     when "created"
       send_sms_confirmation(booking)
-      customer_email = booking.user_id.present? ? booking.user&.email : booking.customer_email
+      customer_email = booking.customer_email_address
       BookingMailer.booking_created_for_customer(booking).deliver_later if customer_email.present?
       BookingMailer.new_booking_notification(booking).deliver_later
       send_provider_sms(booking)
       Rails.logger.info "New booking notification for booking ##{booking_id}"
 
     when "confirmed"
-      customer_email = booking.user_id.present? ? booking.user&.email : booking.customer_email
+      customer_email = booking.customer_email_address
       BookingMailer.booking_confirmed_for_customer(booking).deliver_later if customer_email.present?
       Rails.logger.info "Booking confirmed notification for booking ##{booking_id}"
 
@@ -35,7 +35,7 @@ class BookingNotificationJob < ApplicationJob
       Rails.logger.info "Booking completed notification for booking ##{booking_id}"
 
     when "rescheduled"
-      customer_email = booking.user_id.present? ? booking.user&.email : booking.customer_email
+      customer_email = booking.customer_email_address
       BookingMailer.booking_rescheduled_for_customer(booking).deliver_later if customer_email.present?
       BookingMailer.new_booking_notification(booking).deliver_later
       Rails.logger.info "Booking rescheduled notification for booking ##{booking_id}"

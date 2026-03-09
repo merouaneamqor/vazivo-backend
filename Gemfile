@@ -93,6 +93,7 @@ group :development do
   gem "annotate"
   gem "brakeman", require: false
   gem "bullet"
+  gem "debride", require: false
   gem "letter_opener"
   gem "letter_opener_web"
   gem "rails_best_practices", require: false

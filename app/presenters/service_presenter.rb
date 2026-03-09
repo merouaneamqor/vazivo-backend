@@ -54,15 +54,15 @@ class ServicePresenter
   delegate :business_id, to: :service
 
   def business_name
-    service.business.translated_name
+    service.business_translated_name
   end
 
   def business_slug
-    service.business.translated_slug
+    service.business_translated_slug
   end
 
   def image_url
-    return nil unless service.image.present?
+    return nil unless service.image?
 
     service.image.url
   end
@@ -71,9 +71,9 @@ class ServicePresenter
     return nil unless service.service_category
 
     {
-      id: service.service_category.id,
-      name: service.service_category.name,
-      color: service.service_category.color,
+      id: service.service_category_id,
+      name: service.category_name,
+      color: service.category_color,
     }
   end
 end

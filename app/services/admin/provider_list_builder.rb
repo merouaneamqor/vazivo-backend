@@ -163,11 +163,11 @@ module Admin
     end
 
     def duplicate_listing?(business)
-      return false if business.phone.blank? && business.email.blank?
+      return false if !business.phone? && !business.email?
 
       base = Business.where.not(id: business.id)
-      by_phone = business.phone.present? && base.exists?(phone: business.phone)
-      by_email = business.email.present? && base.exists?(email: business.email)
+      by_phone = business.phone? && base.exists?(phone: business.phone)
+      by_email = business.email? && base.exists?(email: business.email)
       by_phone || by_email
     end
   end

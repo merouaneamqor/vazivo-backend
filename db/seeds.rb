@@ -846,7 +846,7 @@ past_bookings.sample(rand(15..past_bookings.count)).each do |booking|
     service_quality_rating: rating,
     hygiene_rating: rating
   )
-  Rails.logger.debug { "  ✓ Review: #{rating}⭐ for #{booking.business.name}" }
+  Rails.logger.debug { "  ✓ Review: #{rating}⭐ for #{booking.business_name}" }
 end
 
 # ============================================================================
@@ -866,7 +866,7 @@ past_bookings.each do |booking|
     status: :succeeded,
     paid_at: booking.completed_at || Time.zone.parse("#{booking.date} #{booking.start_time}")
   )
-  Rails.logger.debug { "  ✓ Booking payment: #{booking.total_price} MAD for #{booking.business.name}" }
+  Rails.logger.debug { "  ✓ Booking payment: #{booking.total_price} MAD for #{booking.business_name}" }
 end
 
 # Create booking payments for some confirmed upcoming bookings
@@ -881,7 +881,7 @@ upcoming_bookings.select(&:status_confirmed?).sample(5).each do |booking|
     status: :pending,
     paid_at: nil
   )
-  Rails.logger.debug { "  ✓ Booking payment (pending): #{booking.total_price} MAD for #{booking.business.name}" }
+  Rails.logger.debug { "  ✓ Booking payment (pending): #{booking.total_price} MAD for #{booking.business_name}" }
 end
 
 # ============================================================================

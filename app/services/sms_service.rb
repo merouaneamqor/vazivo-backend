@@ -2,10 +2,10 @@
 
 class SmsService
   def self.send_booking_confirmation(booking)
-    phone = booking.user_id.present? ? booking.user&.phone : booking.customer_phone
+    phone = booking.customer_phone_number
     return if phone.blank?
 
-    business_name = booking.business&.name || "Us"
+    business_name = booking.business_name || "Us"
     date_str = booking.date&.strftime("%B %d, %Y")
     time_str = booking.start_time&.strftime("%l:%M %p")&.strip
     ref = booking.short_booking_id
@@ -16,15 +16,14 @@ class SmsService
   end
 
   def self.send_new_booking_notification_to_provider(booking)
-    phone = booking.business&.user&.phone
+    phone = booking.business&.owner_phone
     return if phone.blank?
 
-    business_name = booking.business&.name || "Your business"
+    business_name = booking.business_name || "Your business"
     date_str = booking.date&.strftime("%B %d, %Y")
     time_str = booking.start_time&.strftime("%l:%M %p")&.strip
     ref = booking.short_booking_id
-    customer = booking.user_id.present? ? booking.user&.name : booking.customer_name
-    customer = customer.presence || "A customer"
+    customer = booking.customer_full_name || "A customer"
 
     body = "New booking at #{business_name}: #{customer} on #{date_str} at #{time_str}. Ref: ##{ref}"
 

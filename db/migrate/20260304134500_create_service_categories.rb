@@ -15,7 +15,7 @@ class CreateServiceCategories < ActiveRecord::Migration[7.1]
 
     add_index :service_categories, :archived_at
     add_index :service_categories, [:business_id, :position]
-    
+
     # Add service_category_id to services table
     add_reference :services, :service_category, foreign_key: true
   end

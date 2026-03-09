@@ -19,6 +19,10 @@ class Service < ApplicationRecord
   has_many :staff_services, dependent: :destroy
   has_many :staff_members, through: :staff_services, source: :staff
 
+  # Delegates for Law of Demeter
+  delegate :translated_name, :translated_slug, to: :business, prefix: true, allow_nil: true
+  delegate :name, :color, to: :service_category, prefix: :category, allow_nil: true
+
   # Attachments
   mount_uploader :image, ImageUploader
 
